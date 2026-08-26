@@ -39,3 +39,6 @@ jobs:
             git commit -m "Materialize reproducible core figure PDFs"
             git push
           fi
+
+# This workflow is intentionally path-limited so the bot's generated-PDF commit
+# does not trigger another materialization run.
