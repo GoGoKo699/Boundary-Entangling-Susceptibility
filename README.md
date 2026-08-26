@@ -96,11 +96,13 @@ The causal statement concerns **measurement location on the same pre-state**, co
 | Understand the full argument | [`docs/SCIENTIFIC_STORY.md`](docs/SCIENTIFIC_STORY.md) |
 | Check the exact identities | [`docs/THEORY.md`](docs/THEORY.md) |
 | Inspect numerical methods | [`docs/NUMERICAL_METHODS.md`](docs/NUMERICAL_METHODS.md) |
+| Navigate the code | [`docs/CODE_MAP.md`](docs/CODE_MAP.md) |
 | Reproduce the six Python panels | [`docs/REPRODUCTION.md`](docs/REPRODUCTION.md) |
 | Audit every claim | [`docs/CLAIM_EVIDENCE_MAP.md`](docs/CLAIM_EVIDENCE_MAP.md) |
 | See results beyond the Letter | [`docs/EXTENDED_RESULTS.md`](docs/EXTENDED_RESULTS.md) |
 | Understand failed earlier directions | [`docs/RESEARCH_HISTORY.md`](docs/RESEARCH_HISTORY.md) |
 | Review limitations | [`docs/SCOPE_AND_LIMITATIONS.md`](docs/SCOPE_AND_LIMITATIONS.md) |
+| Check migration completeness | [`provenance/MIGRATION_STATUS.md`](provenance/MIGRATION_STATUS.md) |
 
 ## Quick start
 
@@ -113,11 +115,11 @@ python verify.py
 python reproduce.py --core-figures
 ```
 
-The accepted Python-generated paper panels are under [`figures/core_svg/`](figures/core_svg/) for browser display; the plotting scripts regenerate vector PDFs locally. Their canonical inputs are under [`data/processed/core_figures/`](data/processed/core_figures/), and the exact plotting scripts are under [`scripts/figures/`](scripts/figures/).
+The canonical figure inputs are under [`data/processed/core_figures/`](data/processed/core_figures/), the exact plotting scripts are under [`scripts/figures/`](scripts/figures/), and browser-visible SVG exports are under [`figures/core_svg/`](figures/core_svg/). Fresh vector PDFs and PNGs are written locally to `reproduced_figures/`.
 
-## Full research packages
+## Full research studies
 
-The clean reader-facing layer is accompanied by the final study scripts and derived tables under `studies/`. Large compressed raw-state archives are intentionally kept outside the first Git commit and are described in [`docs/DATA_POLICY.md`](docs/DATA_POLICY.md).
+The clean reader-facing layer is accompanied by load-bearing simulation and analysis source, design locks, validation source, and selected derived tables under [`studies/`](studies/). Large compressed trajectory/state archives are intentionally kept outside ordinary Git history and are described in [`docs/DATA_POLICY.md`](docs/DATA_POLICY.md).
 
 ## Citation and licensing
 
