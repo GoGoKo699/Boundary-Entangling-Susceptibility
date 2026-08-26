@@ -1,10 +1,25 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the repository and the associated manuscript when available."
-title: "Boundary Entangling Susceptibility"
+message: >-
+  If you use this repository, cite the associated preprint or versioned
+  repository release when it becomes available.
+title: >-
+  Beyond the Schmidt Spectrum: Boundary Entangling Susceptibility in
+  Monitored Quantum Circuits
 type: software
 authors:
   - family-names: Lin
     given-names: Ruge
-repository-code: "https://github.com/GoGoKo699/Boundary-Entangling-Susceptibility"
+    email: gogoko699@gmail.com
+repository-code: https://github.com/GoGoKo699/Boundary-Entangling-Susceptibility
 version: 0.1.0
 date-released: 2026-08-26
+abstract: >-
+  Code, canonical figure data, exact response identities, and validation
+  material for fixed-spectrum boundary entangling susceptibility in monitored
+  quantum circuits.
+keywords:
+  - quantum information
+  - quantum entanglement
+  - monitored quantum circuits
+  - Schmidt spectrum
+  - stabilizer circuits
