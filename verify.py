@@ -104,6 +104,8 @@ if not (2.0 < float(fit["decay_length"]) < 3.0):
     raise SystemExit("Figure 4 decay length is outside the audited range")
 
 # Repository policy: no manuscript or TikZ sources in the tracked project.
+# Build the forbidden marker dynamically so this verifier does not match itself.
+tikz_marker = "\\begin{" + "tikzpicture}"
 for path in ROOT.rglob("*"):
     if not path.is_file() or ".git" in path.parts:
         continue
@@ -111,7 +113,7 @@ for path in ROOT.rglob("*"):
         raise SystemExit(f"TeX source is excluded from this repository: {path}")
     if path.suffix.lower() in {".md", ".py", ".yml", ".yaml"}:
         text = path.read_text(encoding="utf-8", errors="ignore").lower()
-        if "\\begin{tikzpicture}" in text:
+        if tikz_marker in text:
             raise SystemExit(f"TikZ source is excluded from this repository: {path}")
 
 print("verification passed")
