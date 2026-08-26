@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the repository and the associated manuscript when available."
+title: "Boundary Entangling Susceptibility"
+type: software
+authors:
+  - family-names: Lin
+    given-names: Ruge
+repository-code: "https://github.com/GoGoKo699/Boundary-Entangling-Susceptibility"
+version: 0.1.0
+date-released: 2026-08-26
