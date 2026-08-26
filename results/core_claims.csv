@@ -1,0 +1,8 @@
+claim_id,claim,evidence,status,scope
+M1,Complete central Schmidt spectrum does not determine fresh-gate susceptibility,Held-out rank-4 intervention across five state-generation families plus independent-seed replication,Supported numerically,Finite tested circuit and measurement families
+M2,Neighboring-cut purities exactly determine the Haar or uniform-Clifford relative Renyi-2 response,Two-copy response-operator theorem,Exact,All pure input states for the stated probe ensemble
+M3,Physical fixed-spectrum suppression persists through n=256,Matched stabilizer states in fixed (n,tau,S_m) strata under two monitoring protocols,Supported numerically,Monitored Clifford circuits through 256 qubits
+M4,The large-size conclusion independently replicates,Disjoint simulation seed and random-Pauli monitoring,Supported numerically,Same locked estimator and tested size range
+M5,Moving one measurement toward the cut suppresses the unchanged-spectrum response,Paired measurement-location intervention on copies of the same pre-state,Paired conditional intervention,Projective-Z stabilizer arm conditional on Delta S_m=0
+L1,The extrapolated response is nonzero in the thermodynamic limit,Locked 1/n extrapolation and fixed-form sensitivities,Supported extrapolation,Not a proof of a universal correction exponent
+L2,The response is a new MIPT order parameter,None,Not claimed,Response remains nonzero on both sides of the transition
