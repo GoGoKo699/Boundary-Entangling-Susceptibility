@@ -1,0 +1,3 @@
+condition,conditional_fixed_spectrum,estimate,ci_low,ci_high,trajectories,bootstrap
+unconditional,False,0.0714074074132,0.0654814814868,0.0773152777843,5400,5000
+central_spectrum_unchanged,True,-0.0474290225329,-0.0494346253981,-0.0454523225409,4790,5000
