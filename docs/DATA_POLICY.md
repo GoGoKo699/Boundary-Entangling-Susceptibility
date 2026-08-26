@@ -1,7 +1,38 @@
 # Data policy
 
-The repository tracks all canonical data needed to regenerate the six core Python panels, the complete analysis scripts from the final two checkpoints, and the load-bearing derived tables.
+## Tracked in ordinary Git history
 
-The two complete checkpoint packages contain roughly 20 MB of additional compressed raw arrays and state tables. They are preserved in the handover package but are not placed in the first ordinary Git commit. Before public release they should be attached to a versioned GitHub Release or deposited in a research archive, with hashes recorded here.
+The repository tracks:
 
-This avoids hiding the scientific story inside binary archives while keeping ordinary Git history reviewable.
+- every canonical CSV or JSON input used by the six core Python panels;
+- the exact plotting scripts;
+- selected load-bearing derived tables from Checkpoints 04 and 05;
+- design locks, timestamps, simulation and analysis source, theorem checks, and
+  validation source needed to audit the final scientific chain;
+- browser-visible SVG exports of the accepted panels.
+
+These files are small, reviewable, and sufficient to reproduce the displayed
+core figures and verify the headline numerical statements.
+
+## Kept outside ordinary Git history
+
+The complete Checkpoint 04 and Checkpoint 05 packages contain additional
+compressed raw arrays, state tables, bootstrap arrays, and duplicated generated
+artifacts. They are intentionally not committed as opaque binary archives.
+Before public release they should be attached to a versioned GitHub Release or
+deposited in a research archive, with download locations and SHA-256 values
+recorded here.
+
+## Why this split is deliberate
+
+A reader should not have to download a large archive to understand the result,
+inspect the central evidence, or regenerate the paper panels. At the same time,
+full trajectory-level provenance should remain available as a release asset for
+specialist reanalysis.
+
+## Pending release action
+
+- choose the public data archive or GitHub Release;
+- upload the two complete checkpoint packages;
+- record their immutable hashes and URLs;
+- specify the final data license.
