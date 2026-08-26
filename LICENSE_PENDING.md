@@ -1,3 +1,5 @@
 # License pending
 
-No reuse license has yet been selected. All rights are reserved until the repository owner adds an explicit license.
+No reuse license has yet been selected for this private prepublication repository.
+
+Before public release, choose a code license and a compatible data/figure license, then replace this notice with the final license files.
