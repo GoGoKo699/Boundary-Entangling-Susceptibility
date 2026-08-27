@@ -14,14 +14,24 @@
 - [x] Repository-level verifier and GitHub Actions workflow.
 - [x] Selected load-bearing scripts, design locks, validation source, and derived tables from Checkpoints 04 and 05.
 - [x] Explicit exclusion of TeX and TikZ.
+- [x] Author-reviewed PDF filenames and SHA-256 identities recorded without broken in-repository paths.
 
-## Deliberately pending before public release
+## Deliberately outside ordinary Git history
 
-- [ ] Select code and data licenses.
-- [ ] Upload complete checkpoint archives as release/data-deposit assets.
-- [ ] Add immutable download URLs and hashes to `docs/DATA_POLICY.md`.
+- The exact six author-reviewed PDF binaries. They are reproducible from tracked inputs and scripts; their immutable hashes are recorded in `provenance/figure_sha256.csv`.
+- Complete compressed Checkpoint 04 and Checkpoint 05 trajectory/state archives. Their hashes are recorded in `docs/DATA_POLICY.md` pending a release or research-data deposit.
+
+## Pending before public release
+
+- [ ] Select code, data, and figure licenses.
+- [ ] Upload complete checkpoint archives and the frozen PDF set as release/data-deposit assets.
+- [ ] Add immutable download URLs to `docs/DATA_POLICY.md`.
 - [ ] Complete an external specialist audit of the exact theorems.
 - [ ] Replace the provisional citation record with the preprint DOI/arXiv entry.
+- [ ] Add repository description and topics in GitHub settings.
+- [ ] Decide whether to protect `main` and require the test workflow before merging.
+- [ ] Remove temporary migration branches after explicit author approval.
+- [ ] Decide when to change repository visibility from private to public.
 
 ## Archived scientific directions
 
