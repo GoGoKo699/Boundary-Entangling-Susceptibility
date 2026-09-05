@@ -1,12 +1,14 @@
 # Evidence reassessment: distance profile, pairing, and finite-size inference
 
+**Figure status update:** The author has approved removal of the exponential curve and length annotation from the active Figure 4 distance panel. The original data and intervals are unchanged. See [the approved baseline and caption](FIGURE_BASELINE.md). The analysis below records the reassessment that motivated that decision.
+
 **Analysis date:** 2026-09-05. **Basis:** the original Checkpoint 05 archive, SHA-256 `284a92bfac08af6194cd576ce07c4be90e1e760fcc7b0fc7951eaacd1fa975ce`.
 
-This is a post-hoc sensitivity analysis and archived-row replay. It does not replace the locked primary estimands, their original intervals, or the accepted manuscript artwork. The numerical circuit simulations were not rerun. New location intervals use 5,000 trajectory-cluster bootstrap draws and seed `2026090501`; size diagnostics reuse the 2,000 archived trajectory bootstraps per size/protocol/run.
+This is a post-hoc sensitivity analysis and archived-row replay. It does not replace the locked primary estimands or their original intervals. The numerical circuit simulations were not rerun. New location intervals use 5,000 trajectory-cluster bootstrap draws and seed `2026090501`; size diagnostics reuse the 2,000 archived trajectory bootstraps per size/protocol/run. The subsequent approved artwork revision removes only the fitted curve and its annotation.
 
 ## Decisions
 
-Keep the central-spectrum question, exact neighboring-purity mechanism, measured persistence through 256 qubits, independent-seed replication, and paired measurement-location result. Do not promote the fitted `xi=2.37` to an established physical localization length or describe a single exponential as an adequate law for the entire profile. Keep large-size extrapolations explicitly model-dependent. The frozen Figure 4 curve is retained only for reproducibility pending an author-approved artwork revision.
+Keep the central-spectrum question, exact neighboring-purity mechanism, measured persistence through 256 qubits, independent-seed replication, and paired measurement-location result. Do not promote the fitted `xi=2.37` to an established physical localization length or describe a single exponential as an adequate law for the entire profile. Keep large-size extrapolations explicitly model-dependent. The historical curve remains in earlier source artifacts; the current Figure 4 omits it following author approval.
 
 ## 1. What was recovered from the stored observations
 
@@ -55,7 +57,7 @@ For the archived curve, all six predictions of the frozen fit fall outside the c
 
 Changing eligibility therefore does not resolve the full-profile mismatch. The problem is also present in multiple individual cells at short distances, rather than appearing only after pooling different cells. Fits to different distance windows give different descriptive scales. These exploratory fits are all reported, not used to select a replacement headline model.
 
-**Recommended Figure 4 revision for author review:** retain the observed means and their original intervals; remove the exponential curve and `xi` annotation from the main artwork. Do not add another fitted function. A caption can state that the response is concentrated near the cut and decreases strongly with measurement distance. The historical fitted parameter and its diagnostics belong in this document, not in the physical claim. No manuscript figure has been changed by this decision record.
+**Adopted Figure 4 revision:** retain the observed means and their original intervals; remove the exponential curve and `xi` annotation from the main artwork. Do not add another fitted function. A caption can state that the response is concentrated near the cut and decreases strongly with measurement distance. The historical fitted parameter and its diagnostics belong in this document, not in the physical claim. The replacement Python PDF is available; the external Overleaf project must use that replacement and the updated caption.
 
 ## 5. Finite sizes versus a limiting coefficient
 
@@ -96,4 +98,4 @@ python scripts/analysis/reassess_evidence.py \
 
 The script verifies the full ZIP hash before reading it and records hashes of every member used. It imports no original checkpoint estimator code. It writes the fresh paired intervals, cell profiles, common-eligibility curve, covariance and window diagnostics, independently reconstructed finite-size coefficients, and fixed-menu extrapolation checks. Full raw circuit generation and a fresh full finite-size bootstrap campaign are outside this pass.
 
-Selected text results are in [`../results/evidence_reassessment/`](../results/evidence_reassessment/); running the command regenerates every diagnostic table. The new bootstrap arrays are reproducible outputs, not frozen primary data. Permanent raw-archive deposit remains pending as described in [`DATA_POLICY.md`](DATA_POLICY.md).
+The text results are in [`../results/evidence_reassessment/`](../results/evidence_reassessment/). The new bootstrap arrays are reproducible outputs, not frozen primary data. Permanent raw-archive deposit remains pending as described in [`DATA_POLICY.md`](DATA_POLICY.md).

@@ -1,9 +1,9 @@
-# Figure assets
+# Figures
 
-`core/` contains regenerated PDF and PNG panels. `core_svg/` contains browser exports of the same six panels. The supported plotting command is `python reproduce.py --core-figures` from the repository root, producing six PDF/PNG/SVG triples.
+The [approved baseline](../docs/FIGURE_BASELINE.md) contains six Python data panels forming four narrative figures. `core/` holds PDF/PNG outputs and `core_svg/` holds browser SVGs. The [dialogue report](../docs/DIALOGUE_REPORT.md) uses the same panels and adds no fifth narrative figure.
 
-The original external author-approved PDF bytes are identified by [`../provenance/figure_sha256.csv`](../provenance/figure_sha256.csv). Their identity is distinct from the regenerated repository files. The local rendering comparison is recorded in [`../provenance/EXPORT_COMPARISON_2026-09-05.json`](../provenance/EXPORT_COMPARISON_2026-09-05.json). No standalone font files, manuscript source, or TikZ code are included.
+The active Figure 4 distance panel omits the historical exponential curve and its length annotation. The original data points, confidence intervals, labels, and page dimensions are unchanged. Its contrast panel and all panels of Figures 1–3 are unchanged.
 
-**Figure 4 remains historical artwork pending author review.** The observed points are supported, but the exponential curve and xi annotation should not be read as an adequate single-exponential law or a precisely determined physical length. See [`../docs/EVIDENCE_REASSESSMENT.md`](../docs/EVIDENCE_REASSESSMENT.md). No new functional form has been fitted into the main artwork.
+Run `python reproduce.py --core-figures` to rebuild six PDF/PNG/SVG triples in `reproduced_figures/`. All three formats come from the same Python source. The current Figure 4 generator has no decay-fit input.
 
-Normal CI exports workflow artifacts and has read-only repository permissions. It does not push regenerated binaries onto `main`.
+The earlier external Overleaf PDF hashes in `provenance/figure_sha256.csv` are historical identities, not current-output checksums. The historical fit is discussed in the evidence reassessment but is not an active graphical or physical claim.

@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-05",
+  "source_commit": "e293fff4e2dce3f5298de8916f8ec839b555772f",
+  "approved_change": "Remove only the exponential curve and fitted-length annotation from the Figure 4 distance panel",
+  "numerical_changes": false,
+  "other_panels_changed": false,
+  "local_approved_panel_sha256": "bb81287b3e596ee1dfcad17b26bebe4203f7b05055ba48c79d0d25202a4d20d9",
+  "render_comparison_dpi": 144,
+  "local_render_matches_approved_candidate": true,
+  "page_dimensions_preserved": true,
+  "unchanged_other_panels_match_accepted_renders": 5,
+  "historical_fit_input": "data/processed/core_figures/figure_04_distance_fit.json",
+  "historical_fit_input_used_by_current_plot": false,
+  "current_plotting_source": "scripts/figures/make_figure_04.py",
+  "overleaf_replacement": "Graph/figure_04_distance_decay.pdf",
+  "caption_document": "docs/FIGURE_BASELINE.md",
+  "report_source": "docs/DIALOGUE_REPORT.md",
+  "report_main_questions": 9,
+  "report_appendix_questions": 32,
+  "report_narrative_figures": 4,
+  "note": "Rendered equivalence is not a byte-identity claim for differently generated PDF metadata. The earlier external figure manifest remains historical. The Overleaf project itself is not edited by this repository change."
+}

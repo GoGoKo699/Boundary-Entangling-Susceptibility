@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild the six frozen-layout panels; validate all 18 PDF/PNG/SVG outputs."""
+"""Rebuild the six approved panels; validate all 18 PDF/PNG/SVG outputs."""
 from __future__ import annotations
 import argparse
 import json
@@ -32,7 +32,7 @@ def main():
             ['make_figure_02.py','--csv',data/'figure_02_boundary_codes.csv','--outdir',out],
             ['make_figure_03.py','--csv',data/'figure_03_size_scaling.csv','--pdf',out/(STEMS[3]+'.pdf'),'--png',out/(STEMS[3]+'.png')],
             ['make_figure_04.py','--distance-csv',data/'figure_04_distance_decay.csv','--contrast-csv',data/'figure_04_conditioning_contrast.csv',
-             '--fit-json',data/'figure_04_distance_fit.json','--distance-pdf',out/(STEMS[4]+'.pdf'),'--distance-png',out/(STEMS[4]+'.png'),
+             '--distance-pdf',out/(STEMS[4]+'.pdf'),'--distance-png',out/(STEMS[4]+'.png'),
              '--contrast-pdf',out/(STEMS[5]+'.pdf'),'--contrast-png',out/(STEMS[5]+'.png')],
         ]
         for name,*rest in commands:
@@ -50,8 +50,8 @@ def main():
         args.output.mkdir(parents=True,exist_ok=True)
         for name in sorted(expected):shutil.copy2(out/name,args.output/name)
         (args.output/'EXPORT_STATUS.json').write_text(json.dumps({'figure_files':18,'complete':True,
-            'baseline':'frozen manuscript layout, historical Figure 4 exponential retained for reproducibility',
-            'interpretation':'see docs/EVIDENCE_REASSESSMENT.md; frozen artwork is not an endorsement of its exponential fit'},indent=2)+'\n')
+            'baseline':'approved 2026-09-05: original panels with the Figure 4 distance fit removed',
+            'interpretation':'observed distance means and original intervals; no fitted decay law'},indent=2)+'\n')
     print(f'Validated 18 figure files in {args.output}')
 
 if __name__=='__main__':main()
