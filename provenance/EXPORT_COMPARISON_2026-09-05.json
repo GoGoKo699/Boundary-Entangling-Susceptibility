@@ -1,0 +1,14 @@
+{
+  "comparison": "local regenerated PDF panels versus exact author-approved originals extracted from Overleaf.zip",
+  "renderer": "PyMuPDF at 144 dpi",
+  "scope": "local environment comparison, not cross-platform byte equality or a guarantee about browser fallback fonts",
+  "manuscript_sources_modified": false,
+  "results": [
+    {"file":"figure_01_panel_b.pdf","page_size_equal":true,"pixel_mean_absolute_difference":0.0},
+    {"file":"figure_02_redistribution_matrix.pdf","page_size_equal":true,"pixel_mean_absolute_difference":0.0},
+    {"file":"figure_02_response_matrix.pdf","page_size_equal":true,"pixel_mean_absolute_difference":0.0},
+    {"file":"figure_03_size_scaling.pdf","page_size_equal":true,"pixel_mean_absolute_difference":0.0},
+    {"file":"figure_04_conditioning_contrast.pdf","page_size_equal":true,"pixel_mean_absolute_difference":0.0},
+    {"file":"figure_04_distance_decay.pdf","page_size_equal":true,"pixel_mean_absolute_difference":0.0}
+  ]
+}

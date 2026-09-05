@@ -1,8 +1,9 @@
 claim_id,claim,evidence,status,scope
-M1,Complete central Schmidt spectrum does not determine fresh-gate susceptibility,Held-out rank-4 intervention across five state-generation families plus independent-seed replication,Supported numerically,Finite tested circuit and measurement families
-M2,Neighboring-cut purities exactly determine the Haar or uniform-Clifford relative Renyi-2 response,Two-copy response-operator theorem,Exact,All pure input states for the stated probe ensemble
-M3,Physical fixed-spectrum suppression persists through n=256,Matched stabilizer states in fixed (n,tau,S_m) strata under two monitoring protocols,Supported numerically,Monitored Clifford circuits through 256 qubits
-M4,The large-size conclusion independently replicates,Disjoint simulation seed and random-Pauli monitoring,Supported numerically,Same locked estimator and tested size range
-M5,Moving one measurement toward the cut suppresses the unchanged-spectrum response,Paired measurement-location intervention on copies of the same pre-state,Paired conditional intervention,Projective-Z stabilizer arm conditional on Delta S_m=0
-L1,The extrapolated response is nonzero in the thermodynamic limit,Locked 1/n extrapolation and fixed-form sensitivities,Supported extrapolation,Not a proof of a universal correction exponent
-L2,The response is a new MIPT order parameter,None,Not claimed,Response remains nonzero on both sides of the transition
+M1,Complete central spectrum does not determine the fresh-gate response,Exact neighboring-purity formula and finite intervention tests,Exact insufficiency; numerical monitored-state contrasts,Stated probe ensembles and tested input families
+M2,Neighboring-cut purities determine the Haar or uniform-Clifford response,Two-copy response identity,Exact,"Purity-normalized linear-entropy response, not a finite logarithmic entropy increment"
+M3,Fixed-spectrum monitoring coefficients remain negative through n=256,Archived-row replay of all 16 size/protocol/run coefficients,Supported numerically,Monitored Clifford circuits and observed common support
+M4,The finite-size conclusion replicates with disjoint seeds,Separate primary and replication campaigns,Independent-seed replication,Not independent implementation or external replication
+M5,Paired near-minus-far suppression survives stricter eligibility,Original endpoint and post-hoc same-side joint-preservation bootstrap,Paired conditional intervention,"Specified potential interventions, not population-wide or long-run-rate causality"
+L1,Negative extrapolated sign is stable under the checked models,Locked inverse-size fit plus finite sensitivity menu,Model-dependent evidence,Not proof of a thermodynamic limit or exhaustive model uncertainty
+L2,A single exponential with physical localization length xi=2.37 describes the profile,"Covariance-aware residuals remain large, including under common eligibility",Not supported as a main physical claim,Historical fit parameter retained only for provenance
+L3,The susceptibility is a new MIPT order parameter,No supporting claim,Not claimed,No critical exponent or generic non-Clifford limit asserted

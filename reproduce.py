@@ -1,88 +1,57 @@
 #!/usr/bin/env python3
-"""Regenerate the six core Python panels from canonical tables."""
+"""Rebuild the six frozen-layout panels; validate all 18 PDF/PNG/SVG outputs."""
 from __future__ import annotations
-
 import argparse
+import json
 from pathlib import Path
+import shutil
 import subprocess
 import sys
+import tempfile
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent
+STEMS = ['figure_01_panel_b','figure_02_response_matrix','figure_02_redistribution_matrix',
+         'figure_03_size_scaling','figure_04_distance_decay','figure_04_conditioning_contrast']
 
-
-def run(command: list[object]) -> None:
-    command_text = [str(item) for item in command]
-    print("+", " ".join(command_text))
-    subprocess.run(command_text, check=True)
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--core-figures", action="store_true")
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--core-figures', action='store_true')
+    parser.add_argument('--output', type=Path, default=ROOT/'reproduced_figures')
     args = parser.parse_args()
     if not args.core_figures:
-        parser.error("select --core-figures")
-
-    output = ROOT / "reproduced_figures"
-    output.mkdir(exist_ok=True)
-
-    run(
-        [
-            sys.executable,
-            ROOT / "scripts/figures/make_figure_01_frozen.py",
-            "--csv",
-            ROOT / "data/processed/core_figures/figure_01_panel_b.csv",
-            "--pdf",
-            output / "figure_01_panel_b.pdf",
-            "--png",
-            output / "figure_01_panel_b.png",
+        parser.error('select --core-figures')
+    # A fresh staging directory prevents stale files from making an incomplete run pass.
+    # Existing user directories are never recursively deleted.
+    with tempfile.TemporaryDirectory(prefix='boundary-figures-') as temporary:
+        out=Path(temporary)
+        data=ROOT/'data/processed/core_figures'
+        scripts=ROOT/'scripts/figures'
+        commands=[
+            ['make_figure_01_frozen.py','--csv',data/'figure_01_panel_b.csv','--pdf',out/(STEMS[0]+'.pdf'),'--png',out/(STEMS[0]+'.png')],
+            ['make_figure_02.py','--csv',data/'figure_02_boundary_codes.csv','--outdir',out],
+            ['make_figure_03.py','--csv',data/'figure_03_size_scaling.csv','--pdf',out/(STEMS[3]+'.pdf'),'--png',out/(STEMS[3]+'.png')],
+            ['make_figure_04.py','--distance-csv',data/'figure_04_distance_decay.csv','--contrast-csv',data/'figure_04_conditioning_contrast.csv',
+             '--fit-json',data/'figure_04_distance_fit.json','--distance-pdf',out/(STEMS[4]+'.pdf'),'--distance-png',out/(STEMS[4]+'.png'),
+             '--contrast-pdf',out/(STEMS[5]+'.pdf'),'--contrast-png',out/(STEMS[5]+'.png')],
         ]
-    )
-    run(
-        [
-            sys.executable,
-            ROOT / "scripts/figures/make_figure_02.py",
-            "--csv",
-            ROOT / "data/processed/core_figures/figure_02_boundary_codes.csv",
-            "--outdir",
-            output,
-        ]
-    )
-    run(
-        [
-            sys.executable,
-            ROOT / "scripts/figures/make_figure_03.py",
-            "--csv",
-            ROOT / "data/processed/core_figures/figure_03_size_scaling.csv",
-            "--pdf",
-            output / "figure_03_size_scaling.pdf",
-            "--png",
-            output / "figure_03_size_scaling.png",
-        ]
-    )
-    run(
-        [
-            sys.executable,
-            ROOT / "scripts/figures/make_figure_04.py",
-            "--distance-csv",
-            ROOT / "data/processed/core_figures/figure_04_distance_decay.csv",
-            "--contrast-csv",
-            ROOT / "data/processed/core_figures/figure_04_conditioning_contrast.csv",
-            "--fit-json",
-            ROOT / "data/processed/core_figures/figure_04_distance_fit.json",
-            "--distance-pdf",
-            output / "figure_04_distance_decay.pdf",
-            "--distance-png",
-            output / "figure_04_distance_decay.png",
-            "--contrast-pdf",
-            output / "figure_04_conditioning_contrast.pdf",
-            "--contrast-png",
-            output / "figure_04_conditioning_contrast.png",
-        ]
-    )
+        for name,*rest in commands:
+            subprocess.run([sys.executable,str(scripts/name),*map(str,rest)],check=True)
+        expected={stem+suffix for stem in STEMS for suffix in ['.pdf','.png','.svg']}
+        if {p.name for p in out.iterdir()} != expected:
+            raise RuntimeError('The staging output set is not exactly six PDF/PNG/SVG triples')
+        for name in sorted(expected):
+            path=out/name
+            content=path.read_bytes()
+            if len(content)<500:raise RuntimeError(f'Unexpectedly small figure: {name}')
+            if path.suffix=='.pdf' and not content.startswith(b'%PDF-'):raise RuntimeError(name)
+            if path.suffix=='.png' and not content.startswith(b'\x89PNG\r\n\x1a\n'):raise RuntimeError(name)
+            if path.suffix=='.svg':ET.fromstring(content)
+        args.output.mkdir(parents=True,exist_ok=True)
+        for name in sorted(expected):shutil.copy2(out/name,args.output/name)
+        (args.output/'EXPORT_STATUS.json').write_text(json.dumps({'figure_files':18,'complete':True,
+            'baseline':'frozen manuscript layout, historical Figure 4 exponential retained for reproducibility',
+            'interpretation':'see docs/EVIDENCE_REASSESSMENT.md; frozen artwork is not an endorsement of its exponential fit'},indent=2)+'\n')
+    print(f'Validated 18 figure files in {args.output}')
 
-    print(f"Core figures written to {output}")
-
-
-if __name__ == "__main__":
-    main()
+if __name__=='__main__':main()
