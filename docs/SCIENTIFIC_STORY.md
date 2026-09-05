@@ -1,121 +1,47 @@
-# Project map after Checkpoint 05
+# Scientific story
 
-## One-sentence result
+## What is the question?
 
-At exactly fixed complete central Schmidt spectrum, stronger monitoring makes a
-fresh cross-cut two-qubit gate generate less entanglement because it changes the
-spatial embedding of the Schmidt vectors, encoded for stabilizer states by the
-two neighboring entropy increments. The effect persists through 256 qubits,
-replicates under a disjoint seed and a different measurement basis, and is
-causally reproduced by moving one projective measurement toward the cut.
+The Schmidt spectrum tells us how much bipartite entanglement is already present at one cut. The question here concerns a response: does that same spectrum determine the average change produced by an independent fresh gate crossing the cut?
 
-## Logic chain
+For the purity-normalized linear-entropy response used in this project, the answer is no. The spectrum does not specify how the Schmidt vectors occupy the boundary sites and the interiors of the two halves.
 
-1. **The historical flow-balance claim fails.** Cumulative unitary and
-   measurement increments telescope toward cancellation in any stationary
-   bounded coordinate. This branch is archived.
-2. **A non-telescoping response survives.** States from more strongly monitored
-   ensembles respond less to the next fresh cross-cut gate after central-state
-   controls.
-3. **The central spectrum is insufficient.** Counterfactual spectrum
-   equalization reverses the unmatched trend while retaining the Schmidt
-   vectors.
-4. **An exact response theorem identifies the missing information.** For a Haar
-   or uniformly random two-qubit Clifford probe,
-   \[
-   \chi_2=\frac{d}{d-1}\left[P_m-\frac25(P_{m-1}+P_{m+1})\right].
-   \]
-   The central spectrum fixes `P_m`, but not the neighboring-cut purities.
-5. **Physical exact-spectrum states reproduce the result.** Stabilizer reduced
-   states have flat nonzero spectra, so fixing the central entropy fixes the
-   complete central spectrum without modifying the state.
-6. **The effect persists at large size.** Exact-spectrum response slopes remain
-   negative through `n=256` and extrapolate to a nonzero negative limit under
-   the locked `1/n` model and every reported sensitivity model.
-7. **The mechanism becomes finite and exact.** For stabilizer states the
-   response is a nine-state function of
-   `(S_m-S_{m-1},S_m-S_{m+1})`. Stronger monitoring shifts this boundary-code
-   distribution toward local entanglement maxima.
-8. **A paired intervention establishes locality.** On copies of the same
-   premeasurement state, a measurement adjacent to the cut suppresses the next
-   gate response more than a far measurement whenever the complete central
-   spectrum remains unchanged. The effect decays over about 2.37 sites.
-9. **The response is transition-sensitive but not an order parameter.** An
-   independent tripartite-information crossing occurs near `p=0.27` in the
-   package convention. The suppression weakens above the crossing but remains
-   nonzero.
+A four-qubit example makes insufficiency concrete. Across `12|34`, the product state `|0000>` and the product of two Bell pairs, one inside `12` and one inside `34`, both have central spectrum `(1,0,0,0)`. The neighboring purities are `(1,1)` in the first case and `(1/2,1/2)` in the second. Substitution in the exact formula gives relative responses `4/15` and `4/5`. This is an explanatory example, not a novelty claim.
 
-## Current central claim
+## What does the exact mechanism add?
 
-> The complete central Schmidt spectrum does not determine boundary entangling
-> susceptibility in monitored circuits. At fixed spectrum, monitoring reshapes
-> the neighboring entanglement profile, and this spatial embedding controls the
-> response to a fresh cross-cut gate.
+A two-copy swap calculation expresses the average post-probe purity exactly. For a Haar or uniform two-qubit Clifford probe, the relative response is
 
-## Main evidence
+$$
+\chi_{\mathrm{rel}}=\frac{D}{D-1}\left[1-\frac25\frac{P_{m-1}+P_{m+1}}{P_m}\right],\qquad D=2^{n/2}.
+$$
 
-- Locked primary Clifford simulation: 57,600 trajectories, `n=32–256`.
-- Independent-seed replication: 21,600 trajectories.
-- Two monitoring protocols: projective Z and random Pauli.
-- Exact stabilizer spectrum matching in `(tau,S_m)` strata.
-- Exact local-twirl response theorem and stabilizer boundary-code reduction.
-- Paired measurement-location intervention: 5,400 pre-states and 75,600 valid
-  potential interventions.
-- Direct state-vector validation at `n<=10` with zero discrepancies in all 256
-  recorded comparisons.
+Thus the central spectrum fixes only one of the three required purities. The complete theory also treats locally dressed fixed two-qubit gates using four purity features. The [theory document](THEORY.md) separates these exact identities from empirical claims about monitored ensembles. Neighboring-cut purities are not synonymous with information contained in a small physical window.
 
-## Paper structure now justified
+The response is derived from normalized linear entropy, then divided by the input central purity. It must not be confused with the expectation of the finite change in logarithmic Renyi-2 entropy.
 
-1. Central-spectrum insufficiency and physical question.
-2. Exact local response theorem.
-3. Physical stabilizer exact-spectrum construction.
-4. Large-size persistence and independent replication.
-5. Boundary-code redistribution as the microscopic mechanism.
-6. Paired cut-local measurement intervention.
-7. Relation to, and distinction from, the monitored transition.
-8. Scope and limitations.
+## What do the monitored-state data show?
 
-## Keep
+Figure 1 applies a common central spectrum while preserving state-dependent Schmidt vectors. The held-out endpoint contrasts are negative across five tested state-generation families and a separate seed. This diagnostic controls eigenvalues, but it is not offered as an experimentally physical spectrum-replacement operation.
 
-- The local-twirl four-purity response theorem.
-- The Haar/Clifford three-cut specialization.
-- Physical exact-spectrum stabilizer comparisons.
-- Large-size and independent-seed results.
-- Boundary-code theorem and probability decomposition.
-- Paired measurement-location intervention.
-- Tripartite-information crossing as contextual evidence.
-- Cut-local decay and the conditional/unconditional sign reversal.
+The physical stabilizer arm removes that objection. A stabilizer reduced state has a flat nonzero spectrum, so fixing the integer central entropy fixes the complete spectrum. Figures 2 and 3 compare naturally generated states within the same size, probe-time, and central-spectrum strata. The response depends on the two adjacent entropy increments, giving a finite nine-code description. Monitoring changes the conditional distribution of those codes.
 
-## Archive, but preserve for provenance
+An archived-row replay independently reconstructs all 16 finite-size monitoring coefficients from 237,600 stored state records. Their negativity persists through 256 qubits. The independent seed is a repeat of the simulation campaign, not an independently developed simulator or an external replication.
 
-- Entanglement-trajectory fingerprints as a generic replacement for entropy.
-- Cumulative spectral-flow cancellation ratio.
-- “Flow-balance principle,” order-parameter, or critical-point-locator language.
-- Six-coordinate multiplicity as if it supplied six independent tests.
-- Aubry field-versus-transport competition as part of the central story.
-- Artificial Schmidt-spectrum truncation as the final physical evidence; it is
-  now historical motivation because physically reachable stabilizer states
-  provide exact-spectrum controls.
+The fitted points at infinity in Figure 3 require an additional modeling step. Fixed-menu sensitivity fits retain negative intercepts, but the primary random-Pauli series shows a substantial residual under the locked inverse-size model. Sampling intervals do not account for every possible finite-size correction, and the exact-spectrum support can vary with size. The measured finite-size effect and the extrapolated limit must therefore remain distinct claims.
 
-## Unresolved before submission
+## What is controlled in the measurement-location intervention?
 
-- Independent specialist verification of both exact theorems.
-- Final priority search for fixed-spectrum response and neighboring-cut purity
-  antecedents.
-- Whether a compact non-Clifford physical cross-check can be added without
-  expanding the project into a new program.
-- Whether a complete bounded-window reduced stabilizer state, rather than a few
-  entropy summaries, reconstructs the boundary code.
-- Exact journal framing and manuscript length.
+The same pre-state is copied and measured at different locations. On eligible interventions with unchanged central entropy, its complete central stabilizer spectrum is preserved. The original analysis averages eligible sides at each distance before pairing near and far means. Its negative pooled near-minus-far contrast is reproduced from the archived intervention records.
 
-## Publication status
+A stricter post-hoc analysis compares the same side and pre-state, requiring both near and far interventions to preserve the spectrum. Its pooled contrast is `-0.04747`, with a fresh 95% interval `[-0.04934,-0.04547]`. A separate common-eligibility profile holds the side/pre-state sample fixed across all six displayed distances. It retains strong near-cut concentration: the magnitude at four sites is about 12% of the adjacent-cut effect, and at eight sites about 1.6%.
 
-The project is ready for manuscript construction and external theory audit. It
-is not yet ready for submission. A balanced target is *Quantum* or *Physical
-Review Research*. A PRL attempt is scientifically defensible if the paper is
-kept narrow and the theorem/novelty audit is favorable.
+Those observations do not establish the historical single-exponential law. Covariance-aware and cell-resolved residual checks still show substantial mismatch. The fitted `xi=2.37` is retained in the frozen artwork for provenance, not as a currently endorsed physical localization length. The [evidence reassessment](EVIDENCE_REASSESSMENT.md) gives the precise selection rules, new intervals, model diagnostics, and proposed figure revision.
 
+## What is the contribution and its boundary?
 
-## How to read the four core figures
+The useful combination is complete-spectrum control, a fresh-gate response endpoint, an exact neighboring-purity mechanism, physical stabilizer comparisons at substantial size, and paired location interventions. The contribution should emphasize the monitored-state redistribution and controlled response mechanism, not treat elementary central-spectrum insufficiency as the entire discovery.
 
-The repository core follows the same causal and evidential order as the planned Letter: insufficiency, exact mechanism, physical persistence, then paired localization. The repository is broader only in its robustness and provenance material.
+No new monitored-transition order parameter or critical exponent is asserted. Finite non-Clifford intervention checks do not establish a generic non-Clifford thermodynamic law. The location result is conditional on the defined eligible potential interventions and is not a randomized causal effect of the long-run monitoring probability. A rapidly attenuating measured profile is not a theorem of strict finite range.
+
+The four-figure narrative remains the same. Its present evidential status is narrower than some archived checkpoint wording: direct finite-size persistence and paired near-cut concentration survive, whereas precise limiting and exponential-law interpretations require additional assumptions. The [research history](RESEARCH_HISTORY.md) explains the discarded flow-balance direction without making it part of the active result.

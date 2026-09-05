@@ -1,69 +1,32 @@
-# Code map
+# Code and evidence map
 
-## Reader-facing package
+## Supported entry points
 
-`src/boundary_susceptibility/response.py`
-: Exact neighboring-purity and locally dressed response formulas.
+[`../reproduce.py`](../reproduce.py) rebuilds six frozen-layout panels from canonical inputs and checks all 18 PDF/PNG/SVG files. [`../scripts/figures/export_formats.py`](../scripts/figures/export_formats.py) exports the same Matplotlib figure to all three formats. Historical Figure 4 artwork is reproduced as recorded; its current interpretation is in [`EVIDENCE_REASSESSMENT.md`](EVIDENCE_REASSESSMENT.md).
 
-`src/boundary_susceptibility/boundary_codes.py`
-: Stabilizer boundary codes, exact response alphabet, and weighted reconstruction.
+[`../scripts/analysis/reassess_evidence.py`](../scripts/analysis/reassess_evidence.py) reads the hash-verified original Checkpoint 05 ZIP, recalculates the finite-size point estimates from stored entropy records, and performs the post-hoc pairing, distance-profile, and finite-size-model checks. It does not rerun random-circuit generation.
 
-`reproduce.py`
-: Rebuilds the six accepted Python-generated core panels from their canonical tables.
+## Core plotting scripts
 
-`verify.py`
-: Runs deterministic consistency, hash, and exact-identity checks.
-
-## Core figure scripts
-
-| Script | Output |
+| Script in `scripts/figures/` | Panels |
 |---|---|
-| `scripts/figures/make_figure_01.py` | Fixed-spectrum cross-family response panel |
-| `scripts/figures/make_figure_02.py` | Exact response and boundary-code redistribution matrices |
-| `scripts/figures/make_figure_03.py` | Large-size scaling and replication panel |
-| `scripts/figures/make_figure_04.py` | Paired distance-decay and conditioning-contrast panels |
+| `make_figure_01_frozen.py` | Five-family fixed-spectrum response |
+| `make_figure_02.py` | Boundary-response and probability-redistribution matrices |
+| `make_figure_03.py` | Finite-size slopes and model-dependent extrapolations |
+| `make_figure_04.py` | Recorded distance curve and conditioning contrast |
 
-The plotting scripts contain no manuscript or TikZ code. Conceptual diagrams used in the paper are intentionally not part of this repository.
+Canonical source tables are in [`../data/processed/core_figures/`](../data/processed/core_figures/). These small tables redraw figures; they are not a substitute for the archived trajectory data.
 
-## Canonical core data
+## Study sources
 
-| Path | Contents |
-|---|---|
-| `data/processed/core_figures/figure_01_panel_b.csv` | Primary and independent fixed-spectrum endpoint contrasts |
-| `data/processed/core_figures/figure_02_boundary_codes.csv` | Nine exact responses and representative probability shifts |
-| `data/processed/core_figures/figure_03_size_scaling.csv` | Finite-size slopes and thermodynamic intercepts |
-| `data/processed/core_figures/figure_04_distance_decay.csv` | Distance-resolved paired response |
-| `data/processed/core_figures/figure_04_conditioning_contrast.csv` | Unconditional and unchanged-spectrum near-minus-far effects |
-| `data/processed/core_figures/figure_04_distance_fit.json` | Locked exponential-fit parameters |
+[`../studies/checkpoint_04/`](../studies/checkpoint_04/) contains the state-vector intervention, architecture/probe source, and theorem checks. [`../studies/checkpoint_05/`](../studies/checkpoint_05/) contains the stabilizer simulator, scaling and replication analysis, boundary codes, measurement-location analysis, design records, and validation source. Full data availability is documented in [`DATA_POLICY.md`](DATA_POLICY.md).
 
-## Full research studies
+## Verification
 
-`studies/counterfactual_intervention_and_universality/`
-: State-vector intervention, probe and architecture robustness, theorem checks, and physical stabilizer reachability.
+[`../verify.py`](../verify.py) checks the existing frozen-result and repository-structure expectations. Those checks are regression checks, not a fresh independent simulation. [`../tests/test_identities.py`](../tests/test_identities.py) checks the reusable formulas. [`../tests/test_evidence_pipeline.py`](../tests/test_evidence_pipeline.py) tests estimator plumbing on synthetic data and validates the complete plotting output set.
 
-`studies/physical_scaling_and_causal_locality/`
-: Large stabilizer simulations, boundary-code analysis, finite-size scaling, transition context, and paired location intervention.
-
-The study directories preserve their final internal organization where doing so protects imports and provenance. Their top-level README files explain entry points and runtime requirements.
-
-## Tests
-
-`tests/test_response.py`
-: Exact neighboring-purity and boundary-code values.
-
-`tests/test_figure_data.py`
-: Canonical table schemas and load-bearing sign checks.
-
-`tests/test_reproduction.py`
-: Smoke reproduction of all six core panels.
+The exact-identity package is [`../src/boundary_susceptibility/`](../src/boundary_susceptibility/). Its concise implementations cover the neighboring-purity formula and stabilizer response alphabet; the full locally dressed theorem is in [`THEORY.md`](THEORY.md) and the study validation scripts.
 
 ## Provenance
 
-`provenance/figure_sha256.csv`
-: Author-approved frozen panel hashes.
-
-`data/manifests/source_migration.csv`
-: Mapping from final checkpoint sources to repository destinations.
-
-`provenance/VERIFICATION_REPORT.json`
-: Machine-readable clean-repository verification result.
+[`../provenance/figure_sha256.csv`](../provenance/figure_sha256.csv) identifies the original author-approved PDF bytes from the external Overleaf archive. Regenerated repository exports can have different PDF metadata. [`../results/evidence_reassessment/input_manifest.json`](../results/evidence_reassessment/input_manifest.json) records the archived members actually read by this reassessment. No nonexistent source-migration table or test module is assumed.

@@ -4,6 +4,7 @@ import argparse, json
 from pathlib import Path
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+from export_formats import save_formats
 import numpy as np
 import pandas as pd
 FIG_BLUE='#245B78'; FIG_TEAL='#2F7C78'; FIG_ORANGE='#B66A3C'; FIG_GRAY='#6F7478'; FIG_GRID='#D9DEE2'; BS=chr(92)
@@ -21,7 +22,7 @@ def distance_panel(distance_csv,fit_json,pdf,png):
     ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
     ax.text(0.97,0.08,f'$-A e^{{-d/{BS}xi}}, {BS}quad {BS}xi={fit["decay_length"]:.2f}$ sites',transform=ax.transAxes,ha='right',va='bottom',fontsize=9.5,color=FIG_TEAL)
     ax.text(0.10,0.08,f'${BS}Delta S_m=0$',transform=ax.transAxes,ha='left',va='bottom',fontsize=9.5,color=FIG_GRAY)
-    fig.subplots_adjust(left=0.17,right=0.985,bottom=0.23,top=0.97); pdf.parent.mkdir(parents=True,exist_ok=True); fig.savefig(pdf); fig.savefig(png,dpi=400); plt.close(fig)
+    fig.subplots_adjust(left=0.17,right=0.985,bottom=0.23,top=0.97); save_formats(fig,pdf,png); plt.close(fig)
 def contrast_panel(contrast_csv,pdf,png):
     df=pd.read_csv(contrast_csv); rows=df.set_index('condition').loc[['unconditional','central_spectrum_unchanged']]
     x=np.array([0.,1.]); y=rows.estimate.to_numpy(float); yerr=np.vstack([y-rows.ci_low.to_numpy(float),rows.ci_high.to_numpy(float)-y])
@@ -38,7 +39,7 @@ def contrast_panel(contrast_csv,pdf,png):
     ax.set_ylabel(f'near-minus-far $D_{{{BS}rm rel}}$',labelpad=0.6)
     ax.text(x[0],y[0]+0.005,f'{y[0]:+.4f}',ha='center',va='bottom',fontsize=9.5,color=FIG_ORANGE)
     ax.text(x[1],y[1]+0.006,f'{y[1]:+.4f}',ha='center',va='bottom',fontsize=9.5,color='white')
-    fig.subplots_adjust(left=0.27,right=0.985,bottom=0.23,top=0.96); pdf.parent.mkdir(parents=True,exist_ok=True); fig.savefig(pdf); fig.savefig(png,dpi=400); plt.close(fig)
+    fig.subplots_adjust(left=0.27,right=0.985,bottom=0.23,top=0.96); save_formats(fig,pdf,png); plt.close(fig)
 
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--distance-csv',type=Path,required=True); ap.add_argument('--contrast-csv',type=Path,required=True); ap.add_argument('--fit-json',type=Path,required=True); ap.add_argument('--distance-pdf',type=Path,required=True); ap.add_argument('--distance-png',type=Path,required=True); ap.add_argument('--contrast-pdf',type=Path,required=True); ap.add_argument('--contrast-png',type=Path,required=True); a=ap.parse_args(); configure(); distance_panel(a.distance_csv,a.fit_json,a.distance_pdf,a.distance_png); contrast_panel(a.contrast_csv,a.contrast_pdf,a.contrast_png)

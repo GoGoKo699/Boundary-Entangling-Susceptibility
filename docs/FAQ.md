@@ -1,62 +1,53 @@
 # Frequently asked questions
 
-## What is fixed when two states are called “same-spectrum”?
+## What is fixed by same-spectrum matching?
 
-The complete Schmidt eigenvalue list across the central cut is fixed, including its rank. In the counterfactual intervention this is imposed directly while retaining the original Schmidt vectors. In the physical stabilizer arm, no state is modified: matching the stabilizer entropy `S_m` fixes the complete flat nonzero spectrum exactly.
+The complete central Schmidt eigenvalue list, including zeros and rank. In the diagnostic intervention the list is replaced while state-dependent Schmidt vectors are retained. In the physical stabilizer arm, matching `(n,tau,S_m)` fixes the complete flat spectrum without altering the state.
 
-## Why is the central Schmidt spectrum insufficient?
+## Is the response an entropy increment?
 
-It determines every bipartite quantity that depends only on the central reduced-state eigenvalues, but it does not determine how the corresponding Schmidt vectors are embedded in the sites adjacent to the cut. A fresh local gate interacts with that spatial embedding.
+It is the expected normalized linear-entropy change divided by the input central purity. It is not generally the mean finite-gate increment of `-log2(P_m)`. The explicit definition is in the root README and [numerical methods](NUMERICAL_METHODS.md).
 
-For the Haar/uniform-Clifford Rényi-2 response, the missing information is identified exactly by the two neighboring-cut purities.
+## Why does the central spectrum not suffice?
 
-## Is the spectrum-replacement operation supposed to be experimentally physical?
+It does not fix the neighboring-cut purities that enter the exact fresh-gate formula. A small exact example is in the [scientific story](SCIENTIFIC_STORY.md). The empirical contribution concerns the monitored distribution of this missing spatial information.
 
-No. It is a diagnostic intervention used to separate eigenvalue effects from Schmidt-vector and spatial-embedding effects. The physical stabilizer comparison later reproduces the result without replacing coefficients or modifying states.
+## Does the exact formula imply a local reduced state is sufficient?
 
-## Why use the response to a fresh gate?
+No. The probe acts on the boundary qubits, but the purity features concern extended bipartitions. The nine-code stabilizer description is not a theorem of reconstruction from a small physical window.
 
-A fresh independent probe tests a property of the state rather than reusing correlations with the circuit gate that generated it. The endpoint is local, non-telescoping, and admits an exact two-copy response formula.
+## Does the project prove a nonzero thermodynamic limit?
 
-## Why use relative Rényi-2 susceptibility?
+No. The within-spectrum coefficients are directly observed to be negative through 256 qubits. The original inverse-size extrapolations and a finite menu of post-hoc alternatives have negative intercepts, but model residuals and changing support limit the precision of a thermodynamic interpretation. See [evidence reassessment](EVIDENCE_REASSESSMENT.md).
 
-Purity gives direct access to swap-operator identities and exact Haar/Clifford two-copy averages. Dividing by the central purity removes a trivial multiplicative scale that can become exponentially small with stabilizer rank. The unnormalized response is retained as a secondary check.
+## Is the localization length exactly 2.37 sites?
 
-## Is the result merely a restatement that local gates depend on local correlations?
+No. That value is the historical unweighted exponential-fit parameter. A narrow bootstrap parameter interval did not establish the adequacy of the exponential. The revised interpretation is a response concentrated near the cut and rapidly decreasing at the sampled distances. The original curve remains visible only because the accepted artwork has not yet been revised.
 
-The broad principle is not new. The contribution is the fixed-complete-spectrum question, the exact neighboring-cut response specialization, the monitored-state redistribution that it exposes, physical large-size matching, independent replication, and the paired location intervention.
+## Could changing selected trajectories produce the distance profile?
 
-## Is this a new order parameter for the measurement-induced transition?
+A post-hoc common-eligibility check keeps only side/pre-state combinations whose central spectrum is preserved under every displayed location intervention. The profile remains near-cut concentrated. This check uses a different selected population and does not establish a strict finite range; its simultaneous uncertainty band includes zero at the farthest displayed distance.
 
-No. The response remains nonzero and of the same sign on both sides of the independently located transition. Its monitoring dependence changes across the transition, so it is transition-sensitive but not an order parameter.
+## What is causal?
 
-## What exactly is causal in the paired intervention?
+The specified paired location interventions on copies of the same pre-state. A strict same-side sensitivity comparison requires unchanged central spectrum under both potential interventions before calculating the contrast. This is not an unconditional population effect and not the causal effect of assigning the long-run monitoring rate.
 
-For each sampled premeasurement state, copies are subjected to measurements at different locations. Measurement location is therefore controlled on the same pre-state. The causal statement is conditional on the branch where the complete central spectrum remains unchanged. It is not a causal claim about assigning the long-run monitoring probability `p`.
+## What does independent replication mean here?
 
-## Are the thermodynamic conclusions universal?
+The primary design was repeated with a disjoint base seed. This is independent-seed replication, not an independent implementation or external laboratory replication. Separate direct state-vector/tableau tests address some implementation risks.
 
-The data remain negative through `n=256` in monitored Clifford circuits and are consistent with a nonzero large-size limit under several fixed correction models. This does not establish a universal exponent or generic non-Clifford thermodynamic law.
+## Is this a new transition order parameter?
+
+No. Transition context is secondary. Neither an order parameter nor a critical exponent is claimed.
 
 ## What non-Clifford evidence is included?
 
-Checkpoint 04 includes finite state-vector tests with Haar and fixed non-Clifford Floquet-Cartan dynamics, weak measurements, random-Pauli measurements, and several fresh-probe ensembles. The large-size physical exact-spectrum arm is stabilizer/Clifford based.
+The finite state-vector intervention study includes Haar and fixed non-Clifford Floquet-Cartan dynamics, along with weak and random-Pauli measurement variants. The large-system physical exact-spectrum evidence is stabilizer/Clifford based.
 
-## Why are the full checkpoint ZIP files not committed?
+## What does green CI establish?
 
-They contain compressed raw arrays, state tables, bootstrap arrays, and duplicated generated artifacts that are unsuitable for ordinary reviewable Git history. The canonical plotted data, source, design locks, selected result tables, and browser figures are tracked. Complete archives are reserved for a versioned release or research-data deposit.
+That the included software, frozen-result regression checks, structural checks, and figure-generation tests pass in the recorded environment. It does not independently prove the scientific interpretation or rerun the original circuit campaign. The separate archive-based reassessment command recomputes selected estimates from stored observations.
 
-## How do I reproduce the core figures?
+## Where are the raw data?
 
-Run:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pip install -e .
-python verify.py
-python reproduce.py --core-figures
-```
-
-The generated PDFs and PNGs appear in `reproduced_figures/`.
+The original Checkpoint 04 and Checkpoint 05 ZIP identities are in [data policy](DATA_POLICY.md). A permanent raw-data deposit remains pending. Small canonical figure tables and selected source are tracked; they must not be mistaken for the full trajectory-level data.
