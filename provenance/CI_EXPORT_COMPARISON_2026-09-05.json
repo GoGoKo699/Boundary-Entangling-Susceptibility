@@ -1,0 +1,17 @@
+{
+  "workflow_run_id": 33947942463,
+  "tested_source_commit": "9703601d85bb6a6463c4f386ffb23e26adbf47ba",
+  "artifact_id": 9963916321,
+  "comparison": "Downloaded GitHub Actions exports compared with accepted originals from hash-verified Overleaf.zip",
+  "renderer": "PyMuPDF at 144 dpi",
+  "scope": "Six single-page PDF outputs, not a guarantee of cross-platform browser font rasterization",
+  "accepted_originals_modified": false,
+  "results": [
+    {"file":"figure_01_panel_b.pdf","equal_page_size":true,"rendered_pixel_bytes_equal":true,"max_pixel_difference":0,"repository_export_sha256":"6dbe4b0eec4dcab714eeb19a83dc6ad67402d0c47e98ff349c0731852084b63b"},
+    {"file":"figure_02_redistribution_matrix.pdf","equal_page_size":true,"rendered_pixel_bytes_equal":true,"max_pixel_difference":0,"repository_export_sha256":"357c88228b05d5fc9b74b0f0d9283b1411d72bfda65324466b35ae29eb571afb"},
+    {"file":"figure_02_response_matrix.pdf","equal_page_size":true,"rendered_pixel_bytes_equal":true,"max_pixel_difference":0,"repository_export_sha256":"e2e23b25b7d0a4e836115d2cda3d7241e56846401a033cf3775436e5d5fde9c8"},
+    {"file":"figure_03_size_scaling.pdf","equal_page_size":true,"rendered_pixel_bytes_equal":true,"max_pixel_difference":0,"repository_export_sha256":"5d476c03058824da83d37381377df135ffd354939371bde77dbebd929f7d97df"},
+    {"file":"figure_04_conditioning_contrast.pdf","equal_page_size":true,"rendered_pixel_bytes_equal":true,"max_pixel_difference":0,"repository_export_sha256":"fb268286db1f2492a5af229f262788cb3d1de5b9c9360989ce7be713fae2c01e"},
+    {"file":"figure_04_distance_decay.pdf","equal_page_size":true,"rendered_pixel_bytes_equal":true,"max_pixel_difference":0,"repository_export_sha256":"082f129a1b0f53d718cd37738238b1c5f827c91d17473439106f959f72508900"}
+  ]
+}
