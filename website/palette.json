@@ -1,0 +1,31 @@
+{
+  "name": "Irises",
+  "status": "presentation preview, not adopted canonical artwork",
+  "reference": "https://en.wikipedia.org/wiki/Irises_(painting)",
+  "selection": "Design choices inspired by the linked reproduction as it appears today, not pigment measurements or exact pixel samples.",
+  "colors": {
+    "ink": "#24313A",
+    "iris": "#3F4D8C",
+    "leaf": "#477568",
+    "sage": "#A6B99A",
+    "ochre": "#BD964A",
+    "terracotta": "#A05A3C",
+    "paper": "#F7F5EC",
+    "white": "#FFFFFF",
+    "muted": "#59666A",
+    "line": "#D5DCCF"
+  },
+  "figure_mapping": {
+    "#245b78": "#3F4D8C",
+    "#b66a3c": "#A05A3C",
+    "#2f7c78": "#477568",
+    "#f3f4f4": "#F7F5EC"
+  },
+  "semantics": {
+    "run": "Keep filled-circle versus open-square encoding; do not encode replication with color alone.",
+    "protocol": "Keep projective-Z and random-Pauli labels and existing panel assignments.",
+    "matrix": "Keep both existing zero-centered scales, matrix order, signs, numeric annotations, and the existing reversed palette in the response matrix.",
+    "distance": "Keep the zero reference line, accepted confidence intervals, and no exponential fit.",
+    "website": "Colors organize navigation and emphasis. They do not certify claims or imply a significance threshold."
+  }
+}
