@@ -1,0 +1,79 @@
+name: website-preview
+on:
+  push:
+    branches: ['main', 'presentation/**']
+    paths:
+      - 'README.md'
+      - 'website/**'
+      - 'scripts/site/**'
+      - 'docs/**'
+      - 'figures/**'
+      - 'data/**'
+      - 'entanglement-data.zip'
+      - 'scripts/figures/**'
+      - 'requirements*.txt'
+      - '.github/workflows/website-preview.yml'
+  pull_request:
+    branches: ['main']
+    paths:
+      - 'README.md'
+      - 'website/**'
+      - 'scripts/site/**'
+      - 'docs/**'
+      - 'figures/**'
+      - 'data/**'
+      - 'entanglement-data.zip'
+      - 'scripts/figures/**'
+      - 'requirements*.txt'
+      - '.github/workflows/website-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: website-preview-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      PYTHONHASHSEED: '0'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements-reproducible.txt -r website/requirements-preview.txt
+      - run: pip install -e .
+      - name: Install the pinned document converter
+        run: |
+          curl --fail --location --retry 3 https://github.com/jgm/pandoc/releases/download/3.1.11.1/pandoc-3.1.11.1-linux-amd64.tar.gz -o "$RUNNER_TEMP/pandoc.tar.gz"
+          tar -xzf "$RUNNER_TEMP/pandoc.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/pandoc-3.1.11.1/bin" >> "$GITHUB_PATH"
+      - run: python -m playwright install --with-deps chromium
+      - name: Generate palette candidates without replacing accepted figures
+        run: python scripts/site/preview_figures.py --output "$RUNNER_TEMP/bes-irises"
+      - name: Build the source-derived website and verify links and mathematics
+        run: |
+          python scripts/site/build.py --output "$RUNNER_TEMP/bes-site" --figures "$RUNNER_TEMP/bes-irises"
+          python scripts/site/check.py --site "$RUNNER_TEMP/bes-site" --report "$RUNNER_TEMP/website-report/site-check.json"
+      - name: Check desktop and mobile layouts with network requests blocked
+        run: python scripts/site/capture_preview.py --site "$RUNNER_TEMP/bes-site" --output "$RUNNER_TEMP/website-report/screenshots"
+      - run: python verify.py
+      - run: pytest -q tests scripts/site/test_site.py
+      - name: Ensure no tracked scientific or presentation file was rewritten
+        run: git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: website-preview-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/bes-site/
+            ${{ runner.temp }}/website-report/
+          retention-days: 30
+          if-no-files-found: error
+# Read-only preview. No Pages deployment, repository write, public upload,
+# automatic merge, canonical recoloring, or change of visibility or license.
