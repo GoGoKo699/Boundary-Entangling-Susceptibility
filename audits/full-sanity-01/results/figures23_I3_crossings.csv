@@ -1,0 +1,13 @@
+run,protocol,n_low,n_high,crossing,candidates,ci_low,ci_high,valid_bootstrap_fraction,interval_source
+primary,random_pauli,32,64,0.26617647058823529,[0.2661764705882353],0.25548245614035092,0.27690972222222221,0.97050000000000003,"archived table; original crossing draws not in bundle, not regenerated"
+primary,random_pauli,64,128,0.26925373134328362,[0.2692537313432836],0.26500000000000001,0.27634393939393942,0.99350000000000005,"archived table; original crossing draws not in bundle, not regenerated"
+primary,random_pauli,128,256,0.26742857142857146,[0.26742857142857146],0.26107142857142851,0.2728589901477832,1,"archived table; original crossing draws not in bundle, not regenerated"
+primary,z_projective,32,64,0.26523809523809527,[0.2652380952380953],0.25388450292397657,0.2742857142857143,0.99750000000000005,"archived table; original crossing draws not in bundle, not regenerated"
+primary,z_projective,64,128,0.27129032258064517,[0.27129032258064517],0.2590390995260663,0.2771190476190476,0.99550000000000005,"archived table; original crossing draws not in bundle, not regenerated"
+primary,z_projective,128,256,0.26880281690140845,[0.26880281690140845],0.26676723884976528,0.27572943722943721,0.99350000000000005,"archived table; original crossing draws not in bundle, not regenerated"
+replication,random_pauli,32,64,0.26960000000000001,[0.2696],0.25941176470588229,0.2781818181818182,0.96050000000000002,"archived table; original crossing draws not in bundle, not regenerated"
+replication,random_pauli,64,128,0.26333333333333336,[0.26333333333333336],0.25653846153846149,0.27710714285714289,0.94550000000000001,"archived table; original crossing draws not in bundle, not regenerated"
+replication,random_pauli,128,256,0.26877192982456144,[0.26877192982456144],0.2654595588235294,0.27633851674641141,0.99099999999999999,"archived table; original crossing draws not in bundle, not regenerated"
+replication,z_projective,32,64,0.27342105263157895,[0.27342105263157895],0.25096062271062269,0.27700000000000002,0.99850000000000005,"archived table; original crossing draws not in bundle, not regenerated"
+replication,z_projective,64,128,0.26750000000000002,"[0.2675, 0.27571428571428575]",0.25883183111954461,0.27727272727272728,0.84399999999999997,"archived table; original crossing draws not in bundle, not regenerated"
+replication,z_projective,128,256,0.27312500000000001,[0.273125],0.25922213541666661,0.27642857142857141,1,"archived table; original crossing draws not in bundle, not regenerated"

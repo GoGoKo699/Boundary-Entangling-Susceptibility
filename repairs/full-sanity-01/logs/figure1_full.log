@@ -1,0 +1,22 @@
+argv: ["python", "scripts/analysis/complete_figure1_uncertainty.py", "--output", "repairs/full-sanity-01/reproduced_figure1_uncertainty"]
+UTC start: 2026-09-08T15:29:39.916000+00:00
+eligible_union/primary/haar_z: -0.25726645 [-0.28891473,-0.22614352], rejected 0/50000
+eligible_union/primary/clifford_z: -0.40553742 [-0.56357654,-0.23094866], rejected 1035/51035
+eligible_union/primary/floquet_cartan_z: -0.20808060 [-0.23582110,-0.18171927], rejected 0/50000
+eligible_union/primary/haar_random_pauli: -0.18815608 [-0.21786223,-0.15819382], rejected 0/50000
+eligible_union/primary/haar_weak_z_eta06: -0.18258769 [-0.20417858,-0.16076061], rejected 0/50000
+eligible_union/independent/haar_z: -0.20743236 [-0.24630630,-0.16900182], rejected 0/50000
+eligible_union/independent/clifford_z: -0.31924810 [-0.45723975,-0.18793542], rejected 862/50862
+eligible_union/independent/floquet_cartan_z: -0.18477780 [-0.21999589,-0.15006428], rejected 0/50000
+eligible_union/independent/haar_random_pauli: -0.19769181 [-0.23534389,-0.16074642], rejected 0/50000
+eligible_union/independent/haar_weak_z_eta06: -0.17814102 [-0.21336254,-0.14191189], rejected 0/50000
+all_confirmatory/primary/haar_z: -0.25726645 [-0.28894901,-0.22608773], rejected 0/50000
+all_confirmatory/primary/clifford_z: -0.40553742 [-0.57113455,-0.22232559], rejected 5036/55036
+all_confirmatory/primary/floquet_cartan_z: -0.20808060 [-0.23589697,-0.18158876], rejected 0/50000
+all_confirmatory/primary/haar_random_pauli: -0.18815608 [-0.21786823,-0.15835823], rejected 0/50000
+all_confirmatory/primary/haar_weak_z_eta06: -0.18258769 [-0.20413324,-0.16130915], rejected 0/50000
+all_confirmatory/independent/haar_z: -0.20743236 [-0.24647851,-0.16910441], rejected 0/50000
+all_confirmatory/independent/clifford_z: -0.31924810 [-0.46097803,-0.18101329], rejected 2881/52881
+all_confirmatory/independent/floquet_cartan_z: -0.18477780 [-0.22030582,-0.15037145], rejected 0/50000
+all_confirmatory/independent/haar_random_pauli: -0.19769181 [-0.23502719,-0.16106757], rejected 0/50000
+all_confirmatory/independent/haar_weak_z_eta06: -0.17814102 [-0.21374228,-0.14238287], rejected 0/50000

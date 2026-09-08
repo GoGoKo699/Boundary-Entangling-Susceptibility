@@ -6,6 +6,8 @@ The cleanup preserved the accepted baseline. The subsequently approved Figure 1 
 
 The data container consolidates unchanged source members; it does not regenerate missing observations, substitute rounded tables for raw data, or include manuscript source. Reproduction does not need any old checkpoint ZIP or access to a previous chat.
 
+The full-sanity repair changes only Figure 3's estimator label in the core artwork, with its own explicit successor record and unchanged numerical inputs. Supporting compact exports are independently regenerated and provenance-bound; the inconsistent earlier files are retained as historical evidence. The original audit remains unchanged. See the [repair record](../repairs/full-sanity-01/SUMMARY.md).
+
 A local package, a staged pull request, and the merged remote repository are different objects. Completion of one does not establish completion of the others. Remote readiness requires the binary bundle to be present and the repository checks to pass on that exact commit.
 
 See [precise reproducibility limits](../docs/REPRODUCIBILITY_LIMITS.md). Preserved original intervals and fully regenerated intervals are not interchangeable.

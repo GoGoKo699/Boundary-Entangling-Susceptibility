@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "python",
+    "materialize_studies.py",
+    "--output",
+    "/workspace/scratch/0174ee249694/repair-reproduced-studies"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T15:32:56.193566+00:00",
+  "end_utc": "2026-09-08T15:32:56.428970+00:00",
+  "wall_seconds": 0.23541018700052518,
+  "exit_code": 0,
+  "user_seconds": 0.13089199999999998,
+  "system_seconds": 0.105115,
+  "peak_child_rss_kib": 27056,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

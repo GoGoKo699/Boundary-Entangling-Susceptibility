@@ -1,0 +1,2106 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "primary: chi response all rows",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary: linear response all rows",
+      "max_abs_error": 9.996344030316351e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary: P_central all rows",
+      "max_abs_error": 1.3234889800848443e-23,
+      "tolerance": 1e-15
+    },
+    {
+      "name": "primary: P_left_neighbor all rows",
+      "max_abs_error": 1.3234889800848443e-23,
+      "tolerance": 1e-15
+    },
+    {
+      "name": "primary: P_right_neighbor all rows",
+      "max_abs_error": 1.3234889800848443e-23,
+      "tolerance": 1e-15
+    },
+    {
+      "name": "primary: stored code increments L",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary: stored code increments R",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/32: pairwise vs explicit dummy OLS",
+      "max_abs_error": 2.0816681711721685e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32: canonical beta",
+      "max_abs_error": 4.8221843185203284e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/32: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/32: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/32: score cluster SE",
+      "max_abs_error": 8.825405684032006e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32: archived bootstrap interval",
+      "max_abs_error": 4.2819914281011506e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/32: code conservation",
+      "max_abs_error": 4.119968255444917e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/random_pauli/32: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/random_pauli/32/0.2-0.22: adjacent beta",
+      "max_abs_error": 1.8041124150158794e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/0.22-0.24: adjacent beta",
+      "max_abs_error": 1.1796119636642288e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/0.24-0.25: adjacent beta",
+      "max_abs_error": 3.5735303605122226e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/0.25-0.26: adjacent beta",
+      "max_abs_error": 4.128641872824801e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/0.26-0.27: adjacent beta",
+      "max_abs_error": 3.122502256758253e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/0.27-0.28: adjacent beta",
+      "max_abs_error": 5.169475958410885e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/0.28-0.3: adjacent beta",
+      "max_abs_error": 8.829742492721948e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/0.3-0.34: adjacent beta",
+      "max_abs_error": 1.519617764955683e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/6.0: time beta",
+      "max_abs_error": 4.2327252813834093e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/8.0: time beta",
+      "max_abs_error": 3.9898639947466563e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/32/10.0: time beta",
+      "max_abs_error": 4.128641872824801e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64: pairwise vs explicit dummy OLS",
+      "max_abs_error": 1.3877787807814457e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64: canonical beta",
+      "max_abs_error": 1.947747518826759e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/64: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/64: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/64: score cluster SE",
+      "max_abs_error": 2.3418766925686896e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64: archived bootstrap interval",
+      "max_abs_error": 3.5284275501368256e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/64: code conservation",
+      "max_abs_error": 5.312590645178972e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/random_pauli/64: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/random_pauli/64/0.2-0.22: adjacent beta",
+      "max_abs_error": 4.3021142204224816e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/0.22-0.24: adjacent beta",
+      "max_abs_error": 5.759281940243e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/0.24-0.25: adjacent beta",
+      "max_abs_error": 5.620504062164855e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/0.25-0.26: adjacent beta",
+      "max_abs_error": 5.828670879282072e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/0.26-0.27: adjacent beta",
+      "max_abs_error": 4.891920202254596e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/0.27-0.28: adjacent beta",
+      "max_abs_error": 6.418476861114186e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/0.28-0.3: adjacent beta",
+      "max_abs_error": 1.5959455978986625e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/0.3-0.34: adjacent beta",
+      "max_abs_error": 9.853229343548264e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/6.0: time beta",
+      "max_abs_error": 7.91033905045424e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/8.0: time beta",
+      "max_abs_error": 8.534839501805891e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/64/10.0: time beta",
+      "max_abs_error": 7.494005416219807e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128: pairwise vs explicit dummy OLS",
+      "max_abs_error": 1.249000902703301e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128: canonical beta",
+      "max_abs_error": 1.304512053934559e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/128: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/128: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/128: score cluster SE",
+      "max_abs_error": 7.090682208055199e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128: archived bootstrap interval",
+      "max_abs_error": 4.7982451345518484e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/128: code conservation",
+      "max_abs_error": 2.8189256484623115e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/random_pauli/128: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/random_pauli/128/0.2-0.22: adjacent beta",
+      "max_abs_error": 2.914335439641036e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/0.22-0.24: adjacent beta",
+      "max_abs_error": 1.942890293094024e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/0.24-0.25: adjacent beta",
+      "max_abs_error": 4.163336342344337e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/0.25-0.26: adjacent beta",
+      "max_abs_error": 4.85722573273506e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/0.26-0.27: adjacent beta",
+      "max_abs_error": 1.8735013540549517e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/0.27-0.28: adjacent beta",
+      "max_abs_error": 4.787836793695988e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/0.28-0.3: adjacent beta",
+      "max_abs_error": 7.632783294297951e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/0.3-0.34: adjacent beta",
+      "max_abs_error": 1.4988010832439613e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/6.0: time beta",
+      "max_abs_error": 9.020562075079397e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/8.0: time beta",
+      "max_abs_error": 1.3183898417423734e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/128/10.0: time beta",
+      "max_abs_error": 1.5265566588595902e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256: pairwise vs explicit dummy OLS",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256: canonical beta",
+      "max_abs_error": 4.787142904305597e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/256: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/256: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/256: score cluster SE",
+      "max_abs_error": 9.627715291671279e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256: archived bootstrap interval",
+      "max_abs_error": 4.366645933728819e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/256: code conservation",
+      "max_abs_error": 4.336808689942018e-19,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/random_pauli/256: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/random_pauli/256/0.2-0.22: adjacent beta",
+      "max_abs_error": 1.5265566588595902e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/0.22-0.24: adjacent beta",
+      "max_abs_error": 2.3592239273284576e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/0.24-0.25: adjacent beta",
+      "max_abs_error": 1.249000902703301e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/0.25-0.26: adjacent beta",
+      "max_abs_error": 1.942890293094024e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/0.26-0.27: adjacent beta",
+      "max_abs_error": 9.020562075079397e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/0.27-0.28: adjacent beta",
+      "max_abs_error": 3.2612801348363973e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/0.28-0.3: adjacent beta",
+      "max_abs_error": 7.632783294297951e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/0.3-0.34: adjacent beta",
+      "max_abs_error": 1.457167719820518e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/6.0: time beta",
+      "max_abs_error": 3.8163916471489756e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/8.0: time beta",
+      "max_abs_error": 4.163336342344337e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/256/10.0: time beta",
+      "max_abs_error": 4.787836793695988e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32: pairwise vs explicit dummy OLS",
+      "max_abs_error": 2.2620794126737565e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32: canonical beta",
+      "max_abs_error": 3.889596977835197e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/32: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/32: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/32: score cluster SE",
+      "max_abs_error": 2.992397996059992e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32: archived bootstrap interval",
+      "max_abs_error": 4.446443213623752e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/32: code conservation",
+      "max_abs_error": 2.3310346708438345e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/z_projective/32: weighted code reconstruction",
+      "max_abs_error": 3.469446951953614e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/z_projective/32/0.2-0.22: adjacent beta",
+      "max_abs_error": 1.249000902703301e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/0.22-0.24: adjacent beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/0.24-0.25: adjacent beta",
+      "max_abs_error": 3.0878077872387166e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/0.25-0.26: adjacent beta",
+      "max_abs_error": 4.40619762898109e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/0.26-0.27: adjacent beta",
+      "max_abs_error": 4.649058915617843e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/0.27-0.28: adjacent beta",
+      "max_abs_error": 6.279698983036042e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/0.28-0.3: adjacent beta",
+      "max_abs_error": 9.992007221626409e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/0.3-0.34: adjacent beta",
+      "max_abs_error": 1.880440247958859e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/6.0: time beta",
+      "max_abs_error": 4.2674197509029455e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/8.0: time beta",
+      "max_abs_error": 4.891920202254596e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/32/10.0: time beta",
+      "max_abs_error": 4.3368086899420177e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64: pairwise vs explicit dummy OLS",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64: canonical beta",
+      "max_abs_error": 3.640143741989732e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/64: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/64: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/64: score cluster SE",
+      "max_abs_error": 4.9873299934333204e-18,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64: archived bootstrap interval",
+      "max_abs_error": 3.785860513971784e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/64: code conservation",
+      "max_abs_error": 2.6020852139652106e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/z_projective/64: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/z_projective/64/0.2-0.22: adjacent beta",
+      "max_abs_error": 4.649058915617843e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/0.22-0.24: adjacent beta",
+      "max_abs_error": 6.453171330633722e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/0.24-0.25: adjacent beta",
+      "max_abs_error": 6.279698983036042e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/0.25-0.26: adjacent beta",
+      "max_abs_error": 6.765421556309548e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/0.26-0.27: adjacent beta",
+      "max_abs_error": 2.636779683484747e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/0.27-0.28: adjacent beta",
+      "max_abs_error": 2.0469737016526324e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/0.28-0.3: adjacent beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/0.3-0.34: adjacent beta",
+      "max_abs_error": 1.0685896612017132e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/6.0: time beta",
+      "max_abs_error": 7.840950111415168e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/8.0: time beta",
+      "max_abs_error": 7.28583859910259e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/64/10.0: time beta",
+      "max_abs_error": 7.632783294297951e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128: pairwise vs explicit dummy OLS",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128: canonical beta",
+      "max_abs_error": 4.436728762158282e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/128: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/128: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/128: score cluster SE",
+      "max_abs_error": 9.584347204771859e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128: archived bootstrap interval",
+      "max_abs_error": 1.7770507287906412e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/128: code conservation",
+      "max_abs_error": 4.336808689942018e-19,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/z_projective/128: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/z_projective/128/0.2-0.22: adjacent beta",
+      "max_abs_error": 3.0531133177191805e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/0.22-0.24: adjacent beta",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/0.24-0.25: adjacent beta",
+      "max_abs_error": 4.163336342344337e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/0.25-0.26: adjacent beta",
+      "max_abs_error": 2.0816681711721685e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/0.26-0.27: adjacent beta",
+      "max_abs_error": 1.457167719820518e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/0.27-0.28: adjacent beta",
+      "max_abs_error": 4.718447854656915e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/0.28-0.3: adjacent beta",
+      "max_abs_error": 7.494005416219807e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/0.3-0.34: adjacent beta",
+      "max_abs_error": 1.2351231148954867e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/6.0: time beta",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/8.0: time beta",
+      "max_abs_error": 6.245004513516506e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/128/10.0: time beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256: pairwise vs explicit dummy OLS",
+      "max_abs_error": 1.0408340855860843e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256: canonical beta",
+      "max_abs_error": 1.820071870994866e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/256: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/256: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/256: score cluster SE",
+      "max_abs_error": 9.150666335777657e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256: archived bootstrap interval",
+      "max_abs_error": 3.53259088647917e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 -1/-1: indicator slope",
+      "max_abs_error": 7.629313847345998e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 -1/-1: display response",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 -1/0: indicator slope",
+      "max_abs_error": 1.3253287356462806e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 -1/0: display response",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 -1/1: indicator slope",
+      "max_abs_error": 6.604959634781693e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 -1/1: display response",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 0/-1: indicator slope",
+      "max_abs_error": 1.3003487175922146e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 0/-1: display response",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 0/0: indicator slope",
+      "max_abs_error": 3.83026943495679e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 0/0: display response",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 0/1: indicator slope",
+      "max_abs_error": 1.647293412787576e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 0/1: display response",
+      "max_abs_error": 1.6653345369377348e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 1/-1: indicator slope",
+      "max_abs_error": 3.853254521013483e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 1/-1: display response",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 1/0: indicator slope",
+      "max_abs_error": 3.198483145006037e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 1/0: display response",
+      "max_abs_error": 1.6653345369377348e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 1/1: indicator slope",
+      "max_abs_error": 1.5740880821013548e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "Figure2 1/1: display response",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/256: code conservation",
+      "max_abs_error": 3.3610267347050637e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/z_projective/256: weighted code reconstruction",
+      "max_abs_error": 6.938893903907228e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "primary/z_projective/256/0.2-0.22: adjacent beta",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/0.22-0.24: adjacent beta",
+      "max_abs_error": 2.7755575615628914e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/0.24-0.25: adjacent beta",
+      "max_abs_error": 2.5673907444456745e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/0.25-0.26: adjacent beta",
+      "max_abs_error": 2.2898349882893854e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/0.26-0.27: adjacent beta",
+      "max_abs_error": 1.5265566588595902e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/0.27-0.28: adjacent beta",
+      "max_abs_error": 3.8163916471489756e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/0.28-0.3: adjacent beta",
+      "max_abs_error": 6.730727086790012e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/0.3-0.34: adjacent beta",
+      "max_abs_error": 1.6237011735142914e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/6.0: time beta",
+      "max_abs_error": 2.0122792321330962e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/8.0: time beta",
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/z_projective/256/10.0: time beta",
+      "max_abs_error": 1.3877787807814457e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "primary/random_pauli/locked: reassessment intercept and interval",
+      "max_abs_error": 7.424616477180734e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/locked: reassessment residual",
+      "max_abs_error": 4.234834705130197e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/random_pauli: locked intercept",
+      "max_abs_error": 4.579669976578771e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli: locked intercept interval",
+      "max_abs_error": 3.4361402612148595e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/power_0.5: reassessment intercept and interval",
+      "max_abs_error": 1.3461454173580023e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/power_0.5: reassessment residual",
+      "max_abs_error": 3.198330489340151e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/random_pauli/power_1.0: reassessment intercept and interval",
+      "max_abs_error": 7.979727989493313e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/power_1.0: reassessment residual",
+      "max_abs_error": 4.533262654149439e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/random_pauli/power_1.5: reassessment intercept and interval",
+      "max_abs_error": 6.730727086790012e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/power_1.5: reassessment residual",
+      "max_abs_error": 5.25091081726714e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/random_pauli/power_2.0: reassessment intercept and interval",
+      "max_abs_error": 5.828670879282072e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/power_2.0: reassessment residual",
+      "max_abs_error": 5.4996007747831754e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/random_pauli/leave_out_32: reassessment intercept and interval",
+      "max_abs_error": 1.3877787807814457e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/leave_out_32: reassessment residual",
+      "max_abs_error": 4.845013279464183e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/random_pauli/leave_out_64: reassessment intercept and interval",
+      "max_abs_error": 3.677613769070831e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/leave_out_64: reassessment residual",
+      "max_abs_error": 3.7761460625063137e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/random_pauli/leave_out_128: reassessment intercept and interval",
+      "max_abs_error": 1.033895191682177e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/leave_out_128: reassessment residual",
+      "max_abs_error": 3.055333763768431e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/random_pauli/leave_out_256: reassessment intercept and interval",
+      "max_abs_error": 1.0061396160665481e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/leave_out_256: reassessment residual",
+      "max_abs_error": 3.9825920339353615e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective/locked: reassessment intercept and interval",
+      "max_abs_error": 6.591949208711867e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/locked: reassessment residual",
+      "max_abs_error": 1.6342482922482304e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective: locked intercept",
+      "max_abs_error": 5.662137425588298e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective: locked intercept interval",
+      "max_abs_error": 3.885086696797657e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/power_0.5: reassessment intercept and interval",
+      "max_abs_error": 9.43689570931383e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/power_0.5: reassessment residual",
+      "max_abs_error": 2.2715163083830703e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective/power_1.0: reassessment intercept and interval",
+      "max_abs_error": 6.106226635438361e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/power_1.0: reassessment residual",
+      "max_abs_error": 1.566746732351021e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective/power_1.5: reassessment intercept and interval",
+      "max_abs_error": 5.134781488891349e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/power_1.5: reassessment residual",
+      "max_abs_error": 2.454925152051146e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective/power_2.0: reassessment intercept and interval",
+      "max_abs_error": 4.926614671774132e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/power_2.0: reassessment residual",
+      "max_abs_error": 2.9629632081196178e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective/leave_out_32: reassessment intercept and interval",
+      "max_abs_error": 1.3183898417423734e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/leave_out_32: reassessment residual",
+      "max_abs_error": 4.2077452633293433e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective/leave_out_64: reassessment intercept and interval",
+      "max_abs_error": 2.8449465006019636e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/leave_out_64: reassessment residual",
+      "max_abs_error": 8.171241461241152e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective/leave_out_128: reassessment intercept and interval",
+      "max_abs_error": 9.43689570931383e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/leave_out_128: reassessment residual",
+      "max_abs_error": 2.0667911826421914e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "primary/z_projective/leave_out_256: reassessment intercept and interval",
+      "max_abs_error": 9.298117831235686e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/leave_out_256: reassessment residual",
+      "max_abs_error": 5.581091144790662e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication: chi response all rows",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication: linear response all rows",
+      "max_abs_error": 9.996344030316351e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication: P_central all rows",
+      "max_abs_error": 1.3234889800848443e-23,
+      "tolerance": 1e-15
+    },
+    {
+      "name": "replication: P_left_neighbor all rows",
+      "max_abs_error": 1.3234889800848443e-23,
+      "tolerance": 1e-15
+    },
+    {
+      "name": "replication: P_right_neighbor all rows",
+      "max_abs_error": 1.3234889800848443e-23,
+      "tolerance": 1e-15
+    },
+    {
+      "name": "replication: stored code increments L",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication: stored code increments R",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/32: pairwise vs explicit dummy OLS",
+      "max_abs_error": 7.28583859910259e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32: canonical beta",
+      "max_abs_error": 1.6698448179752745e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/32: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/32: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/32: score cluster SE",
+      "max_abs_error": 2.927345865710862e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32: archived bootstrap interval",
+      "max_abs_error": 2.0886070650760757e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/32: code conservation",
+      "max_abs_error": 7.589415207398531e-19,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/random_pauli/32: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/random_pauli/32/0.2-0.22: adjacent beta",
+      "max_abs_error": 2.498001805406602e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/0.22-0.24: adjacent beta",
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/0.24-0.25: adjacent beta",
+      "max_abs_error": 2.237793284010081e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/0.25-0.26: adjacent beta",
+      "max_abs_error": 1.97758476261356e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/0.26-0.27: adjacent beta",
+      "max_abs_error": 3.365363543395006e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/0.27-0.28: adjacent beta",
+      "max_abs_error": 2.8449465006019636e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/0.28-0.3: adjacent beta",
+      "max_abs_error": 3.2612801348363973e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/0.3-0.34: adjacent beta",
+      "max_abs_error": 3.469446951953614e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/6.0: time beta",
+      "max_abs_error": 2.5673907444456745e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/8.0: time beta",
+      "max_abs_error": 2.7755575615628914e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/32/10.0: time beta",
+      "max_abs_error": 2.393918396847994e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64: pairwise vs explicit dummy OLS",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64: canonical beta",
+      "max_abs_error": 3.697042672001771e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/64: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/64: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/64: score cluster SE",
+      "max_abs_error": 8.196568423990414e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64: archived bootstrap interval",
+      "max_abs_error": 7.577272143066693e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/64: code conservation",
+      "max_abs_error": 1.8973538018496328e-19,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/random_pauli/64: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/random_pauli/64/0.2-0.22: adjacent beta",
+      "max_abs_error": 1.0408340855860843e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/0.22-0.24: adjacent beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/0.24-0.25: adjacent beta",
+      "max_abs_error": 8.673617379884035e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/0.25-0.26: adjacent beta",
+      "max_abs_error": 5.898059818321144e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/0.26-0.27: adjacent beta",
+      "max_abs_error": 6.245004513516506e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/0.27-0.28: adjacent beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/0.28-0.3: adjacent beta",
+      "max_abs_error": 2.636779683484747e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/0.3-0.34: adjacent beta",
+      "max_abs_error": 6.036837696399289e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/6.0: time beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/8.0: time beta",
+      "max_abs_error": 9.71445146547012e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/64/10.0: time beta",
+      "max_abs_error": 6.938893903907228e-18,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128: pairwise vs explicit dummy OLS",
+      "max_abs_error": 1.3877787807814457e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128: canonical beta",
+      "max_abs_error": 1.5785983631388945e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/128: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/128: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/128: score cluster SE",
+      "max_abs_error": 4.206704429243757e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128: archived bootstrap interval",
+      "max_abs_error": 3.048949981376836e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/128: code conservation",
+      "max_abs_error": 8.456776945386935e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/random_pauli/128: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/random_pauli/128/0.2-0.22: adjacent beta",
+      "max_abs_error": 4.163336342344337e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/0.22-0.24: adjacent beta",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/0.24-0.25: adjacent beta",
+      "max_abs_error": 6.245004513516506e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/0.25-0.26: adjacent beta",
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/0.26-0.27: adjacent beta",
+      "max_abs_error": 1.5959455978986625e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/0.27-0.28: adjacent beta",
+      "max_abs_error": 2.8449465006019636e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/0.28-0.3: adjacent beta",
+      "max_abs_error": 2.498001805406602e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/0.3-0.34: adjacent beta",
+      "max_abs_error": 1.6653345369377348e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/6.0: time beta",
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/8.0: time beta",
+      "max_abs_error": 3.0531133177191805e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/128/10.0: time beta",
+      "max_abs_error": 1.942890293094024e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256: pairwise vs explicit dummy OLS",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256: canonical beta",
+      "max_abs_error": 1.6237011735142914e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/256: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/256: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/256: score cluster SE",
+      "max_abs_error": 6.938893903907228e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256: archived bootstrap interval",
+      "max_abs_error": 4.028027911218146e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/256: code conservation",
+      "max_abs_error": 3.903127820947816e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/random_pauli/256: weighted code reconstruction",
+      "max_abs_error": 6.938893903907228e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/random_pauli/256/0.2-0.22: adjacent beta",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/0.22-0.24: adjacent beta",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/0.24-0.25: adjacent beta",
+      "max_abs_error": 1.3877787807814457e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/0.25-0.26: adjacent beta",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/0.26-0.27: adjacent beta",
+      "max_abs_error": 1.0061396160665481e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/0.27-0.28: adjacent beta",
+      "max_abs_error": 2.5673907444456745e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/0.28-0.3: adjacent beta",
+      "max_abs_error": 3.122502256758253e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/0.3-0.34: adjacent beta",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/6.0: time beta",
+      "max_abs_error": 2.5673907444456745e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/8.0: time beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/256/10.0: time beta",
+      "max_abs_error": 9.020562075079397e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32: pairwise vs explicit dummy OLS",
+      "max_abs_error": 3.469446951953614e-18,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32: canonical beta",
+      "max_abs_error": 4.808306530712514e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/32: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/32: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/32: score cluster SE",
+      "max_abs_error": 1.8214596497756474e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32: archived bootstrap interval",
+      "max_abs_error": 4.7475912090533257e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/32: code conservation",
+      "max_abs_error": 6.505213034913027e-19,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/z_projective/32: weighted code reconstruction",
+      "max_abs_error": 3.469446951953614e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/z_projective/32/0.2-0.22: adjacent beta",
+      "max_abs_error": 2.0816681711721685e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/0.22-0.24: adjacent beta",
+      "max_abs_error": 3.2612801348363973e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/0.24-0.25: adjacent beta",
+      "max_abs_error": 3.426078865054194e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/0.25-0.26: adjacent beta",
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/0.26-0.27: adjacent beta",
+      "max_abs_error": 2.837357085394565e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/0.27-0.28: adjacent beta",
+      "max_abs_error": 3.226585665316861e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/0.28-0.3: adjacent beta",
+      "max_abs_error": 3.608224830031759e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/0.3-0.34: adjacent beta",
+      "max_abs_error": 4.718447854656915e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/6.0: time beta",
+      "max_abs_error": 3.0878077872387166e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/8.0: time beta",
+      "max_abs_error": 2.5673907444456745e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/32/10.0: time beta",
+      "max_abs_error": 3.2612801348363973e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64: pairwise vs explicit dummy OLS",
+      "max_abs_error": 1.3877787807814457e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64: canonical beta",
+      "max_abs_error": 1.6341095143701523e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/64: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/64: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/64: score cluster SE",
+      "max_abs_error": 3.686287386450715e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64: archived bootstrap interval",
+      "max_abs_error": 2.278038868652743e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/64: code conservation",
+      "max_abs_error": 1.5720931501039814e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/z_projective/64: weighted code reconstruction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/z_projective/64/0.2-0.22: adjacent beta",
+      "max_abs_error": 1.3877787807814457e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/0.22-0.24: adjacent beta",
+      "max_abs_error": 1.249000902703301e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/0.24-0.25: adjacent beta",
+      "max_abs_error": 4.5102810375396984e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/0.25-0.26: adjacent beta",
+      "max_abs_error": 1.0668549377257364e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/0.26-0.27: adjacent beta",
+      "max_abs_error": 9.020562075079397e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/0.27-0.28: adjacent beta",
+      "max_abs_error": 2.177077962350893e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/0.28-0.3: adjacent beta",
+      "max_abs_error": 2.8449465006019636e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/0.3-0.34: adjacent beta",
+      "max_abs_error": 3.122502256758253e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/6.0: time beta",
+      "max_abs_error": 1.1796119636642288e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/8.0: time beta",
+      "max_abs_error": 9.71445146547012e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/64/10.0: time beta",
+      "max_abs_error": 1.5265566588595902e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128: pairwise vs explicit dummy OLS",
+      "max_abs_error": 2.914335439641036e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128: canonical beta",
+      "max_abs_error": 1.1171619185290638e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/128: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/128: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/128: score cluster SE",
+      "max_abs_error": 8.066464163292153e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128: archived bootstrap interval",
+      "max_abs_error": 3.2134017668994375e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/128: code conservation",
+      "max_abs_error": 7.047314121155779e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/z_projective/128: weighted code reconstruction",
+      "max_abs_error": 6.938893903907228e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/z_projective/128/0.2-0.22: adjacent beta",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/0.22-0.24: adjacent beta",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/0.24-0.25: adjacent beta",
+      "max_abs_error": 1.2923689896027213e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/0.25-0.26: adjacent beta",
+      "max_abs_error": 1.942890293094024e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/0.26-0.27: adjacent beta",
+      "max_abs_error": 1.942890293094024e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/0.27-0.28: adjacent beta",
+      "max_abs_error": 2.8449465006019636e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/0.28-0.3: adjacent beta",
+      "max_abs_error": 3.469446951953614e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/0.3-0.34: adjacent beta",
+      "max_abs_error": 3.469446951953614e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/6.0: time beta",
+      "max_abs_error": 2.8449465006019636e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/8.0: time beta",
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/128/10.0: time beta",
+      "max_abs_error": 2.706168622523819e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256: pairwise vs explicit dummy OLS",
+      "max_abs_error": 1.3877787807814457e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256: canonical beta",
+      "max_abs_error": 3.8170855365393663e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/256: selected rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/256: selected clusters",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/256: score cluster SE",
+      "max_abs_error": 1.0408340855860843e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256: archived bootstrap interval",
+      "max_abs_error": 4.293093658347402e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/256: code conservation",
+      "max_abs_error": 1.3010426069826053e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/z_projective/256: weighted code reconstruction",
+      "max_abs_error": 6.938893903907228e-18,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "replication/z_projective/256/0.2-0.22: adjacent beta",
+      "max_abs_error": 1.3877787807814457e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/0.22-0.24: adjacent beta",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/0.24-0.25: adjacent beta",
+      "max_abs_error": 6.938893903907228e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/0.25-0.26: adjacent beta",
+      "max_abs_error": 1.3877787807814457e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/0.26-0.27: adjacent beta",
+      "max_abs_error": 1.1796119636642288e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/0.27-0.28: adjacent beta",
+      "max_abs_error": 1.1796119636642288e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/0.28-0.3: adjacent beta",
+      "max_abs_error": 2.1510571102112408e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/0.3-0.34: adjacent beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/6.0: time beta",
+      "max_abs_error": 1.8735013540549517e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/8.0: time beta",
+      "max_abs_error": 2.983724378680108e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/z_projective/256/10.0: time beta",
+      "max_abs_error": 7.632783294297951e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "replication/random_pauli/locked: reassessment intercept and interval",
+      "max_abs_error": 2.7755575615628914e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/locked: reassessment residual",
+      "max_abs_error": 3.26405569239796e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/random_pauli: locked intercept",
+      "max_abs_error": 8.021361352916756e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli: locked intercept interval",
+      "max_abs_error": 3.6561031979687186e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/power_0.5: reassessment intercept and interval",
+      "max_abs_error": 4.0245584642661925e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/power_0.5: reassessment residual",
+      "max_abs_error": 6.206146707654625e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/random_pauli/power_1.0: reassessment intercept and interval",
+      "max_abs_error": 2.498001805406602e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/power_1.0: reassessment residual",
+      "max_abs_error": 4.796163466380676e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/random_pauli/power_1.5: reassessment intercept and interval",
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/power_1.5: reassessment residual",
+      "max_abs_error": 4.707345624410664e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/random_pauli/power_2.0: reassessment intercept and interval",
+      "max_abs_error": 1.0408340855860843e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/power_2.0: reassessment residual",
+      "max_abs_error": 1.3500311979441904e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/random_pauli/leave_out_32: reassessment intercept and interval",
+      "max_abs_error": 3.5388358909926865e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/leave_out_32: reassessment residual",
+      "max_abs_error": 7.838174553853605e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/random_pauli/leave_out_64: reassessment intercept and interval",
+      "max_abs_error": 3.7470027081099033e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/leave_out_64: reassessment residual",
+      "max_abs_error": 6.350475700855895e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/random_pauli/leave_out_128: reassessment intercept and interval",
+      "max_abs_error": 2.1510571102112408e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/leave_out_128: reassessment residual",
+      "max_abs_error": 2.1760371282653068e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/random_pauli/leave_out_256: reassessment intercept and interval",
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/leave_out_256: reassessment residual",
+      "max_abs_error": 8.06819888676813e-15,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective/locked: reassessment intercept and interval",
+      "max_abs_error": 2.983724378680108e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/locked: reassessment residual",
+      "max_abs_error": 1.716404796070492e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective: locked intercept",
+      "max_abs_error": 9.797718192317006e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective: locked intercept interval",
+      "max_abs_error": 4.0766001685454967e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/power_0.5: reassessment intercept and interval",
+      "max_abs_error": 7.355227538141662e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/power_0.5: reassessment residual",
+      "max_abs_error": 1.6964207816272392e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective/power_1.0: reassessment intercept and interval",
+      "max_abs_error": 2.498001805406602e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/power_1.0: reassessment residual",
+      "max_abs_error": 1.7996715229173788e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective/power_1.5: reassessment intercept and interval",
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/power_1.5: reassessment residual",
+      "max_abs_error": 2.7200464103316335e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective/power_2.0: reassessment intercept and interval",
+      "max_abs_error": 1.3183898417423734e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/power_2.0: reassessment residual",
+      "max_abs_error": 3.6859404417555197e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective/leave_out_32: reassessment intercept and interval",
+      "max_abs_error": 5.134781488891349e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/leave_out_32: reassessment residual",
+      "max_abs_error": 1.389999226830696e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective/leave_out_64: reassessment intercept and interval",
+      "max_abs_error": 4.371503159461554e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/leave_out_64: reassessment residual",
+      "max_abs_error": 9.209299989265674e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective/leave_out_128: reassessment intercept and interval",
+      "max_abs_error": 1.3183898417423734e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/leave_out_128: reassessment residual",
+      "max_abs_error": 1.4828416272649747e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "replication/z_projective/leave_out_256: reassessment intercept and interval",
+      "max_abs_error": 3.608224830031759e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/leave_out_256: reassessment residual",
+      "max_abs_error": 1.5720758028692217e-13,
+      "tolerance": 1e-10
+    }
+  ],
+  "source_member_sha256": {
+    "checkpoint_05/analysis/synthesis/fixed_spectrum_time_sensitivity.csv": "a465a9ab674adc3c0fa44be3f8a1419310460b065c3b0b9e4c529f90c2c5223d",
+    "checkpoint_05/data/primary_scaling/stabilizer_scaling_states.csv.gz": "3cd3df40084251c34d8b8420d13ad99220c576e12be2638cdb48a270ab0ac2e9",
+    "checkpoint_05/analysis/primary/fixed_spectrum_size_slopes.csv": "9e60545e326f38adcf5518e1f9732d2da6c7d68bd3f7742579760a9a783f373b",
+    "checkpoint_05/analysis/primary/fixed_spectrum_adjacent_contrasts.csv": "b32b562ad515c6227eec34abc78901677cb1c0836ae8cfd03e7a0d7854a50779",
+    "checkpoint_05/analysis/primary/bootstrap_primary_slopes.npz": "6c3ecce69f240315c73fa98958b7df19848683397b80bdd18bdeb0da61cdaaf0",
+    "checkpoint_05/data/independent_replication/stabilizer_scaling_states.csv.gz": "e72c3740d31a0f2d5a6c07fd702156558a34cb568ab4cb4ea1b23c8c7434b30d",
+    "checkpoint_05/analysis/replication/fixed_spectrum_size_slopes.csv": "ea1e5ad2b86068947ee1d7eb8fbc0202cea5f13f3e6cfdb052cf24292ef1ab73",
+    "checkpoint_05/analysis/replication/fixed_spectrum_adjacent_contrasts.csv": "cb30974ae8841f97ac1f8fa34096922a7f78ea3d5d9a7dee7f63d62d9450d795",
+    "checkpoint_05/analysis/replication/bootstrap_primary_slopes.npz": "eb237d24ea3d344140eea4d5b9f87da412d4eb330a29517f498d006068f63d36"
+  },
+  "archive_sha256": "04e3e353a309b866634715b8b062b7531394fddbcdef1c61f8aec0ba3a4d0255",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "seed": null,
+  "new_bootstrap_draws": 0,
+  "bootstrap_dependency": "original archived arrays only for size/limit intervals",
+  "physical_dependency": "original archived entropies and circuit generator",
+  "wall_seconds": 9.923139052996703,
+  "max_rss_kib": 540924
+}

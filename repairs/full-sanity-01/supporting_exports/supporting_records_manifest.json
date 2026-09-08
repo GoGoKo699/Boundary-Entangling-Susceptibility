@@ -1,0 +1,80 @@
+{
+  "archive_run_labels": {
+    "independent_seed_rank4": "independent_rank4",
+    "primary_rank4": "primary_rank4"
+  },
+  "checks": {
+    "decomposition_rows": 15,
+    "endpoint_rows": 30,
+    "maximum_archived_point_error": 5.551115123125783e-17,
+    "maximum_row_stencil_error": 1.4224732503009818e-16
+  },
+  "coefficients_exact": {
+    "cartan_xx_pi4": [
+      "4/9",
+      "1/9",
+      "-2/9",
+      "4/9"
+    ],
+    "cartan_xy_pi8": [
+      "1/3",
+      "1/4",
+      "-1/12",
+      "1/3"
+    ],
+    "haar_or_clifford_2design": [
+      "2/5",
+      "0",
+      "0",
+      "2/5"
+    ]
+  },
+  "coefficients_order": [
+    "P_L",
+    "P_A",
+    "P_Lb",
+    "P_R"
+  ],
+  "contrast": "mean over supported (n,tau) cells of mean(p=.24) minus mean(p=.08)",
+  "estimand": "chi2: normalized linear-entropy change; NOT divided by input purity",
+  "generator": "scripts/analysis/reproduce_supporting_records.py",
+  "normalization": "D/(D-1) applied within each n cell, D=2**(n//2)",
+  "output_sha256": {
+    "intervention_comparison_support.csv": "9cdd5a08df42b4bfd0750247233e9107b00e03339a7f3f96d18ab24c3a014998",
+    "intervention_cross_architecture.csv": "52a06baf83e24ba1eb7bb10fa8314a851b764d66d7be6f5a6ddbe2eb03014800",
+    "response_stencil_decomposition.csv": "a54c9e89d7495672f526cd98eb63c57f2a37c5057233ca467dd82177d45cd2c2"
+  },
+  "reference_and_support_uncertainty": "not propagated",
+  "row_filter": {
+    "p_measure": [
+      0.08,
+      0.24
+    ],
+    "split": "confirmatory",
+    "variant": "equalized_rank4"
+  },
+  "runs": [
+    "primary_rank4",
+    "independent_seed_rank4"
+  ],
+  "sampling_unit": "physical trajectory; observations at different tau are dependent",
+  "schema_version": 1,
+  "source_archive": "entanglement-data.zip",
+  "source_member_sha256": {
+    "checkpoint_04/analysis/consolidated/intervention_cross_architecture.csv": "9342e61c83d155e1c3be62861e6029a68870da854813efc79213b3ee66529995",
+    "checkpoint_04/data/intervention/independent_seed_rank4/state_response_rows.csv.gz": "153710199f198a1440f56e610255c61628eba4f9ee4745737ed03e9fc6693026",
+    "checkpoint_04/data/intervention/primary_rank4/state_response_rows.csv.gz": "1f3139866d13838a659e4c6e9e127170f11a7050ead1885810796f67bd89068c"
+  },
+  "support": "two-rate nonempty cells separately within each run/family, not cross-run intersection",
+  "tolerance": 2e-12,
+  "uncertainty": {
+    "historical_execution": "matching archived point verified; historical invocation and draw vectors not recovered here",
+    "not_current_figure1": "no full-support proposal rejection; chi2 instead of chi_rel; within-run support",
+    "procedure": "4000 trajectory-stratified draws; undefined cells omitted within a draw; linear 2.5/97.5 percentiles",
+    "scope": "older post-hoc pointwise supporting diagnostic, not simultaneous or exact-coverage intervals",
+    "source_generator": "studies/checkpoint_04/scripts/build_consolidated_checkpoint04_analysis.py:balanced_bootstrap",
+    "source_member": "checkpoint_04/analysis/consolidated/intervention_cross_architecture.csv",
+    "status": "archived endpoint intervals only; no new bootstrap draws"
+  },
+  "weighting": "equal (n,tau) cells; equal eligible state rows within each rate cell"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "confirmed_defects_unmasked",
+  "argv": [
+    "pytest",
+    "-q",
+    "--runxfail",
+    "audits/full-sanity-01/code/figure1_confirmed_defects.py"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T13:58:49.473503+00:00",
+  "end_utc": "2026-09-08T13:58:49.854743+00:00",
+  "wall_seconds": 0.3808303359983256,
+  "exit_code": 1,
+  "user_seconds": 0.337588,
+  "system_seconds": 0.039501,
+  "peak_child_rss_kib": 28148,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

@@ -35,6 +35,7 @@ jobs:
       - run: pip install -r requirements-reproducible.txt
       - run: pip install -e .
       - run: python scripts/analysis/reproduce_core_records.py --output reproduced_records
+      - run: python scripts/analysis/reproduce_supporting_records.py --output reproduced_supporting_records --check
       - run: python scripts/analysis/reassess_evidence.py --output reproduced_evidence --bootstrap 5000 --seed 2026090501
       - run: python materialize_studies.py --output reproduced_studies
       - run: python studies/checkpoint_05/scripts/validate_tableau_against_statevector.py --clifford-table reproduced_studies/checkpoint_05/data/two_qubit_clifford_group.npz --maps reproduced_studies/checkpoint_05/data/two_qubit_clifford_symplectic_maps.npz --report reproduced_records/tableau_statevector.json
@@ -44,6 +45,7 @@ jobs:
           name: recorded-evidence-${{ github.sha }}
           path: |
             reproduced_records/
+            reproduced_supporting_records/
             reproduced_evidence/
           if-no-files-found: error
           retention-days: 30

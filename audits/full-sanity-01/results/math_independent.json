@@ -1,0 +1,269 @@
+{
+  "seed": 202609080101,
+  "tolerance": 2e-10,
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "independence": "No baseline imports, archived rows, or archived gates. Dense SVD and NumPy linear algebra; mathematical identities shared by definition. Clifford average generated afresh from H/S/CNOT, with 720 exact Pauli cosets.",
+  "single_clifford_count": 24,
+  "two_qubit_clifford_pauli_cosets": 720,
+  "gram": [
+    [
+      16.0,
+      8.0,
+      8.0,
+      4.0
+    ],
+    [
+      8.0,
+      16.0,
+      4.0,
+      8.0
+    ],
+    [
+      8.0,
+      4.0,
+      16.0,
+      8.0
+    ],
+    [
+      4.0,
+      8.0,
+      8.0,
+      16.0
+    ]
+  ],
+  "named_gate_coefficients": {
+    "identity": {
+      "coefficients": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "ep": 0.0,
+      "gt": 0.0
+    },
+    "swap": {
+      "coefficients": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "ep": 0.0,
+      "gt": 1.0
+    },
+    "xy_pi8": {
+      "coefficients": [
+        0.33333333333333337,
+        0.25,
+        -0.08333333333333333,
+        0.3333333333333333
+      ],
+      "ep": 0.5000000000000006,
+      "gt": 0.33333333333333365
+    },
+    "xx_pi4": {
+      "coefficients": [
+        0.4444444444444444,
+        0.11111111111111112,
+        -0.2222222222222222,
+        0.4444444444444444
+      ],
+      "ep": 0.666666666666667,
+      "gt": 0.3333333333333335
+    }
+  },
+  "max_errors": {
+    "haar_clifford_operator": 2.6645352591003757e-15,
+    "invariant_coefficients_104_gates": 1.9984014443252818e-15,
+    "invariant_overlaps": 1.0658141036401503e-14,
+    "cartan_100_gates": 1.4779844015322396e-15,
+    "local_design_twirl_8_gates": 1.2656542548727775e-14,
+    "four_purity_state_average": 5.9396931817445875e-15,
+    "general_response_12_dense_states": 4.440892098500626e-16
+  },
+  "stabilizer_checks": {
+    "state_counts": {
+      "4": 120,
+      "6": 120,
+      "8": 60
+    },
+    "outcomes": 9820,
+    "central_preserving_outcomes": 4602,
+    "equality": 2832,
+    "strict": 1770,
+    "observed_codes": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "max_entropy_integer_error": 4.884981308350689e-15,
+    "max_flat_eigenvalue_error": 2.220446049250313e-15,
+    "max_positive_response_roundoff": 2.9976021664879227e-15,
+    "max_corollary_residual": 7.382983113757291e-15,
+    "max_opposite_outcome_purity_difference": 3.1086244689504383e-15
+  },
+  "distinct_observables_product_n4": {
+    "mean_post_purity": 0.7999999999999992,
+    "relative_linear_response": 0.2666666666666666,
+    "mean_finite_log2_increment": 0.4000000000000012,
+    "minus_log2_mean_post_purity": 0.32192809488736385
+  },
+  "examples": {
+    "fixed_spectrum_product_and_internal_bells": {
+      "responses": [
+        0.2666666666666666,
+        0.7999999999999998
+      ],
+      "central_spectra": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "noncontiguous_required": {
+      "stencils": [
+        [
+          0.5000000000000001,
+          0.25,
+          1.0,
+          0.5000000000000001
+        ],
+        [
+          0.5000000000000001,
+          0.25,
+          0.25,
+          0.5000000000000001
+        ]
+      ],
+      "swap_post_purities": [
+        1.0,
+        0.25
+      ]
+    },
+    "generic_input_outside_corollary": {
+      "outcome_probability": 0.5,
+      "central_purities": [
+        1.0000000000000009,
+        0.9999999999999996
+      ],
+      "responses": [
+        0.4000000000000002,
+        0.45714285714285713
+      ],
+      "positive_change": 0.05714285714285694
+    },
+    "individual_gate_outside_corollary": {
+      "outcome_probability": 0.4999999999999999,
+      "fixed_cnot_responses": [
+        0.0,
+        0.6666666666666666
+      ],
+      "averaged_responses": [
+        0.5333333333333333,
+        0.5333333333333332
+      ]
+    },
+    "distance_not_ordered_by_corollary": {
+      "central_purities": [
+        0.49999999999999917,
+        0.5,
+        0.5
+      ],
+      "responses_before_near_far": [
+        -0.22857142857142954,
+        -0.22857142857142876,
+        -0.6857142857142858
+      ],
+      "positive_near_minus_far": 0.4571428571428571
+    },
+    "mixed_input_pure_complement_substitution_fails": {
+      "input": "I_16/16",
+      "actual_post_purity": 0.25,
+      "incorrect_pure_complement_haar_prediction": 0.4,
+      "correct_P_Lab_form": 0.25
+    },
+    "two_invariants_do_not_classify_all_gate_content": {
+      "sin2_squared_cartan_coordinates": [
+        [
+          0.5,
+          0.5,
+          0
+        ],
+        [
+          0.6666666666666666,
+          0.16666666666666666,
+          0.16666666666666666
+        ]
+      ],
+      "ep_gt": [
+        [
+          0.5000000000000006,
+          0.33333333333333365
+        ],
+        [
+          0.4999999999999997,
+          0.3333333333333332
+        ]
+      ],
+      "normalized_operator_schmidt_spectra": [
+        [
+          0.7285533905932735,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.02144660940672625
+        ],
+        [
+          0.7218564716806983,
+          0.19481019498596833,
+          0.041666666666666664,
+          0.04166666666666666
+        ]
+      ]
+    }
+  },
+  "runtime_seconds": 6.558882894998533
+}

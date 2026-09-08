@@ -1,0 +1,21 @@
+{
+  "baseline": "00009cf7cc02104e4c776863b3ea551bd38e00f4",
+  "tracked_files": 207,
+  "markdown_files": 64,
+  "python_files": 50,
+  "local_links": 221,
+  "missing_links": [],
+  "fragment_review": [],
+  "dependencies": [
+    "matplotlib",
+    "numba",
+    "numpy",
+    "pandas",
+    "pytest",
+    "scipy",
+    "statsmodels"
+  ],
+  "manuscript_tex": [],
+  "editable_schematic_formats": [],
+  "limitation": "Local existence, AST imports and approximate GitHub heading slugs only; external URLs and live GitHub math rendering not tested here."
+}

@@ -1,0 +1,5 @@
+argv: ["python", "studies/checkpoint_04/scripts/validate_gate_invariant_formula.py", "--samples", "100", "--seed", "123", "--output", "repairs/full-sanity-01/reproduced_records/gate_invariants_final.json"]
+UTC start: 2026-09-08T15:40:38.094779+00:00
+usage: validate_gate_invariant_formula.py [-h] [--out OUT] [--samples SAMPLES]
+                                          [--seed SEED]
+validate_gate_invariant_formula.py: error: unrecognized arguments: --output repairs/full-sanity-01/reproduced_records/gate_invariants_final.json

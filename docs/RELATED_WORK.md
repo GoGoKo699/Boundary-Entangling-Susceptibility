@@ -12,12 +12,18 @@ This audit asks whether the Checkpoint 05 combination is already established:
 4. demonstrate large-size persistence and a paired cut-local measurement
    intervention.
 
-A targeted search through 2026-08-19 did not identify a paper containing this
-complete combination. This is not proof of absolute priority. The novelty claim
-should be phrased as a new synthesis and application of several established
-ingredients.
+A targeted search through 2026-08-19, with equation-level checks added on
+2026-09-08, did not identify a paper establishing this complete empirical
+combination. This bounded search is not proof of priority. In particular,
+the local purity-transfer identities are established, and fixed-Schmidt-orbit
+response also has prior formulations.
 
-**Current framing.** This is the retained targeted-search record, not a new priority audit. The [claim map](CLAIM_EVIDENCE_MAP.md) distinguishes exact ingredients from empirical evidence. In particular, the single-measurement suppression sign is a corollary; the paired spatial dependence is empirical. The revised contribution wording below does not claim that different comparison designs estimate the same numerical effect.
+**Current framing.** The [claim map](CLAIM_EVIDENCE_MAP.md) distinguishes exact
+ingredients, their direct deductions, and empirical evidence. The
+single-measurement suppression sign is a corollary; the paired spatial
+dependence is empirical. Different comparison designs need not estimate the
+same numerical effect. This page integrates the focused attribution repair,
+not an exhaustive priority certification.
 
 ## Established background that must be credited
 
@@ -56,8 +62,18 @@ Two-copy swap operators and purity features are established tools for random
 unitary dynamics. You and Gu formulated second-Renyi entanglement features for
 random Hamiltonian dynamics (arXiv:1803.10425).
 
-**Not novel here:** using two-copy operators to express averaged linear-entropy
-response.
+The direct antecedent of the four-purity stencil is Kuo et al.,
+[arXiv:1910.11351v2](https://arxiv.org/abs/1910.11351v2), Eqs. (19) and (60).
+Akhtar and You, [arXiv:2006.08797v2](https://arxiv.org/abs/2006.08797v2),
+Eq. (20), give its Haar cut-transfer specialization. The
+[theory dictionary](THEORY.md#entanglement-feature-dictionary) supplies the
+subsystem, invariant and normalization translation, including the
+noncontiguous purity.
+
+**Not novel here:** the transfer rule, its Haar neighboring-purity identity,
+or writing an averaged linear-entropy response with two-copy operators.
+The stabilizer alphabet and single-measurement sign corollary are direct
+deductions, not independent empirical discoveries.
 
 ### Entangling power and gate typicality
 
@@ -90,25 +106,37 @@ transition and instead resolves a microscopic response mechanism.
 
 ## Closest conceptual antecedents
 
-The closest bodies of work are:
+Fan, Vijay, Vishwanath, and You,
+[arXiv:2002.12385v1](https://arxiv.org/abs/2002.12385v1), Eq. (13), Figure 4,
+and Appendix E relate a weak-measurement entropy drop to distance-dependent
+qudit-environment information. Their normalized entanglement-feature
+treatment uses a ratio-of-averages approximation. Here Figure 4 instead
+conditions on an unchanged central spectrum and measures the change in the
+**subsequent fresh-gate response**. Its paired spatial endpoint is not their
+entropy drop, and their reported decay behavior is not a decay law for this
+repository.
 
-- entanglement-feature and swap-operator formulas for local random dynamics;
-- entangling-power descriptions of two-qubit gates;
-- monitored-circuit coding and graph-state structure;
-- stabilizer entropy profiles and cluster descriptions;
-- interventions or diagnostics based on localizable entanglement.
+Rudziński, Tartaglione, and Życzkowski,
+[arXiv:2605.26867v2](https://arxiv.org/abs/2605.26867v2), Section VI,
+Eqs. (86)-(97), study response averaged over fixed Schmidt orbits, including
+linear entropy. They average local-unitary orbits for bipartite channels,
+with two-qubit entanglement diagnostics. The present comparisons retain the
+spatial structure of monitored many-body states and apply a designated
+two-site cross-cut probe. Fixed-spectrum response itself is therefore not
+claimed as unprecedented; the monitored conditional coefficients and paired
+location contrasts are the distinct empirical targets here.
 
-None of the sources found in the targeted search directly asks whether two
-states with the **same complete central Schmidt spectrum** have different
-fresh-gate susceptibilities because of their neighboring spatial entanglement
-profile.
+These comparisons supplement entangling-power, monitored-code, graph-state,
+stabilizer-profile and localizable-entanglement antecedents above. None of
+these equations establishes the signs or effect sizes of the repository's
+specified monitored-population endpoints.
 
 ## Conservative contribution statement
 
 The strongest defensible novelty statement is:
 
 > We formulate and test a fixed-spectrum response question for monitored
-> quantum states. The exact local-twirl identity specifies the neighboring-cut
+> quantum states. The established local-twirl identity specifies the neighboring-cut
 > information omitted by the central spectrum. In monitored stabilizer
 > circuits this becomes a finite boundary-code description. Physical
 > within-spectrum monitoring coefficients remain negative through 256 qubits
@@ -117,13 +145,13 @@ The strongest defensible novelty statement is:
 > response change in its specified selected populations; it does not derive
 > the long-run monitoring coefficient.
 
-The novelty lies in the combination of:
+The empirical contribution lies in the tested combination of:
 
 1. complete-spectrum control;
 2. response rather than static entropy as the endpoint;
 3. an exact neighboring-cut mechanism;
 4. physical large-size stabilizer realization;
-5. paired causal localization.
+5. paired measurement-location contrasts in specified selected populations.
 
 ## Claims to avoid
 
@@ -140,9 +168,9 @@ Do not state that the work:
 
 ## Priority risks for external review
 
-1. A mathematically equivalent four-purity response formula may exist under
-   different terminology in operator-entanglement or entanglement-feature
-   literature.
+1. The four-purity transfer formula is already present in the
+   entanglement-feature literature. Its translation and attribution must be
+   retained wherever the local-twirl mechanism is used.
 2. A stabilizer entropy-gradient or local-rank identity may be known in graph-
    state language.
 3. The empirical result may be viewed as a specific consequence of Clifford
@@ -150,8 +178,9 @@ Do not state that the work:
    central.
 4. The transition crossover is secondary and should not be oversold.
 
-These risks justify an independent specialist search and theorem audit before
-submission.
+The independent repository audit checked the stated equations and scope.
+Its bounded literature search neither certifies priority nor supplies evidence
+for a stronger population, localization or thermodynamic claim.
 
 ## Reference set
 
@@ -162,13 +191,25 @@ submission.
   arXiv:1510.02619.
 - Y.-Z. You and Y. Gu, *Entanglement Features of Random Hamiltonian Dynamics*,
   arXiv:1803.10425.
+- W.-T. Kuo, A. A. Akhtar, D. P. Arovas, and Y.-Z. You, *Markovian
+  Entanglement Dynamics under Locally Scrambled Quantum Evolution*,
+  [arXiv:1910.11351v2](https://arxiv.org/abs/1910.11351v2),
+  [Phys. Rev. B **101**, 224202 (2020)](https://doi.org/10.1103/PhysRevB.101.224202).
+- A. A. Akhtar and Y.-Z. You, *Multi-Region Entanglement in Locally Scrambled
+  Quantum Dynamics*, [arXiv:2006.08797v2](https://arxiv.org/abs/2006.08797v2),
+  [Phys. Rev. B **102**, 134203 (2020)](https://doi.org/10.1103/PhysRevB.102.134203).
+- R. Fan, S. Vijay, A. Vishwanath, and Y.-Z. You, *Self-Organized Error
+  Correction in Random Unitary Circuits with Measurement*,
+  [arXiv:2002.12385v1](https://arxiv.org/abs/2002.12385v1),
+  [Phys. Rev. B **103**, 174309 (2021)](https://doi.org/10.1103/PhysRevB.103.174309).
 - Y. Li, X. Chen, and M. P. A. Fisher, *Measurement-driven entanglement
   transition in hybrid quantum circuits*, arXiv:1901.08092.
 - B. Jonnadula et al., *Entanglement measures of bipartite quantum gates and
   their thermalization under arbitrary interaction strength*,
   arXiv:1909.08139.
 - O. Lunt, M. Szyniszewski, and A. Pal, *Measurement-induced criticality and
-  entanglement clusters*, arXiv:2012.03857.
+  entanglement clusters: a study of 1D and 2D Clifford circuits*,
+  [arXiv:2012.03857](https://arxiv.org/abs/2012.03857).
 - B. Yoshida, *Decoding the Entanglement Structure of Monitored Quantum
   Circuits*, arXiv:2109.08691.
 - S. Manna, V. Madhok, and A. Lakshminarayan, *Entangling power, gate
@@ -178,3 +219,6 @@ submission.
   arXiv:2601.14185.
 - Y.-X. Zhang and Y.-X. Zhang, *Typical Output States of Monitored Random
   Clifford Circuits: A Graph-Theoretic Approach*, arXiv:2608.03102.
+- M. Rudziński, G. Tartaglione, and K. Życzkowski, *Entangling power and
+  fidelity diagnostic for bipartite quantum channels*,
+  [arXiv:2605.26867v2](https://arxiv.org/abs/2605.26867v2).

@@ -1,0 +1,121 @@
+path,coverage,detail
+.github/workflows/tests.yml,manual_full,manual inspection within simulator/completeness assignment
+LICENSE_STATUS.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+README.md,manual_full,manual inspection within simulator/completeness assignment
+data/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+data/record_bundle_manifest.json,manual_selected,complete member names and selected source identities; root validates everyhash
+docs/00_START_HERE.md,manual_full,manual inspection within simulator/completeness assignment
+docs/CLAIM_EVIDENCE_MAP.md,manual_full,manual inspection within simulator/completeness assignment
+docs/CODE_MAP.md,manual_full,manual inspection within simulator/completeness assignment
+docs/DATA_POLICY.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/DIALOGUE_QUESTION_MAP.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/DIALOGUE_REPORT.md,manual_selected,"definitions and Figure1 lines1-130, sources498-512, targeted references throughout; full scientific coverage delegated"
+docs/EDITORIAL_POLICY.md,manual_full,manual inspection within simulator/completeness assignment
+docs/EVIDENCE_REASSESSMENT.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/EXTENDED_RESULTS.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/FAQ.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/FIGURE1_CAPTION.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/FIGURE1_UNCERTAINTY.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/FIGURE1_UNCERTAINTY_PLAN.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/FIGURE1_UNCERTAINTY_REVIEW.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/FIGURE_BASELINE.md,manual_full,manual inspection within simulator/completeness assignment
+docs/NOTATION.md,manual_full,manual inspection within simulator/completeness assignment
+docs/NUMERICAL_METHODS.md,manual_full,manual inspection within simulator/completeness assignment
+docs/PROJECT_GUIDE.md,manual_full,manual inspection within simulator/completeness assignment
+docs/RELATED_WORK.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/REPRODUCIBILITY_LIMITS.md,manual_full,manual inspection within simulator/completeness assignment
+docs/REPRODUCTION.md,manual_full,manual inspection within simulator/completeness assignment
+docs/RESEARCH_HISTORY.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/RESULTS_AT_A_GLANCE.md,manual_full,manual inspection within simulator/completeness assignment
+docs/RUN_HISTORY.md,manual_full,manual inspection within simulator/completeness assignment
+docs/SCIENTIFIC_STORY.md,manual_full,manual inspection within simulator/completeness assignment
+docs/SCOPE_AND_LIMITATIONS.md,manual_full,manual inspection within simulator/completeness assignment
+docs/THEORY.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/TRANSITION_CONTEXT.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+docs/VALIDATION.md,manual_full,manual inspection within simulator/completeness assignment
+figures/PALETTE.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+figures/README.md,manual_full,manual inspection within simulator/completeness assignment
+materialize_studies.py,manual_full,manual inspection within simulator/completeness assignment
+provenance/PUBLIC_RELEASE_CHECKLIST.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+provenance/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+provenance/SELF_CONTAINMENT.md,manual_full,manual inspection within simulator/completeness assignment
+provenance/SOURCE_MIGRATION.md,manual_full,manual inspection within simulator/completeness assignment
+provenance/study_source_map.csv,manual_selected,entry paths/hashes and relevant simulator entries
+pyproject.toml,manual_full,manual inspection within simulator/completeness assignment
+reproduce.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+requirements-reproducible.txt,manual_full,manual inspection within simulator/completeness assignment
+requirements.txt,manual_full,manual inspection within simulator/completeness assignment
+results/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+results/evidence_reassessment/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+results/figure1_uncertainty/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+results/historical_figure1/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+scripts/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+scripts/analysis/check_figure1_adoption.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/analysis/complete_figure1_uncertainty.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/analysis/reassess_evidence.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/analysis/reproduce_core_records.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/analysis/verify_figure1_uncertainty.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/figures/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+scripts/figures/export_formats.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/figures/figure_palette.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/figures/make_figure_01_frozen.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/figures/make_figure_02.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/figures/make_figure_03.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+scripts/figures/make_figure_04.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+src/boundary_susceptibility/__init__.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+src/boundary_susceptibility/boundary_codes.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+src/boundary_susceptibility/records.py,manual_full,manual inspection within simulator/completeness assignment
+src/boundary_susceptibility/response.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/README.md,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_04/README.md,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_04/design/DESIGN_LOCK_BEFORE_RUN.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_04/design/PHYSICAL_STABILIZER_DESIGN_LOCK_BEFORE_FULL_RUN.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_04/design/PHYSICAL_STABILIZER_INDEPENDENT_SEED_LOCK_BEFORE_RUN.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_04/notes/METHODS_AND_DEFINITIONS.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_04/notes/RUN_HISTORY_AND_PROTOCOL_DEVIATIONS.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_04/results/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_04/scripts/analyze_checkpoint04.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_04/scripts/analyze_gate_space_universality.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_04/scripts/analyze_physical_stabilizer_full.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_04/scripts/build_consolidated_checkpoint04_analysis.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_04/scripts/cp04_common.py,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_04/scripts/cross_architecture_rankflex.py,manual_selected,"kernels1-535, referenceconstruction680-836; validators delegated to root/Figure1"
+studies/checkpoint_04/scripts/cross_architecture_simulation.py,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_04/scripts/independent_seed_replication.py,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_04/scripts/run_physical_cell_sequential.py,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_04/scripts/run_physical_stabilizer_arm.py,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_04/scripts/validate_gate_invariant_formula.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_04/scripts/validate_response_operator.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_05/README.md,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_05/design/CALIBRATION_PLAN.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_05/design/INDEPENDENT_REPLICATION_LOCK_BEFORE_RUN.md,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_05/design/PAIRED_MEASUREMENT_INTERVENTION_LOCK_BEFORE_RUN.md,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_05/design/PRIMARY_SCALING_DESIGN_LOCK_BEFORE_RUN.md,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_05/notes/METHODS_AND_DEFINITIONS.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_05/notes/RUN_HISTORY_AND_PROTOCOL_DEVIATIONS.md,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_05/results/README.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/checkpoint_05/scripts/analyze_boundary_code_decomposition.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_05/scripts/analyze_checkpoint05.py,manual_selected,imports and main execution/provenance191-231; estimator substance delegated to Figures2-3
+studies/checkpoint_05/scripts/analyze_finite_size_sensitivity.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_05/scripts/analyze_measurement_location.py,manual_selected,imports and main execution/provenance114-155; estimator substance delegated to Figure4
+studies/checkpoint_05/scripts/analyze_time_sensitivity.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_05/scripts/analyze_transition_crossover.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+studies/checkpoint_05/scripts/build_symplectic_maps.py,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_05/scripts/cp04_common.py,manual_selected,"lines1-260 manually; identical hash to CP04 copy in provenance map, CP04 copy read fully"
+studies/checkpoint_05/scripts/run_tableau_scaling.py,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_05/scripts/stabilizer_tableau.py,manual_full,manual inspection within simulator/completeness assignment
+studies/checkpoint_05/scripts/validate_tableau_against_statevector.py,manual_full,manual inspection within simulator/completeness assignment
+studies/figure_design/FIGURE_01_SPEC.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/figure_design/FIGURE_02_SPEC.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/figure_design/FIGURE_03_SPEC.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/figure_design/FIGURE_04_SPEC.md,navigation_scan_only,local links/fragments scanned; not manual scientific coverage by this agent
+studies/figure_design/bootstrap_reference.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+tests/test_approved_figure4.py,manual_full,manual inspection within simulator/completeness assignment
+tests/test_evidence_pipeline.py,manual_full,manual inspection within simulator/completeness assignment
+tests/test_figure1_adoption.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+tests/test_figure1_svg.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+tests/test_figure1_uncertainty.py,AST_import_scan_only,not scientific manual coverage by this agent; see responsible figure/math/root report
+tests/test_figure_palette.py,manual_full,manual inspection within simulator/completeness assignment
+tests/test_identities.py,manual_full,manual inspection within simulator/completeness assignment
+tests/test_record_bundle.py,manual_full,manual inspection within simulator/completeness assignment
+verify.py,manual_selected,"lines1-200; formula/expected-table, local-link, figure-integrity and source-policy checks; root audits full verifier"

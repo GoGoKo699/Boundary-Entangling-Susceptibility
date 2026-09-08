@@ -1,0 +1,22 @@
+{
+  "name": "package_boundary",
+  "argv": [
+    "python",
+    "audits/full-sanity-01/code/verify_audit_package.py"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T14:08:54.166429+00:00",
+  "end_utc": "2026-09-08T14:08:54.281908+00:00",
+  "wall_seconds": 0.11543331099528586,
+  "exit_code": 0,
+  "user_seconds": 0.059114999999999994,
+  "system_seconds": 0.05912,
+  "peak_child_rss_kib": 44160,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

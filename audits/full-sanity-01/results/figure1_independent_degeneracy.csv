@@ -1,0 +1,11 @@
+run,family,eligible,degenerate_selected_gap_1e-10,rank4_boundary_gap_1e-10,nonflat_1e-10
+primary,clifford_z,96,93,25,62
+primary,floquet_cartan_z,142,0,0,142
+primary,haar_random_pauli,143,0,0,143
+primary,haar_weak_z_eta06,144,0,0,144
+primary,haar_z,143,0,0,143
+independent,clifford_z,61,60,16,38
+independent,floquet_cartan_z,94,0,0,94
+independent,haar_random_pauli,96,0,0,96
+independent,haar_weak_z_eta06,96,0,0,96
+independent,haar_z,95,0,0,95

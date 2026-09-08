@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "python",
+    "scripts/analysis/reassess_evidence.py",
+    "--output",
+    "repairs/full-sanity-01/reproduced_evidence",
+    "--bootstrap",
+    "5000",
+    "--seed",
+    "2026090501"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T15:29:38.089589+00:00",
+  "end_utc": "2026-09-08T15:29:50.201078+00:00",
+  "wall_seconds": 12.111490969997249,
+  "exit_code": 0,
+  "user_seconds": 10.474406,
+  "system_seconds": 1.565687,
+  "peak_child_rss_kib": 478996,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

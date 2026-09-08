@@ -1,0 +1,403 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "primary/random_pauli/32: secondary beta",
+      "max_abs_error": 3.2959746043559335e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/32: secondary archived interval",
+      "max_abs_error": 5.724587470723463e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/64: secondary beta",
+      "max_abs_error": 4.77048955893622e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/64: secondary archived interval",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/128: secondary beta",
+      "max_abs_error": 1.8735013540549517e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/128: secondary archived interval",
+      "max_abs_error": 2.949029909160572e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/128: hinge coefficients",
+      "max_abs_error": 1.5334955527634975e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/128: hinge retained rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/128: hinge archived intervals",
+      "max_abs_error": 7.632783294297951e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/256: secondary beta",
+      "max_abs_error": 1.734723475976807e-18,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/256: secondary archived interval",
+      "max_abs_error": 9.020562075079397e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/256: hinge coefficients",
+      "max_abs_error": 3.885780586188048e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/256: hinge retained rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/256: hinge archived intervals",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/32: secondary beta",
+      "max_abs_error": 3.3133218391157016e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/32: secondary archived interval",
+      "max_abs_error": 4.85722573273506e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/64: secondary beta",
+      "max_abs_error": 4.2500725161431774e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/64: secondary archived interval",
+      "max_abs_error": 9.194034422677078e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/128: secondary beta",
+      "max_abs_error": 1.6306400674181987e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/128: secondary archived interval",
+      "max_abs_error": 8.153200337090993e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/128: hinge coefficients",
+      "max_abs_error": 1.4953316362920077e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/128: hinge retained rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/128: hinge archived intervals",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/256: secondary beta",
+      "max_abs_error": 5.724587470723463e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/256: secondary archived interval",
+      "max_abs_error": 6.591949208711867e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/256: hinge coefficients",
+      "max_abs_error": 1.3877787807814457e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/256: hinge retained rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/256: hinge archived intervals",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli: secondary limit",
+      "max_abs_error": 1.6014967130217883e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli: quarter I3 identity",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/random_pauli/32-64: I3 crossing point",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/64-128: I3 crossing point",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/random_pauli/128-256: I3 crossing point",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective: secondary limit",
+      "max_abs_error": 1.3586354263850353e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective: quarter I3 identity",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "primary/z_projective/32-64: I3 crossing point",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/64-128: I3 crossing point",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "primary/z_projective/128-256: I3 crossing point",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/32: secondary beta",
+      "max_abs_error": 2.0643209364124004e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/32: secondary archived interval",
+      "max_abs_error": 5.724587470723463e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/64: secondary beta",
+      "max_abs_error": 1.1275702593849246e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/64: secondary archived interval",
+      "max_abs_error": 8.500145032286355e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/128: secondary beta",
+      "max_abs_error": 1.4224732503009818e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/128: secondary archived interval",
+      "max_abs_error": 8.673617379884035e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/128: hinge coefficients",
+      "max_abs_error": 6.106226635438361e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/128: hinge retained rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/128: hinge archived intervals",
+      "max_abs_error": 9.020562075079397e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/256: secondary beta",
+      "max_abs_error": 1.249000902703301e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/256: secondary archived interval",
+      "max_abs_error": 2.949029909160572e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/256: hinge coefficients",
+      "max_abs_error": 1.249000902703301e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/256: hinge retained rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/256: hinge archived intervals",
+      "max_abs_error": 9.71445146547012e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/32: secondary beta",
+      "max_abs_error": 1.7520707107365752e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/32: secondary archived interval",
+      "max_abs_error": 6.852157730108388e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/64: secondary beta",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/64: secondary archived interval",
+      "max_abs_error": 7.546047120499111e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/128: secondary beta",
+      "max_abs_error": 2.1163626406917047e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/128: secondary archived interval",
+      "max_abs_error": 8.673617379884035e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/128: hinge coefficients",
+      "max_abs_error": 1.5959455978986625e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/128: hinge retained rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/128: hinge archived intervals",
+      "max_abs_error": 6.938893903907228e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/256: secondary beta",
+      "max_abs_error": 2.1510571102112408e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/256: secondary archived interval",
+      "max_abs_error": 6.765421556309548e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/256: hinge coefficients",
+      "max_abs_error": 6.38378239159465e-16,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/256: hinge retained rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/256: hinge archived intervals",
+      "max_abs_error": 9.71445146547012e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli: secondary limit",
+      "max_abs_error": 1.2947976024690888e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli: quarter I3 identity",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/random_pauli/32-64: I3 crossing point",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/64-128: I3 crossing point",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/random_pauli/128-256: I3 crossing point",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective: secondary limit",
+      "max_abs_error": 1.444677710793485e-14,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective: quarter I3 identity",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "replication/z_projective/32-64: I3 crossing point",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/64-128: I3 crossing point",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "replication/z_projective/128-256: I3 crossing point",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-11
+    }
+  ],
+  "source_member_sha256": {
+    "checkpoint_05/analysis/synthesis/transition_crossover_hinge_fits.csv": "10f67d1eddc12162ab170fb8597940a6a778f71cdc3dc08fabb3fa0b12f5b100",
+    "checkpoint_05/analysis/synthesis/transition_crossover_bootstraps.npz": "f2e87ccec812912a833bb02f27838570f47d0441687292dd3bc449fc8dbe8386",
+    "checkpoint_05/data/primary_scaling/stabilizer_scaling_states.csv.gz": "3cd3df40084251c34d8b8420d13ad99220c576e12be2638cdb48a270ab0ac2e9",
+    "checkpoint_05/analysis/primary/fixed_spectrum_size_slopes.csv": "9e60545e326f38adcf5518e1f9732d2da6c7d68bd3f7742579760a9a783f373b",
+    "checkpoint_05/analysis/primary/thermodynamic_limit_fits.csv": "5fdabe0e78199c4911dc62e0abf8caed1607fce5fe7c1e397ff5d909586195c3",
+    "checkpoint_05/analysis/primary/independent_I3_crossings.csv": "42474fc06db739ea31f75324ebd34a241a46fa4d92b8eecd3cc1811b471713ff",
+    "checkpoint_05/analysis/primary/bootstrap_primary_slopes.npz": "6c3ecce69f240315c73fa98958b7df19848683397b80bdd18bdeb0da61cdaaf0",
+    "checkpoint_05/data/independent_replication/stabilizer_scaling_states.csv.gz": "e72c3740d31a0f2d5a6c07fd702156558a34cb568ab4cb4ea1b23c8c7434b30d",
+    "checkpoint_05/analysis/replication/fixed_spectrum_size_slopes.csv": "ea1e5ad2b86068947ee1d7eb8fbc0202cea5f13f3e6cfdb052cf24292ef1ab73",
+    "checkpoint_05/analysis/replication/thermodynamic_limit_fits.csv": "dc989105942de3055f56365a2c8be1a70aeaa1fc35f50c07f8731c7fc9d4d605",
+    "checkpoint_05/analysis/replication/independent_I3_crossings.csv": "cc165831fe66d24a24540728cfaab6f806e13b03a1fa755e1c2d6764d08ac93d",
+    "checkpoint_05/analysis/replication/bootstrap_primary_slopes.npz": "eb237d24ea3d344140eea4d5b9f87da412d4eb330a29517f498d006068f63d36"
+  },
+  "wall_seconds": 3.0354477930013672,
+  "max_rss_kib": 481176,
+  "new_random_draws": 0,
+  "dependencies": "audit-owned cell estimator; original raw quarter entropies; original archived size and hinge bootstrap arrays; crossing intervals merely copied from source table"
+}

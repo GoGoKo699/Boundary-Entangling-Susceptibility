@@ -58,13 +58,13 @@
     },
     {
       "path": "figures/core/figure_03_size_scaling.pdf",
-      "sha256": "519f6c835e93b818b014e00e6d3061c03437f69b6e7df712e7832c60575434c6",
-      "bytes": 14036
+      "sha256": "fcbe148d8a55cb638a40716e0ca22e24d25efcb7da0f414f32255acdd083e98b",
+      "bytes": 14180
     },
     {
       "path": "figures/core/figure_03_size_scaling.png",
-      "sha256": "3e2ff8a8f94618aac0efb34edd9a8858bdffb078ae8289eccf795550c33fb864",
-      "bytes": 115584
+      "sha256": "eab57b893c0b75aafb3c18ea1c2c79ab9120e3022ab21bd64601484f67f67304",
+      "bytes": 123134
     },
     {
       "path": "figures/core/figure_04_conditioning_contrast.pdf",
@@ -103,8 +103,8 @@
     },
     {
       "path": "figures/core_svg/figure_03_size_scaling.svg",
-      "sha256": "a434bb5ac4bf4c018d02d8e65f56101d41641b482bd324e6a8a8682cf99f67a3",
-      "bytes": 38488
+      "sha256": "6f7dd678e4ff36ee88ca269c7c27a8119ebc80a1b73575172d61fa918b94c927",
+      "bytes": 39941
     },
     {
       "path": "figures/core_svg/figure_04_conditioning_contrast.svg",
@@ -117,7 +117,9 @@
       "bytes": 17833
     }
   ],
-  "baseline_id": "irises-figure-palette-2026-09-08",
+  "baseline_id": "figure3-coefficient-label-2026-09-08",
+  "label_adoption_record": "provenance/FIGURE3_LABEL_2026-09-08.json",
+  "label_scientific_baseline_commit": "00009cf7cc02104e4c776863b3ea551bd38e00f4",
   "preceding_commit": "c54dca28464832ecebeb6602c4c490d3d68d3015",
   "adoption_record": "provenance/FIGURE1_ADOPTION_2026-09-08.json",
   "palette_adoption_record": "provenance/FIGURE_PALETTE_2026-09-08.json",

@@ -1,0 +1,24 @@
+argv: ["python", "scripts/analysis/reproduce_core_records.py", "--output", "repairs/full-sanity-01/reproduced_records"]
+UTC start: 2026-09-08T15:29:36.638460+00:00
+Figure 1: current points and historical provenance verified; run the dedicated workflow for current intervals
+Figures 2/3 primary: rows, coefficients, archived intervals, and locked fits verified
+Figures 2/3 replication: rows, coefficients, archived intervals, and locked fits verified
+{
+  "passed": true,
+  "checks": 156,
+  "max_error": 4.838351941316432e-13,
+  "bundle_sha256": "04e3e353a309b866634715b8b062b7531394fddbcdef1c61f8aec0ba3a4d0255",
+  "state_rows": {
+    "primary": 172800,
+    "replication": 64800
+  },
+  "intervention_rows": 75600,
+  "figure1_contrasts": 10,
+  "figure1_historical_interval_replay": false,
+  "figure1_current_interval_command": "See docs/FIGURE1_UNCERTAINTY.md: separate sampler, replay verifier, and adoption check",
+  "interval_scope": "Figure 1 historical intervals source-verified only; current Figure 1 is checked in its separate complete workflow; Figures 3/4 reuse archived original resamples",
+  "simulation_scope": "No circuit-generation campaign or new statistical estimand",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

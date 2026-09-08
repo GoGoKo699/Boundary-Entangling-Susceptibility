@@ -121,6 +121,9 @@ cell:
 - base seed: `2026082401`.
 
 The replication lock was timestamped before the primary analysis was complete.
+Explicit run labels and generation commands are in [campaign recipes](CAMPAIGN_RECIPES.md).
+These commands are reconstructed from the retained source, design locks, and
+record fields, not claimed to be recovered historical shell transcripts.
 
 ## 6. Exact-spectrum fixed-effect estimator
 
@@ -178,7 +181,13 @@ $$
 
 for four contiguous quarters of the open chain. Only `tau=10` is used. Pairwise
 size crossings are linearly interpolated on the simulated probability grid and
-bootstrapped over trajectories.
+bootstrapped over trajectories. The recorded algorithm considers adjacent
+grid intervals wholly within `[0.235,0.295]`, selects the crossing nearest
+`0.26` if there is more than one, and excludes bootstrap proposals with no
+crossing. Its reported crossing intervals are therefore conditional on
+crossing existence under this rule, not unconditional critical-point intervals.
+This is a different observable on the same trajectories, not an independent
+physical dataset.
 
 The susceptibility is never used to choose the transition point. A hinge fit
 at `p=0.27`, motivated by the independent high-size `I_3` crossing, is a
@@ -212,10 +221,10 @@ A separate projective-Z run uses:
 - base seed `2026082501`.
 
 Every location is evaluated on a copy of the same premeasurement stabilizer
-state. The primary principal-stratum contrast keeps interventions with
+state. The original conditional contrast keeps interventions with
 `Delta S_m=0`, which exactly preserves the complete central stabilizer spectrum.
 For every trajectory, the valid two-sided mean at `d=0` is compared with the
-valid mean at distances at least `n/4`. The original endpoint can retain different sides at different distances; its eligibility is defined by the existence of the near and far means, not joint preservation for one fixed side. The stricter same-side check requires both $d=0$ and $d=n/4$ interventions to preserve the spectrum; the all-six-distance check imposes a common side/pre-state population. These are distinct selected estimands, specified in [the evidence reassessment](EVIDENCE_REASSESSMENT.md), and do not identify an unconditional long-run monitoring-rate effect.
+valid mean at distances at least `n/4`. The original endpoint can retain different sides at different distances; its eligibility is defined by the existence of the near and far means, not joint preservation for one fixed side. The stricter same-side check requires both $d=0$ and $d=n/4$ interventions to preserve the spectrum on the same side/pre-state. It is this fixed-side joint-preservation comparison that has the principal-stratum interpretation. The all-six-distance check imposes a common side/pre-state population. Each contrast averages eligible sides within pre-state, then pre-states within each $(n,p)$ cell, then gives the nine cells equal weight. These are distinct selected estimands, specified in [the evidence reassessment](EVIDENCE_REASSESSMENT.md), and do not identify an unconditional long-run monitoring-rate effect.
 
 The unconditional contrast is secondary. It includes measurements that lower
 `S_m` by one and therefore change the complete central spectrum.
@@ -224,9 +233,18 @@ For a single-site Pauli measurement on a pure stabilizer input, the nonpositive 
 
 ## 11. Reproducibility
 
-All raw state tables, intervention tables, analysis tables, bootstrap arrays,
-design locks, simulator source, symplectic maps, validation scripts, and figure
-scripts are included in the package. The verifier checks algebraic identities,
+The state and intervention tables supporting the current figures, selected
+analysis tables, archived size/location/hinge bootstrap arrays, design locks,
+simulator source, symplectic maps, validation scripts, and figure scripts are
+included and indexed in [the record manifest](../data/record_bundle_manifest.json).
+This is a selected-record bundle, not every file from the historical campaigns.
+Original simulation manifests, execution logs, and crossing resample arrays
+are not included. Historical Figure 1 resampling seed recovery remains
+incomplete; its current replacement is specified below. The original Figure 3
+and Figure 4 analyzer invocation seeds have not been established from included
+execution records. Their archived arrays can be replayed without claiming
+fresh generation from those historical seeds. [Campaign recipes](CAMPAIGN_RECIPES.md)
+distinguish these tasks. The verifier checks algebraic identities,
 row counts, hashes, script compilation, figure readability, and the sign and
 numerical ranges of every load-bearing result.
 

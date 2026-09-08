@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "python",
+    "scripts/analysis/verify_figure1_uncertainty.py",
+    "--output",
+    "repairs/full-sanity-01/reproduced_figure1_uncertainty",
+    "--report",
+    "repairs/full-sanity-01/figure1_review_verification/independent_replay.json"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T15:36:11.969974+00:00",
+  "end_utc": "2026-09-08T15:36:13.590883+00:00",
+  "wall_seconds": 1.6209061359986663,
+  "exit_code": 1,
+  "user_seconds": 1.401721,
+  "system_seconds": 0.22087299999999999,
+  "peak_child_rss_kib": 110556,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

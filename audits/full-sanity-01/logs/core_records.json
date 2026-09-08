@@ -1,0 +1,24 @@
+{
+  "name": "core_records",
+  "argv": [
+    "python",
+    "scripts/analysis/reproduce_core_records.py",
+    "--output",
+    "audits/full-sanity-01/reproduced_records"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T13:41:14.553853+00:00",
+  "end_utc": "2026-09-08T13:41:21.164017+00:00",
+  "wall_seconds": 6.61011925299681,
+  "exit_code": 0,
+  "user_seconds": 4.73896,
+  "system_seconds": 1.8273359999999998,
+  "peak_child_rss_kib": 488420,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

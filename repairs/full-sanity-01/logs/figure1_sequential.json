@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "python",
+    "repairs/full-sanity-01/code/verify_figure1_sequence.py"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T15:42:06.847577+00:00",
+  "end_utc": "2026-09-08T15:42:36.162295+00:00",
+  "wall_seconds": 29.31485363300453,
+  "exit_code": 0,
+  "user_seconds": 28.691799,
+  "system_seconds": 0.5888559999999999,
+  "peak_child_rss_kib": 112968,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

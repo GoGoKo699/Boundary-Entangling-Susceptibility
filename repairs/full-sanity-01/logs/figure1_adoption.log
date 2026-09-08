@@ -1,0 +1,10 @@
+argv: ["python", "scripts/analysis/check_figure1_adoption.py", "--resamples", "repairs/full-sanity-01/reproduced_figure1_uncertainty"]
+UTC start: 2026-09-08T15:32:54.795630+00:00
+Traceback (most recent call last):
+  File "/workspace/scratch/0174ee249694/repo/scripts/analysis/check_figure1_adoption.py", line 139, in <module>
+    print(json.dumps(verify(resamples=args.resamples),indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/0174ee249694/repo/scripts/analysis/check_figure1_adoption.py", line 121, in verify
+    if sha(resamples/path)!=digest:raise ValueError('Replayed output differs: '+path)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Replayed output differs: resamples/all_confirmatory__primary__haar_random_pauli.npz

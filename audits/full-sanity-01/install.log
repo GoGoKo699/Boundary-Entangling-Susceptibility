@@ -1,0 +1,119 @@
+Collecting numpy>=1.24 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 1))
+  Downloading numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting pandas>=2.0 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 2))
+  Downloading pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Collecting matplotlib>=3.7 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 3))
+  Downloading matplotlib-3.11.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting scipy>=1.10 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 4))
+  Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting statsmodels>=0.14 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 5))
+  Downloading statsmodels-0.15.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.6 kB)
+Collecting pytest>=7.4 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 6))
+  Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting numba>=0.61 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 7))
+  Downloading numba-0.67.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+Collecting Pillow>=10 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 8))
+  Using cached pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting numpy>=1.24 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 1))
+  Using cached numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting pandas>=2.0 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 2))
+  Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+Collecting matplotlib>=3.7 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 3))
+  Using cached matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+Collecting scipy>=1.10 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 4))
+  Using cached scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting numba>=0.61 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 7))
+  Downloading numba-0.65.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.9 kB)
+Collecting statsmodels>=0.14 (from -r /workspace/scratch/0174ee249694/repo/requirements.txt (line 5))
+  Downloading statsmodels-0.14.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+Collecting python-dateutil>=2.8.2 (from pandas>=2.0->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 2))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas>=2.0->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 2))
+  Downloading pytz-2026.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas>=2.0->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 2))
+  Downloading tzdata-2026.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting contourpy>=1.0.1 (from matplotlib>=3.7->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 3))
+  Using cached contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib>=3.7->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 3))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib>=3.7->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 3))
+  Using cached fonttools-4.64.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (123 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib>=3.7->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 3))
+  Using cached kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting packaging>=20.0 (from matplotlib>=3.7->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 3))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyparsing>=3 (from matplotlib>=3.7->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 3))
+  Using cached pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting patsy>=0.5.6 (from statsmodels>=0.14->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 5))
+  Downloading patsy-1.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Collecting llvmlite<0.48,>=0.47.0dev0 (from numba>=0.61->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 7))
+  Downloading llvmlite-0.47.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.0 kB)
+Collecting iniconfig>=1.0.1 (from pytest>=7.4->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 6))
+  Using cached iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest>=7.4->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 6))
+  Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest>=7.4->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 6))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.0->-r /workspace/scratch/0174ee249694/repo/requirements.txt (line 2))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Using cached numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 66.3 MB/s eta 0:00:00
+Using cached matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+Using cached scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+Downloading statsmodels-0.14.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (10.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.3/10.3 MB 84.5 MB/s eta 0:00:00
+Downloading numba-0.65.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 27.3 MB/s eta 0:00:00
+Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+Using cached contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (362 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.64.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+Using cached iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Using cached kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+Downloading llvmlite-0.47.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (56.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 MB 60.4 MB/s eta 0:00:00
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Downloading patsy-1.0.3-py2.py3-none-any.whl (233 kB)
+Using cached pluggy-1.6.0-py3-none-any.whl (20 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+Downloading tzdata-2026.3-py2.py3-none-any.whl (348 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, tzdata, six, pyparsing, pygments, pluggy, Pillow, packaging, numpy, llvmlite, kiwisolver, iniconfig, fonttools, cycler, scipy, python-dateutil, pytest, patsy, numba, contourpy, pandas, matplotlib, statsmodels
+Successfully installed Pillow-12.3.0 contourpy-1.3.3 cycler-0.12.1 fonttools-4.64.0 iniconfig-2.3.0 kiwisolver-1.5.1 llvmlite-0.47.0 matplotlib-3.10.8 numba-0.65.1 numpy-2.3.5 packaging-26.3 pandas-2.2.3 patsy-1.0.3 pluggy-1.6.0 pygments-2.21.0 pyparsing-3.3.2 pytest-9.1.1 python-dateutil-2.9.0.post0 pytz-2026.3.post1 scipy-1.17.0 six-1.17.0 statsmodels-0.14.6 tzdata-2026.3
+Obtaining file:///workspace/scratch/0174ee249694/repo
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy>=1.24 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from boundary-entangling-susceptibility==0.1.0) (2.3.5)
+Requirement already satisfied: pandas>=2.0 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from boundary-entangling-susceptibility==0.1.0) (2.2.3)
+Requirement already satisfied: scipy>=1.10 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from boundary-entangling-susceptibility==0.1.0) (1.17.0)
+Requirement already satisfied: matplotlib>=3.7 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from boundary-entangling-susceptibility==0.1.0) (3.10.8)
+Requirement already satisfied: contourpy>=1.0.1 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (4.64.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (1.5.1)
+Requirement already satisfied: packaging>=20.0 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (26.3)
+Requirement already satisfied: pillow>=8 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (12.3.0)
+Requirement already satisfied: pyparsing>=3 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (3.3.2)
+Requirement already satisfied: python-dateutil>=2.7 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from pandas>=2.0->boundary-entangling-susceptibility==0.1.0) (2026.3.post1)
+Requirement already satisfied: tzdata>=2022.7 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from pandas>=2.0->boundary-entangling-susceptibility==0.1.0) (2026.3)
+Requirement already satisfied: six>=1.5 in /workspace/scratch/0174ee249694/audit-venv/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib>=3.7->boundary-entangling-susceptibility==0.1.0) (1.17.0)
+Building wheels for collected packages: boundary-entangling-susceptibility
+  Building editable for boundary-entangling-susceptibility (pyproject.toml): started
+  Building editable for boundary-entangling-susceptibility (pyproject.toml): finished with status 'done'
+  Created wheel for boundary-entangling-susceptibility: filename=boundary_entangling_susceptibility-0.1.0-0.editable-py3-none-any.whl size=2104 sha256=77819201a82e093d949de995741542cff1c631ac143400be292cba003c07a279
+  Stored in directory: /tmp/pip-ephem-wheel-cache-aqjpfq9j/wheels/c9/38/14/b81c5e0312b20767b49a53c7387d7ce952af135b655c34ccd0
+Successfully built boundary-entangling-susceptibility
+Installing collected packages: boundary-entangling-susceptibility
+Successfully installed boundary-entangling-susceptibility-0.1.0

@@ -24,9 +24,11 @@ def main():
         err=float(np.max(np.abs(pred-actual))); errors.append(err)
         if k<3:
             examples.append({'entangling_power':ep,'gate_typicality':gt,'direct_coefficients':actual.tolist(),'invariant_formula_coefficients':pred.tolist(),'max_abs_error':err})
-    result={'samples':args.samples,'seed':args.seed,'maximum_coefficient_error':max(errors),'mean_coefficient_error':float(np.mean(errors)),'examples':examples,'passes':bool(max(errors)<5e-13)}
+    result={'samples':args.samples,'seed':args.seed,'maximum_coefficient_error':max(errors),'mean_coefficient_error':float(np.mean(errors)),'examples':examples,'passes':bool(np.isfinite(errors).all() and max(errors)<5e-13)}
     text=json.dumps(result,indent=2)
     if args.out:
         args.out.parent.mkdir(parents=True,exist_ok=True);args.out.write_text(text+'\n',encoding='utf-8')
     print(text)
+    if not result['passes']:
+        raise SystemExit(1)
 if __name__=='__main__':main()

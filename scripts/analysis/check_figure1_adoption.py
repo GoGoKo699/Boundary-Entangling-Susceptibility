@@ -9,6 +9,14 @@ import numpy as np
 import pandas as pd
 
 ROOT=Path(__file__).resolve().parents[2]
+FIGURE3_SOURCE='scripts/figures/make_figure_03.py'
+FIGURE3_OUTPUTS={
+    'figures/core/figure_03_size_scaling.pdf',
+    'figures/core/figure_03_size_scaling.png',
+    'figures/core_svg/figure_03_size_scaling.svg',
+}
+FIGURE3_OLD_LABEL=r'$\beta_n=\partial\chi_{\rm rel}/\partial(p/0.02)$'
+FIGURE3_NEW_LABEL=r'within-spectrum $\beta_n$ (per $\Delta p=0.02$)'
 
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -23,6 +31,42 @@ def check_tables(current, historical):
     if not np.isfinite(values.to_numpy()).all() or not (values.ci_low<=values.estimate).all() or not (values.estimate<=values.ci_high).all():
         raise ValueError('Invalid interval')
 
+def figure3_label_successors(root, palette):
+    """Allow exactly one ylabel replacement after the unchanged palette record."""
+    path=root/'provenance/FIGURE3_LABEL_2026-09-08.json'
+    if not path.exists():return {}
+    record=json.loads(path.read_text())
+    if (record['status']!='adopted' or record['scientific_values_changed'] is not False
+            or record['layout_changed'] is not False
+            or record['old_label']!=FIGURE3_OLD_LABEL or record['new_label']!=FIGURE3_NEW_LABEL):
+        raise ValueError('Invalid Figure 3 label-only specification')
+    rows=record['changed_files']
+    if len(rows)!=4 or {r['path'] for r in rows}!=FIGURE3_OUTPUTS|{FIGURE3_SOURCE}:
+        raise ValueError('Label exceptions must cover only Figure 3 source and three exports')
+    locked={r['path']:r['sha256'] for r in palette['changed_files']}
+    locked.update(palette['unchanged_scientific_inputs'])
+    for entry in rows:
+        name=entry['path']
+        if entry['before_sha256']!=locked[name]:
+            raise ValueError('Label change does not follow the palette baseline: '+name)
+        if sha(root/name)!=entry['sha256']:
+            raise ValueError('Label output mismatch: '+name)
+    # The predecessor source is recovered by exactly the approved substitution.
+    # Even updating the successor hash cannot authorize numerical/layout edits.
+    source=(root/FIGURE3_SOURCE).read_bytes()
+    new=FIGURE3_NEW_LABEL.encode();old=FIGURE3_OLD_LABEL.encode()
+    if source.count(new)!=1 or old in source:
+        raise ValueError('Figure 3 must contain exactly the approved new ylabel')
+    if hashlib.sha256(source.replace(new,old)).hexdigest()!=locked[FIGURE3_SOURCE]:
+        raise ValueError('Figure 3 source changes more than the approved ylabel')
+    predecessors=record['unchanged_predecessor_records']
+    if set(predecessors)!={'provenance/FIGURE1_ADOPTION_2026-09-08.json',
+                          'provenance/FIGURE_PALETTE_2026-09-08.json'}:
+        raise ValueError('Wrong Figure 3 predecessor record set')
+    for name,digest in predecessors.items():
+        if sha(root/name)!=digest:raise ValueError('Historical adoption record changed: '+name)
+    return {r['path']:r for r in rows}
+
 def palette_successors(root):
     path=root/'provenance/FIGURE_PALETTE_2026-09-08.json'
     if not path.exists():return {}
@@ -35,13 +79,18 @@ def palette_successors(root):
     rows=palette['changed_files']
     if len(rows)!=19 or {r['path'] for r in rows}!=allowed:
         raise ValueError('Palette exceptions must cover only 18 panels and their exporter')
+    labels=figure3_label_successors(root,palette)
     for entry in rows:
-        if sha(root/entry['path'])!=entry['sha256']:
+        digest=labels.get(entry['path'],entry)['sha256']
+        if sha(root/entry['path'])!=digest:
             raise ValueError('Palette output mismatch: '+entry['path'])
     for key in ['unchanged_scientific_inputs','supporting_files']:
         for name,digest in palette[key].items():
+            if name in labels:digest=labels[name]['sha256']
             if sha(root/name)!=digest:raise ValueError('Palette source mismatch: '+name)
-    return {r['path']:r for r in rows}
+    # Preserve the original before-hash so the Figure 1 -> palette -> label
+    # chain is checked below, rather than replacing it with a fresh exception.
+    return {r['path']:{**r,'sha256':labels.get(r['path'],r)['sha256']} for r in rows}
 
 def verify(root=ROOT, resamples=None):
     record=json.loads((root/'provenance/FIGURE1_ADOPTION_2026-09-08.json').read_text())
@@ -63,6 +112,7 @@ def verify(root=ROOT, resamples=None):
     check_tables(pd.read_csv(current,dtype=str),pd.read_csv(historical,dtype=str))
     if sha(current)!=record['canonical_table_sha256']:raise ValueError('Current table mismatch')
     summary={'passed':True,'adopted':True,'historical_resamples_recovered':False,'other_panel_data_unchanged':True,'palette':'Irises' if successors else 'original',
+             'figure3_label_successor':(root/'provenance/FIGURE3_LABEL_2026-09-08.json').exists(),
              'full_resample_output_checked':resamples is not None}
     if resamples is not None:
         resamples=Path(resamples)

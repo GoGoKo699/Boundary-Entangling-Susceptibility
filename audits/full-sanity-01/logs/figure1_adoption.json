@@ -1,0 +1,24 @@
+{
+  "name": "figure1_adoption",
+  "argv": [
+    "python",
+    "scripts/analysis/check_figure1_adoption.py",
+    "--resamples",
+    "audits/full-sanity-01/reproduced_figure1_uncertainty"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T13:42:53.531006+00:00",
+  "end_utc": "2026-09-08T13:42:54.244783+00:00",
+  "wall_seconds": 0.7137202890007757,
+  "exit_code": 0,
+  "user_seconds": 0.52796,
+  "system_seconds": 0.185694,
+  "peak_child_rss_kib": 88012,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

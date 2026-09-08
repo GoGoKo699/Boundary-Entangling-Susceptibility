@@ -1,0 +1,38 @@
+argv: ["python", "scripts/analysis/reassess_evidence.py", "--output", "audits/full-sanity-01/reproduced_evidence", "--bootstrap", "5000", "--seed", "2026090501"]
+UTC start: 2026-09-08T13:41:14.553070+00:00
+{
+  "analysis_status": "post-hoc sensitivity and archived-row replay, not a replacement primary analysis",
+  "seed": 2026090501,
+  "archive_sha256": "04e3e353a309b866634715b8b062b7531394fddbcdef1c61f8aec0ba3a4d0255",
+  "sizes": {
+    "primary": {
+      "rows": 172800,
+      "response_error": 8.326672684688674e-17
+    },
+    "replication": {
+      "rows": 64800,
+      "response_error": 8.326672684688674e-17
+    },
+    "max_slope_error": 7.563394355258879e-16,
+    "intervals": "archived trajectory bootstraps reused, not fresh finite-size bootstrap simulations"
+  },
+  "locations": {
+    "intervention_rows": 75600,
+    "pre_states": 5400,
+    "max_response_error": 1.1102230246251565e-16,
+    "profile_replay_error": 5.637851296924623e-17,
+    "strict_eligible_side_pairs": 7945,
+    "common_eligible_side_pre_states": 6008,
+    "common_trajectories": 4025,
+    "conditional_max_delta": 0.0,
+    "bootstrap_repetitions": 5000,
+    "interval_scope": "pointwise percentile; simultaneous bands separately labeled",
+    "model_diagnostic_scope": "Q is descriptive; no exact chi-square p-value is asserted"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  }
+}

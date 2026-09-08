@@ -1,0 +1,12 @@
+argv: ["python", "scripts/analysis/check_figure1_adoption.py", "--resamples", "audits/full-sanity-01/reproduced_figure1_uncertainty"]
+UTC start: 2026-09-08T13:42:53.531006+00:00
+{
+  "passed": true,
+  "adopted": true,
+  "historical_resamples_recovered": false,
+  "other_panel_data_unchanged": true,
+  "palette": "Irises",
+  "full_resample_output_checked": true,
+  "expected_output_files": 26,
+  "primary_intervals_checked": 10
+}

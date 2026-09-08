@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "python",
+    "verify.py"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T15:32:16.468915+00:00",
+  "end_utc": "2026-09-08T15:32:17.658522+00:00",
+  "wall_seconds": 1.189540951003437,
+  "exit_code": 0,
+  "user_seconds": 1.017211,
+  "system_seconds": 0.17529799999999998,
+  "peak_child_rss_kib": 88128,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

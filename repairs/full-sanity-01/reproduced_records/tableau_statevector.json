@@ -1,0 +1,2056 @@
+{
+  "case_count": 256,
+  "max_central_observable_error": 0.0,
+  "max_tripartite_vector_error": 0.0,
+  "passed": true,
+  "cases": [
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 6,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 8,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.0,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.08,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.2,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 0,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 0,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 1,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 2,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    },
+    {
+      "n": 10,
+      "p": 0.5,
+      "protocol": 1,
+      "trajectory": 3,
+      "central_error": 0.0,
+      "tmi_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "wall_seconds": 3.0354477930013672,
+  "max_rss_kib": 481176,
+  "new_random_draws": 0,
+  "dependencies": "audit-owned cell estimator; original raw quarter entropies; original archived size and hinge bootstrap arrays; crossing intervals merely copied from source table"
+}
+76 checks passed

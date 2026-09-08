@@ -78,6 +78,10 @@ Averaging over $U$ proves the result. No Haar assumption is required.
 
 ## 3. Locally dressed fixed entanglers
 
+This is the cut-row specialization of the entanglement-feature transfer rule
+of [Kuo et al., Eqs. (19) and (60), arXiv:1910.11351v2](https://arxiv.org/abs/1910.11351v2).
+The dictionary below makes the equivalence explicit.
+
 Consider the ensemble
 
 $$
@@ -149,7 +153,11 @@ does not generally determine the response to a fresh cross-cut gate.
 
 ## 4. Coefficients from gate invariants
 
-Use the normalized two-qubit definitions
+Use the rescaled definitions of
+[Jonnadula et al., Eqs. (16) and (18), arXiv:1909.08139v2](https://arxiv.org/abs/1909.08139v2),
+not the original unrescaled product-input entangling power. With
+$V_{ij,kl}=\langle ij|V|kl\rangle$, define realignment by
+$(V^R)_{ik,jl}=V_{ij,kl}$, where $i,j,k,l\in\{0,1\}$. Then
 
 $$
 E_{\mathrm{op}}(V)
@@ -176,6 +184,9 @@ g_t(V)
      {2E_{\mathrm{op}}(\mathrm{SWAP})}.
 $$
 
+For qubits, $e_p/3$ is the product-input average of the unnormalized
+one-qubit linear-entropy production.
+
 Evaluating the four Hilbert--Schmidt overlaps of the locally twirled response
 operator gives
 
@@ -192,11 +203,55 @@ g_t-\frac56 e_p,
 }
 $$
 
-Thus the complete locally dressed purity-based response is governed by the same
-two local-unitary invariants used to classify the nonlocal content of a
-two-qubit gate.
+These two established local-unitary invariants determine this averaged
+purity response. They do not completely classify a two-qubit gate up to local
+unitaries.
 
-The identity was independently audited on 100 Haar-random two-qubit gates.
+### Entanglement-feature dictionary
+
+Write $q$ for the papers' single-site dimension $d$: here $q=2$, whereas
+$D=2^{n/2}$ is the half-chain dimension and our $d$ labels measurement distance.
+In the feature basis, a down spin includes a site in a subsystem; $X_a,X_b$
+toggle inclusion and $Z_a,Z_b$ read the corresponding signs
+($+1$ for exclusion, $-1$ for inclusion). These are not physical gates.
+For the output region $La$:
+
+| Transfer-row operation | Input region | Purity in this document |
+|---|---|---|
+| $I$ | $La$ | $P_{La}=P_m$ |
+| $X_a$ | $L$ | $P_L=P_{m-1}$ |
+| $X_b$ | $Lab$ | $P_{Lab}=P_{m+1}=P_R$ for pure global inputs |
+| $X_aX_b$ | $Lb$ | noncontiguous $P_{L\cup b}$ |
+
+Kuo et al.'s Eq. (19) propagates the purity-feature vector by
+$T=\widehat{W}_V\widehat{W}_I^{-1}$, where the gate-feature matrix is
+$(\widehat{W}_V)_{\sigma,\tau}=\operatorname{Tr}(F_\sigma V^{\otimes2}F_\tau V^{\dagger\otimes2})$
+and $\widehat{W}_I$ is its identity-gate Gram matrix. The labels
+$\sigma,\tau$ specify subsystem swaps on $ab$. For a direct algebraic
+translation of their Eqs. (17) and (60), put $E=E_{\mathrm{op}}(V)$ and
+$E_s=E_{\mathrm{op}}(V\,\mathrm{SWAP})$. At $q=2$, their coefficients are
+$A_{ab}=16E$ and $B_{ab}=16(3/4-E_s)$. Multiplication gives
+
+$$
+T=I-Q\left[u-v(X_a+X_b)+wX_aX_b\right],
+\qquad Q=(I-Z_aZ_b)/2,
+$$
+
+$$
+u=\frac{A_{ab}-B_{ab}/4}{9}=g_t+\frac56e_p,
+\quad v=\frac{A_{ab}-B_{ab}}{18}=\frac23e_p,
+\quad w=\frac{A_{ab}/4-B_{ab}}{9}=\frac56e_p-g_t.
+$$
+
+The cut row has coefficients $(v,1-u,-w,v)$ in the order
+$(P_L,P_{La},P_{L\cup b},P_{Lab})$, exactly the displayed stencil. This is a
+specialization and change of normalization, not an independent transfer identity. Negative
+coefficients are allowed: they are not probabilities of separate experiments.
+Only the fresh probe needs local input averaging; no locally scrambled or
+equilibrium assumption is imposed on the preceding monitored preparation.
+Output local rotations can be omitted because purity is invariant under them.
+
+The identity was numerically checked on 100 Haar-random two-qubit gates.
 Direct commutant projection and the invariant formula agreed with maximum
 coefficient error
 
@@ -232,6 +287,10 @@ e_p
 g_t=\frac13(A+B+C).
 $$
 
+These are Jonnadula et al.'s Eq. (31) under
+$(c_1,c_2,c_3)=2(\alpha,\beta,\gamma)$; the sign convention of the exponent
+does not affect the squared sines.
+
 The probes used in Checkpoint 04 have the exact coefficients
 
 | Probe ensemble | $(c_I,c_a,c_b,c_{ab})$ |
@@ -241,7 +300,19 @@ The probes used in Checkpoint 04 have the exact coefficients
 | $e^{-i\pi XX/4}$ with local input dressing | $(4/9,1/9,-2/9,4/9)$ |
 
 The Haar neighboring-cut identity is therefore one point in a larger exact
-four-purity response family.
+four-purity response family. More explicitly,
+[Akhtar and You, Eq. (20), arXiv:2006.08797v2](https://arxiv.org/abs/2006.08797v2),
+give
+
+$$
+T_{\mathrm{Haar}}=I-Q\left[I-\frac{q}{q^2+1}(X_a+X_b)\right].
+$$
+
+Its cut row is $\mathbb E P'_{La}=q(P_L+P_{Lab})/(q^2+1)$. For qubits this is
+$\mathbb E P'_m=(2/5)(P_{m-1}+P_{m+1})$. The response normalization then gives
+$\chi_2=D(P_m-\mathbb E P'_m)/(D-1)$ and
+$\chi_{\rm rel}=\chi_2/P_m$, with **input** purity in the denominator.
+No logarithm-of-average or average-logarithm approximation is used.
 
 ## 6. Fixed-spectrum gate-space criterion
 
@@ -278,11 +349,17 @@ $$
 imply $\Delta\chi_V\le0$ for every locally dressed two-qubit probe. These
 conditions are sufficient, not necessary.
 
-In the extreme-rate Checkpoint 04 comparison, both point inequalities hold in
-all five rank-4 dynamics. Bootstrap support for the second inequality is
-complete in three of five primary rank-4 families and all five post-hoc rank-2
-families. The full gate-space statement is therefore retained as a post-hoc
-extension, not as the locked primary claim.
+In the extreme-rate Checkpoint 04 comparison, the archived equally pooled
+raw-purity shifts satisfy both point inequalities in all five rank-4 dynamics.
+The marginal bootstrap interval for the second raw-purity inequality is
+positive in three of five primary rank-4 families and all five post-hoc rank-2
+families. This is a post-hoc diagnostic, not the locked primary claim or a
+simultaneous confidence guarantee over all probes. The
+[historical extension estimator](../studies/checkpoint_04/scripts/analyze_gate_space_universality.py)
+omits undefined cells within bootstrap draws. It also pools raw purity shifts
+across sizes without $D/(D-1)$, unlike the normalized response criterion at
+fixed dimension derived above. The archived intervals must not be assigned to
+the dimension-weighted pooled criterion or to the adopted Figure 1 bootstrap.
 
 ## 7. Scope
 
@@ -343,8 +420,10 @@ $$
 \chi_{\rm rel}=\frac{\chi_2}{P_m}.
 $$
 
-The two-copy response theorem from Checkpoint 04 proves the first displayed
-identity for every pure input state.
+The first displayed identity is the qubit cut-row specialization of the
+[Haar transfer rule](https://arxiv.org/abs/2006.08797v2), Eq. (20), derived above.
+Uniform Clifford averaging has the same two-copy moment by the established
+unitary-design result. Neither step requires a stabilizer input.
 
 ## 2. Flat-spectrum lemma
 
@@ -358,6 +437,11 @@ $$
 
 Consequently, fixing `S_m` fixes the **complete** central Schmidt spectrum, not
 only its entropy or purity.
+
+This is the reduced-stabilizer-projector property of
+[Fattal et al., Eqs. (4)-(6), quant-ph/0406168](https://arxiv.org/abs/quant-ph/0406168).
+The finite alphabet below is a direct substitution into the established
+transfer rule, not a separately observed physical law.
 
 ## 3. Finite-alphabet theorem
 

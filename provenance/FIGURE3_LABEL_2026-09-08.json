@@ -1,0 +1,42 @@
+{
+  "status": "adopted",
+  "date": "2026-09-08",
+  "scope": "Figure 3 ylabel only: identify the within-spectrum coefficient, not a pointwise derivative.",
+  "scientific_baseline_commit": "00009cf7cc02104e4c776863b3ea551bd38e00f4",
+  "audit_commit": "897dba9926583d12bcaacb214d62a5652c1ba8e1",
+  "finding": "F-05a; audits/full-sanity-01/FIGURES23.md F23-2",
+  "scientific_values_changed": false,
+  "layout_changed": false,
+  "old_label": "$\\beta_n=\\partial\\chi_{\\rm rel}/\\partial(p/0.02)$",
+  "new_label": "within-spectrum $\\beta_n$ (per $\\Delta p=0.02$)",
+  "changed_files": [
+    {
+      "path": "scripts/figures/make_figure_03.py",
+      "before_sha256": "31330b258f07a29a19da478633447ea5af9bcebcda9215d98cc4808e9d0f378c",
+      "sha256": "789dc9095883a8eecd878144e52db71d7a61aa371c8f9c9a2be7e7ffafa9eca0"
+    },
+    {
+      "path": "figures/core/figure_03_size_scaling.pdf",
+      "before_sha256": "519f6c835e93b818b014e00e6d3061c03437f69b6e7df712e7832c60575434c6",
+      "sha256": "fcbe148d8a55cb638a40716e0ca22e24d25efcb7da0f414f32255acdd083e98b"
+    },
+    {
+      "path": "figures/core/figure_03_size_scaling.png",
+      "before_sha256": "3e2ff8a8f94618aac0efb34edd9a8858bdffb078ae8289eccf795550c33fb864",
+      "sha256": "eab57b893c0b75aafb3c18ea1c2c79ab9120e3022ab21bd64601484f67f67304"
+    },
+    {
+      "path": "figures/core_svg/figure_03_size_scaling.svg",
+      "before_sha256": "a434bb5ac4bf4c018d02d8e65f56101d41641b482bd324e6a8a8682cf99f67a3",
+      "sha256": "6f7dd678e4ff36ee88ca269c7c27a8119ebc80a1b73575172d61fa918b94c927"
+    }
+  ],
+  "unchanged_predecessor_records": {
+    "provenance/FIGURE1_ADOPTION_2026-09-08.json": "624e98177ae8c611d3d854541b4531eec7278e6025e500eca161755682304592",
+    "provenance/FIGURE_PALETTE_2026-09-08.json": "a6ffd2232c54eb341f93553197987dcc70646a861f005206b5a07a482b73888d"
+  },
+  "pre_label_exports": "audits/full-sanity-01/reproduced_figures/figure_03_size_scaling.{pdf,png,svg}",
+  "source_check": "Reversing the single declared ylabel substitution reproduces the palette-locked source SHA-256 exactly.",
+  "geometry_check": "tests/test_figure3_label.py compares all artist geometry after excluding only the declared ylabel text and compares old/new SVG trees after removing only that ylabel group.",
+  "history_policy": "The earlier Figure 1 and palette adoption records and all audit files remain byte-identical. No observation, interval, fit, color, marker, axis limit, or panel geometry is changed."
+}

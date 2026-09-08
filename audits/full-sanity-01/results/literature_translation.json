@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "arithmetic": "exact fractions",
+  "seed": null,
+  "affine_basis_points": 3,
+  "Haar_local_dimensions": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "coefficient_order": [
+    "P_L",
+    "P_La",
+    "P_Lb",
+    "P_Lab"
+  ],
+  "cases": {
+    "identity": [
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    "swap": [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    "CNOT_class": [
+      "4/9",
+      "1/9",
+      "-2/9",
+      "4/9"
+    ],
+    "sqrt_swap": [
+      "1/3",
+      "1/12",
+      "1/12",
+      "1/3"
+    ],
+    "Haar_mean": [
+      "2/5",
+      "0",
+      "0",
+      "2/5"
+    ],
+    "XX_YY_pi_over_8": [
+      "1/3",
+      "1/4",
+      "-1/12",
+      "1/3"
+    ]
+  },
+  "independence_limit": "Uses published EF operators and invariant definitions; no independent physical twirl validation."
+}

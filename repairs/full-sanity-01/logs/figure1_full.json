@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "python",
+    "scripts/analysis/complete_figure1_uncertainty.py",
+    "--output",
+    "repairs/full-sanity-01/reproduced_figure1_uncertainty"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T15:29:39.916000+00:00",
+  "end_utc": "2026-09-08T15:30:06.749372+00:00",
+  "wall_seconds": 26.833379114999843,
+  "exit_code": 0,
+  "user_seconds": 26.22909,
+  "system_seconds": 0.5262709999999999,
+  "peak_child_rss_kib": 94072,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

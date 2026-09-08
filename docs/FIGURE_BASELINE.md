@@ -1,8 +1,14 @@
 # Approved figure baseline
 
-## Current figure palette
+## Figure 3 coefficient-label revision: 8 September 2026
 
-The six panels use the approved [Irises palette](../figures/PALETTE.md). All data, intervals, labels, axes, marker shapes, panel sizes, and fitted/no-fit choices are unchanged. This palette applies only to figures. The repository uses standard GitHub Markdown. The earlier revision descriptions below record what changed at their respective dates, not a claim that the old colors are still active.
+Figure 3 now labels its ordinate **within-spectrum $\beta_n$ (per $\Delta p=0.02$)**. This is a pooled finite-grid fixed-effect coefficient, not a pointwise derivative. Only the ylabel string and its three rendered exports changed. All numerical data, intervals, fitted lines, colors, markers, axes, panel dimensions and layout settings remain unchanged. See [the explicit label successor](../provenance/FIGURE3_LABEL_2026-09-08.json) and [the focused checks](../tests/test_figure3_label.py).
+
+The prior figure identities remain in the unchanged Figure 1 and palette provenance records. The pre-label Figure 3 [PDF](../audits/full-sanity-01/reproduced_figures/figure_03_size_scaling.pdf), [PNG](../audits/full-sanity-01/reproduced_figures/figure_03_size_scaling.png) and [SVG](../audits/full-sanity-01/reproduced_figures/figure_03_size_scaling.svg) remain in the immutable audit package. They are historical, not the active panel.
+
+## Figure palette revision: 8 September 2026
+
+The six panels use the approved [Irises palette](../figures/PALETTE.md). At the palette revision, all data, intervals, labels, axes, marker shapes, panel sizes, and fitted/no-fit choices were unchanged. The later Figure 3 label correction is recorded above. This palette applies only to figures. The repository uses standard GitHub Markdown. The earlier revision descriptions below record what changed at their respective dates, not a claim that the old colors or labels are still active.
 
 ## Figure 1 uncertainty revision: 8 September 2026
 

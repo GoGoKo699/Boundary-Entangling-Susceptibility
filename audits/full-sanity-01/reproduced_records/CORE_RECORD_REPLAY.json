@@ -1,0 +1,813 @@
+{
+  "passed": true,
+  "checks": 156,
+  "max_error": 4.838351941316432e-13,
+  "bundle_sha256": "04e3e353a309b866634715b8b062b7531394fddbcdef1c61f8aec0ba3a4d0255",
+  "state_rows": {
+    "primary": 172800,
+    "replication": 64800
+  },
+  "intervention_rows": 75600,
+  "figure1_contrasts": 10,
+  "figure1_historical_interval_replay": false,
+  "figure1_current_interval_command": "See docs/FIGURE1_UNCERTAINTY.md: separate sampler, replay verifier, and adoption check",
+  "interval_scope": "Figure 1 historical intervals source-verified only; current Figure 1 is checked in its separate complete workflow; Figures 3/4 reuse archived original resamples",
+  "simulation_scope": "No circuit-generation campaign or new statistical estimand",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "source_member_hashes": {
+    "accepted_figure1/figure_01_panel_b_data.csv": "d0167d2607922cbb30566743560fe13d1ccc7822c2879d188a30fdbc21d76914",
+    "checkpoint_04/data/intervention/primary_rank4/state_response_rows.csv.gz": "1f3139866d13838a659e4c6e9e127170f11a7050ead1885810796f67bd89068c",
+    "checkpoint_04/data/intervention/independent_seed_rank4/state_response_rows.csv.gz": "153710199f198a1440f56e610255c61628eba4f9ee4745737ed03e9fc6693026",
+    "checkpoint_05/data/primary_scaling/stabilizer_scaling_states.csv.gz": "3cd3df40084251c34d8b8420d13ad99220c576e12be2638cdb48a270ab0ac2e9",
+    "checkpoint_05/analysis/primary/bootstrap_primary_slopes.npz": "6c3ecce69f240315c73fa98958b7df19848683397b80bdd18bdeb0da61cdaaf0",
+    "checkpoint_05/data/independent_replication/stabilizer_scaling_states.csv.gz": "e72c3740d31a0f2d5a6c07fd702156558a34cb568ab4cb4ea1b23c8c7434b30d",
+    "checkpoint_05/analysis/replication/bootstrap_primary_slopes.npz": "eb237d24ea3d344140eea4d5b9f87da412d4eb330a29517f498d006068f63d36",
+    "checkpoint_05/data/measurement_location_intervention/paired_measurement_interventions.csv.gz": "70943f16093d672d82be62696d73387879539981e55b45be33a48d6172d6b365",
+    "checkpoint_05/data/measurement_location_intervention/stabilizer_scaling_states.csv.gz": "f39bf713391772b8ad6496af723db7fc4e364edca31a164314f959ce414389dc",
+    "checkpoint_05/analysis/intervention/intervention_bootstraps.npz": "ad251db11842ad0562bf859675c86ec27a4f72ecb6ce7fc1df0026fff54ccb17"
+  },
+  "details": [
+    {
+      "check": "Figure 1 historical source table/estimate",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "Figure 1 historical source table/ci_low",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "Figure 1 historical source table/ci_high",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "Figure 1 unchanged current field/estimate",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "Figure 1 unchanged current field/common_cells",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "Figure 1 unchanged current field/p_low",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "Figure 1 unchanged current field/p_high",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: primary/haar_z/estimate",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells primary/haar_z",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: independent/haar_z/estimate",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells independent/haar_z",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: primary/clifford_z/estimate",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells primary/clifford_z",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: independent/clifford_z/estimate",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells independent/clifford_z",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: primary/floquet_cartan_z/estimate",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells primary/floquet_cartan_z",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: independent/floquet_cartan_z/estimate",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells independent/floquet_cartan_z",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: primary/haar_random_pauli/estimate",
+      "max_abs_error": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells primary/haar_random_pauli",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: independent/haar_random_pauli/estimate",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells independent/haar_random_pauli",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: primary/haar_weak_z_eta06/estimate",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells primary/haar_weak_z_eta06",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "1: independent/haar_weak_z_eta06/estimate",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 1 common cells independent/haar_weak_z_eta06",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "primary: all statewise responses",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "check": "3: primary/random_pauli/32/beta",
+      "max_abs_error": 4.824959876081891e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "primary/random_pauli/32/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: primary/random_pauli/32/ci_low",
+      "max_abs_error": 4.2819914281011506e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/32/ci_high",
+      "max_abs_error": 1.1088352458443751e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/64/beta",
+      "max_abs_error": 1.9456658506555868e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "primary/random_pauli/64/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: primary/random_pauli/64/ci_low",
+      "max_abs_error": 3.5284275501368256e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/64/ci_high",
+      "max_abs_error": 4.073130721593543e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/128/beta",
+      "max_abs_error": 1.2490009027033011e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "primary/random_pauli/128/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: primary/random_pauli/128/ci_low",
+      "max_abs_error": 4.7982451345518484e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/128/ci_high",
+      "max_abs_error": 1.995625886763719e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/256/beta",
+      "max_abs_error": 4.7926940194287226e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "primary/random_pauli/256/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: primary/random_pauli/256/ci_low",
+      "max_abs_error": 4.366645933728819e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/256/ci_high",
+      "max_abs_error": 4.034966805122053e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/32/beta",
+      "max_abs_error": 3.88786225435922e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "primary/z_projective/32/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: primary/z_projective/32/ci_low",
+      "max_abs_error": 4.446443213623752e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/32/ci_high",
+      "max_abs_error": 2.4740626214381223e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/64/beta",
+      "max_abs_error": 3.629735401133871e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "primary/z_projective/64/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: primary/z_projective/64/ci_low",
+      "max_abs_error": 3.785860513971784e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/64/ci_high",
+      "max_abs_error": 3.2029934260435766e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/128/beta",
+      "max_abs_error": 4.449218771185315e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "primary/z_projective/128/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: primary/z_projective/128/ci_low",
+      "max_abs_error": 1.7770507287906412e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/128/ci_high",
+      "max_abs_error": 1.3808398868775384e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/256/beta",
+      "max_abs_error": 1.8159085346525217e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "primary/z_projective/256/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: primary/z_projective/256/ci_low",
+      "max_abs_error": 5.8494875609937935e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/256/ci_high",
+      "max_abs_error": 3.53259088647917e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: -1,-1/probability slope",
+      "max_abs_error": 7.657069422961627e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: -1,-1/response",
+      "max_abs_error": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: -1,0/probability slope",
+      "max_abs_error": 1.3239409568654992e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: -1,0/response",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: -1,1/probability slope",
+      "max_abs_error": 6.617970060851519e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: -1,1/response",
+      "max_abs_error": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 0,-1/probability slope",
+      "max_abs_error": 1.3010426069826053e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 0,-1/response",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 0,0/probability slope",
+      "max_abs_error": 3.823330541052883e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 0,0/response",
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 0,1/probability slope",
+      "max_abs_error": 1.6438239658356224e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 0,1/response",
+      "max_abs_error": 1.6653345369377348e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 1,-1/probability slope",
+      "max_abs_error": 3.8651807449108233e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 1,-1/response",
+      "max_abs_error": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 1,0/probability slope",
+      "max_abs_error": 3.201605647262795e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 1,0/response",
+      "max_abs_error": 1.6653345369377348e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 1,1/probability slope",
+      "max_abs_error": 1.573394192710964e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "2: 1,1/response",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 2: slope conservation",
+      "max_abs_error": 1.1492543028346347e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "check": "Figure 2: response reconstruction",
+      "max_abs_error": 6.938893903907228e-18,
+      "tolerance": 1e-12
+    },
+    {
+      "check": "3: primary/random_pauli/locked fit/beta",
+      "max_abs_error": 3.95516952522712e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/locked fit/a_over_n",
+      "max_abs_error": 1.894040480010517e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/locked fit/ci_low",
+      "max_abs_error": 7.271960811294775e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/random_pauli/locked fit/ci_high",
+      "max_abs_error": 3.4333647036532966e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/locked fit/beta",
+      "max_abs_error": 5.620504062164855e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/locked fit/a_over_n",
+      "max_abs_error": 3.331779296900095e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/locked fit/ci_low",
+      "max_abs_error": 3.778227730677486e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: primary/z_projective/locked fit/ci_high",
+      "max_abs_error": 3.880923360455313e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication: all statewise responses",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-12
+    },
+    {
+      "check": "3: replication/random_pauli/32/beta",
+      "max_abs_error": 1.6670692604137116e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication/random_pauli/32/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: replication/random_pauli/32/ci_low",
+      "max_abs_error": 2.0886070650760757e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/32/ci_high",
+      "max_abs_error": 6.50868248186498e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/64/beta",
+      "max_abs_error": 3.697736561392162e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication/random_pauli/64/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: replication/random_pauli/64/ci_low",
+      "max_abs_error": 3.83026943495679e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/64/ci_high",
+      "max_abs_error": 7.577272143066693e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/128/beta",
+      "max_abs_error": 1.5758228055773316e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication/random_pauli/128/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: replication/random_pauli/128/ci_low",
+      "max_abs_error": 3.1710745140856034e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/128/ci_high",
+      "max_abs_error": 3.048949981376836e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/256/beta",
+      "max_abs_error": 1.6257828416854636e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication/random_pauli/256/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: replication/random_pauli/256/ci_low",
+      "max_abs_error": 4.028027911218146e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/256/ci_high",
+      "max_abs_error": 2.273181642920008e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/32/beta",
+      "max_abs_error": 4.810388198883686e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication/z_projective/32/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: replication/z_projective/32/ci_low",
+      "max_abs_error": 4.7475912090533257e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/32/ci_high",
+      "max_abs_error": 2.3137741722578653e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/64/beta",
+      "max_abs_error": 1.6334156249797616e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication/z_projective/64/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: replication/z_projective/64/ci_low",
+      "max_abs_error": 2.278038868652743e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/64/ci_high",
+      "max_abs_error": 1.3232470674751085e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/128/beta",
+      "max_abs_error": 1.119243586700236e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication/z_projective/128/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: replication/z_projective/128/ci_low",
+      "max_abs_error": 3.2134017668994375e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/128/ci_high",
+      "max_abs_error": 2.128158760328347e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/256/beta",
+      "max_abs_error": 3.818473315320148e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "replication/z_projective/256/eligible rows",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "3: replication/z_projective/256/ci_low",
+      "max_abs_error": 4.293093658347402e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/256/ci_high",
+      "max_abs_error": 2.182976022169214e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/locked fit/beta",
+      "max_abs_error": 7.965850201685498e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/locked fit/a_over_n",
+      "max_abs_error": 4.838351941316432e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/locked fit/ci_low",
+      "max_abs_error": 3.6588787555302815e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/random_pauli/locked fit/ci_high",
+      "max_abs_error": 2.969152701481903e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/locked fit/beta",
+      "max_abs_error": 9.811595980124821e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/locked fit/a_over_n",
+      "max_abs_error": 3.730349362740526e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/locked fit/ci_low",
+      "max_abs_error": 3.951006188884776e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "3: replication/z_projective/locked fit/ci_high",
+      "max_abs_error": 4.0772940579358874e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 4: all intervention responses",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "check": "4: unconditional/estimate",
+      "max_abs_error": 1.9220736113823023e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: unconditional/ci_low",
+      "max_abs_error": 1.827704654289164e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: unconditional/ci_high",
+      "max_abs_error": 2.6881274983736603e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 4: unconditional pre-states",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "4: central_spectrum_unchanged/estimate",
+      "max_abs_error": 2.232936058277346e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: central_spectrum_unchanged/ci_low",
+      "max_abs_error": 1.4231671396913725e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: central_spectrum_unchanged/ci_high",
+      "max_abs_error": 4.475586568020162e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "Figure 4: central_spectrum_unchanged pre-states",
+      "max_abs_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "4: distance=0/estimate",
+      "max_abs_error": 4.202888037596608e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=0/ci_low",
+      "max_abs_error": 4.2271741662602835e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=0/ci_high",
+      "max_abs_error": 4.7552239923476236e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=1/estimate",
+      "max_abs_error": 2.9302948956200225e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=1/ci_low",
+      "max_abs_error": 2.180200464607651e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=1/ci_high",
+      "max_abs_error": 2.906702656346738e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=2/estimate",
+      "max_abs_error": 1.5210055437364645e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=2/ci_low",
+      "max_abs_error": 2.853967062677043e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=2/ci_high",
+      "max_abs_error": 4.752795379481256e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=4/estimate",
+      "max_abs_error": 2.0964133207179714e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=4/ci_low",
+      "max_abs_error": 4.863297264900979e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=4/ci_high",
+      "max_abs_error": 5.054984208996416e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=8/estimate",
+      "max_abs_error": 1.6562272386888566e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=8/ci_low",
+      "max_abs_error": 1.2318705083780301e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=8/ci_high",
+      "max_abs_error": 4.498354813642358e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=16/estimate",
+      "max_abs_error": 2.45029690981724e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=16/ci_low",
+      "max_abs_error": 2.4665599424045226e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "check": "4: distance=16/ci_high",
+      "max_abs_error": 1.5937771935536915e-17,
+      "tolerance": 2e-11
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+argv: ["python", "studies/checkpoint_05/scripts/validate_tableau_against_statevector.py", "--clifford-table", "/workspace/scratch/0174ee249694/repair-reproduced-studies/checkpoint_05/data/two_qubit_clifford_group.npz", "--maps", "/workspace/scratch/0174ee249694/repair-reproduced-studies/checkpoint_05/data/two_qubit_clifford_symplectic_maps.npz", "--report", "repairs/full-sanity-01/reproduced_records/tableau_statevector.json"]
+UTC start: 2026-09-08T15:33:13.764808+00:00
+{
+  "case_count": 256,
+  "max_central_observable_error": 0.0,
+  "max_tripartite_vector_error": 0.0,
+  "passed": true
+}

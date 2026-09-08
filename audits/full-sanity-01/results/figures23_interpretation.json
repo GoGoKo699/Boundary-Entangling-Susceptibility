@@ -1,0 +1,351 @@
+{
+  "weight_definition": "n_sp*n_sq/N_s*((q-p)/.02)^2, normalized over all strata and pairs",
+  "graphs": [
+    {
+      "run": "primary",
+      "protocol": "random_pauli",
+      "n": 32,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 9,
+      "effective_strata_inverse_Herfindahl": 12.088953586525523,
+      "weight_touching_p020": 0.282099785252486,
+      "positive_pair_weight": 0.01288900596599744
+    },
+    {
+      "run": "primary",
+      "protocol": "random_pauli",
+      "n": 64,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 9,
+      "effective_strata_inverse_Herfindahl": 14.956175696449296,
+      "weight_touching_p020": 0.17310251129486512,
+      "positive_pair_weight": 0.017122882970968194
+    },
+    {
+      "run": "primary",
+      "protocol": "random_pauli",
+      "n": 128,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 8,
+      "effective_strata_inverse_Herfindahl": 16.533549265422845,
+      "weight_touching_p020": 0.062007563138299866,
+      "positive_pair_weight": 0.011943879394574315
+    },
+    {
+      "run": "primary",
+      "protocol": "random_pauli",
+      "n": 256,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 7,
+      "effective_strata_inverse_Herfindahl": 14.124638247327637,
+      "weight_touching_p020": 0.004008364179835413,
+      "positive_pair_weight": 0.05461839178471188
+    },
+    {
+      "run": "primary",
+      "protocol": "z_projective",
+      "n": 32,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 9,
+      "effective_strata_inverse_Herfindahl": 12.082798252554548,
+      "weight_touching_p020": 0.28287626625580015,
+      "positive_pair_weight": 0.01980954256490604
+    },
+    {
+      "run": "primary",
+      "protocol": "z_projective",
+      "n": 64,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 9,
+      "effective_strata_inverse_Herfindahl": 15.00514241975648,
+      "weight_touching_p020": 0.17615423287411425,
+      "positive_pair_weight": 0.013826966044693294
+    },
+    {
+      "run": "primary",
+      "protocol": "z_projective",
+      "n": 128,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 8,
+      "effective_strata_inverse_Herfindahl": 16.257334754107355,
+      "weight_touching_p020": 0.06411911959281422,
+      "positive_pair_weight": 0.05612806852451728
+    },
+    {
+      "run": "primary",
+      "protocol": "z_projective",
+      "n": 256,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 7,
+      "effective_strata_inverse_Herfindahl": 14.533936581172288,
+      "weight_touching_p020": 0.0056787964883981985,
+      "positive_pair_weight": 0.010620116032516252
+    },
+    {
+      "run": "replication",
+      "protocol": "random_pauli",
+      "n": 32,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 9,
+      "effective_strata_inverse_Herfindahl": 11.2159180981144,
+      "weight_touching_p020": 0.2741352451795814,
+      "positive_pair_weight": 0.07450782788084193
+    },
+    {
+      "run": "replication",
+      "protocol": "random_pauli",
+      "n": 64,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 9,
+      "effective_strata_inverse_Herfindahl": 14.474333834485744,
+      "weight_touching_p020": 0.1455406526202424,
+      "positive_pair_weight": 0.05142414974926052
+    },
+    {
+      "run": "replication",
+      "protocol": "random_pauli",
+      "n": 128,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 8,
+      "effective_strata_inverse_Herfindahl": 14.407302781393787,
+      "weight_touching_p020": 0.025150973416992118,
+      "positive_pair_weight": 0.04908305849989593
+    },
+    {
+      "run": "replication",
+      "protocol": "random_pauli",
+      "n": 256,
+      "eligible_rates": [
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 6,
+      "effective_strata_inverse_Herfindahl": 12.96573087749712,
+      "weight_touching_p020": 0.0,
+      "positive_pair_weight": 0.08586316172077482
+    },
+    {
+      "run": "replication",
+      "protocol": "z_projective",
+      "n": 32,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 9,
+      "effective_strata_inverse_Herfindahl": 11.497688571080495,
+      "weight_touching_p020": 0.26898328298778174,
+      "positive_pair_weight": 0.05271438892361943
+    },
+    {
+      "run": "replication",
+      "protocol": "z_projective",
+      "n": 64,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 9,
+      "effective_strata_inverse_Herfindahl": 14.576630570790115,
+      "weight_touching_p020": 0.14687953073543014,
+      "positive_pair_weight": 0.04680849486514952
+    },
+    {
+      "run": "replication",
+      "protocol": "z_projective",
+      "n": 128,
+      "eligible_rates": [
+        0.2,
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 7,
+      "effective_strata_inverse_Herfindahl": 14.554507012513067,
+      "weight_touching_p020": 0.04477950878657259,
+      "positive_pair_weight": 0.06715165851998062
+    },
+    {
+      "run": "replication",
+      "protocol": "z_projective",
+      "n": 256,
+      "eligible_rates": [
+        0.22,
+        0.24,
+        0.25,
+        0.26,
+        0.27,
+        0.28,
+        0.3,
+        0.34
+      ],
+      "rate_graph_connected": true,
+      "max_levels_in_one_stratum": 6,
+      "effective_strata_inverse_Herfindahl": 13.481976528423898,
+      "weight_touching_p020": 0.0,
+      "positive_pair_weight": 0.07754721968018016
+    }
+  ],
+  "all_16_finite_point_and_interval_negative": true,
+  "time_coefficients_negative": 48,
+  "time_intervals_below_zero": 48,
+  "adjacent_positive_count": 2,
+  "adjacent_nonnegative_upper_interval_count": 23,
+  "adjacent_count": 128,
+  "all_sensitivity_upper_bounds_negative": true,
+  "intercept_range": [
+    -0.06647505789788026,
+    -0.04445710204008357
+  ],
+  "max_full_FE_df_SE_fractional_increase": 0.0025419253013130305
+}

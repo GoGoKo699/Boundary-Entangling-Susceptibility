@@ -1,0 +1,4 @@
+x                                                                        [100%]
+=========================== short test summary info ============================
+XFAIL audits/full-sanity-01/code/validator_confirmed_defect.py::test_numerically_failed_gate_validator_must_exit_nonzero - MATH-C1: validator exits zero despite reporting passes=false
+1 xfailed in 1.01s

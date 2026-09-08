@@ -1,0 +1,9 @@
+# Current figure rendering inspection
+
+The audit regenerated six PDF/PNG/SVG triples using the pinned plotting dependencies and the frozen canonical tables. Root visually inspected every regenerated PNG at its available resolution. All plotted values, series orientation, displayed signs, marker conventions, axes and uncertainty extents agree with the tables and current captions. No visible clipped labels or missing data marks were identified. Figure 4 contains no fitted curve or length annotation. The numerical uncertainties at its far distances are smaller than the plotting markers; this limits what can be read from artwork alone, and the tabular/sensitivity record remains necessary.
+
+The mathematical matrix rows run +1,0,-1 and columns -1,0,+1 as stated. The standalone redistribution panel relies on the adjacent response matrix/caption for row and column meanings; the gallery and dialogue provide that context. Figure 3 uses positions linear in 1/n and labels infinity separately. Its derivative-style vertical label overstates the literal estimator definition: it is a pooled within-stratum linear coefficient. This is already acknowledged at docs/DIALOGUE_REPORT.md:191 and should be reconciled in the axis in a later repair (no repair made here).
+
+The baseline test test_all_six_panels_preserve_geometry_and_match_approved_exports in tests/test_figure_palette.py compares all 18 regenerated binaries against tracked current outputs, beyond merely recognizing formats; it passed in the clean environment. This verifies current Python export agreement, not scientific correctness by itself. Fresh independent row/theory checks are reported separately.
+
+No external Overleaf composite or untracked schematic has been seen, rendered, or approved in this audit. Historical external figure hashes are not substituted for current artwork or treated as visual inspection. Editable external schematic sources remain a distinct missing completion item.

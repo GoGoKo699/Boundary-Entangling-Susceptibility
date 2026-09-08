@@ -1,0 +1,1208 @@
+{
+  "analysis_id": "figure1-uncertainty-review-2026-09-08-v1",
+  "plan_sha256": "5514e46d1ed2bbba54237fb98d5bf7ab7f0da312d6c0f8a22ef1a18c26413d93",
+  "plan_commit": "fc1f3c56693ebf52e207e5b251758fe3dbd35ca3",
+  "baseline_commit": "c54dca28464832ecebeb6602c4c490d3d68d3015",
+  "new_intervals_adopted": false,
+  "historical_resamples_recovered": false,
+  "max_point_discrepancy": 1.1102230246251565e-16,
+  "primary_intervals_below_zero": 10,
+  "sensitivity_intervals_below_zero": 10,
+  "sampling_scope": "Conditional on frozen references, common support and full-cell survival. No new trajectories.",
+  "bootstrap_draws_per_result": 50000,
+  "source_member_hashes": {
+    "checkpoint_04/data/intervention/primary_rank4/state_response_rows.csv.gz": "1f3139866d13838a659e4c6e9e127170f11a7050ead1885810796f67bd89068c",
+    "checkpoint_04/data/intervention/primary_rank4/equalization_reference_spectra.json": "9b5131367aa1fcf85dab189470eb8786d12280bda7d1d75d5a545553fe53ec94",
+    "checkpoint_04/data/intervention/independent_seed_rank4/state_response_rows.csv.gz": "153710199f198a1440f56e610255c61628eba4f9ee4745737ed03e9fc6693026",
+    "checkpoint_04/data/intervention/independent_seed_rank4/equalization_reference_spectra.json": "2e667e6393ef75e346cdb2b344f2ef039a9f4c7998647c0bd58282a444b244e9",
+    "accepted_figure1/figure_01_panel_b_data.csv": "d0167d2607922cbb30566743560fe13d1ccc7822c2879d188a30fdbc21d76914",
+    "accepted_figure1/figure_01_source_manifest.json": "5f96d88102b38a7f8dc4d53e838c8c44423851bc24bd19ac3b6c4b35519d1064"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "outputs": {
+    "eligible_union__primary__haar_z": {
+      "path": "resamples/eligible_union__primary__haar_z.npz",
+      "sha256": "445d629608054a4764b15ac92757964da9a256658be8ddedbfe8319498efc25f",
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "haar_z",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        0,
+        0
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 1.1213252548714081e-13,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 143
+    },
+    "eligible_union__primary__clifford_z": {
+      "path": "resamples/eligible_union__primary__clifford_z.npz",
+      "sha256": "ad3a1fb74f4d2278b6c229b8abedaa724146fa5bed65595aa6b1cbec88f7ca70",
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "clifford_z",
+      "cells": 4,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        0,
+        1
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 51035,
+      "rejected": 1035,
+      "rejected_fraction": 0.02028019986283923,
+      "expected_rejected_fraction": 0.020480000000000054,
+      "trajectory_clusters": 51,
+      "eligible_state_rows": 64
+    },
+    "eligible_union__primary__floquet_cartan_z": {
+      "path": "resamples/eligible_union__primary__floquet_cartan_z.npz",
+      "sha256": "6e84292e870d24da1d4538c24a39fa33b96255ce0a8403219c09da2f9dfa3b9a",
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "floquet_cartan_z",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        0,
+        2
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 2.2426505097428162e-13,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 142
+    },
+    "eligible_union__primary__haar_random_pauli": {
+      "path": "resamples/eligible_union__primary__haar_random_pauli.npz",
+      "sha256": "326a2b1cf9695bf2cfa65a61e161d03f7fa9b06375caca0d90cbd484d0dc740e",
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "haar_random_pauli",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        0,
+        3
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 1.1213252548714081e-13,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 143
+    },
+    "eligible_union__primary__haar_weak_z_eta06": {
+      "path": "resamples/eligible_union__primary__haar_weak_z_eta06.npz",
+      "sha256": "03c71c249e2d71b8778a711e122102fdeca6bcf7b08da5b7a5040c53aca5b5cc",
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "haar_weak_z_eta06",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        0,
+        4
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 0.0,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 144
+    },
+    "eligible_union__independent__haar_z": {
+      "path": "resamples/eligible_union__independent__haar_z.npz",
+      "sha256": "cbbc7a8d148f2381fe07d84ff8cd85f80ab550f02cda625075e3956906df512d",
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "haar_z",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        1,
+        0
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 5.960464477539063e-08,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 95
+    },
+    "eligible_union__independent__clifford_z": {
+      "path": "resamples/eligible_union__independent__clifford_z.npz",
+      "sha256": "1239f15c27224dc4c246e660618616568668a6f3615428569079d0cfbaa902c0",
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "clifford_z",
+      "cells": 4,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        1,
+        1
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50862,
+      "rejected": 862,
+      "rejected_fraction": 0.01694781959026385,
+      "expected_rejected_fraction": 0.016996800704042858,
+      "trajectory_clusters": 37,
+      "eligible_state_rows": 45
+    },
+    "eligible_union__independent__floquet_cartan_z": {
+      "path": "resamples/eligible_union__independent__floquet_cartan_z.npz",
+      "sha256": "a48e8d1f20a7d6390e2d60a1576d750014ec824d8bef842386de7b1c993372a6",
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "floquet_cartan_z",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        1,
+        2
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 1.1920928955078125e-07,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 94
+    },
+    "eligible_union__independent__haar_random_pauli": {
+      "path": "resamples/eligible_union__independent__haar_random_pauli.npz",
+      "sha256": "c511aa08f03ce5fc9381aab792054324ee0e705310dc98237868ace24ede242f",
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "haar_random_pauli",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        1,
+        3
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 0.0,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 96
+    },
+    "eligible_union__independent__haar_weak_z_eta06": {
+      "path": "resamples/eligible_union__independent__haar_weak_z_eta06.npz",
+      "sha256": "0c6a8dbb331c9094e00887aba0c7d5127eba6920f6575c374be77d2d2ec98295",
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "haar_weak_z_eta06",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        0,
+        1,
+        4
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 0.0,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 96
+    },
+    "all_confirmatory__primary__haar_z": {
+      "path": "resamples/all_confirmatory__primary__haar_z.npz",
+      "sha256": "5f0ebffcac0ed7e8de9d4e73140a968038e45a948650b48541ae005c407bb383",
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "haar_z",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        0,
+        0
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 1.1213252548714081e-13,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 143
+    },
+    "all_confirmatory__primary__clifford_z": {
+      "path": "resamples/all_confirmatory__primary__clifford_z.npz",
+      "sha256": "7732ad184310bd3c26aa3cd8c1c62b328af7515dffa9a23ff1fed64e80339860",
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "clifford_z",
+      "cells": 4,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        0,
+        1
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 55036,
+      "rejected": 5036,
+      "rejected_fraction": 0.09150374300457882,
+      "expected_rejected_fraction": 0.0915439311985351,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 64
+    },
+    "all_confirmatory__primary__floquet_cartan_z": {
+      "path": "resamples/all_confirmatory__primary__floquet_cartan_z.npz",
+      "sha256": "8a5ea487f48137cebf04f2efff5a1d90b5b0d1a9cb2271c010742822efec287c",
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "floquet_cartan_z",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        0,
+        2
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 2.2426505097428162e-13,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 142
+    },
+    "all_confirmatory__primary__haar_random_pauli": {
+      "path": "resamples/all_confirmatory__primary__haar_random_pauli.npz",
+      "sha256": "eacdbbc8677e634fc185ce29c2c843e270282024dcbb1a4ed3f177acae951ed2",
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "haar_random_pauli",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        0,
+        3
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 1.1213252548714081e-13,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 143
+    },
+    "all_confirmatory__primary__haar_weak_z_eta06": {
+      "path": "resamples/all_confirmatory__primary__haar_weak_z_eta06.npz",
+      "sha256": "b2fe23b39e24070a5dd932266736892e4d25cb39d91583623e53f8107c75dc2d",
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "haar_weak_z_eta06",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        0,
+        4
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 0.0,
+      "trajectory_clusters": 72,
+      "eligible_state_rows": 144
+    },
+    "all_confirmatory__independent__haar_z": {
+      "path": "resamples/all_confirmatory__independent__haar_z.npz",
+      "sha256": "e8d16cdfe4593369f0f24402651803eb8dcc451ccc5ce86e2ce225162deb63eb",
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "haar_z",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        1,
+        0
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 5.960464477539063e-08,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 95
+    },
+    "all_confirmatory__independent__clifford_z": {
+      "path": "resamples/all_confirmatory__independent__clifford_z.npz",
+      "sha256": "4687eabdd96cf52e966f44487c86bf2dd6ba20b2ef8e98852928300d1683415b",
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "clifford_z",
+      "cells": 4,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        1,
+        1
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 52881,
+      "rejected": 2881,
+      "rejected_fraction": 0.05448081541574479,
+      "expected_rejected_fraction": 0.053536104411491814,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 45
+    },
+    "all_confirmatory__independent__floquet_cartan_z": {
+      "path": "resamples/all_confirmatory__independent__floquet_cartan_z.npz",
+      "sha256": "a2d2f1ed6f0bfc87df041e5e2983f4a5a003a17a02a8697ddfa0c3d2bb8006dc",
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "floquet_cartan_z",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        1,
+        2
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 1.1920928955078125e-07,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 94
+    },
+    "all_confirmatory__independent__haar_random_pauli": {
+      "path": "resamples/all_confirmatory__independent__haar_random_pauli.npz",
+      "sha256": "52b995351399d97790b43f02f6a7a2baa57bfae27360ee23a2e0032ad3e86087",
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "haar_random_pauli",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        1,
+        3
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 0.0,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 96
+    },
+    "all_confirmatory__independent__haar_weak_z_eta06": {
+      "path": "resamples/all_confirmatory__independent__haar_weak_z_eta06.npz",
+      "sha256": "b23bd40fd195d3a30f38919f45ae0059fc944636f2b4995227f407294988d158",
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "haar_weak_z_eta06",
+      "cells": 6,
+      "strata": [
+        {
+          "key": "n10_p08",
+          "sign": -1,
+          "n": 10,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n10_p24",
+          "sign": 1,
+          "n": 10,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n12_p08",
+          "sign": -1,
+          "n": 12,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n12_p24",
+          "sign": 1,
+          "n": 12,
+          "p_measure": 0.24
+        },
+        {
+          "key": "n14_p08",
+          "sign": -1,
+          "n": 14,
+          "p_measure": 0.08
+        },
+        {
+          "key": "n14_p24",
+          "sign": 1,
+          "n": 14,
+          "p_measure": 0.24
+        }
+      ],
+      "seed_sequence": [
+        2026090801,
+        1,
+        1,
+        4
+      ],
+      "bootstrap_replicates": 50000,
+      "proposals": 50000,
+      "rejected": 0,
+      "rejected_fraction": 0.0,
+      "expected_rejected_fraction": 0.0,
+      "trajectory_clusters": 48,
+      "eligible_state_rows": 96
+    }
+  }
+}
