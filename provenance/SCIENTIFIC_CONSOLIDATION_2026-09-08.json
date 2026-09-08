@@ -1,0 +1,91 @@
+{
+  "baseline_commit": "8906b8024e53204d7fb55043ee5d446a25289fcf",
+  "baseline_tree": "82f0ea21eb9b0c3944b1a6f46d5d01aadcbc1bcd",
+  "scope": "Documentation and claim-ledger consolidation only",
+  "changed_existing_files": 13,
+  "unchanged_existing_files": 186,
+  "main_questions": 9,
+  "appendix_questions": 32,
+  "edited_appendix_answers": [
+    "F3",
+    "H1",
+    "H3"
+  ],
+  "unchanged_figure_captions": 4,
+  "unchanged_image_inclusions": 6,
+  "unchanged_figure_assets": 18,
+  "exact_algebra_checks": 25,
+  "algebra_check_scope": "Formal subtraction and monotonicity on allowed integer increments, not physical state sampling or a new empirical test",
+  "new_simulation": false,
+  "new_statistical_analysis": false,
+  "new_priority_search": false,
+  "full_independent_scientific_audit": false,
+  "scope_decision": "No additional calculation required by the retained claims in this consolidation. Finite-sample, support, model, and replication limits remain explicit.",
+  "existing_files": [
+    {
+      "path": "README.md",
+      "before_sha256": "fb89f6ae3c866b07ff7a88f939499c703e844d4514665bcf7caf7bfd3fdadc69",
+      "after_sha256": "bc9eba263b816481f636d3f884e2c6c9e6b51d0e955f79cadf92806b2e80f61f"
+    },
+    {
+      "path": "docs/CLAIM_EVIDENCE_MAP.md",
+      "before_sha256": "4298fb50b795eaf4135dcc63262f0980d84fd0557e27deb4e587688181bfb459",
+      "after_sha256": "fad12c13a7e01eed75f8a8b3757f3e280b665dfb9108227f6e3b671d53341c73"
+    },
+    {
+      "path": "docs/DIALOGUE_QUESTION_MAP.md",
+      "before_sha256": "5fea6a3e055942d06f2dd3a10eceef30072aec7f1c7be054bfc7f27297a07407",
+      "after_sha256": "54f5f6097738b4967660592191300f0cec9e022e1d93d4230a1d25ad2902644e"
+    },
+    {
+      "path": "docs/DIALOGUE_REPORT.md",
+      "before_sha256": "bc29f57b1f8f377249b833c4be11e54e296314278d642e5e00c51f7cacc48688",
+      "after_sha256": "def5210b1e1a7959831d7078ca4688a9e01b1c154ad4627713a9c69fbe43419c"
+    },
+    {
+      "path": "docs/FAQ.md",
+      "before_sha256": "6f7133b521bd193e5799ef58414d64af0e8e095bfea5d61b8a408a4552a2b582",
+      "after_sha256": "cf7ea27d5ebd65cf06d96953591c5d4117df65fdaedd1619054c06c0a4d59828"
+    },
+    {
+      "path": "docs/NOTATION.md",
+      "before_sha256": "3311850e255a483315715506c81399866a6da78797005314a9430fb1a7cde20f",
+      "after_sha256": "40c7377be050652ad266a36eae168cf180a23ab0f4e86919000df13d53889add"
+    },
+    {
+      "path": "docs/NUMERICAL_METHODS.md",
+      "before_sha256": "6807db2f7cb42052ffd18c80ee2e07dcaad3097e4180b9022a43ef6fb95d9108",
+      "after_sha256": "e7f10ae5d0bebef4bf72b860e3b8158b1ee222c5b6990e05fae512ce4482b395"
+    },
+    {
+      "path": "docs/RELATED_WORK.md",
+      "before_sha256": "2327d34b89fd332c3af0a6e499faa4efd6acec9fffc89ee0fcc31420dcb2dc17",
+      "after_sha256": "a6fdfc9231f65fd8c805f46aa241167f1d7e18437db9d3f90159af4b71d4bb68"
+    },
+    {
+      "path": "docs/RESULTS_AT_A_GLANCE.md",
+      "before_sha256": "21dc94029bfd65570b0ff330e05a816e193f617729ba351d5a2365f2e65008f3",
+      "after_sha256": "51ce2b120d86502a614b583ac7355ce103f244420b67fa896273cef46647eb06"
+    },
+    {
+      "path": "docs/SCIENTIFIC_STORY.md",
+      "before_sha256": "6d46472b7af6d4a0260c8bada6cc80f2b6a43f438392010be3024cf55f51db33",
+      "after_sha256": "af43311c5078a8c84616cfe32f61999523f2a2531a309d7f0c266a258b70c452"
+    },
+    {
+      "path": "docs/SCOPE_AND_LIMITATIONS.md",
+      "before_sha256": "410475fb4bba9ed0d430e6e67083ad638e8b03533e7d3fc19f2006d642c72723",
+      "after_sha256": "e152acafa0b2c17af5df155897d9390924535630577f6076fa7dab2d13bc7b97"
+    },
+    {
+      "path": "docs/THEORY.md",
+      "before_sha256": "9b2992e08e6242562206bf2d484a96fd9895a6351566abe6d5f32b466059792d",
+      "after_sha256": "90a4fe2dce12aae844acc8ac66b75969c704c6b0b7633e4a3068063a84683c4f"
+    },
+    {
+      "path": "results/core_claims.csv",
+      "before_sha256": "24322b17d686f8b63d655eb4e907588868608a076928e2db9abf379a794ff650",
+      "after_sha256": "dde6c0b26353d747d7088d7273df3bddb3b0b815bbf7399a60cb654b4f7b3a4d"
+    }
+  ]
+}

@@ -17,6 +17,8 @@ complete combination. This is not proof of absolute priority. The novelty claim
 should be phrased as a new synthesis and application of several established
 ingredients.
 
+**Current framing.** This is the retained targeted-search record, not a new priority audit. The [claim map](CLAIM_EVIDENCE_MAP.md) distinguishes exact ingredients from empirical evidence. In particular, the single-measurement suppression sign is a corollary; the paired spatial dependence is empirical. The revised contribution wording below does not claim that different comparison designs estimate the same numerical effect.
+
 ## Established background that must be credited
 
 ### Monitored-circuit entanglement transitions
@@ -106,13 +108,14 @@ profile.
 The strongest defensible novelty statement is:
 
 > We formulate and test a fixed-spectrum response question for monitored
-> quantum states. An exact local-twirl theorem shows that the central Schmidt
-> spectrum is insufficient because the next-gate linear-entropy response also
-> depends on neighboring-cut purities. In monitored stabilizer circuits this
-> becomes a finite boundary-code problem. The resulting monitoring-dependent
-> response persists to 256 qubits, independently replicates, and is reproduced
-> by a paired cut-local measurement intervention without modifying the central
-> spectrum.
+> quantum states. The exact local-twirl identity specifies the neighboring-cut
+> information omitted by the central spectrum. In monitored stabilizer
+> circuits this becomes a finite boundary-code description. Physical
+> within-spectrum monitoring coefficients remain negative through 256 qubits
+> and repeat with disjoint seeds. A separate paired measurement-location
+> intervention establishes spatial dependence of the spectrum-preserving
+> response change in its specified selected populations; it does not derive
+> the long-run monitoring coefficient.
 
 The novelty lies in the combination of:
 

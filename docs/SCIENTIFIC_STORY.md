@@ -30,9 +30,13 @@ Figure 3's lines and points at infinity depend on the locked inverse-size model.
 
 ## 4. A controlled measurement-location contrast
 
+On the spectrum-preserving branch, a single-site Pauli measurement on a pure stabilizer state cannot increase the specified Haar/uniform-Clifford averaged response. This follows from the existing neighboring-purity identity and nonincreasing stabilizer cut entropies; it is not an additional numerical discovery. It does not order two measurement locations or determine a monitoring-rate coefficient.
+
 Figure 4 evaluates different measurement locations on copies of the same pre-state. Its conditional endpoint keeps spectrum-preserving interventions and compares eligible near and far means. Stricter post-hoc same-side joint-preservation and six-distance common-eligibility checks retain negative near-minus-far effects and near-cut concentration.
 
 The current approved distance panel shows the original observations and intervals without an exponential curve or length annotation. The historical single-exponential fit is not an adequately supported physical law. It remains documented only in the [evidence reassessment](EVIDENCE_REASSESSMENT.md), which records the fit diagnostics and exact conditioning rules. The [figure baseline](FIGURE_BASELINE.md) contains the adopted caption.
+
+The three designs have distinct estimands: Figure 1 uses modified finite-system states, Figures 2–3 use conditional comparisons of unmodified stabilizer states, and Figure 4 uses paired measurement-location interventions. Their effect sizes need not coincide, and Figure 4 does not quantitatively derive Figure 3's long-run coefficient.
 
 ## Scope
 

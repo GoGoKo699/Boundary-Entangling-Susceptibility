@@ -53,36 +53,36 @@ For a region `A`, the stabilizer entropy is computed from the rank of the
 restricted binary generator matrix. Pure stabilizer reduced states have a flat
 nonzero spectrum. If the central entropy is `S_m`, then
 
-\[
+$$
 \lambda_1=\cdots=\lambda_{2^{S_m}}=2^{-S_m},
 \qquad
 \lambda_j=0\quad(j>2^{S_m}).
-\]
+$$
 
 Thus a fixed `(n,tau,S_m)` stratum is an exact complete-central-spectrum
 stratum.
 
 ## 4. Entangling-susceptibility observables
 
-Let `m=n/2`, `d=2^m`, and let `P_{m-1}`, `P_m`, and `P_{m+1}` be the purities
+Let `m=n/2`, `D=2^m`, and let `P_{m-1}`, `P_m`, and `P_{m+1}` be the purities
 across the three adjacent cuts. The exact average normalized linear-entropy
 response to a fresh Haar-random or uniformly random two-qubit Clifford gate on
 the central bond is
 
-\[
+$$
 \chi_2
 =
-\frac{d}{d-1}
+\frac{D}{D-1}
 \left[
 P_m-\frac25(P_{m-1}+P_{m+1})
 \right].
-\]
+$$
 
 The primary large-size outcome is
 
-\[
+$$
 \chi_{\rm rel}=\frac{\chi_2}{P_m}.
-\]
+$$
 
 The relative response removes the trivial multiplicative central-purity scale,
 which can become very small when the matched rank grows with system size. The
@@ -90,14 +90,14 @@ unnormalized `chi_2` remains a prespecified secondary outcome.
 
 For stabilizer states,
 
-\[
+$$
 \chi_{\rm rel}
 =
-\frac{d}{d-1}
+\frac{D}{D-1}
 \left[
 1-\frac25(2^{\delta_L}+2^{\delta_R})
 \right],
-\]
+$$
 
 where `delta_L=S_m-S_{m-1}` and `delta_R=S_m-S_{m+1}`.
 
@@ -129,7 +129,7 @@ stratified by `(tau,S_m)`. A stratum is eligible when at least three probability
 levels have at least ten trajectory records each. Within the eligible support,
 fit
 
-\[
+$$
 y_i
 =
 \alpha_{\tau,S_m}
@@ -137,7 +137,7 @@ y_i
 \beta_n\frac{p_i-0.26}{0.02}
 +
 \varepsilon_i.
-\]
+$$
 
 The primary outcome is `chi_rel`; the secondary outcome is `chi_2`. Hence
 `beta_n` is the fixed-complete-spectrum change per `Delta p=0.02`.
@@ -157,9 +157,9 @@ separately to expose that support structure.
 
 The locked primary extrapolation is
 
-\[
+$$
 \beta_n=\beta_\infty+\frac{a}{n}.
-\]
+$$
 
 The exponent is not fitted. Weighted least squares uses the size-level
 bootstrap intervals, and a second bootstrap propagates trajectory uncertainty
@@ -171,10 +171,10 @@ are reported only as sensitivity analyses.
 The monitored transition is located with the standard quarter-partition
 tripartite information
 
-\[
+$$
 I_3(A:B:C)
 =S_A+S_B+S_C-S_{AB}-S_{AC}-S_{BC}+S_{ABC}
-\]
+$$
 
 for four contiguous quarters of the open chain. Only `tau=10` is used. Pairwise
 size crossings are linearly interpolated on the simulated probability grid and
@@ -215,12 +215,12 @@ Every location is evaluated on a copy of the same premeasurement stabilizer
 state. The primary principal-stratum contrast keeps interventions with
 `Delta S_m=0`, which exactly preserves the complete central stabilizer spectrum.
 For every trajectory, the valid two-sided mean at `d=0` is compared with the
-valid mean at distances at least `n/4`. Both potential interventions are known
-from simulation, so this is a paired counterfactual location contrast within a
-well-defined principal stratum.
+valid mean at distances at least `n/4`. The original endpoint can retain different sides at different distances; its eligibility is defined by the existence of the near and far means, not joint preservation for one fixed side. The stricter same-side check requires both $d=0$ and $d=n/4$ interventions to preserve the spectrum; the all-six-distance check imposes a common side/pre-state population. These are distinct selected estimands, specified in [the evidence reassessment](EVIDENCE_REASSESSMENT.md), and do not identify an unconditional long-run monitoring-rate effect.
 
 The unconditional contrast is secondary. It includes measurements that lower
 `S_m` by one and therefore change the complete central spectrum.
+
+For a single-site Pauli measurement on a pure stabilizer input, the nonpositive spectrum-preserving response change is an [exact corollary](THEORY.md#5-one-measurement-corollary). The sign of a near-minus-far difference and its distance dependence remain empirical. This interpretation changes no sampling, pairing, resampling, or eligibility rule.
 
 ## 11. Reproducibility
 
