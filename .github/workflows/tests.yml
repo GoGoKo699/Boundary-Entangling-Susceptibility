@@ -47,3 +47,31 @@ jobs:
             reproduced_evidence/
           if-no-files-found: error
           retention-days: 30
+
+  figure1-uncertainty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      PYTHONHASHSEED: '0'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements-reproducible.txt
+      - run: pip install -e .
+      - run: python scripts/analysis/complete_figure1_uncertainty.py --output reproduced_figure1_uncertainty
+      - run: python scripts/analysis/verify_figure1_uncertainty.py --output reproduced_figure1_uncertainty --report figure1_review_verification/independent_replay.json
+      - run: python scripts/analysis/check_figure1_adoption.py --resamples reproduced_figure1_uncertainty
+      - uses: actions/upload-artifact@v4
+        with:
+          name: figure1-uncertainty-${{ github.sha }}
+          path: |
+            reproduced_figure1_uncertainty/
+            figure1_review_verification/
+          retention-days: 90
+          if-no-files-found: error

@@ -18,7 +18,8 @@ from boundary_susceptibility.response import haar_clifford_relative_response
 ROOT = Path(__file__).resolve().parent
 
 GENERATED = {'.git', '.venv', 'venv', '__pycache__', '.pytest_cache',
-             'reproduced_studies', 'reproduced_evidence', 'reproduced_records', 'reproduced_figures'}
+             'reproduced_studies', 'reproduced_evidence', 'reproduced_records', 'reproduced_figures',
+             'reproduced_figure1_uncertainty', 'figure1_review_verification'}
 def ignored(path: Path) -> bool:
     return any(part in GENERATED or part.endswith('.egg-info') for part in path.relative_to(ROOT).parts)
 
@@ -208,3 +209,7 @@ for entry in protected['files']:
     if hashlib.sha256(file.read_bytes()).hexdigest()!=entry['sha256']:
         raise SystemExit(f"Frozen figure/input changed: {entry['path']}")
 print(f"verification passed: {status['members']} source-data members and all current panels/inputs verified")
+
+# Bind the active Figure 1 to its approved statistical revision.
+import subprocess, sys
+subprocess.run([sys.executable,str(ROOT/'scripts/analysis/check_figure1_adoption.py')],check=True)

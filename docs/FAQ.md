@@ -50,4 +50,4 @@ That the included software, frozen-result regression checks, structural checks, 
 
 ## Where are the raw data?
 
-The required root `entanglement-data.zip` contains the original records, spectra, resamples, and maps indexed by `data/record_bundle_manifest.json`. No old chat or separately obtained checkpoint ZIP is needed. Exact Figure 1 accepted-interval resampling remains a historical provenance limitation; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
+The required root `entanglement-data.zip` contains the original records, spectra, resamples, and maps indexed by `data/record_bundle_manifest.json`. No old chat or separately obtained checkpoint ZIP is needed. The current Figure 1 intervals have a deterministic recipe and independent replay; only the superseded historical bootstrap remains unrecovered; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).

@@ -12,7 +12,7 @@ Replacing the central eigenvalues by a shared reference spectrum while retaining
 
 ![Fixed-spectrum response](figures/core_svg/figure_01_panel_b.svg)
 
-Filled circles denote the primary run; open squares denote the independent seed. The horizontal bars are the original 95% trajectory-cluster bootstrap intervals. The reference spectrum is shared within each family/size/time comparison cell, not across every plotted family and size. This is a finite-system diagnostic intervention, not a physical spectrum-replacement protocol.
+Filled circles denote the primary run; open squares denote the independent seed. The horizontal bars are the adopted nominal pointwise 95% support-conditioned trajectory-cluster bootstrap intervals (50,000 valid draws per contrast). References and observed support are fixed; see [the uncertainty definition](docs/FIGURE1_UNCERTAINTY.md). The reference spectrum is shared within each family/size/time comparison cell, not across every plotted family and size. This is a finite-system diagnostic intervention, not a physical spectrum-replacement protocol.
 
 ## 2. An exact neighboring-cut mechanism
 
