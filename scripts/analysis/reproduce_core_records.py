@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Recompute the accepted four figures' statistics from immutable stored records.
 
-Figure 1 reconstructs point estimates and verifies the accepted interval table.
+Figure 1 reconstructs unchanged current points and verifies the historical table.
 Its exact accepted bootstrap seed and resamples have not been recovered. Figures
 3 and 4 use the original archived resamples for their original intervals. All
 point estimates and Figure 2 probability slopes are recalculated from state or
@@ -49,10 +49,13 @@ def main():
                             'accepted':float(expected),'provenance_kind':kind})
 
     canon=ROOT/'data/processed/core_figures'
-    f1=pd.read_csv(canon/'figure_01_panel_b.csv')
+    current_f1=pd.read_csv(canon/'figure_01_panel_b.csv')
     accepted=csv('accepted_figure1/figure_01_panel_b_data.csv')
+    f1=pd.read_csv(ROOT/'results/historical_figure1/figure_01_panel_b.csv')
     for field in ['estimate','ci_low','ci_high']:
-        check('Figure 1 accepted-source table/'+field,f1[field],accepted[field],0)
+        check('Figure 1 historical source table/'+field,f1[field],accepted[field],0)
+    for field in ['estimate','common_cells','p_low','p_high']:
+        check('Figure 1 unchanged current field/'+field,current_f1[field],accepted[field],0)
     filtered={}
     for run,folder in [('primary','primary_rank4'),('independent','independent_seed_rank4')]:
         raw=csv(f'checkpoint_04/data/intervention/{folder}/state_response_rows.csv.gz')
@@ -80,7 +83,7 @@ def main():
                     'recalculated':None,'accepted':float(target[field]),
                     'provenance_kind':'accepted hybrid source table verified; original accepted resamples not recovered'})
     pd.DataFrame(support_rows).to_csv(args.output/'figure1_reconstructed_support.csv',index=False)
-    print('Figure 1: all point estimates and accepted table provenance verified; exact accepted CI replay unavailable',flush=True)
+    print('Figure 1: current points and historical provenance verified; run the dedicated workflow for current intervals',flush=True)
 
     f2=pd.read_csv(canon/'figure_02_boundary_codes.csv')
     f3=pd.read_csv(canon/'figure_03_size_scaling.csv')
@@ -164,8 +167,9 @@ def main():
     pd.DataFrame(output_rows).to_csv(args.output/'core_values_replay.csv',index=False,float_format='%.17g')
     summary={'passed':True,'checks':len(checks),'max_error':max(x['max_abs_error'] for x in checks),
              'bundle_sha256':records.sha256,'state_rows':state_counts,'intervention_rows':len(raw),
-             'figure1_contrasts':10,'figure1_exact_accepted_interval_replay':False,
-             'interval_scope':'Figure 1 accepted intervals source-verified only; Figures 3/4 percentiles reuse archived original resamples',
+             'figure1_contrasts':10,'figure1_historical_interval_replay':False,
+             'figure1_current_interval_command':'See docs/FIGURE1_UNCERTAINTY.md: separate sampler, replay verifier, and adoption check',
+             'interval_scope':'Figure 1 historical intervals source-verified only; current Figure 1 is checked in its separate complete workflow; Figures 3/4 reuse archived original resamples',
              'simulation_scope':'No circuit-generation campaign or new statistical estimand',
              'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,
              'source_member_hashes':sources,'details':checks}

@@ -1,5 +1,7 @@
 # Figure 1 uncertainty review: calculation plan
 
+> Historical review/design record. The author subsequently adopted the primary recipe on 8 September 2026. See [the current procedure](FIGURE1_UNCERTAINTY.md); statements below about pending adoption describe the earlier review stage.
+
 Baseline: `c54dca28464832ecebeb6602c4c490d3d68d3015`. This is a new post-hoc uncertainty calculation on existing data, not recovery of the missing historical bootstrap and not an independent simulation. Historical results and eligibility counts have been inspected; no new bootstrap results were computed before this lock. It is an internal prospective calculation record, not public preregistration.
 
 The complete machine-readable plan was frozen locally at `2026-09-08T05:36:35.356216+00:00`, SHA-256 `5514e46d1ed2bbba54237fb98d5bf7ab7f0da312d6c0f8a22ef1a18c26413d93`, and will be included with the implementation. The statistical procedure is specified below.

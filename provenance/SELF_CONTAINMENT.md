@@ -2,7 +2,7 @@
 
 The checkout is complete only when the root `entanglement-data.zip` has the identity specified by `data/record_bundle_manifest.json`. `python verify.py` enforces this; it does not silently skip missing data.
 
-All current artwork and canonical numerical values are frozen to the accepted `d693b9dda41891d046157f3569b79c3b0d90d2e5` baseline. The only original-fit input relocation is to `results/historical_fit/`. No scientific estimate is replaced during cleanup.
+The cleanup preserved the accepted baseline. The subsequently approved Figure 1 uncertainty revision changes only its interval columns and rendered error bars. The current manifest identifies active files; `FIGURE1_ADOPTION_2026-09-08.json` identifies the retained historical files, locked calculation, and protected unchanged inputs/panels. Current Figure 1 intervals regenerate from tracked inputs; the missing historical seed remains explicitly unrecovered.
 
 The data container consolidates unchanged source members; it does not regenerate missing observations, substitute rounded tables for raw data, or include manuscript source. Reproduction does not need any old checkpoint ZIP or access to a previous chat.
 

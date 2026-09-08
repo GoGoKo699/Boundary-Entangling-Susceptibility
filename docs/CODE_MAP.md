@@ -18,3 +18,7 @@ The code keeps independent estimators and simulator validation paths separate. C
 Use [the reproduction guide](REPRODUCTION.md) for commands. The [data manifest](../data/record_bundle_manifest.json) maps every raw member back to its original source identity. No later project is a software dependency.
 
 See [precise reproducibility limits](REPRODUCIBILITY_LIMITS.md). Preserved original intervals and fully regenerated intervals are not interchangeable.
+
+## Current Figure 1 uncertainty
+
+`complete_figure1_uncertainty.py` regenerates the adopted recipe and its prespecified sensitivity; `verify_figure1_uncertainty.py` independently replays saved multiplicities; `check_figure1_adoption.py` binds the replay to current figure inputs and protected hashes. All are under `scripts/analysis/`. See [the complete commands](FIGURE1_UNCERTAINTY.md).

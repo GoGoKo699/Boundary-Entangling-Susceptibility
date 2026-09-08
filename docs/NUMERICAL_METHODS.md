@@ -229,3 +229,7 @@ design locks, simulator source, symplectic maps, validation scripts, and figure
 scripts are included in the package. The verifier checks algebraic identities,
 row counts, hashes, script compilation, figure readability, and the sign and
 numerical ranges of every load-bearing result.
+
+## Figure 1 uncertainty revision
+
+The active Figure 1 bars use 50,000 valid support-conditioned trajectory-cluster percentile draws, primary pool `eligible_union`, seed 2026090801. Size/rate strata are resampled separately; time observations and eligibility masks remain clustered. A whole proposal is rejected if any required cell is empty. Fixed run-specific discovery spectra and common observed support are not re-estimated. These nominal pointwise post-hoc intervals are not simultaneous or exact finite-sample guarantees. The [adopted recipe](FIGURE1_UNCERTAINTY.md) and immutable plan define all details; other analyses are unchanged.

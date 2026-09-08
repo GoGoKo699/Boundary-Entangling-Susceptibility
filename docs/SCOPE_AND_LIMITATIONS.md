@@ -15,4 +15,4 @@ The project studies a fresh-gate, purity-normalized linear-entropy response. The
 
 No new order parameter, critical exponent, universal non-Clifford thermodynamic law, or absolute novelty priority is asserted. The [evidence reassessment](EVIDENCE_REASSESSMENT.md) is the current interpretation of Figures 3 and 4; the original analysis definitions remain archived for provenance.
 
-The indexed record bundle must be present in the checkout for the recorded-data workflows. Explicit code/data/figure licensing remains undecided. The accepted Figure 1 uncertainty table is preserved, but its exact seed/resamples have not been recovered; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
+The indexed record bundle must be present in the checkout for the recorded-data workflows. Explicit code/data/figure licensing remains undecided. The current Figure 1 intervals have a fully specified support-conditioned recipe. Its fixed references, selected support, and small Clifford samples limit inference. The superseded historical table is preserved without claiming recovery of its missing seed; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).

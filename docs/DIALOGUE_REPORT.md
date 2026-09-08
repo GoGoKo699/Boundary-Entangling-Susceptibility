@@ -96,7 +96,7 @@ The comparison averages the supported size/time cell contrasts, using $n=10,12,1
 
 ![Figure 1. Fixed-spectrum response contrasts.](../figures/core/figure_01_panel_b.png)
 
-**Figure 1. Complete central-spectrum control leaves a response difference.** Filled circles are the held-out primary run; open squares are the independent-seed run. Bars are the original trajectory-cluster bootstrap intervals. The eigenvalues are equalized within comparison cells, while the retained Schmidt vectors remain state-dependent. This is a diagnostic spectrum replacement, not an experimentally proposed operation. [S1, S6]
+**Figure 1. Complete central-spectrum control leaves a response difference.** Filled circles are the held-out primary run; open squares are the independent-seed run. Bars are the adopted nominal pointwise 95% percentile intervals from 50,000 valid support-conditioned trajectory-cluster draws per contrast. Whole trajectories retain their time records and rank-eligibility masks; entire proposals with any empty required cell are rejected. The primary pool is the union of trajectories with an eligible retained row. Reference spectra and observed support are fixed. See [the complete recipe and limitations](FIGURE1_UNCERTAINTY.md). The eigenvalues are equalized within comparison cells, while the retained Schmidt vectors remain state-dependent. This is a diagnostic spectrum replacement, not an experimentally proposed operation. [S1, S6]
 
 **Reader.** What does the plot establish, and what does it not establish?
 
@@ -448,7 +448,7 @@ The model-free summary is preferable. In the common-eligibility sample, the magn
 
 **Answer.** The supplied phase-free tableau implementation was compared with a direct state-vector implementation for $n=4,6,8,10$, both monitoring protocols, four probabilities, four trajectories, and two times: 256 recorded comparisons agreed for the tested entropy/response quantities. The takeover reran that supplied cross-validation and separately checked the response projection and Clifford average. The evidence pass independently reconstructed all 16 finite-size coefficients and the original location endpoints from stored records. These are complementary checks with different failure modes. They do not constitute a new full large-system campaign or an external replication. [S3, S4, S7]
 
-At repository level, tests check exact-identity examples, a synthetic within-stratum regression with a known answer, paired bootstrap behavior, rejection of a wrong archive, and complete all-format figure export. The figure pipeline validates six PDF/PNG/SVG triples in fresh temporary output before copying them. This guards against stale missing outputs; it does not turn canonical-table redraws into raw-data reanalysis. The independent evidence command reads the required indexed root record bundle; it no longer requires a separately obtained Checkpoint 05 archive. Exact resampling of the accepted Figure 1 intervals remains unverified; the accepted table is preserved and source-traced. [S4, S5]
+At repository level, tests check exact-identity examples, a synthetic within-stratum regression with a known answer, paired bootstrap behavior, rejection of a wrong archive, and complete all-format figure export. The figure pipeline validates six PDF/PNG/SVG triples in fresh temporary output before copying them. This guards against stale missing outputs; it does not turn canonical-table redraws into raw-data reanalysis. The independent evidence command reads the required indexed root record bundle; it no longer requires a separately obtained Checkpoint 05 archive. Current Figure 1 intervals are reproduced by the adopted locked sampler and independently replayed from saved multiplicities. Only the superseded historical interval recipe remains unrecovered; see [the current procedure](FIGURE1_UNCERTAINTY.md). [S4, S5]
 
 ### H3. How does the work differ from established related approaches?
 
@@ -460,7 +460,7 @@ This report does not perform a new priority search or certify absolute novelty. 
 
 The source hierarchy is deliberate: current canonical figure tables for plotted numbers; the exact theory for algebraic claims; recorded methods and code for estimands; and the September 5 reassessment for fit limitations and new selected-population checks. Older figure specifications organize the questions but do not override the later evidence reassessment.
 
-**S1. Canonical figure data.** [Core CSV/JSON tables](../data/processed/core_figures/), especially the Figure 1 contrast, Figure 2 code, Figure 3 scaling, and Figure 4 distance/contrast tables. Original plotted confidence intervals are retained.
+**S1. Canonical figure data.** [Core CSV/JSON tables](../data/processed/core_figures/), especially the Figure 1 contrast, Figure 2 code, Figure 3 scaling, and Figure 4 distance/contrast tables. Figure 1 uses the approved 8 September 2026 uncertainty recipe; its historical intervals are preserved separately. Figures 2–4 are unchanged.
 
 **S2. Exact theory.** [Response operator and stabilizer boundary-code theory](THEORY.md). Includes assumptions, local twirling, gate-invariant conventions, and the finite alphabet.
 

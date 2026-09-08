@@ -29,5 +29,5 @@ def test_accepted_figures_and_data_unchanged():
 def test_figure1_accepted_intervals_not_mislabeled_as_replayed():
     from boundary_susceptibility.records import ROOT
     code=(ROOT/'scripts/analysis/reproduce_core_records.py').read_text()
-    assert "'figure1_exact_accepted_interval_replay':False" in code
+    assert "'figure1_historical_interval_replay':False" in code
     assert (ROOT/'docs/REPRODUCIBILITY_LIMITS.md').is_file()

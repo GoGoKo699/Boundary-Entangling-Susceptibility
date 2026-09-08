@@ -1,5 +1,7 @@
 # Figure 1 uncertainty calculation: review candidate
 
+> Historical review/design record. The author subsequently adopted the primary recipe on 8 September 2026. See [the current procedure](FIGURE1_UNCERTAINTY.md); statements below about pending adoption describe the earlier review stage.
+
 **Date:** 8 September 2026. **Baseline:** `c54dca28464832ecebeb6602c4c490d3d68d3015`.
 
 All ten newly calculated nominal 95% intervals remain below zero. All ten intervals in the prespecified full-confirmatory-pool sensitivity remain below zero as well. The existing figure, canonical plotting table, and main branch have not been replaced. The [candidate table](../results/figure1_uncertainty_review/figure_01_candidate_intervals.csv) is separate from the accepted data.

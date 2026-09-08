@@ -1,6 +1,12 @@
 # Approved figure baseline
 
-The author approved the minimal Figure 4 distance-panel revision on 5 September 2026. The active version removes the historical exponential curve and its length annotation. Observed means, original intervals, dimensions, axes, label positions, and the conditioning-contrast panel are unchanged. Figures 1–3 are unchanged.
+## Figure 1 uncertainty revision: 8 September 2026
+
+The active Figure 1 panel now uses the reviewed primary support-conditioned bootstrap intervals. Point positions, fonts, colors, dimensions, axes, family order, and plotting source are unchanged. The former CSV/PDF/PNG/SVG are preserved under `results/historical_figure1/`. See [the current method](FIGURE1_UNCERTAINTY.md) and [replacement caption](FIGURE1_CAPTION.md). Figures 2–4 remain unchanged.
+
+## Figure 4 revision: 5 September 2026
+
+The author approved the minimal Figure 4 distance-panel revision on 5 September 2026. The active version removes the historical exponential curve and its length annotation. Observed means, original intervals, dimensions, axes, label positions, and the conditioning-contrast panel are unchanged. At that Figure 4 revision, Figures 1–3 were unchanged; the later Figure 1 uncertainty revision is described above.
 
 The four-figure [dialogue report](DIALOGUE_REPORT.md) uses this baseline. Its question identifiers follow [DIALOGUE_QUESTION_MAP.md](DIALOGUE_QUESTION_MAP.md).
 
