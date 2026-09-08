@@ -9,7 +9,7 @@ These six Python panels form the four-figure scientific account. The [full dialo
 | 3: physical size comparison | [Size dependence](core/figure_03_size_scaling.pdf) | [Table](../data/processed/core_figures/figure_03_size_scaling.csv) |
 | 4: paired location intervention | [Distance profile](core/figure_04_distance_decay.pdf), [conditioning contrast](core/figure_04_conditioning_contrast.pdf) | [Distance](../data/processed/core_figures/figure_04_distance_decay.csv), [contrast](../data/processed/core_figures/figure_04_conditioning_contrast.csv) |
 
-The approved [Irises palette](PALETTE.md) applies only to the figures. `core/` holds publication PDF/PNG outputs; `core_svg/` holds the matching browser SVGs. The numerical inputs and figure geometry are unchanged.
+The [figure palette](PALETTE.md) applies only to the figures. `core/` holds publication PDF/PNG outputs; `core_svg/` holds the matching browser SVGs. The numerical inputs and figure geometry are unchanged.
 
 ## Preview
 

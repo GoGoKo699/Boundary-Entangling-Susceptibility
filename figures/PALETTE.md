@@ -1,12 +1,12 @@
 # Figure palette
 
-The approved palette is inspired by the linked reproduction of Vincent van Gogh's [Irises](https://en.wikipedia.org/wiki/Irises_%28painting%29). The colors are design choices, not pigment measurements or exact pixel samples.
+The figure palette assigns consistent colors to data series and matrix scales.
 
 | Figure role | Color |
 |---|---|
-| Main series / iris blue | `#3F4D8C` |
-| Second protocol / leaf green | `#477568` |
-| Contrast / earth tone | `#A05A3C` |
+| Main series | `#3F4D8C` |
+| Second protocol | `#477568` |
+| Contrast | `#A05A3C` |
 | Matrix neutral midpoint | `#F7F5EC` |
 | Dark matrix-label option | `#24313A` |
 
