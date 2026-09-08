@@ -44,7 +44,7 @@ Finite-size points are direct estimates. Points at infinity and the lines come f
 
 ## 4. Paired measurement-location intervention
 
-Copies of the same premeasurement stabilizer state receive one projective-Z measurement at different distances. The retained interventions preserve the central spectrum. The paired near-minus-far contrast is negative, and the response is concentrated near the cut.
+For the stated averaged probe, the nonpositive response change after a spectrum-preserving single-site Pauli measurement is an [exact stabilizer corollary](docs/THEORY.md#5-one-measurement-corollary). Its magnitude and near-minus-far sign are not fixed by that corollary. Copies of the same premeasurement stabilizer state receive one projective-Z measurement at different distances. The retained interventions preserve the central spectrum. The paired near-minus-far contrast is negative, and the response is concentrated near the cut.
 
 <p align="center">
 <img src="figures/core_svg/figure_04_distance_decay.svg" width="62%" alt="Observed distance profile with original intervals and no fitted curve">

@@ -4,6 +4,8 @@
 
 The project studies a fresh-gate, purity-normalized linear-entropy response. The complete central Schmidt spectrum is insufficient; neighboring-cut purity features determine the Haar/uniform-Clifford response exactly. Monitored stabilizer ensembles exhibit negative within-spectrum monitoring coefficients through 256 qubits and in an independent-seed campaign. Paired location contrasts and a stricter common-eligibility profile support concentration of the measurement-induced suppression near the cut.
 
+The nonpositive single-measurement sign is an exact corollary for pure stabilizer inputs, projective Pauli measurements preserving the central spectrum, and the stated averaged fresh probe. The empirical content in Figure 4 is spatial concentration and the paired near-minus-far difference. Neither the sign corollary nor that intervention quantitatively derives the long-run monitoring coefficient.
+
 ## Distinctions that matter
 
 - A finite-size observation is not proof of a limiting coefficient. Extrapolation intervals condition on a model, and exact-spectrum support changes with size.

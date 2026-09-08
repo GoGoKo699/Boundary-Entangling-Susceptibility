@@ -2,11 +2,11 @@
 
 ## A dialogue on boundary entangling susceptibility
 
-**Working report · 5 September 2026**
+**Scientific account · 8 September 2026**
 
 **Central question.** When two many-body states have the same complete Schmidt spectrum across a cut, what determines their response to the next fresh gate crossing that cut?
 
-**Answer in one paragraph.** For the purity-normalized linear-entropy response studied here, the central spectrum is insufficient. A Haar-random or uniformly random two-qubit Clifford probe has an exact response determined by the purities across three adjacent cuts. Monitored circuits change the two neighboring purities even at fixed complete central spectrum. The corresponding monitoring coefficients remain negative through 256 qubits and repeat under independent seeds. A paired measurement-location intervention produces a spectrum-preserving suppression concentrated near the cut. These statements do not require a single-exponential distance law, a rigorously established thermodynamic limit, or a new transition order parameter. [S1–S5]
+**Answer in one paragraph.** For the purity-normalized linear-entropy response studied here, the central spectrum is insufficient. A Haar-random or uniformly random two-qubit Clifford probe has an exact response determined by three adjacent-cut purities. In the tested monitored ensembles, the neighboring-purity information has monitoring-associated differences within fixed-spectrum comparisons. The physical conditional coefficients remain negative through 256 qubits and repeat under disjoint seeds. A spectrum-preserving Pauli measurement on a pure stabilizer state cannot increase this averaged response; the paired intervention establishes how its suppression depends on measurement location in the tested populations. The result does not require a single-exponential distance law, a rigorous thermodynamic limit, or a new transition order parameter. [S1–S5]
 
 This report follows the agreed **M1–M9 main-text questions** and **A–H appendix questions**. It contains only the four agreed figures, assembled from the six Python panels. The answers distinguish exact identities, original numerical results, extrapolations, and post-hoc checks. The Figure 4 distance panel uses the approved revision without the exponential curve or its length annotation. Its data and original confidence intervals are unchanged. [S1, S4, S6]
 
@@ -39,9 +39,9 @@ $$
 
 The list $\{\lambda_\alpha\}$ fixes the central purity, Schmidt rank, and entropies. It does not specify the Schmidt vectors $|u_\alpha\rangle$ and $|v_\alpha\rangle$, or how their degrees of freedom occupy the sites within each half. A gate acting on just the two boundary sites is sensitive to that spatial arrangement. The question is therefore about the **response to a specified local operation**, not a competing definition of the entanglement already present. [S2]
 
-**Reader.** Is insufficiency by itself the main discovery?
+**Reader.** Why study this distinction in monitored circuits?
 
-**Answer.** No. A small example already makes insufficiency explicit. Across $12|34$, compare $|0000\rangle$ with a Bell pair within sites $12$ and another within $34$. Both have central spectrum $(1,0,0,0)$. Their neighboring-cut purities differ, however, and the exact formula below gives responses $4/15$ and $4/5$. This is an illustration of the identity, not a priority claim. The empirical contribution is that monitored dynamics reorganizes this extra information systematically at fixed spectrum, and that a controlled location intervention reproduces the response suppression. [S2, S7]
+**Answer.** Gates and measurements generate the states on which the later boundary probe acts. We ask whether their history is associated with response-relevant spatial structure after the central eigenvalues are controlled. The probe ensemble is held fixed; the comparison concerns the input states. Bare spectrum insufficiency is not the empirical discovery. The study tests its systematic organization in monitored ensembles and its dependence on a controlled measurement location. [S2–S4, S8]
 
 **Next question.** Which response makes that distinction both precise and computable?
 
@@ -67,6 +67,8 @@ $$
 
 The main probe ensemble is Haar $U(4)$, or the uniform two-qubit Clifford ensemble, which gives the same two-copy average. The expectation is evaluated using an exact identity rather than estimating it from a finite sample of fresh gates. Positive response means an average increase in normalized linear entropy; negative response means an average decrease. A negative **contrast or monitoring coefficient** means a lower response in one ensemble, not necessarily a negative response for every state. [S2, S3]
 
+The family labels in Figure 1 describe the state-generation dynamics and monitoring, not different choices of this main probe. The locally dressed alternative probes are supporting extensions discussed in Appendix B4 and C3. [S2, S8]
+
 **Reader.** Why divide by purity, and why not call this the Rényi-2 entropy change?
 
 **Answer.** Division by $P_m$ separates the relative response from the input purity scale. It is useful when ranks vary with size, because purity can become small. The unnormalized $\chi_2$ remains a secondary outcome. This quantity is not generally
@@ -83,7 +85,7 @@ The average of a logarithm is not the logarithm of an average, and the response 
 
 **Reader.** How do you separate eigenvalue effects from the remaining state structure?
 
-**Answer.** In the diagnostic intervention, the leading Schmidt-vector pairs of each eligible state are retained while the eigenvalues are replaced by a shared rank-4 reference spectrum. That reference is constructed from discovery trajectories, separately within each state-generation family, size, and probe time, then used in the held-out comparison. Thus “same spectrum” is exact within the declared comparison cell; it is not a claim that every plotted family and size has one universal reference spectrum. [S6, S8]
+**Answer.** In the diagnostic intervention, the leading Schmidt-vector pairs of each eligible state are retained while the eigenvalues are replaced by a shared rank-4 reference spectrum. That reference is constructed from discovery trajectories, separately within each state-generation family, size, and probe time, then used in the held-out comparison. Each run retains its own discovery-derived references; primary and independent runs are not pooled or assumed to share one reference. Thus “same spectrum” is exact within the declared comparison cell; it is not a claim that every plotted family and size has one universal reference spectrum. [S6, S8]
 
 The displayed endpoint is
 
@@ -124,6 +126,10 @@ $$
 
 This identity holds for every pure input state under the stated probe ensemble. No stabilizer assumption enters it. The complete central spectrum fixes $P_m$, but it does not fix the two neighboring-cut purities. At fixed $P_m$, a larger neighboring-purity sum gives a lower response. That is the exact state information through which the measured effect operates. The identity does not, by itself, predict the direction in which monitoring changes those purities. [S2]
 
+**Reader.** Can equal central spectra really give different responses?
+
+**Answer.** Across $12|34$, compare $|0000\rangle$ with a Bell pair within sites $12$ and another within $34$. Both have central spectrum $(1,0,0,0)$, so $P_m=1$ and $D=4$. For the product state the neighboring purities are $(1,1)$; for the two internal Bell pairs they are $(1/2,1/2)$. The identity gives $\chi_{\rm rel}=4/15$ and $4/5$, respectively. This is an exact illustration, not a priority claim or a monitored-ensemble experiment. [S2, S7]
+
 **Reader.** Does “neighboring-cut” mean that a few physical sites determine the answer?
 
 **Answer.** No. These purities are associated with extended bipartitions whose cut positions are adjacent. They are not merely observables of a two-site reduced density matrix. The probe is local; the information relevant to its averaged entangling response can involve how the boundary sites are entangled with the interiors. Exact sufficiency of three cut purities must not be confused with a theorem about reconstructing the response from a bounded physical window. [S2, S4]
@@ -134,7 +140,7 @@ This identity holds for every pure input state under the stated probe ensemble. 
 
 **Reader.** Can the mechanism be made more explicit than three real-valued purities?
 
-**Answer.** For a pure stabilizer state, $P_j=2^{-S_j}$, where $S_j$ is the integer entropy in bits. Define
+**Answer.** Stabilizer states make the exact response a finite alphabet. Their flat spectra will also permit complete-spectrum matching without state modification in M6. For a pure stabilizer state, $P_j=2^{-S_j}$, where $S_j$ is the integer entropy in bits. Define
 
 $$
 \delta_L=S_m-S_{m-1},\qquad
@@ -200,7 +206,19 @@ The primary simulation contains 57,600 trajectories; the disjoint-seed run conta
 
 **Next question.** Can one controlled measurement-location change reproduce the response suppression while preserving the spectrum?
 
-## M8. Can a single measurement cause the fixed-spectrum suppression, and how local is it?
+## M8. How does measurement location change the fixed-spectrum response?
+
+**Reader.** Is the negative measurement-induced change itself a numerical discovery?
+
+**Answer.** No. For a single-site projective Pauli measurement on a pure stabilizer state, each cut entropy stays unchanged or decreases. On the branch preserving the central spectrum, $\Delta_M P_m=0$, while $\Delta_M P_{m-1}$ and $\Delta_M P_{m+1}$ are nonnegative. Subtraction of the same exact response formula gives
+
+$$
+\Delta_M\chi_{\rm rel}
+=-\frac{2D}{5(D-1)P_m}
+\left(\Delta_M P_{m-1}+\Delta_M P_{m+1}\right)\leq0.
+$$
+
+Here $\Delta_M$ compares the states before and after measurement; $\chi_{\rm rel}$ still averages over the fresh probe ensemble. This corollary does not assert a sign for every individual gate or generic non-stabilizer measurement. Appendix F3 states the assumptions and deduction. The empirical questions are the frequency, magnitude, and spatial dependence of the change. In particular, two nonpositive changes need not have a negative near-minus-far difference. [S2, S3]
 
 **Reader.** What exactly is paired in Figure 4?
 
@@ -225,21 +243,21 @@ It is not itself the difference from a far measurement. The right panel instead 
 
 **Answer.** The original analysis can retain different sides at near and far locations. A post-hoc check therefore fixes the side and pre-state and requires both the $d=0$ and $d=n/4$ interventions to preserve the spectrum. It gives $-0.047474$ with fresh 95% interval $[-0.049338,-0.045470]$, close to the original conditional estimate. A second check fixes eligibility across all six displayed distances. That common-sample curve still concentrates the effect near the cut: at four sites its magnitude is 11.95% of the adjacent-cut value, and at eight sites 1.65%. These are new selected-population checks, not replacements for the original plotted endpoints. [S4]
 
-**Reader.** Then is the decay exponential with length 2.37 sites?
+**Reader.** How much spatial localization can be claimed?
 
-**Answer.** That interpretation is not supported by the fit diagnostics. The historical fit's parameter interval described resampling variation inside a chosen exponential model; it did not establish that the model fits adequately. Covariance-aware and cell/window diagnostics show substantial mismatch, including for the common-eligibility profile. The approved figure therefore removes the curve and length annotation while preserving every data point and original interval. The surviving statement is strong attenuation over the measured distances, not a precise physical localization length or strict finite-range theorem. [S4]
+**Answer.** The observations and stricter pairing checks support strong attenuation over the measured distances. They do not establish a physical localization length, a particular asymptotic decay law, or strict finite support. Figure 4 therefore shows the observations without a fitted curve; Appendix F5 retains the historical fit diagnostics. The theorem supplies the nonpositive single-measurement sign, while the data establish the location-dependent magnitude within the specified selected populations. [S2, S4]
 
 **Next question.** What single conclusion can the four figures support together?
 
 ## M9. What is the narrow final conclusion, and what is not claimed?
 
-**Reader.** What should remain after all the qualifications?
+**Reader.** What do the four comparisons establish together?
 
-**Answer.** The complete central Schmidt spectrum does not determine the stated fresh-gate response. The exact neighboring-purity identity identifies the extra state information; monitored dynamics reorganizes it within fixed-spectrum comparisons; the corresponding coefficients persist through 256 qubits and repeat under disjoint seeds; a controlled paired location intervention produces a spectrum-preserving suppression concentrated near the cut. That is the four-figure chain. [S1–S5]
+**Answer.** In the tested monitored ensembles, the central Schmidt spectrum alone does not specify the average response to the designated boundary-gate ensemble. Neighboring-cut purities identify the additional information. Spectrum equalization reveals finite-family contrasts; physical stabilizer matching reveals its monitoring-associated redistribution and persistence through the tested sizes; paired location interventions establish its spatial dependence. [S1–S5]
 
-The results do not establish a new monitored-transition order parameter, a critical exponent, a universal generic non-Clifford thermodynamic law, or an unconditional causal effect of the long-run monitoring rate. The exponential fit is not a physical conclusion. “Exact,” “independently replicated,” and “local” apply to specific parts of the argument, not indiscriminately to the whole project. [S2–S5]
+These comparisons answer different objections and have different estimands. The measurement-sign corollary does not determine the monitoring-rate trend. Figure 4 does not quantitatively derive Figure 3's entire coefficient, and Figure 2's weighted reconstruction is an identity, not an additional independent experiment. [S2–S4]
 
-The exact formula is the mechanism; the monitored-state redistribution is the empirical discovery; physical spectrum matching and paired intervention answer different objections. The limiting extrapolation and the transition context strengthen interpretation only within their declared assumptions. There is no need to restore the earlier cumulative flow-balance framing. [S4, S5]
+The results do not establish a new monitored-transition order parameter, a critical exponent, a universal generic non-Clifford thermodynamic law, or an unconditional causal effect of the long-run monitoring rate. The limiting extrapolation is model-dependent, and no exponential fit is a physical conclusion. There is no need to restore the earlier cumulative flow-balance framing. [S4, S5]
 
 # Part II. Appendix questions
 
@@ -403,6 +421,18 @@ The original uncertainty calculation clusters by trajectory and bootstraps traje
 
 **Answer.** Both pre- and postmeasurement states are pure stabilizer states. Their spectra at the central cut are flat on their nonzero support. Equal $S_m$ means equal rank and equal nonzero eigenvalues at the same dimension. The condition preserves the spectrum, not necessarily the central reduced density matrix or the Schmidt basis. Precisely those unfixed spatial degrees of freedom can alter neighboring purities and the next-probe response. [S2, S3]
 
+**Reader.** Why does spectrum preservation constrain the sign of the response change?
+
+**Answer.** The single-site projective Pauli measurement is local with respect to each of the three cuts. Its nonzero-probability stabilizer outcomes have identical cut entropies because their phase-free support is the same. Average entanglement monotonicity therefore applies to each such entropy value, and the one-generator rank update bounds the decrease by one bit. Hence $\Delta_M S_j\in\{0,-1\}$ for $j=m-1,m,m+1$. The flat-spectrum identity gives $\Delta_M P_{m\pm1}\geq0$. With $\Delta_M P_m=0$, subtraction of the Haar/uniform-Clifford identity gives
+
+$$
+\Delta_M\chi_{\rm rel}
+=-\frac{2D}{5(D-1)P_m}
+\bigl(\Delta_M P_{m-1}+\Delta_M P_{m+1}\bigr)\leq0.
+$$
+
+Equality holds exactly when both neighboring purities are unchanged. This is an explicit deduction from the existing response identity and stabilizer measurement rule, not independent numerical evidence. It constrains the ensemble-averaged probe response, not every gate realization. It neither orders two allowed measurement locations nor predicts the long-run monitoring coefficient. [S2, S3]
+
 ### F4. Could branch conditioning explain the result?
 
 **Answer.** The conditional estimand is genuinely selected, and the selection should be specified rather than dismissed. The original rule can retain different sides at different distances. The stricter same-side check compares $d=0$ with $d=n/4$ and requires both potential interventions to preserve the spectrum, retaining 7,945 side pairs in 4,786 pre-states. Its estimate and fresh interval remain negative. A separate all-six-distance eligibility rule retains 6,008 side/pre-state combinations in 4,025 pre-states and still yields a strongly attenuating profile. Neither check identifies an unconditional population effect. Together they show that the qualitative result does not disappear when pairing and eligibility are tightened in these specified ways. [S4]
@@ -435,6 +465,7 @@ The model-free summary is preferable. In the common-eligibility sample, the magn
 |---|---|
 | Two-copy response identity and Haar neighboring-purity formula | Exact under stated assumptions |
 | Flat stabilizer spectra and finite boundary-code reduction | Exact |
+| Nonpositive spectrum-preserving single-Pauli-measurement response change | Exact corollary for pure stabilizer inputs and the stated averaged probe |
 | Monitoring-associated code redistribution | Numerical, conditional on support |
 | Negative coefficients through $n=256$ | Direct finite-size evidence |
 | Disjoint-seed repeat | Independent-seed replication, not external replication |
@@ -452,7 +483,7 @@ At repository level, tests check exact-identity examples, a synthetic within-str
 
 ### H3. How does the work differ from established related approaches?
 
-**Answer.** The source literature audit credits stabilizer spectrum structure, Clifford designs, two-copy swap methods, entanglement features, and gate entangling-power/typicality descriptions as established ingredients. The intended contribution is their use in a controlled question about monitored state ensembles: full central-spectrum control, a fresh-gate response, an exact neighboring-cut explanation, physical large-size comparison, and a paired location intervention. Elementary insufficiency and the existence of monitored transitions should not be advertised as new. [S2, S10]
+**Answer.** The source literature audit credits stabilizer spectrum structure, Clifford designs, two-copy swap methods, entanglement features, and gate entangling-power/typicality descriptions as established ingredients. The intended contribution is their use in a controlled question about monitored state ensembles: full central-spectrum control, a fresh-gate response, an exact neighboring-cut explanation, physical large-size comparison, and a paired location intervention. Elementary insufficiency, the Haar neighboring-purity transfer rule, and the measurement-sign deduction are not presented as independent novelty claims. The empirical direction and organization of the monitored-state redistribution remain separate from those identities. [S2, S10]
 
 This report does not perform a new priority search or certify absolute novelty. The stored literature audit is a record of prior positioning, not proof that no equivalent formulation exists. The four-figure argument should remain intelligible and testable even to a reader who regards the individual algebraic tools as familiar. [S10]
 
@@ -462,7 +493,7 @@ The source hierarchy is deliberate: current canonical figure tables for plotted 
 
 **S1. Canonical figure data.** [Core CSV/JSON tables](../data/processed/core_figures/), especially the Figure 1 contrast, Figure 2 code, Figure 3 scaling, and Figure 4 distance/contrast tables. Figure 1 uses the approved 8 September 2026 uncertainty recipe; its historical intervals are preserved separately. Figures 2–4 are unchanged.
 
-**S2. Exact theory.** [Response operator and stabilizer boundary-code theory](THEORY.md). Includes assumptions, local twirling, gate-invariant conventions, and the finite alphabet.
+**S2. Exact theory.** [Response operator and stabilizer boundary-code theory](THEORY.md). Includes assumptions, local twirling, gate-invariant conventions, the finite alphabet, and the measurement-sign corollary deduced from the response identity and stabilizer measurement rule.
 
 **S3. Methods.** [Numerical methods](NUMERICAL_METHODS.md) and [run history](RUN_HISTORY.md). Includes grids, seeds, support rules, and original uncertainty calculations.
 

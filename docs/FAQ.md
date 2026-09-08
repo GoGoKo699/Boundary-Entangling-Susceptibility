@@ -28,6 +28,14 @@ No. That value is the historical unweighted exponential-fit parameter. A narrow 
 
 A post-hoc common-eligibility check keeps only side/pre-state combinations whose central spectrum is preserved under every displayed location intervention. The profile remains near-cut concentrated. This check uses a different selected population and does not establish a strict finite range; its simultaneous uncertainty band includes zero at the farthest displayed distance.
 
+## Is the negative single-measurement response change itself empirical?
+
+No. For a pure stabilizer input, a single-site Pauli measurement cannot increase either neighboring-cut entropy. If it preserves the central spectrum, the exact Haar/uniform-Clifford response identity implies a nonpositive change in the averaged response. This does not give the sign of the difference between two such changes. The paired near-minus-far contrast and its spatial concentration remain empirical; see the [corollary](THEORY.md#5-one-measurement-corollary). This is not a sign theorem for every individual probe gate or generic non-stabilizer measurements.
+
+## Does the location intervention explain the whole monitoring coefficient?
+
+It tests a controlled response mechanism under a different operation and selection rule. It does not quantitatively derive the long-run, within-spectrum monitoring coefficient. Figure 1's spectrum replacement, Figures 2–3's physical matching, and Figure 4's paired intervention should not be treated as interchangeable estimates.
+
 ## What is causal?
 
 The specified paired location interventions on copies of the same pre-state. A strict same-side sensitivity comparison requires unchanged central spectrum under both potential interventions before calculating the contrast. This is not an unconditional population effect and not the causal effect of assigning the long-run monitoring rate.

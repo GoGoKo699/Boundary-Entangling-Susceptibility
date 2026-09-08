@@ -9,11 +9,11 @@ The M1–M9 and A–H identifiers retain the original figure-design structure. A
 | M1 | What does the complete Schmidt spectrum tell us, and what might it omit? | Motivation; no figure |
 | M2 | What fresh-gate response is tested? | Definition of `chi_rel`; no figure |
 | M3 | At the same complete central spectrum, does monitoring history still matter? | **Figure 1** |
-| M4 | What missing state information controls the response? | **Figure 2(a)** |
-| M5 | How does monitoring reorganize that information? | **Figure 2(b)** |
-| M6 | Could spectrum replacement itself create the effect? | **Figure 3(a)** |
-| M7 | Does the physical effect persist at large size and independently replicate? | **Figure 3(b)** |
-| M8 | Can a single measurement cause the fixed-spectrum suppression, and how local is it? | **Figure 4** |
+| M4 | What missing state information controls the response? | Exact identity; prepares Figure 2 |
+| M5 | How does monitoring reorganize that information? | **Figure 2**, both matrices |
+| M6 | Could spectrum replacement itself create the effect? | Physical matching; prepares Figure 3 |
+| M7 | Does the physical effect persist at large size and independently replicate? | **Figure 3** |
+| M8 | How does measurement location change the fixed-spectrum response? | **Figure 4** |
 | M9 | What is the narrow final conclusion, and what is not claimed? | Scope paragraph; no figure |
 
 ## Appendix questions
@@ -58,7 +58,7 @@ The M1–M9 and A–H identifiers retain the original figure-design structure. A
 
 - F1. What is paired, and what variable is intervened on?
 - F2. How are outcomes sampled and weighted?
-- F3. Why does `Delta S_m = 0` imply an unchanged complete spectrum?
+- F3. Why does `Delta S_m = 0` imply an unchanged complete spectrum? The answer also derives the nonpositive single-measurement response change and separates it from the near-minus-far contrast.
 - F4. Could branch conditioning explain the result?
 - F5. Does the distance profile justify a physical localization length?
 
