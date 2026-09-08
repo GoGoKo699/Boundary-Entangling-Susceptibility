@@ -1,0 +1,24 @@
+{
+  "name": "materialize",
+  "argv": [
+    "python",
+    "materialize_studies.py",
+    "--output",
+    "/workspace/scratch/0174ee249694/reproduced_studies"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T13:41:14.546022+00:00",
+  "end_utc": "2026-09-08T13:41:14.946524+00:00",
+  "wall_seconds": 0.4004443729936611,
+  "exit_code": 0,
+  "user_seconds": 0.243271,
+  "system_seconds": 0.147968,
+  "peak_child_rss_kib": 27368,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

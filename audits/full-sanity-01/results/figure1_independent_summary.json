@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "checks": {
+    "discovery_vs_regenerated_physical_spectrum_error": 0.0,
+    "reference_reconstruction_error": 1.1102230246251565e-16,
+    "physical_purity_from_spectrum_error": 2.220446049250313e-16,
+    "spectrum_normalization_error": 3.3306690738754696e-16,
+    "stored_response_vs_neighbor_purities_error": 3.3306690738754696e-16,
+    "equalized_reference_purity_error": 1.1102230246251565e-16,
+    "canonical_point_error": 1.1102230246251565e-16
+  },
+  "split_counts": {
+    "primary": {
+      "physical_states": 2160,
+      "discovery_states": 1080,
+      "equalized_states": 1989,
+      "confirmation_cut": 12
+    },
+    "independent": {
+      "physical_states": 1440,
+      "discovery_states": 720,
+      "equalized_states": 1329,
+      "confirmation_cut": 8
+    }
+  },
+  "trajectory_seed_count": 1800,
+  "seed_collisions": 0,
+  "source_sha256": {
+    "checkpoint_04/data/intervention/primary_rank4/state_response_rows.csv.gz": "1f3139866d13838a659e4c6e9e127170f11a7050ead1885810796f67bd89068c",
+    "checkpoint_04/data/intervention/primary_rank4/discovery_spectrum_metadata.csv.gz": "e33815f7be155340a647c02b6cc1510412c196ce95a1a35466293127099d1128",
+    "checkpoint_04/data/intervention/primary_rank4/discovery_spectra.npz": "d41b3917ac20d9d0530cd53af70bd76409c02c3295742076fb7130c3871f56b7",
+    "checkpoint_04/data/intervention/primary_rank4/physical_spectrum_metadata.csv.gz": "ca6ff4eb531c34c0f65bd98092b29bdb041b891996a2deac854b7649fde61abd",
+    "checkpoint_04/data/intervention/primary_rank4/physical_spectra.npz": "cc96ca450013e7afabc7d5019e3fa3de4645de8a683323077468c2c0d4c3c1dd",
+    "checkpoint_04/data/intervention/primary_rank4/equalization_reference_spectra.json": "9b5131367aa1fcf85dab189470eb8786d12280bda7d1d75d5a545553fe53ec94",
+    "checkpoint_04/data/intervention/independent_seed_rank4/state_response_rows.csv.gz": "153710199f198a1440f56e610255c61628eba4f9ee4745737ed03e9fc6693026",
+    "checkpoint_04/data/intervention/independent_seed_rank4/discovery_spectrum_metadata.csv.gz": "18867fe0803d22736e991e228821fde205e331279a751db512e02b2ec22f427c",
+    "checkpoint_04/data/intervention/independent_seed_rank4/discovery_spectra.npz": "ef2c7e06b603847420998e7a5207791c09121547959aee241a544a850a0237bd",
+    "checkpoint_04/data/intervention/independent_seed_rank4/physical_spectrum_metadata.csv.gz": "d748ea4a32813faad6afb53ce37d2f1daeb38417ef9261fb2ec4da8490c2a829",
+    "checkpoint_04/data/intervention/independent_seed_rank4/physical_spectra.npz": "e587eb7d20b7f49e3ce2322ef662955687ba06087227212662b8a9e730aee1e3",
+    "checkpoint_04/data/intervention/independent_seed_rank4/equalization_reference_spectra.json": "2e667e6393ef75e346cdb2b344f2ef039a9f4c7998647c0bd58282a444b244e9"
+  },
+  "runtime_s": 0.3376459410064854,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.3.5"
+  },
+  "independence": "No repository code imports; shares original records and response definition. Discovery and full spectrum records inspected, not fresh state generation."
+}

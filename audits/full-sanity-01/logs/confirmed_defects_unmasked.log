@@ -1,0 +1,39 @@
+argv: ["pytest", "-q", "--runxfail", "audits/full-sanity-01/code/figure1_confirmed_defects.py"]
+UTC start: 2026-09-08T13:58:49.473503+00:00
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+______ test_compact_exact_stencil_reconstructs_stated_floquet_xy_endpoint ______
+
+    @pytest.mark.xfail(strict=True,reason='Confirmed baseline defect: compact four-purity table does not reconstruct its own stated endpoint')
+    def test_compact_exact_stencil_reconstructs_stated_floquet_xy_endpoint():
+        rows=list(csv.DictReader((ROOT/'studies/checkpoint_04/results/response_stencil_decomposition.csv').open()))
+        row=next(r for r in rows if r['family']=='floquet_cartan_z' and r['probe']=='cartan_xy_pi8')
+        # This identity should hold independently of original source provenance.
+>       assert abs(float(row['reconstruction'])-float(row['observed_response_contrast']))<2e-11, row
+E       AssertionError: {'family': 'floquet_cartan_z', 'probe': 'cartan_xy_pi8', 'central_spectrum_contribution': '0.0', 'neighbor_P_L_contribution': '-0.0449654861607', ...}
+E       assert 0.018486913066999996 < 2e-11
+E        +  where 0.018486913066999996 = abs((-0.0800936164752 - -0.0985805295422))
+E        +    where -0.0800936164752 = float('-0.0800936164752')
+E        +    and   -0.0985805295422 = float('-0.0985805295422')
+
+audits/full-sanity-01/code/figure1_confirmed_defects.py:17: AssertionError
+________ test_compact_replication_haar_xy_matches_record_reconstruction ________
+
+    @pytest.mark.xfail(strict=True,reason='Confirmed baseline defect: compact extension endpoint differs from included original rows and consolidated archive')
+    def test_compact_replication_haar_xy_matches_record_reconstruction():
+        rows=list(csv.DictReader((ROOT/'studies/checkpoint_04/results/intervention_cross_architecture.csv').open()))
+        row=next(r for r in rows if r['run']=='independent_seed_rank4' and r['family']=='haar_z' and r['probe']=='cartan_xy_pi8')
+        # Value independently reconstructed in figure1_extensions.py from archived rows,
+        # and verified there against archive analysis/consolidated without using this CSV.
+        expected=-0.05625102837528647
+>       assert abs(float(row['estimate'])-expected)<2e-11, row
+E       AssertionError: {'run': 'independent_seed_rank4', 'intervention_rank': '4', 'family': 'haar_z', 'probe': 'cartan_xy_pi8', ...}
+E       assert 0.036990286556113534 < 2e-11
+E        +  where 0.036990286556113534 = abs((-0.0932413149314 - -0.05625102837528647))
+E        +    where -0.0932413149314 = float('-0.0932413149314')
+
+audits/full-sanity-01/code/figure1_confirmed_defects.py:26: AssertionError
+=========================== short test summary info ============================
+FAILED audits/full-sanity-01/code/figure1_confirmed_defects.py::test_compact_exact_stencil_reconstructs_stated_floquet_xy_endpoint
+FAILED audits/full-sanity-01/code/figure1_confirmed_defects.py::test_compact_replication_haar_xy_matches_record_reconstruction
+2 failed in 0.05s

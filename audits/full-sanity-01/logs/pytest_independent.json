@@ -1,0 +1,27 @@
+{
+  "name": "pytest_independent",
+  "argv": [
+    "pytest",
+    "-q",
+    "-rx",
+    "audits/full-sanity-01/code/math_independent.py",
+    "audits/full-sanity-01/code/figure1_diagnostic_tests.py",
+    "audits/full-sanity-01/code/figure1_confirmed_defects.py",
+    "audits/full-sanity-01/code/test_figures23_audit.py"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T13:58:47.938568+00:00",
+  "end_utc": "2026-09-08T13:58:48.740288+00:00",
+  "wall_seconds": 0.8016331910039298,
+  "exit_code": 0,
+  "user_seconds": 0.704722,
+  "system_seconds": 0.082262,
+  "peak_child_rss_kib": 87740,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

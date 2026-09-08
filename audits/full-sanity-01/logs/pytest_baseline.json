@@ -1,0 +1,23 @@
+{
+  "name": "pytest_baseline",
+  "argv": [
+    "pytest",
+    "-q",
+    "tests"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T13:41:14.645305+00:00",
+  "end_utc": "2026-09-08T13:41:34.473426+00:00",
+  "wall_seconds": 19.8280868619986,
+  "exit_code": 0,
+  "user_seconds": 17.841274,
+  "system_seconds": 1.9201389999999998,
+  "peak_child_rss_kib": 204756,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

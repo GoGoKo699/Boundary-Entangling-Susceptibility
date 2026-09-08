@@ -1,0 +1,9 @@
+argv: ["python", "materialize_studies.py", "--output", "/workspace/scratch/0174ee249694/reproduced_studies"]
+UTC start: 2026-09-08T13:41:14.546022+00:00
+{
+  "sha256": "04e3e353a309b866634715b8b062b7531394fddbcdef1c61f8aec0ba3a4d0255",
+  "members": 172,
+  "bytes": 17227222,
+  "all_members_verified": true,
+  "output": "/workspace/scratch/0174ee249694/reproduced_studies"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "gate_invariants",
+  "argv": [
+    "python",
+    "studies/checkpoint_04/scripts/validate_gate_invariant_formula.py",
+    "--out",
+    "audits/full-sanity-01/reproduced_records/gate_invariants.json",
+    "--samples",
+    "100",
+    "--seed",
+    "123"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T13:42:13.889106+00:00",
+  "end_utc": "2026-09-08T13:42:14.734322+00:00",
+  "wall_seconds": 0.8451775440044003,
+  "exit_code": 0,
+  "user_seconds": 0.7372529999999999,
+  "system_seconds": 0.107317,
+  "peak_child_rss_kib": 97092,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

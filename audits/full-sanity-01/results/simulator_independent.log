@@ -1,0 +1,133 @@
+{
+  "seed": 2026090819,
+  "tolerance": 2e-12,
+  "packed_tableau": [
+    {
+      "n": 4,
+      "subsets": 15,
+      "random_measurements": 9,
+      "deterministic_measurements": 0,
+      "passed": true
+    },
+    {
+      "n": 8,
+      "subsets": 15,
+      "random_measurements": 9,
+      "deterministic_measurements": 0,
+      "passed": true
+    },
+    {
+      "n": 63,
+      "subsets": 15,
+      "random_measurements": 9,
+      "deterministic_measurements": 0,
+      "passed": true
+    },
+    {
+      "n": 64,
+      "subsets": 15,
+      "random_measurements": 9,
+      "deterministic_measurements": 0,
+      "passed": true
+    },
+    {
+      "n": 65,
+      "subsets": 15,
+      "random_measurements": 12,
+      "deterministic_measurements": 0,
+      "passed": true
+    },
+    {
+      "n": 127,
+      "subsets": 15,
+      "random_measurements": 12,
+      "deterministic_measurements": 0,
+      "passed": true
+    },
+    {
+      "n": 128,
+      "subsets": 15,
+      "random_measurements": 12,
+      "deterministic_measurements": 0,
+      "passed": true
+    },
+    {
+      "n": 129,
+      "subsets": 15,
+      "random_measurements": 12,
+      "deterministic_measurements": 0,
+      "passed": true
+    },
+    {
+      "n": 256,
+      "subsets": 15,
+      "random_measurements": 15,
+      "deterministic_measurements": 0,
+      "passed": true
+    }
+  ],
+  "dense_kernels": [
+    {
+      "module": "cross_architecture_simulation",
+      "measurement_cases": 144,
+      "max_gate_error": 5.551115123125783e-17,
+      "max_state_error": 5.978733960281817e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "module": "cross_architecture_rankflex",
+      "measurement_cases": 144,
+      "max_gate_error": 6.206335383118183e-17,
+      "max_state_error": 3.88579026655253e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "module": "cp04_common",
+      "measurement_cases": 144,
+      "max_gate_error": 5.721958498152797e-17,
+      "max_state_error": 4.710277376051326e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "passed": true
+    }
+  ],
+  "gate_maps": {
+    "gates": 11520,
+    "unique_projective_unitaries": 11520,
+    "support_maps": 720,
+    "multiplicities": [
+      16
+    ],
+    "independently_generated_group_matches": true,
+    "exhaustive_map_pauli_cases": 11520,
+    "class_support_counts": [
+      {
+        "support_maps": 36,
+        "minimum_multiplicity": 36,
+        "maximum_multiplicity": 36
+      },
+      {
+        "support_maps": 324,
+        "minimum_multiplicity": 4,
+        "maximum_multiplicity": 4
+      },
+      {
+        "support_maps": 324,
+        "minimum_multiplicity": 4,
+        "maximum_multiplicity": 4
+      },
+      {
+        "support_maps": 36,
+        "minimum_multiplicity": 36,
+        "maximum_multiplicity": 36
+      }
+    ],
+    "max_pauli_identification_error": 1.831026719408895e-15,
+    "max_unitarity_error": 8.881784197001252e-16,
+    "uniform_class_weight_max_error": 0.0,
+    "passed": true
+  },
+  "elapsed_seconds": 11.844081808994815,
+  "passed": true
+}

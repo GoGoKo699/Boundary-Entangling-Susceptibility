@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "archive_sha256": "04e3e353a309b866634715b8b062b7531394fddbcdef1c61f8aec0ba3a4d0255",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "seed": null,
+  "new_bootstrap_draws": 0,
+  "bootstrap_dependency": "original archived arrays only for size/limit intervals",
+  "physical_dependency": "original archived entropies and circuit generator",
+  "wall_seconds": 9.923139052996703,
+  "max_rss_kib": 540924
+}
+416 numerical checks passed

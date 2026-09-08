@@ -1,0 +1,9 @@
+argv: ["python", "audits/full-sanity-01/code/verify_audit_package.py"]
+UTC start: 2026-09-08T14:08:54.166429+00:00
+{
+  "baseline": "00009cf7cc02104e4c776863b3ea551bd38e00f4",
+  "unchanged_baseline_blobs": 207,
+  "claim_rows": 22,
+  "changed_paths_all_audit": true,
+  "manifest_verified_files": null
+}

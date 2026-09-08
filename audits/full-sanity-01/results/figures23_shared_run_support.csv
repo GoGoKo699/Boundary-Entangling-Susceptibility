@@ -1,0 +1,17 @@
+run,protocol,n,beta,rows,trajectories,interpretation
+primary,random_pauli,32,-0.027017758444015348,20703,7198,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+replication,random_pauli,32,-0.028168041669683303,7781,2699,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+primary,random_pauli,64,-0.035546378479985714,20213,7174,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+replication,random_pauli,64,-0.039109225207836967,7614,2694,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+primary,random_pauli,128,-0.048390480362397577,18404,6756,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+replication,random_pauli,128,-0.044120288837015784,6919,2527,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+primary,random_pauli,256,-0.050243974710462283,15751,5802,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+replication,random_pauli,256,-0.052145090079616235,5921,2170,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+primary,z_projective,32,-0.029754131620661803,20931,7199,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+replication,z_projective,32,-0.027877153996648082,7869,2699,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+primary,z_projective,64,-0.038416442510198906,20230,7172,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+replication,z_projective,64,-0.037418309278016343,7604,2687,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+primary,z_projective,128,-0.045141425317338696,18625,6872,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+replication,z_projective,128,-0.045519660536488829,6997,2553,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+primary,z_projective,256,-0.051054997680385891,16246,5883,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals
+replication,z_projective,256,-0.045509009141761828,6122,2206,diagnostic shared p-spectrum cells; record-count weights still differ; no fresh intervals

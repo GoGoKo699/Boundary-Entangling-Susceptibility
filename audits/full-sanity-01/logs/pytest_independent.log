@@ -1,0 +1,7 @@
+argv: ["pytest", "-q", "-rx", "audits/full-sanity-01/code/math_independent.py", "audits/full-sanity-01/code/figure1_diagnostic_tests.py", "audits/full-sanity-01/code/figure1_confirmed_defects.py", "audits/full-sanity-01/code/test_figures23_audit.py"]
+UTC start: 2026-09-08T13:58:47.938568+00:00
+......xx..                                                               [100%]
+=========================== short test summary info ============================
+XFAIL audits/full-sanity-01/code/figure1_confirmed_defects.py::test_compact_exact_stencil_reconstructs_stated_floquet_xy_endpoint - Confirmed baseline defect: compact four-purity table does not reconstruct its own stated endpoint
+XFAIL audits/full-sanity-01/code/figure1_confirmed_defects.py::test_compact_replication_haar_xy_matches_record_reconstruction - Confirmed baseline defect: compact extension endpoint differs from included original rows and consolidated archive
+8 passed, 2 xfailed in 0.44s

@@ -1,0 +1,375 @@
+{
+  "runtime_s": 0.19982885700301267,
+  "archive_response_point_checks": 45,
+  "all_archive_points_and_exact_decompositions_pass": true,
+  "compact_table_discrepancies": [
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "clifford_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.10706124682578684,
+      "stored": -0.107063180985
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "clifford_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.10706124682578684,
+      "stored": -0.107063180985
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "clifford_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.0745679917521984,
+      "stored": -0.0825363525663
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "clifford_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.0745679917521984,
+      "stored": -0.0814255505927
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "clifford_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.07989103708832147,
+      "stored": -0.0973015724913
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "clifford_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.07989103708832147,
+      "stored": -0.0981757003639
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.10811800540517674,
+      "stored": -0.108122699349
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.10811800540517673,
+      "stored": -0.108122699349
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.07704813781647182,
+      "stored": -0.0985805295422
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.07704813781647181,
+      "stored": -0.0800936164752
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.08533058372706182,
+      "stored": -0.089849420295
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.08533058372706182,
+      "stored": -0.0934466453412
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_random_pauli",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.07139085533050203,
+      "stored": -0.0713917854642
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_random_pauli",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.07139085533050202,
+      "stored": -0.0713917854642
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_random_pauli",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.048409961691946946,
+      "stored": -0.0688050373297
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_random_pauli",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.04840996169194694,
+      "stored": -0.0544063399564
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_random_pauli",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.04977005858907848,
+      "stored": -0.0648048977792
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_random_pauli",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.04977005858907848,
+      "stored": -0.0657593671455
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.051755923445083375,
+      "stored": -0.0517595103467
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.05175592344508338,
+      "stored": -0.0517595103467
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.0367476343766631,
+      "stored": -0.0496014295922
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.036747634376663105,
+      "stored": -0.0405153241005
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.04048711006545341,
+      "stored": -0.0520453354777
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.04048711006545342,
+      "stored": -0.0505302972163
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.09779493121488893,
+      "stored": -0.0977941668667
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.09779493121488893,
+      "stored": -0.0977941668667
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.06817361359428753,
+      "stored": -0.0891848730964
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.06817361359428753,
+      "stored": -0.0760461022209
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "primary_rank4",
+      "family": "haar_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.07313526823489015,
+      "stored": -0.0884687205502
+    },
+    {
+      "table": "response_stencil_decomposition.csv",
+      "run": "primary_rank4",
+      "family": "haar_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.07313526823489015,
+      "stored": -0.0941294201819
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "clifford_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.08067501467316238,
+      "stored": -0.107544527196
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "clifford_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.06125644338470688,
+      "stored": -0.083426498763
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "clifford_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.073711610500149,
+      "stored": -0.0962686144228
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.10372828084476837,
+      "stored": -0.107412347895
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.0711594007425931,
+      "stored": -0.0973901798137
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "floquet_cartan_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.07450475659717226,
+      "stored": -0.0916835296916
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_random_pauli",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.07930090808588826,
+      "stored": -0.0677147693444
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_random_pauli",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.054752869941996955,
+      "stored": -0.0637069356551
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_random_pauli",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.057895533083227126,
+      "stored": -0.0589159770245
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.050690722921670074,
+      "stored": -0.0448685981116
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.03643613854833391,
+      "stored": -0.0426671439855
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_weak_z_eta06",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.04084001066036811,
+      "stored": -0.0447629203553
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_z",
+      "probe": "haar_or_clifford_2design",
+      "recomputed": -0.07956730871061889,
+      "stored": -0.101306791336
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_z",
+      "probe": "cartan_xy_pi8",
+      "recomputed": -0.05625102837528647,
+      "stored": -0.0932413149314
+    },
+    {
+      "table": "intervention_cross_architecture.csv",
+      "run": "independent_rank4",
+      "family": "haar_z",
+      "probe": "cartan_xx_pi4",
+      "recomputed": -0.061594621544520695,
+      "stored": -0.0939729508191
+    }
+  ],
+  "source_sha256": {
+    "checkpoint_04/analysis/consolidated/intervention_cross_architecture.csv": "9342e61c83d155e1c3be62861e6029a68870da854813efc79213b3ee66529995",
+    "checkpoint_04/analysis/consolidated/gate_space_universality_bootstrap.csv": "800242ff22e62a7506b8ad611cfa23ecb42928809969ddf20fcba4d0fb2d5e08",
+    "checkpoint_04/data/intervention/primary_rank4/state_response_rows.csv.gz": "1f3139866d13838a659e4c6e9e127170f11a7050ead1885810796f67bd89068c",
+    "checkpoint_04/data/intervention/independent_seed_rank4/state_response_rows.csv.gz": "153710199f198a1440f56e610255c61628eba4f9ee4745737ed03e9fc6693026",
+    "checkpoint_04/data/intervention/posthoc_rank2/state_response_rows.csv.gz": "fd162cfa069d1e33493789536156ac3efc27acbcb9bca62012a6cf2f61885e11"
+  },
+  "intervals": "Archived interval endpoints inspected, no new extension bootstrap performed."
+}

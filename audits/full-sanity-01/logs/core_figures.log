@@ -1,0 +1,3 @@
+argv: ["python", "reproduce.py", "--core-figures", "--output", "audits/full-sanity-01/reproduced_figures"]
+UTC start: 2026-09-08T13:41:14.553090+00:00
+Validated 18 figure files in audits/full-sanity-01/reproduced_figures
