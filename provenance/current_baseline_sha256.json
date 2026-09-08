@@ -1,31 +1,125 @@
 {
   "source_commit": "d693b9dda41891d046157f3569b79c3b0d90d2e5",
   "files": [
-    {"path":"data/processed/core_figures/figure_01_panel_b.csv","sha256":"838000b9770bec61b6cf0bba9106f0124c099bc8a24c988ca8117fb8834fd1b9","bytes":1331},
-    {"path":"data/processed/core_figures/figure_02_boundary_codes.csv","sha256":"f851c486a633f43d0c244baca2c3cecb93e51963cd28f4079e465760505342bf","bytes":1134},
-    {"path":"data/processed/core_figures/figure_03_size_scaling.csv","sha256":"cc29fc262ca5654faecb3d1517753e20be9d40fd576ccdd2e49822aae49500ad","bytes":2789},
-    {"path":"data/processed/core_figures/figure_04_conditioning_contrast.csv","sha256":"2b8076c7c0851d4dc255edf45111559cd2d83410a5cd4274bcbeabeef324f1c3","bytes":255},
-    {"path":"data/processed/core_figures/figure_04_distance_decay.csv","sha256":"e387f12091f218fc4b529613573239bc44598a6b2797d75ce34621cf653b804b","bytes":422},
-    {"path":"figures/core/figure_01_panel_b.pdf","sha256":"3604254c511a5aafa7669de23b64e7d2f66d5850ce4d89687a163cd944e6236f","bytes":11664},
-    {"path":"figures/core/figure_01_panel_b.png","sha256":"946d95d044fda9fe2c94a5912b49ad5cb41e47df959e659de6f1447e3620e47e","bytes":68684},
-    {"path":"figures/core/figure_02_redistribution_matrix.pdf","sha256":"357c88228b05d5fc9b74b0f0d9283b1411d72bfda65324466b35ae29eb571afb","bytes":5133},
-    {"path":"figures/core/figure_02_redistribution_matrix.png","sha256":"38ab18cefcee30b4e599ab2550aec962f6a0e9aace321221fbaed514b8114285","bytes":35468},
-    {"path":"figures/core/figure_02_response_matrix.pdf","sha256":"e2e23b25b7d0a4e836115d2cda3d7241e56846401a033cf3775436e5d5fde9c8","bytes":8430},
-    {"path":"figures/core/figure_02_response_matrix.png","sha256":"8080f9737ce3e5ad42b19b174987275a4b6ae53e66070d504ef6e0c0247daec5","bytes":41478},
-    {"path":"figures/core/figure_03_size_scaling.pdf","sha256":"5d476c03058824da83d37381377df135ffd354939371bde77dbebd929f7d97df","bytes":14102},
-    {"path":"figures/core/figure_03_size_scaling.png","sha256":"1e9835d03ed0c35053db193c022b7d5a40f40ee17212f3c72c6d728eda736e5a","bytes":115412},
-    {"path":"figures/core/figure_04_conditioning_contrast.pdf","sha256":"fb268286db1f2492a5af229f262788cb3d1de5b9c9360989ce7be713fae2c01e","bytes":9771},
-    {"path":"figures/core/figure_04_conditioning_contrast.png","sha256":"dfa81b94687f88bcf94496cf99d7489ffe5500e9f6e33cbbcee4c32df5d5a103","bytes":53142},
-    {"path":"figures/core/figure_04_distance_decay.pdf","sha256":"bb81287b3e596ee1dfcad17b26bebe4203f7b05055ba48c79d0d25202a4d20d9","bytes":11354},
-    {"path":"figures/core/figure_04_distance_decay.png","sha256":"83cc666cdc734a8df220baa55611722f99f4fffdad6e3bd598337c21c1706ab4","bytes":64877},
-    {"path":"figures/core_svg/figure_01_panel_b.svg","sha256":"8361164476793986f8b827b48e94d19edc9d52a66525ff5619d08b8afe5e2276","bytes":16976},
-    {"path":"figures/core_svg/figure_02_redistribution_matrix.svg","sha256":"3e1d00df3536e4668160b038e509c8d9896ecf3d44a60d5ef6fd933a3b5b8488","bytes":14069},
-    {"path":"figures/core_svg/figure_02_response_matrix.svg","sha256":"34cad14826be3c1038645d557f4f38c1a9d8840f1b1a59daaa5d7719361a5140","bytes":13846},
-    {"path":"figures/core_svg/figure_03_size_scaling.svg","sha256":"6ca4b12fe2d8ec4a9e8b18e8bf2d7d1ee052caf46465aa4d53d598a0ca6ca328","bytes":38488},
-    {"path":"figures/core_svg/figure_04_conditioning_contrast.svg","sha256":"8b0f634479af21fd95750518d5359d0ccd1fef6bf82fed6cc7e4af12d1927609","bytes":9037},
-    {"path":"figures/core_svg/figure_04_distance_decay.svg","sha256":"72aadd2f5bd74e939d0fad0ac518df080e9f8cbb981e8b8226f18efae7616c51","bytes":17833}
+    {
+      "path": "data/processed/core_figures/figure_01_panel_b.csv",
+      "sha256": "838000b9770bec61b6cf0bba9106f0124c099bc8a24c988ca8117fb8834fd1b9",
+      "bytes": 1331
+    },
+    {
+      "path": "data/processed/core_figures/figure_02_boundary_codes.csv",
+      "sha256": "f851c486a633f43d0c244baca2c3cecb93e51963cd28f4079e465760505342bf",
+      "bytes": 1134
+    },
+    {
+      "path": "data/processed/core_figures/figure_03_size_scaling.csv",
+      "sha256": "cc29fc262ca5654faecb3d1517753e20be9d40fd576ccdd2e49822aae49500ad",
+      "bytes": 2789
+    },
+    {
+      "path": "data/processed/core_figures/figure_04_conditioning_contrast.csv",
+      "sha256": "2b8076c7c0851d4dc255edf45111559cd2d83410a5cd4274bcbeabeef324f1c3",
+      "bytes": 255
+    },
+    {
+      "path": "data/processed/core_figures/figure_04_distance_decay.csv",
+      "sha256": "e387f12091f218fc4b529613573239bc44598a6b2797d75ce34621cf653b804b",
+      "bytes": 422
+    },
+    {
+      "path": "figures/core/figure_01_panel_b.pdf",
+      "sha256": "a72d63c344734bd14e7a23c91e408fd10661fbfe9e9d504045f1f451507c7cc8",
+      "bytes": 11662
+    },
+    {
+      "path": "figures/core/figure_01_panel_b.png",
+      "sha256": "fa8f79e49f518534024d38e97c6cfefefa5930229704fae3f48b4504ab42a3ae",
+      "bytes": 68688
+    },
+    {
+      "path": "figures/core/figure_02_redistribution_matrix.pdf",
+      "sha256": "e6895838e9bbf0bb1d70605442c582acce474335946dcdf33da5b5384c3b850a",
+      "bytes": 5179
+    },
+    {
+      "path": "figures/core/figure_02_redistribution_matrix.png",
+      "sha256": "45ae98643d32c87cd77256ffc150854df9e2bdaa4dacbf1c5b4377ce11000fb7",
+      "bytes": 35769
+    },
+    {
+      "path": "figures/core/figure_02_response_matrix.pdf",
+      "sha256": "1b04e6b327464decaa4736baef7c43f632149bb66f243322cc73bcdb07d32a2b",
+      "bytes": 8469
+    },
+    {
+      "path": "figures/core/figure_02_response_matrix.png",
+      "sha256": "11d366d72f3ccef1f82e8a7ed16f04998a16947293eff01b19a2f846d14919cf",
+      "bytes": 41787
+    },
+    {
+      "path": "figures/core/figure_03_size_scaling.pdf",
+      "sha256": "519f6c835e93b818b014e00e6d3061c03437f69b6e7df712e7832c60575434c6",
+      "bytes": 14036
+    },
+    {
+      "path": "figures/core/figure_03_size_scaling.png",
+      "sha256": "3e2ff8a8f94618aac0efb34edd9a8858bdffb078ae8289eccf795550c33fb864",
+      "bytes": 115584
+    },
+    {
+      "path": "figures/core/figure_04_conditioning_contrast.pdf",
+      "sha256": "514415c209a36c6c7456f359bea15bc376f2b259acbcebc698642406645015c1",
+      "bytes": 9756
+    },
+    {
+      "path": "figures/core/figure_04_conditioning_contrast.png",
+      "sha256": "927c0261a01e5d7101617f675da084ebbff4a379b1e6b2f5eca030792cf6fe85",
+      "bytes": 53049
+    },
+    {
+      "path": "figures/core/figure_04_distance_decay.pdf",
+      "sha256": "87cb291dcf469c3d3e0504d61c34f9e92ac46934c4a853b318d88858e64ed751",
+      "bytes": 11332
+    },
+    {
+      "path": "figures/core/figure_04_distance_decay.png",
+      "sha256": "5e287cc0988e99faaa63b460714f0e37023bf027e44897de79b42fe231ae45bb",
+      "bytes": 64876
+    },
+    {
+      "path": "figures/core_svg/figure_01_panel_b.svg",
+      "sha256": "62d9d5a99a3224900f4a8107e29a90a48b6ea0958e2bbcb7d768c84a6b3e00d5",
+      "bytes": 16976
+    },
+    {
+      "path": "figures/core_svg/figure_02_redistribution_matrix.svg",
+      "sha256": "9ba812b1b93824dba6b8602302d0b8734fe5c79b4594b1b47c7361ad2763b320",
+      "bytes": 13729
+    },
+    {
+      "path": "figures/core_svg/figure_02_response_matrix.svg",
+      "sha256": "f334ea463788711ea6381787c7e0a82613821e753ee7b554222350fd7b6108d6",
+      "bytes": 13678
+    },
+    {
+      "path": "figures/core_svg/figure_03_size_scaling.svg",
+      "sha256": "a434bb5ac4bf4c018d02d8e65f56101d41641b482bd324e6a8a8682cf99f67a3",
+      "bytes": 38488
+    },
+    {
+      "path": "figures/core_svg/figure_04_conditioning_contrast.svg",
+      "sha256": "65c988e33c94f85935a580e51d81e5dea307ad576466a94bebfbed665e9e21c9",
+      "bytes": 9037
+    },
+    {
+      "path": "figures/core_svg/figure_04_distance_decay.svg",
+      "sha256": "286f820c8b49ad529e4072e80dd0c0fc1204308d1ecd06838ed16a6038b88fd7",
+      "bytes": 17833
+    }
   ],
-  "baseline_id": "figure1-uncertainty-adopted-2026-09-08",
+  "baseline_id": "irises-figure-palette-2026-09-08",
   "preceding_commit": "c54dca28464832ecebeb6602c4c490d3d68d3015",
-  "adoption_record": "provenance/FIGURE1_ADOPTION_2026-09-08.json"
+  "adoption_record": "provenance/FIGURE1_ADOPTION_2026-09-08.json",
+  "palette_adoption_record": "provenance/FIGURE_PALETTE_2026-09-08.json",
+  "palette_preceding_commit": "4dfd551727ea7af06b2d91589d5c2e041a7b634f"
 }

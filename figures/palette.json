@@ -1,6 +1,6 @@
 {
   "name": "Irises",
-  "status": "presentation preview, not adopted canonical artwork",
+  "status": "approved for figures only, 2026-09-08",
   "reference": "https://en.wikipedia.org/wiki/Irises_(painting)",
   "selection": "Design choices inspired by the linked reproduction as it appears today, not pigment measurements or exact pixel samples.",
   "colors": {
@@ -11,21 +11,30 @@
     "ochre": "#BD964A",
     "terracotta": "#A05A3C",
     "paper": "#F7F5EC",
-    "white": "#FFFFFF",
-    "muted": "#59666A",
-    "line": "#D5DCCF"
+    "white": "#FFFFFF"
   },
   "figure_mapping": {
     "#245b78": "#3F4D8C",
     "#b66a3c": "#A05A3C",
     "#2f7c78": "#477568",
-    "#f3f4f4": "#F7F5EC"
+    "#f3f4f4": "#F7F5EC",
+    "#1f77b4": "#3F4D8C",
+    "#ff7f0e": "#477568",
+    "#2ca02c": "#A05A3C",
+    "#d62728": "#3F4D8C",
+    "#9467bd": "#477568",
+    "#8c564b": "#A05A3C",
+    "#e377c2": "#3F4D8C",
+    "#7f7f7f": "#477568",
+    "#bcbd22": "#A05A3C",
+    "#17becf": "#3F4D8C"
   },
   "semantics": {
     "run": "Keep filled-circle versus open-square encoding; do not encode replication with color alone.",
     "protocol": "Keep projective-Z and random-Pauli labels and existing panel assignments.",
     "matrix": "Keep both existing zero-centered scales, matrix order, signs, numeric annotations, and the existing reversed palette in the response matrix.",
     "distance": "Keep the zero reference line, accepted confidence intervals, and no exponential fit.",
-    "website": "Colors organize navigation and emphasis. They do not certify claims or imply a significance threshold."
+    "repository": "Native GitHub Markdown. No custom page colors, fonts, CSS, or JavaScript.",
+    "paper": "A neutral midpoint inside the matrix colormap, not a repository or figure-page background."
   }
 }

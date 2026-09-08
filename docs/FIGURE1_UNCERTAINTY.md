@@ -1,5 +1,7 @@
 # Figure 1: adopted uncertainty calculation
 
+The later [figure-only palette adoption](../figures/PALETTE.md) changes colors, not this uncertainty calculation. Statements below about unchanged colors and other figures describe the statistical revision at the time it was made. Its provenance record remains intact.
+
 The author approved the primary uncertainty recipe and revised intervals on 8 September 2026 after reviewing their comparison with the historical intervals. Only Figure 1 error bars change. All point estimates, metadata, common comparison support, plotting code and visual design are unchanged. Figures 2–4 are unchanged.
 
 ## Definition
