@@ -17,6 +17,11 @@ from boundary_susceptibility.response import haar_clifford_relative_response
 
 ROOT = Path(__file__).resolve().parent
 
+GENERATED = {'.git', '.venv', 'venv', '__pycache__', '.pytest_cache',
+             'reproduced_studies', 'reproduced_evidence', 'reproduced_records', 'reproduced_figures'}
+def ignored(path: Path) -> bool:
+    return any(part in GENERATED or part.endswith('.egg-info') for part in path.relative_to(ROOT).parts)
+
 REQUIRED = [
     "README.md",
     "docs/SCIENTIFIC_STORY.md",
@@ -103,14 +108,6 @@ if not (
 ):
     raise SystemExit("Figure 4 conditional/unconditional sign reversal failed")
 
-fit = json.loads(
-    (ROOT / "data/processed/core_figures/figure_04_distance_fit.json").read_text(
-        encoding="utf-8"
-    )
-)
-if not (2.0 < float(fit["decay_length"]) < 3.0):
-    raise SystemExit("Figure 4 decay length is outside the audited range")
-
 # Every browser figure must be well-formed SVG rather than a broken placeholder.
 for svg_path in sorted((ROOT / "figures/core_svg").glob("*.svg")):
     if svg_path.stat().st_size < 1000:
@@ -129,7 +126,7 @@ external_prefixes = ("http://", "https://", "mailto:", "data:", "#")
 broken_links: list[str] = []
 
 for markdown_path in sorted(ROOT.rglob("*.md")):
-    if ".git" in markdown_path.parts:
+    if ignored(markdown_path):
         continue
     text = markdown_path.read_text(encoding="utf-8", errors="strict")
     raw_targets = markdown_link.findall(text) + html_source.findall(text)
@@ -192,7 +189,7 @@ for row in manifest_rows:
 # Build the forbidden marker dynamically so this verifier does not match itself.
 tikz_marker = "\\begin{" + "tikzpicture}"
 for path in ROOT.rglob("*"):
-    if not path.is_file() or ".git" in path.parts:
+    if not path.is_file() or ignored(path):
         continue
     if path.suffix.lower() == ".tex":
         raise SystemExit(f"TeX source is excluded from this repository: {path}")
@@ -201,4 +198,13 @@ for path in ROOT.rglob("*"):
         if tikz_marker in text:
             raise SystemExit(f"TikZ source is excluded from this repository: {path}")
 
-print("verification passed")
+from boundary_susceptibility.records import RecordBundle
+import hashlib
+with RecordBundle() as records:
+    status=records.verify()
+protected=json.loads((ROOT/'provenance/current_baseline_sha256.json').read_text())
+for entry in protected['files']:
+    file=ROOT/entry['path']
+    if hashlib.sha256(file.read_bytes()).hexdigest()!=entry['sha256']:
+        raise SystemExit(f"Frozen figure/input changed: {entry['path']}")
+print(f"verification passed: {status['members']} source-data members and all current panels/inputs verified")

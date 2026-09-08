@@ -1,40 +1,23 @@
-# Data policy
+# Data and scope
 
-## Tracked in ordinary Git history
+The required data file is **`entanglement-data.zip` in the repository root**. It is a deterministic, indexed collection of unchanged records from the original susceptibility study. [The manifest](../data/record_bundle_manifest.json) specifies every member, byte count, original source member, and SHA-256 hash. It contains no manuscript source, fonts, or later channel-theory results.
 
-The repository tracks:
+The bundle contains original intervention rows and reference/physical spectra, both large-size state tables, paired measurement records, archived bootstrap arrays, measurement/gate maps, supporting derived tables, design records, and the original figure-specific resamples. The separate original checkpoint ZIPs are not needed for the documented commands. They remain provenance sources, not hidden dependencies.
 
-- every canonical CSV or JSON input used by the six core Python panels;
-- the exact plotting scripts;
-- selected load-bearing derived tables from Checkpoints 04 and 05;
-- design locks, timestamps, simulation and analysis source, theorem checks, and validation source needed to audit the final scientific chain;
-- browser-visible SVG exports of the accepted panels.
+The source code is readable under [studies](../studies/), not hidden inside a nested checkpoint archive. `python materialize_studies.py` builds a workspace with the documented data layout for these scripts. It verifies inputs and refuses to overwrite different existing files.
 
-These files are small, reviewable, and sufficient to regenerate the displayed data panels and verify the headline numerical statements.
+## What self-contained means
 
-## Frozen author-reviewed figure binaries
+After installing the declared Python dependencies, a complete checkout contains everything needed for canonical-figure redraws, stored-record reanalysis, and the supplied simulator/theorem validation commands. `python verify.py` fails when the bundle is absent, incomplete, or altered. A green source-only test is not accepted as proof of data completeness.
 
-The six PDF panels approved in the manuscript-layout workflow are identified by filename, SHA-256 hash, and byte count in `provenance/figure_sha256.csv`. They are not tracked as ordinary branch files. The canonical values and plotting scripts regenerate equivalent vector PDFs locally, while an immutable copy of the exact frozen PDF set should be attached to a future versioned release.
+No claim is made that every large simulation campaign was freshly rerun during cleanup. Stored-record reanalysis, small simulator cross-checks, and full simulation generation remain separate operations.
 
-## Kept outside ordinary Git history
+## Figures
 
-The complete Checkpoint 04 and Checkpoint 05 packages contain additional compressed raw arrays, state tables, bootstrap arrays, and duplicated generated artifacts. They are intentionally not committed as opaque binary archives. Before public release they should be attached to a versioned GitHub Release or deposited in a research archive, with download locations and SHA-256 values recorded here.
+All six active PDF/PNG/SVG triples are tracked. Their byte identities and the canonical plotting inputs are protected by [the current baseline manifest](../provenance/current_baseline_sha256.json). The Figure 4 distance panel has no fitted exponential. The older external Overleaf hashes are historical provenance only; no Overleaf project is required.
 
-Current local archive identities retained for migration provenance:
+The discarded fit parameters are retained only under [results/historical_fit](../results/historical_fit/), so their diagnostic role is not confused with a current physical claim.
 
-| Archive | Bytes | SHA-256 |
-|---|---:|---|
-| `entanglement_project_checkpoint_04.zip` | 8,874,243 | `690722855b37c5ba1aab96720e03d0f36e7b2b0b86447827f9eeecda0a973023` |
-| `entanglement_project_checkpoint_05.zip` | 10,718,474 | `284a92bfac08af6194cd576ce07c4be90e1e760fcc7b0fc7951eaacd1fa975ce` |
-| `Overleaf.zip` frozen figure source | 56,910 | `888103c5c63a5b8ebb203e73c8cea79c4f43b4d8828caf59d8a6f4518ce44977` |
+## Licensing
 
-## Why this split is deliberate
-
-A reader should not have to download a binary archive to understand the result, inspect the central evidence, or regenerate the paper panels. At the same time, full trajectory-level provenance should remain available as a release asset for specialist reanalysis.
-
-## Pending release action
-
-- choose the public data archive or GitHub Release;
-- upload the two complete checkpoint packages and frozen figure set;
-- record their immutable URLs alongside the hashes above;
-- specify the final data and figure licenses.
+No license is granted by this cleanup. See [LICENSE_STATUS.md](../LICENSE_STATUS.md). Repository privacy and public-release decisions are unchanged.

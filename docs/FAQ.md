@@ -22,7 +22,7 @@ No. The within-spectrum coefficients are directly observed to be negative throug
 
 ## Is the localization length exactly 2.37 sites?
 
-No. That value is the historical unweighted exponential-fit parameter. A narrow bootstrap parameter interval did not establish the adequacy of the exponential. The revised interpretation is a response concentrated near the cut and rapidly decreasing at the sampled distances. The original curve remains visible only because the accepted artwork has not yet been revised.
+No. That value is the historical unweighted exponential-fit parameter. A narrow bootstrap parameter interval did not establish the adequacy of the exponential. The revised interpretation is a response concentrated near the cut and rapidly decreasing at the sampled distances. The current accepted Figure 4 has already removed that curve and annotation.
 
 ## Could changing selected trajectories produce the distance profile?
 
@@ -50,4 +50,4 @@ That the included software, frozen-result regression checks, structural checks, 
 
 ## Where are the raw data?
 
-The original Checkpoint 04 and Checkpoint 05 ZIP identities are in [data policy](DATA_POLICY.md). A permanent raw-data deposit remains pending. Small canonical figure tables and selected source are tracked; they must not be mistaken for the full trajectory-level data.
+The required root `entanglement-data.zip` contains the original records, spectra, resamples, and maps indexed by `data/record_bundle_manifest.json`. No old chat or separately obtained checkpoint ZIP is needed. Exact Figure 1 accepted-interval resampling remains a historical provenance limitation; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).

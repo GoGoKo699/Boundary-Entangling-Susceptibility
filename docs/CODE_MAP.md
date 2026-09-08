@@ -1,32 +1,20 @@
-# Code and evidence map
+# Code map
 
-## Supported entry points
+| Task | Source | Input |
+|---|---|---|
+| Exact three-cut response and stabilizer alphabet | `src/boundary_susceptibility/response.py`, `boundary_codes.py` | Purities or integer entropy increments |
+| Integrity-checked original data access | `src/boundary_susceptibility/records.py` | Root `entanglement-data.zip` plus its manifest |
+| Canonical graph redraws | `reproduce.py`, `scripts/figures/` | Frozen core CSV/JSON tables |
+| Core record replay | `scripts/analysis/reproduce_core_records.py` | Original rows and resamples in the bundle |
+| Earlier figure-design bootstrap reference | `studies/figure_design/bootstrap_reference.py` | Historical design calculation, not the accepted hybrid intervals |
+| Independent September sensitivity replay | `scripts/analysis/reassess_evidence.py` | Checkpoint 05 data members in the bundle |
+| Unpack study layouts safely | `materialize_studies.py` | Bundle and readable study source |
+| State-vector intervention and rank/probe extensions | `studies/checkpoint_04/scripts/` | Discovery/confirmatory rows, spectra, and seeds |
+| Stabilizer scaling and paired interventions | `studies/checkpoint_05/scripts/` | Clifford maps and fixed simulation parameters |
+| Small simulator and theorem checks | Both study script directories | Group tables and explicit seeds |
 
-[`../reproduce.py`](../reproduce.py) rebuilds six frozen-layout panels from canonical inputs and checks all 18 PDF/PNG/SVG files. [`../scripts/figures/export_formats.py`](../scripts/figures/export_formats.py) exports the same Matplotlib figure to all three formats. Historical Figure 4 artwork is reproduced as recorded; its current interpretation is in [`EVIDENCE_REASSESSMENT.md`](EVIDENCE_REASSESSMENT.md).
+The code keeps independent estimators and simulator validation paths separate. Cleanup does not merge them into one numerical implementation merely to remove duplication.
 
-[`../scripts/analysis/reassess_evidence.py`](../scripts/analysis/reassess_evidence.py) reads the hash-verified original Checkpoint 05 ZIP, recalculates the finite-size point estimates from stored entropy records, and performs the post-hoc pairing, distance-profile, and finite-size-model checks. It does not rerun random-circuit generation.
+Use [the reproduction guide](REPRODUCTION.md) for commands. The [data manifest](../data/record_bundle_manifest.json) maps every raw member back to its original source identity. No later project is a software dependency.
 
-## Core plotting scripts
-
-| Script in `scripts/figures/` | Panels |
-|---|---|
-| `make_figure_01_frozen.py` | Five-family fixed-spectrum response |
-| `make_figure_02.py` | Boundary-response and probability-redistribution matrices |
-| `make_figure_03.py` | Finite-size slopes and model-dependent extrapolations |
-| `make_figure_04.py` | Recorded distance curve and conditioning contrast |
-
-Canonical source tables are in [`../data/processed/core_figures/`](../data/processed/core_figures/). These small tables redraw figures; they are not a substitute for the archived trajectory data.
-
-## Study sources
-
-[`../studies/checkpoint_04/`](../studies/checkpoint_04/) contains the state-vector intervention, architecture/probe source, and theorem checks. [`../studies/checkpoint_05/`](../studies/checkpoint_05/) contains the stabilizer simulator, scaling and replication analysis, boundary codes, measurement-location analysis, design records, and validation source. Full data availability is documented in [`DATA_POLICY.md`](DATA_POLICY.md).
-
-## Verification
-
-[`../verify.py`](../verify.py) checks the existing frozen-result and repository-structure expectations. Those checks are regression checks, not a fresh independent simulation. [`../tests/test_identities.py`](../tests/test_identities.py) checks the reusable formulas. [`../tests/test_evidence_pipeline.py`](../tests/test_evidence_pipeline.py) tests estimator plumbing on synthetic data and validates the complete plotting output set.
-
-The exact-identity package is [`../src/boundary_susceptibility/`](../src/boundary_susceptibility/). Its concise implementations cover the neighboring-purity formula and stabilizer response alphabet; the full locally dressed theorem is in [`THEORY.md`](THEORY.md) and the study validation scripts.
-
-## Provenance
-
-[`../provenance/figure_sha256.csv`](../provenance/figure_sha256.csv) identifies the original author-approved PDF bytes from the external Overleaf archive. Regenerated repository exports can have different PDF metadata. [`../results/evidence_reassessment/input_manifest.json`](../results/evidence_reassessment/input_manifest.json) records the archived members actually read by this reassessment. No nonexistent source-migration table or test module is assumed.
+See [precise reproducibility limits](REPRODUCIBILITY_LIMITS.md). Preserved original intervals and fully regenerated intervals are not interchangeable.

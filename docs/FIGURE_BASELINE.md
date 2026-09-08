@@ -6,7 +6,7 @@ The four-figure [dialogue report](DIALOGUE_REPORT.md) uses this baseline. Its qu
 
 ## Reproducible assets
 
-`python reproduce.py --core-figures` produces six PDF/PNG/SVG triples. The current Figure 4 generator takes the original distance and contrast CSVs only. It neither reads nor refits `figure_04_distance_fit.json`.
+`python reproduce.py --core-figures` produces six PDF/PNG/SVG triples. The current Figure 4 generator takes the original distance and contrast CSVs only. It neither reads nor refits `results/historical_fit/figure_04_distance_fit.json`.
 
 Current publication PDFs/PNGs are in `figures/core/`; browser SVGs are in `figures/core_svg/`. `scripts/figures/make_figure_04.py` is the current plotting source. For Overleaf, replace only `Graph/figure_04_distance_decay.pdf`. No geometry or figure insertion change is necessary. The old sentence asserting an exponential law must also be removed from the caption; a complete replacement is below.
 

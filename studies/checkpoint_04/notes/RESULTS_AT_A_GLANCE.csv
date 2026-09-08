@@ -1,0 +1,62 @@
+arm,run,condition,probe_or_outcome,contrast_or_slope,estimate,ci_low,ci_high,status
+central-spectrum intervention,primary_rank4,Haar / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.0977949312148889,-0.1101797344560253,-0.0855055193218096,below zero
+central-spectrum intervention,primary_rank4,Haar / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0681736135942874,-0.0772146025993178,-0.0593704746399951,below zero
+central-spectrum intervention,primary_rank4,Haar / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0731352682348901,-0.0841524380083651,-0.0624400858202615,below zero
+central-spectrum intervention,primary_rank4,Clifford / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.1070612468257868,-0.141640451702569,-0.0708858923732118,below zero
+central-spectrum intervention,primary_rank4,Clifford / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0745679917521983,-0.0969677539719631,-0.0505882851208249,below zero
+central-spectrum intervention,primary_rank4,Clifford / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0798910370883214,-0.1053427551448038,-0.053808261427665,below zero
+central-spectrum intervention,primary_rank4,Floquet Cartan / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.1081180054051767,-0.1223824422624318,-0.0935242909460988,below zero
+central-spectrum intervention,primary_rank4,Floquet Cartan / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0770481378164718,-0.0875913774932344,-0.0659576474279906,below zero
+central-spectrum intervention,primary_rank4,Floquet Cartan / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0853305837270618,-0.1001389580130076,-0.0708725758324245,below zero
+central-spectrum intervention,primary_rank4,Haar / random Pauli,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.071390855330502,-0.0826886001502725,-0.0601312945805126,below zero
+central-spectrum intervention,primary_rank4,Haar / random Pauli,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0484099616919469,-0.05650434707829,-0.0400528242163975,below zero
+central-spectrum intervention,primary_rank4,Haar / random Pauli,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0497700585890784,-0.0602951258263911,-0.0395516644776252,below zero
+central-spectrum intervention,primary_rank4,Haar / weak Z (eta=0.6),Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.0517559234450833,-0.0577701320934972,-0.0455949541178652,below zero
+central-spectrum intervention,primary_rank4,Haar / weak Z (eta=0.6),locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0367476343766631,-0.041315679426932,-0.032185096272924,below zero
+central-spectrum intervention,primary_rank4,Haar / weak Z (eta=0.6),locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0404871100654534,-0.0460252681583155,-0.0350570819309383,below zero
+central-spectrum intervention,independent_rank4,Haar / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.0795673087106188,-0.0948984308026249,-0.0654683922551632,below zero
+central-spectrum intervention,independent_rank4,Haar / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0562510283752864,-0.0674587802331359,-0.0454744263607065,below zero
+central-spectrum intervention,independent_rank4,Haar / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0615946215445206,-0.0758272704453997,-0.0486940717765663,below zero
+central-spectrum intervention,independent_rank4,Clifford / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.0806750146731623,-0.1138776765205273,-0.0477526419511516,below zero
+central-spectrum intervention,independent_rank4,Clifford / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0612564433847068,-0.0911555187369576,-0.0329971628060505,below zero
+central-spectrum intervention,independent_rank4,Clifford / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.073711610500149,-0.1132027927230135,-0.0373369879516532,below zero
+central-spectrum intervention,independent_rank4,Floquet Cartan / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.1037282808447683,-0.1252216920649895,-0.0844937170060936,below zero
+central-spectrum intervention,independent_rank4,Floquet Cartan / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0711594007425931,-0.086583187357482,-0.0563750668008519,below zero
+central-spectrum intervention,independent_rank4,Floquet Cartan / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0745047565971722,-0.0941875966307328,-0.0557118063375939,below zero
+central-spectrum intervention,independent_rank4,Haar / random Pauli,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.0793009080858882,-0.0938434896736261,-0.0647577083908906,below zero
+central-spectrum intervention,independent_rank4,Haar / random Pauli,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0547528699419969,-0.0667778936877053,-0.0435159493281954,below zero
+central-spectrum intervention,independent_rank4,Haar / random Pauli,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0578955330832271,-0.0740495534938748,-0.0425482156108931,below zero
+central-spectrum intervention,independent_rank4,Haar / weak Z (eta=0.6),Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.05069072292167,-0.0610423513461883,-0.0402598740035794,below zero
+central-spectrum intervention,independent_rank4,Haar / weak Z (eta=0.6),locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0364361385483339,-0.0438031215476424,-0.0289247002357962,below zero
+central-spectrum intervention,independent_rank4,Haar / weak Z (eta=0.6),locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0408400106603681,-0.0495561607016761,-0.0319093819294708,below zero
+central-spectrum intervention,posthoc_rank2,Haar / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.1325832852974622,-0.1512499046237787,-0.1140437332399046,below zero
+central-spectrum intervention,posthoc_rank2,Haar / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0941560008025905,-0.107759686208577,-0.0803821557961634,below zero
+central-spectrum intervention,posthoc_rank2,Haar / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.1037679073652833,-0.120520578703063,-0.0873700764369314,below zero
+central-spectrum intervention,posthoc_rank2,Clifford / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.1442572159240789,-0.1768195623775973,-0.1121158025090387,below zero
+central-spectrum intervention,posthoc_rank2,Clifford / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.1023627257763145,-0.124541190868697,-0.0791183605951585,below zero
+central-spectrum intervention,posthoc_rank2,Clifford / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.11268147326564,-0.1386508093123938,-0.0864586643696086,below zero
+central-spectrum intervention,posthoc_rank2,Floquet Cartan / projective Z,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.126952855863775,-0.14685949773293,-0.1068651555408235,below zero
+central-spectrum intervention,posthoc_rank2,Floquet Cartan / projective Z,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0904473156710479,-0.106208158489712,-0.0758240141450122,below zero
+central-spectrum intervention,posthoc_rank2,Floquet Cartan / projective Z,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.1001341130519333,-0.1186614061676998,-0.0822275307093981,below zero
+central-spectrum intervention,posthoc_rank2,Haar / random Pauli,Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.0950865699317399,-0.1116126924641065,-0.0780635589550782,below zero
+central-spectrum intervention,posthoc_rank2,Haar / random Pauli,locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0653601493807884,-0.0776557470154468,-0.0529899992304218,below zero
+central-spectrum intervention,posthoc_rank2,Haar / random Pauli,locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0686419873135025,-0.0825517796545354,-0.0547951878905982,below zero
+central-spectrum intervention,posthoc_rank2,Haar / weak Z (eta=0.6),Haar or Clifford 2-design,chi(p=0.24)-chi(p=0.08),-0.0785543648328506,-0.0904700158505306,-0.0667820799227934,below zero
+central-spectrum intervention,posthoc_rank2,Haar / weak Z (eta=0.6),locally dressed XY(pi/8),chi(p=0.24)-chi(p=0.08),-0.0554220993193448,-0.0638794331199164,-0.0473883261130418,below zero
+central-spectrum intervention,posthoc_rank2,Haar / weak Z (eta=0.6),locally dressed XX(pi/4),chi(p=0.24)-chi(p=0.08),-0.0605096372595298,-0.0705677939621059,-0.0510235460520577,below zero
+physical exact-spectrum stabilizer,main_physical,random Pauli,Haar or Clifford 2-design,fixed-spectrum slope per Delta p=0.04,-0.0149431281471839,-0.0177506542766895,-0.0121356020176783,below zero
+physical exact-spectrum stabilizer,main_physical,random Pauli,locally dressed XX(pi/8),fixed-spectrum slope per Delta p=0.04,-0.005546058128617,-0.0067260945933989,-0.0043660216638351,below zero
+physical exact-spectrum stabilizer,main_physical,random Pauli,locally dressed XX(pi/4),fixed-spectrum slope per Delta p=0.04,-0.0110921162572341,-0.0134521891867979,-0.0087320433276703,below zero
+physical exact-spectrum stabilizer,main_physical,random Pauli,neighboring-cut purity sum,fixed-spectrum slope per Delta p=0.04,0.0366491971052712,0.0297859398424087,0.0435124543681337,above zero
+physical exact-spectrum stabilizer,main_physical,projective Z,Haar or Clifford 2-design,fixed-spectrum slope per Delta p=0.04,-0.0137266837577461,-0.0164308840474452,-0.0110224834680469,below zero
+physical exact-spectrum stabilizer,main_physical,projective Z,locally dressed XX(pi/8),fixed-spectrum slope per Delta p=0.04,-0.0051040440520827,-0.0062367028596231,-0.0039713852445422,below zero
+physical exact-spectrum stabilizer,main_physical,projective Z,locally dressed XX(pi/4),fixed-spectrum slope per Delta p=0.04,-0.0102080881041654,-0.0124734057192463,-0.0079427704890844,below zero
+physical exact-spectrum stabilizer,main_physical,projective Z,neighboring-cut purity sum,fixed-spectrum slope per Delta p=0.04,0.0336639875728028,0.0270513457723814,0.0402766293732242,above zero
+physical exact-spectrum stabilizer,independent_physical,random Pauli,Haar or Clifford 2-design,fixed-spectrum slope per Delta p=0.04,-0.0124285249463788,-0.0163811557565184,-0.0084758941362391,below zero
+physical exact-spectrum stabilizer,independent_physical,random Pauli,locally dressed XX(pi/8),fixed-spectrum slope per Delta p=0.04,-0.0047840888558777,-0.0063777796196783,-0.0031903980920772,below zero
+physical exact-spectrum stabilizer,independent_physical,random Pauli,locally dressed XX(pi/4),fixed-spectrum slope per Delta p=0.04,-0.0095681777117556,-0.0127555592393566,-0.0063807961841545,below zero
+physical exact-spectrum stabilizer,independent_physical,random Pauli,neighboring-cut purity sum,fixed-spectrum slope per Delta p=0.04,0.0303995902281958,0.0207215627745929,0.0400776176817987,above zero
+physical exact-spectrum stabilizer,independent_physical,projective Z,Haar or Clifford 2-design,fixed-spectrum slope per Delta p=0.04,-0.0140455138267411,-0.01818209104475,-0.0099089366087323,below zero
+physical exact-spectrum stabilizer,independent_physical,projective Z,locally dressed XX(pi/8),fixed-spectrum slope per Delta p=0.04,-0.0051203418551617,-0.0068438492931288,-0.0033968344171945,below zero
+physical exact-spectrum stabilizer,independent_physical,projective Z,locally dressed XX(pi/4),fixed-spectrum slope per Delta p=0.04,-0.0102406837103234,-0.0136876985862577,-0.0067936688343891,below zero
+physical exact-spectrum stabilizer,independent_physical,projective Z,neighboring-cut purity sum,fixed-spectrum slope per Delta p=0.04,0.0345264641995071,0.0244012240137901,0.0446517043852242,above zero

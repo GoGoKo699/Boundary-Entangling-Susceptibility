@@ -10,7 +10,7 @@ Under `studies/checkpoint_04/results/`:
 - `probe_response_coefficients.csv`: exact four-purity coefficients for the tested locally dressed probes;
 - `response_stencil_decomposition.csv`: state-side purity shifts entering each response stencil.
 
-The included source also supports rank-2, rank-4, and rank-8 interventions, three fresh-probe ensembles, and direct validation of the local-twirl coefficient formula.
+The included source also supports recorded rank-2 and rank-4 interventions (the rank-flexible code supports other ranks, but that alone is not a recorded result), three fresh-probe ensembles, and direct validation of the local-twirl coefficient formula.
 
 ## Checkpoint 05 extensions
 

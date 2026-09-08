@@ -1,0 +1,21 @@
+result,quantity,estimate,ci_low,ci_high,note
+Primary projective-Z thermodynamic relative slope,beta_infinity per Delta p=0.02,-0.051758302005895006,-0.054534316521462164,-0.04889762505446115,locked 1/n fit
+Independent projective-Z thermodynamic relative slope,beta_infinity per Delta p=0.02,-0.04916292024719053,-0.0533977263000605,-0.044668726829840764,disjoint seed
+Primary random-Pauli thermodynamic relative slope,beta_infinity per Delta p=0.02,-0.0531901,-0.0558561,-0.050501,protocol replication
+Independent random-Pauli thermodynamic relative slope,beta_infinity per Delta p=0.02,-0.0519658,-0.0565252,-0.0473612,protocol and seed replication
+Primary projective-Z thermodynamic raw slope,beta_infinity chi_2 per Delta p=0.02,-0.00957984,-0.0104445,-0.00870479,rules out pure ratio artifact
+Primary projective-Z n=32 slope,chi_rel change per Delta p=0.02,-0.0292425,-0.0313458,-0.0271922,exact-spectrum fixed effects
+Primary projective-Z n=64 slope,chi_rel change per Delta p=0.02,-0.0387175,-0.041188,-0.0362635,exact-spectrum fixed effects
+Primary projective-Z n=128 slope,chi_rel change per Delta p=0.02,-0.0448206,-0.0478669,-0.0414081,exact-spectrum fixed effects
+Primary projective-Z n=256 slope,chi_rel change per Delta p=0.02,-0.05213,-0.0557866,-0.0484178,exact-spectrum fixed effects
+Primary projective-Z high-size I3 crossing,p per complete brickwork cycle,0.26880281690140845,0.2667672388497653,0.27572943722943727,n=128 versus 256
+Independent projective-Z high-size I3 crossing,p per complete brickwork cycle,0.273125,0.25922213541666667,0.27642857142857147,n=128 versus 256
+Primary Z n=256 pre-transition hinge slope,chi_rel change per Delta p=0.02,-0.1122721629268624,-0.12454617302586958,-0.10046893031286973,secondary fit at p=0.27
+Primary Z n=256 post-transition hinge slope,chi_rel change per Delta p=0.02,-0.03851004550334362,-0.04313594443847651,-0.0341104333876788,secondary fit at p=0.27
+Primary Z n=256 hinge slope change,change in slope,0.07376211742351878,0.060319065518813754,0.08748071799503375,suppression weakens above crossing
+Paired fixed-spectrum near-minus-far intervention,Delta chi_rel,-0.04742902253292233,-0.04943462539811423,-0.045452322540895526,"equal-cell pooled; 4,790 trajectory contrasts"
+Paired unconditional near-minus-far intervention,Delta chi_rel,0.07140740741318077,0.06548148148681827,0.07731527778427312,opposite sign due central-rank collapse
+Fixed-spectrum intervention decay length,lattice sites,2.3720853043415033,2.250777588723654,2.495632772987268,fit -A exp(-d/xi)
+Maximum boundary-code probability conservation error,absolute error,1.5612511283791264e-17,,,algebraic check
+Maximum susceptibility reconstruction error,absolute error,8.534839501805891e-16,,,boundary-code decomposition
+Tableau/state-vector validation comparisons,count,256.0,,,maximum reported discrepancy zero
