@@ -188,7 +188,7 @@ This changes the evidence, not the question. Figure 1 controls eigenvalues by re
 
 **Reader.** What is plotted as the system size increases?
 
-**Answer.** For each size and monitoring protocol, a regression controls $(\tau,S_m)$ and estimates the coefficient of $(p-0.26)/0.02$. The plotted $\beta_n$ is that within-spectrum monitoring coefficient. Although the axis uses derivative notation, the numerical estimate is a pooled linear coefficient on the observed common support, not a separately measured derivative at every rate. [S3, S4]
+**Answer.** For each size and monitoring protocol, a regression controls $(\tau,S_m)$ and estimates the coefficient of $(p-0.26)/0.02$. The plotted $\beta_n$ is that within-spectrum monitoring coefficient per $\Delta p=0.02$: a pooled linear coefficient on the observed common support, not a separately measured derivative at every rate. [S3, S4]
 
 The primary simulation contains 57,600 trajectories; the disjoint-seed run contains 21,600. Both use $n=32,64,128,256$, three late probe times, and projective-Z or random-Pauli monitoring. All 16 finite-size estimates and their plotted intervals are negative. An independently written stored-row replay reproduces these coefficients from 237,600 state records to numerical precision. [S1, S3, S4]
 
@@ -495,7 +495,7 @@ The source hierarchy is deliberate: current canonical figure tables for plotted 
 
 **S2. Exact theory.** [Response operator and stabilizer boundary-code theory](THEORY.md). Includes assumptions, local twirling, gate-invariant conventions, the finite alphabet, and the measurement-sign corollary deduced from the response identity and stabilizer measurement rule.
 
-**S3. Methods.** [Numerical methods](NUMERICAL_METHODS.md) and [run history](RUN_HISTORY.md). Includes grids, seeds, support rules, and original uncertainty calculations.
+**S3. Methods.** [Numerical methods](NUMERICAL_METHODS.md), [run history](RUN_HISTORY.md), and [campaign recipes](CAMPAIGN_RECIPES.md). These distinguish recorded generation seeds and grids, support rules, archived uncertainty replay, and newly declared analysis seeds. Original execution logs/manifests and actual Figure 3/4 analyzer invocation seeds are unavailable; source defaults alone do not establish historical execution.
 
 **S4. Evidence reassessment.** [September 5 analysis](EVIDENCE_REASSESSMENT.md), [result tables](../results/evidence_reassessment/), and [independently written replay script](../scripts/analysis/reassess_evidence.py). The source archive is Checkpoint 05, SHA-256 `284a92bfac08af6194cd576ce07c4be90e1e760fcc7b0fc7951eaacd1fa975ce`.
 
@@ -503,11 +503,11 @@ The source hierarchy is deliberate: current canonical figure tables for plotted 
 
 **S6. Figure/question design record.** The retained specifications are in [studies/figure_design](../studies/figure_design/); figure-specific resamples are indexed in the root [record bundle](../data/record_bundle_manifest.json). The preserved `entanglement_prl_figure_design_checkpoint_01/MAIN_APPENDIX_QUESTION_MAP.md` and Figure 1 specification supply the question identifiers and original contrast definition. The adopted question map is included with this report as [DIALOGUE_QUESTION_MAP.md](DIALOGUE_QUESTION_MAP.md). Historical Figure 4 fit language is superseded.
 
-**S7. Takeover checks.** The cited original-study check scripts and results are preserved under `takeover_review/` in the root record bundle, materialized by `materialize_studies.py`. The author-facing `Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip` records the separately written checks. These are author-side numerical checks, not an external audit. Its provenance remains separate from the original primary simulations.
+**S7. Takeover checks.** The cited original-study check scripts and results are preserved as selected members under `takeover_review/` in the root record bundle, materialized by `materialize_studies.py`. The manifest records their source archive, `Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip`; that original ZIP is not a required or included separate deliverable. These are author-side numerical checks, not an external audit. Their provenance remains separate from the original primary simulations.
 
-**S8. Finite intervention source.** [Checkpoint 04 study](../studies/checkpoint_04/), particularly `scripts/cross_architecture_simulation.py`, plus the preserved full Checkpoint 04 archive, SHA-256 `690722855b37c5ba1aab96720e03d0f36e7b2b0b86447827f9eeecda0a973023`. The archive contains the detailed rank/probe tables and reference-spectrum construction.
+**S8. Finite intervention source.** [Checkpoint 04 study](../studies/checkpoint_04/), particularly `scripts/cross_architecture_simulation.py`, plus selected original members under `checkpoint_04/` in the root data bundle. The [manifest](../data/record_bundle_manifest.json) maps every retained member to its source; the original Checkpoint 04 archive is identified by SHA-256 `690722855b37c5ba1aab96720e03d0f36e7b2b0b86447827f9eeecda0a973023`, but the full historical ZIP is not included. The retained records include the detailed rank/probe tables and reference-spectrum construction needed for the documented calculations.
 
-**S9. Extended physical results.** The full Checkpoint 05 archive's `analysis/synthesis/` tables for code decomposition, time checks, cross-run comparisons, and hinge fits, and `analysis/primary/thermodynamic_limit_fits.csv`. Selected source is also in the [Checkpoint 05 study](../studies/checkpoint_05/). These supporting tables are included as unchanged members of the indexed root data bundle.
+**S9. Extended physical results.** Selected original Checkpoint 05 `analysis/synthesis/` tables for code decomposition, time checks, cross-run comparisons, and hinge fits, and `analysis/primary/thermodynamic_limit_fits.csv`. Selected source is also in the [Checkpoint 05 study](../studies/checkpoint_05/). These supporting tables are included as unchanged members under `checkpoint_05/` in the indexed root data bundle; the full historical Checkpoint 05 archive is not included.
 
 **S10. Related-work scope.** [Stored literature audit](RELATED_WORK.md). This report uses its framing and attribution limits; it adds no fresh priority claim.
 

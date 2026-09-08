@@ -1,0 +1,12 @@
+argv: ["python", "verify.py"]
+UTC start: 2026-09-08T15:32:16.468915+00:00
+{
+  "passed": true,
+  "adopted": true,
+  "historical_resamples_recovered": false,
+  "other_panel_data_unchanged": true,
+  "palette": "Irises",
+  "figure3_label_successor": true,
+  "full_resample_output_checked": false
+}
+verification passed: 172 source-data members and all current panels/inputs verified

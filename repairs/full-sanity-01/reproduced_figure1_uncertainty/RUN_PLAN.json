@@ -1,0 +1,213 @@
+{
+  "analysis_id": "figure1-uncertainty-review-2026-09-08-v1",
+  "locked_utc": "2026-09-08T05:36:35.356216+00:00",
+  "baseline_commit": "c54dca28464832ecebeb6602c4c490d3d68d3015",
+  "repository": "GoGoKo699/Boundary-Entangling-Susceptibility",
+  "status": "Post-hoc statistical revision design, locked after inspecting historical results and support, before calculating new resamples. Not public preregistration.",
+  "runs": [
+    "primary",
+    "independent"
+  ],
+  "families": [
+    "haar_z",
+    "clifford_z",
+    "floquet_cartan_z",
+    "haar_random_pauli",
+    "haar_weak_z_eta06"
+  ],
+  "folders": {
+    "primary": "primary_rank4",
+    "independent": "independent_seed_rank4"
+  },
+  "filters": {
+    "split": "confirmatory",
+    "variant": "equalized_rank4",
+    "p_low": 0.08,
+    "p_high": 0.24,
+    "sizes": [
+      10,
+      12,
+      14
+    ],
+    "taus": [
+      6,
+      8
+    ]
+  },
+  "response_numerator": "probe_haar_or_clifford_2design_delta_linear_norm",
+  "response_denominator": "pre_purity",
+  "common_support": {
+    "haar_z": [
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        8
+      ]
+    ],
+    "clifford_z": [
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        14,
+        6
+      ]
+    ],
+    "floquet_cartan_z": [
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        8
+      ]
+    ],
+    "haar_random_pauli": [
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        8
+      ]
+    ],
+    "haar_weak_z_eta06": [
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        8
+      ]
+    ]
+  },
+  "estimand": "Equal weight per retained (n,tau) cell of mean high-rate response minus mean low-rate response, separately for each run and family.",
+  "primary_pool": "eligible_union",
+  "sensitivity_pool": "all_confirmatory",
+  "bootstrap_replicates": 50000,
+  "seed": 2026090801,
+  "generator": "PCG64",
+  "seed_sequence": "[seed, pool_index, run_index, family_index]",
+  "pool_order": [
+    "eligible_union",
+    "all_confirmatory"
+  ],
+  "stratum_order": "n ascending then p ascending; trajectories sorted by trajectory_index; times ascending",
+  "proposal_batch": 1000,
+  "max_proposals": 1000000,
+  "missing_cell_rule": "Reject the entire proposed run/family replicate if any retained (n,p,tau) mean is undefined; retain first 50000 valid replicates. Never drop a cell or impute. Store all used proposals and the acceptance mask.",
+  "interval": {
+    "method": "percentile",
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "numpy_quantile_method": "linear",
+    "coverage": "nominal pointwise; not simultaneous or exact finite-sample coverage"
+  },
+  "reference_treatment": "Use archived run-specific references without re-estimation; condition on realized reference spectra and fixed observed support. No cross-run pooling.",
+  "success_criterion": "Completeness of reproducible analysis, not a required effect sign. Report all ten intervals and any conclusion changes without tuning.",
+  "diagnostics": [
+    "Exact accepted point-estimate replay",
+    "Per-cell counts and eligibility patterns",
+    "Rejected-proposal rate and exact probability of full support",
+    "Five fixed consecutive 10000-draw sub-batches for Monte Carlo stability",
+    "All-confirmatory-pool sensitivity on identical support and point estimates",
+    "Historical versus revised endpoints and interval widths"
+  ],
+  "archive_sha256": "04e3e353a309b866634715b8b062b7531394fddbcdef1c61f8aec0ba3a4d0255",
+  "source_member_sha256": {
+    "checkpoint_04/data/intervention/primary_rank4/state_response_rows.csv.gz": "1f3139866d13838a659e4c6e9e127170f11a7050ead1885810796f67bd89068c",
+    "checkpoint_04/data/intervention/primary_rank4/equalization_reference_spectra.json": "9b5131367aa1fcf85dab189470eb8786d12280bda7d1d75d5a545553fe53ec94",
+    "checkpoint_04/data/intervention/independent_seed_rank4/state_response_rows.csv.gz": "153710199f198a1440f56e610255c61628eba4f9ee4745737ed03e9fc6693026",
+    "checkpoint_04/data/intervention/independent_seed_rank4/equalization_reference_spectra.json": "2e667e6393ef75e346cdb2b344f2ef039a9f4c7998647c0bd58282a444b244e9",
+    "accepted_figure1/figure_01_panel_b_data.csv": "d0167d2607922cbb30566743560fe13d1ccc7822c2879d188a30fdbc21d76914",
+    "accepted_figure1/figure_01_source_manifest.json": "5f96d88102b38a7f8dc4d53e838c8c44423851bc24bd19ac3b6c4b35519d1064"
+  },
+  "canonical_table_sha256": "d0167d2607922cbb30566743560fe13d1ccc7822c2879d188a30fdbc21d76914",
+  "constraints": [
+    "No new circuit simulation",
+    "No recovery or matching of the historical missing RNG seed",
+    "No accepted figure, canonical CSV, other figure or main-branch change before review",
+    "No channel-project content"
+  ]
+}

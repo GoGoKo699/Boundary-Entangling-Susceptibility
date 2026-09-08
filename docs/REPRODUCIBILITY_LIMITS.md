@@ -16,4 +16,8 @@ The core-record replayer distinguishes current point estimates from historical i
 
 Figures 3 and 4 reconstruct original intervals from preserved bootstrap arrays; this is not a fresh complete bootstrap campaign. The September reassessment runs its own declared post-hoc resampling. Small simulator cross-validation and stored-row replay do not establish a fresh end-to-end repeat of every original simulation campaign or external replication.
 
+The [campaign recipes](CAMPAIGN_RECIPES.md) distinguish verified generator seeds from unrecovered historical bootstrap invocations. The original transition-crossing bootstrap arrays are not stored, so their interval tables have been source-inspected, not independently regenerated. The corrected supporting architecture/probe exports retain explicitly named archived interval columns; their older support procedure is not the current Figure 1 bootstrap.
+
+The required numerical workflows are self-contained. This does not mean all historical execution manifests/logs or all eventual figure assets are present. Actual editable external composite schematics remain outstanding as specified in the [project guide](PROJECT_GUIDE.md).
+
 After installation of the declared dependencies, the current calculations need no old chat, external research repository, or original checkpoint ZIP. CI artifacts have finite retention, but all inputs and scripts required to regenerate them are tracked.

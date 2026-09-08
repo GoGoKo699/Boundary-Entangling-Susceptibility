@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "python",
+    "reproduce.py",
+    "--core-figures",
+    "--output",
+    "repairs/full-sanity-01/reproduced_figures"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T15:32:17.857111+00:00",
+  "end_utc": "2026-09-08T15:32:24.190467+00:00",
+  "wall_seconds": 6.33336146199872,
+  "exit_code": 0,
+  "user_seconds": 5.712467,
+  "system_seconds": 0.620316,
+  "peak_child_rss_kib": 139996,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

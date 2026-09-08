@@ -1,0 +1,26 @@
+argv: ["python", "-m", "pip", "freeze"]
+UTC start: 2026-09-08T15:30:50.044828+00:00
+-e git+https://github.com/GoGoKo699/Boundary-Entangling-Susceptibility.git@897dba9926583d12bcaacb214d62a5652c1ba8e1#egg=boundary_entangling_susceptibility
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.64.0
+iniconfig==2.3.0
+kiwisolver==1.5.1
+llvmlite==0.47.0
+matplotlib==3.10.8
+numba==0.65.1
+numpy==2.3.5
+packaging==26.3
+pandas==2.2.3
+patsy==1.0.3
+pillow==12.3.0
+pluggy==1.6.0
+Pygments==2.21.0
+pyparsing==3.3.2
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+pytz==2026.3.post1
+scipy==1.17.0
+six==1.17.0
+statsmodels==0.14.6
+tzdata==2026.3

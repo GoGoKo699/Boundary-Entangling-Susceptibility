@@ -23,7 +23,7 @@ $$
 =\frac{D}{D-1}\left[1-\frac{2}{5}\frac{P_{m-1}+P_{m+1}}{P_m}\right].
 $$
 
-This is not generally the mean finite-gate increment of $-\log_2 P_m$. The central spectrum fixes $P_m$, but not its two neighboring purities. Those purities concern extended bipartitions; the identity does not assert reconstruction from a small local reduced density matrix.
+This is the qubit specialization of the established entanglement-feature transfer rule; the [equation-level attribution and conventions](docs/RELATED_WORK.md) are explicit. It is not generally the mean finite-gate increment of $-\log_2 P_m$. The central spectrum fixes $P_m$, but not its two neighboring purities. Those purities concern extended bipartitions; the identity does not assert reconstruction from a small local reduced density matrix.
 
 For stabilizer states, define $\delta_L=S_m-S_{m-1}$ and $\delta_R=S_m-S_{m+1}$. Each belongs to $\{-1,0,1\}$, and the response divided by $D/(D-1)$ is $1-\frac25(2^{\delta_L}+2^{\delta_R})$.
 
@@ -71,7 +71,7 @@ python reproduce.py --core-figures
 
 The figure command validates six PDF/PNG/SVG triples in a fresh staging directory before copying them into `reproduced_figures/`. The core data are in [data/processed/core_figures](data/processed/core_figures/); source is in [scripts/figures](scripts/figures/). Browser SVGs and publication PDFs use the same plotting code. The current Figure 4 generator does not read a decay-fit file. The [baseline record](docs/FIGURE_BASELINE.md) distinguishes current artwork from the historical external Overleaf hashes.
 
-To replay all four figures from stored observations, run `python scripts/analysis/reproduce_core_records.py`. The post-hoc reassessment has a separate command in [REPRODUCTION.md](docs/REPRODUCTION.md). Redrawing a small canonical table is not the same as recomputing its estimates from raw records. A successful CI run is a software/regression check, not an independent scientific replication.
+To replay all four figures from stored observations, run `python scripts/analysis/reproduce_core_records.py`. Supporting architecture/probe tables have their own source-bound replay, `python scripts/analysis/reproduce_supporting_records.py --output reproduced_supporting_records --check`. The post-hoc reassessment has a separate command in [REPRODUCTION.md](docs/REPRODUCTION.md). Redrawing a small canonical table is not the same as recomputing its estimates from raw records. A successful CI run is a software/regression check, not an independent scientific replication.
 
 ## Reader routes and scope
 
@@ -92,3 +92,5 @@ No new order parameter, critical exponent, universal non-Clifford thermodynamic 
 The [citation record](CITATION.cff) is provisional. No reuse license has been selected; see [license status](LICENSE_STATUS.md).
 
 See [precise reproducibility limits](docs/REPRODUCIBILITY_LIMITS.md). Preserved original intervals and fully regenerated intervals are not interchangeable.
+
+The [independent full audit](audits/full-sanity-01/REVIEW.md) assesses the frozen pre-repair baseline. The [repair and verification record](repairs/full-sanity-01/SUMMARY.md) tracks the subsequent corrections without rewriting that audit. Editable external composite schematics remain outstanding; the numerical panels are reproducible, but this is not yet a claim that every eventual manuscript asset is present.

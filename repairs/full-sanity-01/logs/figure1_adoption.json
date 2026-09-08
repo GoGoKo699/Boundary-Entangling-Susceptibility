@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "python",
+    "scripts/analysis/check_figure1_adoption.py",
+    "--resamples",
+    "repairs/full-sanity-01/reproduced_figure1_uncertainty"
+  ],
+  "cwd": "/workspace/scratch/0174ee249694/repo",
+  "start_utc": "2026-09-08T15:32:54.795630+00:00",
+  "end_utc": "2026-09-08T15:32:55.639945+00:00",
+  "wall_seconds": 0.8442903520044638,
+  "exit_code": 1,
+  "user_seconds": 0.674458,
+  "system_seconds": 0.16922299999999998,
+  "peak_child_rss_kib": 87768,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "MPLBACKEND": "Agg"
+  }
+}

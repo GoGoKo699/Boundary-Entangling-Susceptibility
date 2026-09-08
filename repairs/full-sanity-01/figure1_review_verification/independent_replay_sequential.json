@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "sampler_imported": false,
+  "rng_used": false,
+  "proposed_vectors_checked": 1009814,
+  "retained_contrasts_checked": 1000000,
+  "explicit_row_expansions_checked": 1280,
+  "max_vector_error": 2.220446049250313e-16,
+  "max_explicit_error": 2.220446049250313e-16,
+  "details": [
+    {
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "haar_z",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "clifford_z",
+      "proposals_checked": 51035,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "floquet_cartan_z",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "haar_random_pauli",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "primary",
+      "family": "haar_weak_z_eta06",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "haar_z",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "clifford_z",
+      "proposals_checked": 50862,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "floquet_cartan_z",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "haar_random_pauli",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "eligible_union",
+      "run": "independent",
+      "family": "haar_weak_z_eta06",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "haar_z",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "clifford_z",
+      "proposals_checked": 55036,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "floquet_cartan_z",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "haar_random_pauli",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "primary",
+      "family": "haar_weak_z_eta06",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "haar_z",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "clifford_z",
+      "proposals_checked": 52881,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "floquet_cartan_z",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "haar_random_pauli",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    },
+    {
+      "pool": "all_confirmatory",
+      "run": "independent",
+      "family": "haar_weak_z_eta06",
+      "proposals_checked": 50000,
+      "retained": 50000,
+      "interval_replayed": true
+    }
+  ]
+}

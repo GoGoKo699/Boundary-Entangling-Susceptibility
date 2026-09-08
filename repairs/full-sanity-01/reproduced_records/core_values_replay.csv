@@ -1,0 +1,137 @@
+figure,selection,recalculated,accepted,provenance_kind
+1,primary/haar_z/estimate,-0.25726645377646451,-0.25726645377646462,state rows on common family/size/time support across both runs
+1,primary/haar_z/ci_low,,-0.29003470333235509,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/haar_z/ci_high,,-0.2246502778287347,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/haar_z/estimate,-0.20743235710923258,-0.20743235710923261,state rows on common family/size/time support across both runs
+1,independent/haar_z/ci_low,,-0.24749461928014371,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/haar_z/ci_high,,-0.16820996989409109,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/clifford_z/estimate,-0.40553742113551461,-0.40553742113551472,state rows on common family/size/time support across both runs
+1,primary/clifford_z/ci_low,,-0.55480987340569099,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/clifford_z/ci_high,,-0.25400939735317168,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/clifford_z/estimate,-0.31924809729965187,-0.31924809729965198,state rows on common family/size/time support across both runs
+1,independent/clifford_z/ci_low,,-0.46591655043712699,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/clifford_z/ci_high,,-0.16902759403895201,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/floquet_cartan_z/estimate,-0.20808060376372686,-0.20808060376372689,state rows on common family/size/time support across both runs
+1,primary/floquet_cartan_z/ci_low,,-0.2355978244221745,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/floquet_cartan_z/ci_high,,-0.181221767265006,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/floquet_cartan_z/estimate,-0.18477780051627954,-0.18477780051627951,state rows on common family/size/time support across both runs
+1,independent/floquet_cartan_z/ci_low,,-0.22525077483307701,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/floquet_cartan_z/ci_high,,-0.1455084338582551,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/haar_random_pauli/estimate,-0.18815607711985491,-0.18815607711985491,state rows on common family/size/time support across both runs
+1,primary/haar_random_pauli/ci_low,,-0.22255233976764521,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/haar_random_pauli/ci_high,,-0.15416104798867211,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/haar_random_pauli/estimate,-0.19769180981953913,-0.1976918098195391,state rows on common family/size/time support across both runs
+1,independent/haar_random_pauli/ci_low,,-0.23585780930354899,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/haar_random_pauli/ci_high,,-0.15906964613779229,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/haar_weak_z_eta06/estimate,-0.18258769451128917,-0.1825876945112892,state rows on common family/size/time support across both runs
+1,primary/haar_weak_z_eta06/ci_low,,-0.2037055141978629,accepted hybrid source table verified; original accepted resamples not recovered
+1,primary/haar_weak_z_eta06/ci_high,,-0.16159603230777531,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/haar_weak_z_eta06/estimate,-0.17814102496761294,-0.178141024967613,state rows on common family/size/time support across both runs
+1,independent/haar_weak_z_eta06/ci_low,,-0.20693245873295429,accepted hybrid source table verified; original accepted resamples not recovered
+1,independent/haar_weak_z_eta06/ci_high,,-0.1488110522213269,accepted hybrid source table verified; original accepted resamples not recovered
+3,primary/random_pauli/32/beta,-0.027469446179151751,-0.0274694461792,recalculated from state rows
+3,primary/random_pauli/32/ci_low,-0.029556821392457182,-0.029556821392500002,percentiles of archived original resamples
+3,primary/random_pauli/32/ci_high,-0.025389682871911089,-0.0253896828719,percentiles of archived original resamples
+3,primary/random_pauli/64/beta,-0.03573799243538054,-0.035737992435399997,recalculated from state rows
+3,primary/random_pauli/64/ci_low,-0.038111375606735283,-0.038111375606699999,percentiles of archived original resamples
+3,primary/random_pauli/64/ci_high,-0.033368233042195924,-0.033368233042199998,percentiles of archived original resamples
+3,primary/random_pauli/128/beta,-0.049307603116701251,-0.049307603116700002,recalculated from state rows
+3,primary/random_pauli/128/ci_low,-0.052416637507947984,-0.052416637507900002,percentiles of archived original resamples
+3,primary/random_pauli/128/ci_high,-0.046046065215719953,-0.046046065215699997,percentiles of archived original resamples
+3,primary/random_pauli/256/beta,-0.052228431900652073,-0.052228431900699999,recalculated from state rows
+3,primary/random_pauli/256/ci_low,-0.055983542529843666,-0.0559835425298,percentiles of archived original resamples
+3,primary/random_pauli/256/ci_high,-0.048433638793740352,-0.048433638793700003,percentiles of archived original resamples
+3,primary/z_projective/32/beta,-0.029242499097161121,-0.0292424990972,recalculated from state rows
+3,primary/z_projective/32/ci_low,-0.031345755061744467,-0.031345755061700002,percentiles of archived original resamples
+3,primary/z_projective/32/ci_high,-0.027192220578724741,-0.027192220578700001,percentiles of archived original resamples
+3,primary/z_projective/64/beta,-0.038717482496763704,-0.038717482496800001,recalculated from state rows
+3,primary/z_projective/64/ci_low,-0.041188046761837856,-0.041188046761799997,percentiles of archived original resamples
+3,primary/z_projective/64/ci_high,-0.036263512873567973,-0.036263512873600003,percentiles of archived original resamples
+3,primary/z_projective/128/beta,-0.044820577874955511,-0.044820577875000003,recalculated from state rows
+3,primary/z_projective/128/ci_low,-0.047866863648282229,-0.0478668636483,percentiles of archived original resamples
+3,primary/z_projective/128/ci_high,-0.041408067341286194,-0.041408067341300002,percentiles of archived original resamples
+3,primary/z_projective/256/beta,-0.05213003639258184,-0.052130036392599999,recalculated from state rows
+3,primary/z_projective/256/ci_low,-0.055786637455905848,-0.055786637455899998,percentiles of archived original resamples
+3,primary/z_projective/256/ci_high,-0.048417804347964673,-0.048417804347999999,percentiles of archived original resamples
+2,"-1,-1/probability slope",-0.014386753730707656,-0.014386753730699999,indicator fixed-effect regression on identical state support
+2,"-1,-1/response",0.59999999999999998,0.59999999999999998,exact formula
+2,"-1,0/probability slope",-0.024194122054486761,-0.0241941220545,indicator fixed-effect regression on identical state support
+2,"-1,0/response",0.39999999999999991,0.40000000000000002,exact formula
+2,"-1,1/probability slope",-0.0013208657550206617,-0.0013208657550199999,indicator fixed-effect regression on identical state support
+2,"-1,1/response",0,0,exact formula
+2,"0,-1/probability slope",-0.02348000927631301,-0.0234800092763,indicator fixed-effect regression on identical state support
+2,"0,-1/response",0.39999999999999991,0.40000000000000002,exact formula
+2,"0,0/probability slope",-0.0052250273239238237,-0.0052250273239200003,indicator fixed-effect regression on identical state support
+2,"0,0/response",0.19999999999999996,0.20000000000000001,exact formula
+2,"0,1/probability slope",0.021806907247083562,0.021806907247100001,indicator fixed-effect regression on identical state support
+2,"0,1/response",-0.20000000000000018,-0.20000000000000001,exact formula
+2,"1,-1/probability slope",0.00075578278542061351,0.00075578278542100003,indicator fixed-effect regression on identical state support
+2,"1,-1/response",0,0,exact formula
+2,"1,0/probability slope",0.021511270392832016,0.0215112703928,indicator fixed-effect regression on identical state support
+2,"1,0/response",-0.20000000000000018,-0.20000000000000001,exact formula
+2,"1,1/probability slope",0.024532817715115732,0.024532817715099998,indicator fixed-effect regression on identical state support
+2,"1,1/response",-0.60000000000000009,-0.59999999999999998,exact formula
+3,primary/random_pauli/locked fit/beta,-0.053190142498300397,-0.053190142498300001,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,primary/random_pauli/locked fit/a_over_n,0.86001035677118942,0.86001035677100002,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,primary/random_pauli/locked fit/ci_low,-0.055856107461107272,-0.055856107461100001,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,primary/random_pauli/locked fit/ci_high,-0.050500964592334337,-0.050500964592300003,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,primary/z_projective/locked fit/beta,-0.051758302005894381,-0.051758302005900002,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,primary/z_projective/locked fit/a_over_n,0.73752808476633314,0.73752808476599996,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,primary/z_projective/locked fit/ci_low,-0.05453431652146222,-0.054534316521500002,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,primary/z_projective/locked fit/ci_high,-0.048897625054461193,-0.048897625054500002,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,replication/random_pauli/32/beta,-0.028168041669683331,-0.028168041669700002,recalculated from state rows
+3,replication/random_pauli/32/ci_low,-0.031654673347079117,-0.031654673347100003,percentiles of archived original resamples
+3,replication/random_pauli/32/ci_high,-0.024877359942506509,-0.0248773599425,percentiles of archived original resamples
+3,replication/random_pauli/64/beta,-0.039109225207836974,-0.039109225207799997,recalculated from state rows
+3,replication/random_pauli/64/ci_low,-0.043088450793696172,-0.043088450793700002,percentiles of archived original resamples
+3,replication/random_pauli/64/ci_high,-0.034937148099192419,-0.034937148099199997,percentiles of archived original resamples
+3,replication/random_pauli/128/beta,-0.044120288837015756,-0.044120288836999998,recalculated from state rows
+3,replication/random_pauli/128/ci_low,-0.049717211758996828,-0.049717211758999999,percentiles of archived original resamples
+3,replication/random_pauli/128/ci_high,-0.038788142561369511,-0.038788142561400001,percentiles of archived original resamples
+3,replication/random_pauli/256/beta,-0.052145090079616256,-0.052145090079599998,recalculated from state rows
+3,replication/random_pauli/256/ci_low,-0.058524975028340281,-0.058524975028300001,percentiles of archived original resamples
+3,replication/random_pauli/256/ci_high,-0.045823237551122734,-0.045823237551100002,percentiles of archived original resamples
+3,replication/z_projective/32/beta,-0.027877153996648103,-0.027877153996599999,recalculated from state rows
+3,replication/z_projective/32/ci_low,-0.031342403028452523,-0.031342403028499999,percentiles of archived original resamples
+3,replication/z_projective/32/ci_high,-0.024262718469376863,-0.024262718469400001,percentiles of archived original resamples
+3,replication/z_projective/64/beta,-0.037418309278016336,-0.037418309278000002,recalculated from state rows
+3,replication/z_projective/64/ci_low,-0.041665244059777222,-0.041665244059800002,percentiles of archived original resamples
+3,replication/z_projective/64/ci_high,-0.032915133596786765,-0.032915133596799998,percentiles of archived original resamples
+3,replication/z_projective/128/beta,-0.045519660536488808,-0.045519660536500001,recalculated from state rows
+3,replication/z_projective/128/ci_low,-0.050483940498732137,-0.050483940498700003,percentiles of archived original resamples
+3,replication/z_projective/128/ci_high,-0.040220805788421285,-0.040220805788400003,percentiles of archived original resamples
+3,replication/z_projective/256/beta,-0.045509009141761814,-0.045509009141799998,recalculated from state rows
+3,replication/z_projective/256/ci_low,-0.05168173525524293,-0.0516817352552,percentiles of archived original resamples
+3,replication/z_projective/256/ci_high,-0.039362327639078168,-0.039362327639099998,percentiles of archived original resamples
+3,replication/random_pauli/locked fit/beta,-0.051965804145207968,-0.051965804145200002,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,replication/random_pauli/locked fit/a_over_n,0.77221178192151618,0.77221178192200002,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,replication/random_pauli/locked fit/ci_low,-0.056525197571063411,-0.0565251975711,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,replication/random_pauli/locked fit/ci_high,-0.047361197798529694,-0.047361197798500003,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,replication/z_projective/locked fit/beta,-0.049162920247190191,-0.049162920247200002,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,replication/z_projective/locked fit/a_over_n,0.68653704611862698,0.68653704611900002,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,replication/z_projective/locked fit/ci_low,-0.05339772630006049,-0.0533977263001,locked WLS from recalculated slopes and original archived bootstrap arrays
+3,replication/z_projective/locked fit/ci_high,-0.044668726829840771,-0.044668726829799998,locked WLS from recalculated slopes and original archived bootstrap arrays
+4,unconditional/estimate,0.071407407413180773,0.071407407413199994,paired intervention records
+4,unconditional/ci_low,0.065481481486818274,0.065481481486799997,original archived resamples
+4,unconditional/ci_high,0.07731527778427312,0.077315277784300002,original archived resamples
+4,central_spectrum_unchanged/estimate,-0.047429022532922333,-0.047429022532900003,paired intervention records
+4,central_spectrum_unchanged/ci_low,-0.049434625398114232,-0.0494346253981,original archived resamples
+4,central_spectrum_unchanged/ci_high,-0.045452322540895526,-0.045452322540900002,original archived resamples
+4,distance=0/estimate,-0.047514657300657973,-0.047514657300700001,equal-cell means from intervention records
+4,distance=0/ci_low,-0.049490671629942272,-0.0494906716299,original archived resamples
+4,distance=0/ci_high,-0.045575144590152446,-0.045575144590199998,original archived resamples
+4,distance=1/estimate,-0.043709385134370699,-0.043709385134400001,equal-cell means from intervention records
+4,distance=1/ci_low,-0.046288076564178195,-0.046288076564199997,original archived resamples
+4,distance=1/ci_high,-0.041182328286070935,-0.041182328286100002,original archived resamples
+4,distance=2/estimate,-0.018461099614515211,-0.018461099614500001,equal-cell means from intervention records
+4,distance=2/ci_low,-0.02013527282352854,-0.0201352728235,original archived resamples
+4,distance=2/ci_high,-0.016864179034347528,-0.0168641790343,original archived resamples
+4,distance=4/estimate,-0.0053992611663679036,-0.0053992611663700001,equal-cell means from intervention records
+4,distance=4/ci_low,-0.0062906485032751371,-0.0062906485032800004,original archived resamples
+4,distance=4/ci_high,-0.0045449951961950546,-0.0045449951961899996,original archived resamples
+4,distance=8/estimate,-0.0011111111112016563,-0.0011111111112000001,equal-cell means from intervention records
+4,distance=8/ci_low,-0.0015000000001512319,-0.0015000000001500001,original archived resamples
+4,distance=8/ci_high,-0.0007592592593324498,-0.00075925925933199997,original archived resamples
+4,distance=16/estimate,-0.00027777777779502451,-0.000277777777795,equal-cell means from intervention records
+4,distance=16/ci_low,-0.00050000000001724663,-0.00050000000001699998,original archived resamples
+4,distance=16/ci_high,-9.2592592601215939e-05,-9.2592592601200001e-05,original archived resamples

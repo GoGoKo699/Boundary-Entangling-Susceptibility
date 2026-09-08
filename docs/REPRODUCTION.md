@@ -62,10 +62,20 @@ python studies/checkpoint_04/scripts/validate_gate_invariant_formula.py \
   --out reproduced_records/gate_invariants.json --samples 100 --seed 123
 ```
 
-The workspace also contains the original intervention and full scaling input layouts. Individual script `--help` output and the study guides define full-generation commands. Full generation is not run on every commit and was not claimed as part of the cleanup.
+The workspace also contains the original intervention and full scaling input layouts. The [campaign recipes](CAMPAIGN_RECIPES.md) give explicit run labels, grids and base seeds and distinguish verified generation inputs from unavailable historical command/analysis-seed records. `--help` documents an interface, not proof of a historical invocation. Full generation is not run on every commit and was not repeated for the audit repairs.
+
+## 6. Replay the supporting architecture/probe exports
+
+```bash
+python scripts/analysis/reproduce_supporting_records.py --output reproduced_supporting_records --check
+```
+
+This recomputes the retained compact endpoints and four-purity decompositions from the original included records, writes the source manifest and support table, and compares all current exports byte-for-byte. A discrepancy fails the command. Archived interval columns remain explicitly identified as historical bootstrap output; this is not a fresh extension bootstrap or a substitution for the adopted Figure 1 recipe. The [supporting-results guide](../studies/checkpoint_04/results/README.md) gives the exact estimand and the preserved inconsistent historical exports.
 
 ## Meaning of verification
 
 Fast CI checks software, local references, source-data integrity, current artwork identity, and redraws. The record-replay job recalculates the frozen core statistics. It is not a second randomly seeded physical campaign or external replication. Extrapolation and causal-scope limitations remain in the [evidence reassessment](EVIDENCE_REASSESSMENT.md).
 
 See [precise reproducibility limits](REPRODUCIBILITY_LIMITS.md). Preserved original intervals and fully regenerated intervals are not interchangeable.
+
+The audit diagnostics under `audits/full-sanity-01/` target their frozen baseline. Active repair regressions are under `tests/`; do not reinterpret a preserved audit expected-failure assertion against repaired current files as evidence about the old baseline.

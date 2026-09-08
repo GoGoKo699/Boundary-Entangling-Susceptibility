@@ -60,7 +60,7 @@ def draw_protocol(ax, df, protocol: str, color: str, title: str, show_y: bool) -
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     if show_y:
-        ax.set_ylabel(r'$\beta_n=\partial\chi_{\rm rel}/\partial(p/0.02)$')
+        ax.set_ylabel(r'within-spectrum $\beta_n$ (per $\Delta p=0.02$)')
     else:
         ax.tick_params(axis='y', labelleft=False)
         ax.set_ylabel('')

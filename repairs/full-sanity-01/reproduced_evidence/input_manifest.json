@@ -1,0 +1,46 @@
+{
+  "data/primary_scaling/stabilizer_scaling_states.csv.gz": {
+    "bytes": 5078817,
+    "sha256": "3cd3df40084251c34d8b8420d13ad99220c576e12be2638cdb48a270ab0ac2e9"
+  },
+  "analysis/primary/fixed_spectrum_size_slopes.csv": {
+    "bytes": 2493,
+    "sha256": "9e60545e326f38adcf5518e1f9732d2da6c7d68bd3f7742579760a9a783f373b"
+  },
+  "analysis/primary/bootstrap_primary_slopes.npz": {
+    "bytes": 297166,
+    "sha256": "6c3ecce69f240315c73fa98958b7df19848683397b80bdd18bdeb0da61cdaaf0"
+  },
+  "data/independent_replication/stabilizer_scaling_states.csv.gz": {
+    "bytes": 1930491,
+    "sha256": "e72c3740d31a0f2d5a6c07fd702156558a34cb568ab4cb4ea1b23c8c7434b30d"
+  },
+  "analysis/replication/fixed_spectrum_size_slopes.csv": {
+    "bytes": 2470,
+    "sha256": "ea1e5ad2b86068947ee1d7eb8fbc0202cea5f13f3e6cfdb052cf24292ef1ab73"
+  },
+  "analysis/replication/bootstrap_primary_slopes.npz": {
+    "bytes": 299812,
+    "sha256": "eb237d24ea3d344140eea4d5b9f87da412d4eb330a29517f498d006068f63d36"
+  },
+  "data/measurement_location_intervention/paired_measurement_interventions.csv.gz": {
+    "bytes": 345935,
+    "sha256": "70943f16093d672d82be62696d73387879539981e55b45be33a48d6172d6b365"
+  },
+  "data/measurement_location_intervention/stabilizer_scaling_states.csv.gz": {
+    "bytes": 165430,
+    "sha256": "f39bf713391772b8ad6496af723db7fc4e364edca31a164314f959ce414389dc"
+  },
+  "analysis/intervention/fixed_spectrum_distance_decay.csv": {
+    "bytes": 498,
+    "sha256": "b80c831f2561b1e669be6c91f2178f9759df2a421aa64a6959f453e4c2f74e80"
+  },
+  "analysis/intervention/intervention_bootstraps.npz": {
+    "bytes": 319805,
+    "sha256": "ad251db11842ad0562bf859675c86ec27a4f72ecb6ce7fc1df0026fff54ccb17"
+  },
+  "analysis/intervention/fixed_spectrum_distance_decay_fit.json": {
+    "bytes": 247,
+    "sha256": "ed5559ee8d4d0e94b0e4df43fa1b8abf839b66aaaebf39eb42dd01366f87ce53"
+  }
+}

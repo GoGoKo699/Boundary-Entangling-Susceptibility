@@ -50,7 +50,7 @@ def main():
         args.output.mkdir(parents=True,exist_ok=True)
         for name in sorted(expected):shutil.copy2(out/name,args.output/name)
         (args.output/'EXPORT_STATUS.json').write_text(json.dumps({'figure_files':18,'complete':True,
-            'baseline':'approved 2026-09-08: Irises colors only; adopted Figure 1 intervals and no-fit Figure 4 unchanged',
+            'baseline':'2026-09-08 audit repair: Figure 3 coefficient label corrected; numerical values, approved colors, adopted Figure 1 intervals and no-fit Figure 4 unchanged',
             'interpretation':'observed distance means and original intervals; no fitted decay law'},indent=2)+'\n')
     print(f'Validated 18 figure files in {args.output}')
 

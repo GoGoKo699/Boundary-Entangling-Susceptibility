@@ -1,0 +1,4 @@
+argv: ["pytest", "-q", "tests/test_gate_validator_exit.py"]
+UTC start: 2026-09-08T15:24:42.890968+00:00
+..                                                                       [100%]
+2 passed in 1.52s

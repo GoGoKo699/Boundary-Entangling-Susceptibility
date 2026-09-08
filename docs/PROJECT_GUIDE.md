@@ -20,7 +20,9 @@ The [data policy](DATA_POLICY.md), [record manifest](../data/record_bundle_manif
 
 The manuscript remains the final step. The repository must first contain every retained scientific definition, proof, method, evidence table, figure source, and attribution required for it.
 
-The existing figure panels are tracked. The external composite-figure schematics still require tracked, editable sources; no unseen Overleaf layout has been recreated. The equation-level connection to entanglement-feature transfer rules identified in the publication discussion still needs integration into the authoritative [related-work account](RELATED_WORK.md). These obligations are not resolved by changing presentation.
+The existing numerical figure panels are tracked. The external composite-figure schematics still require the author's actual editable sources; no unseen Overleaf layout has been recreated. This remains an open asset-completion item. The equation-level entanglement-feature connection is now integrated into the authoritative [related-work account](RELATED_WORK.md) and [theory](THEORY.md), with established machinery distinguished from the empirical comparisons.
+
+The [full audit](../audits/full-sanity-01/REVIEW.md) is an immutable assessment of the pre-repair baseline. Its [repair record](../repairs/full-sanity-01/SUMMARY.md) identifies corrected supporting tables, validation and wording, and remaining limitations. An old finding should be read at its stated baseline, not silently treated as either erased or still unresolved.
 
 The [citation record](../CITATION.cff), [license status](../LICENSE_STATUS.md), and [public-release checklist](../provenance/PUBLIC_RELEASE_CHECKLIST.md) remain separate. No public hosting or new permission grant is implied.
 
