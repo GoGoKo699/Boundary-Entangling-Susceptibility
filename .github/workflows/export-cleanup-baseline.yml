@@ -1,0 +1,27 @@
+name: export-cleanup-baseline
+on:
+  push:
+    branches: ['cleanup/entanglement-only-2026-09-08']
+    paths: ['.github/workflows/export-cleanup-baseline.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: d693b9dda41891d046157f3569b79c3b0d90d2e5
+          persist-credentials: false
+      - name: Export tracked source only
+        run: |
+          git archive --format=tar HEAD > "$RUNNER_TEMP/entanglement-baseline.tar"
+          git ls-tree -r --long HEAD > "$RUNNER_TEMP/entanglement-baseline-tree.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: entanglement-cleanup-baseline-d693b9d
+          path: |
+            ${{ runner.temp }}/entanglement-baseline.tar
+            ${{ runner.temp }}/entanglement-baseline-tree.txt
+          retention-days: 7
