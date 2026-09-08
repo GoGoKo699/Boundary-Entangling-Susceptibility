@@ -64,7 +64,7 @@ jobs:
       - name: Check desktop and mobile layouts with network requests blocked
         run: python scripts/site/capture_preview.py --site "$RUNNER_TEMP/bes-site" --output "$RUNNER_TEMP/website-report/screenshots"
       - run: python verify.py
-      - run: pytest -q tests scripts/site/test_site.py
+      - run: pytest -q tests scripts/site/site_checks.py
       - name: Ensure no tracked scientific or presentation file was rewritten
         run: git diff --exit-code
       - uses: actions/upload-artifact@v4
