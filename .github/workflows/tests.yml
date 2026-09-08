@@ -7,6 +7,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -14,12 +15,35 @@ jobs:
           python-version: '3.11'
       - run: pip install -r requirements-reproducible.txt
       - run: pip install -e .
-      - run: pytest -q
       - run: python verify.py
+      - run: pytest -q
       - run: python reproduce.py --core-figures
       - uses: actions/upload-artifact@v4
         with:
           name: core-figure-exports-${{ github.sha }}
           path: reproduced_figures/
+          if-no-files-found: error
+          retention-days: 30
+  recorded-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements-reproducible.txt
+      - run: pip install -e .
+      - run: python scripts/analysis/reproduce_core_records.py --output reproduced_records
+      - run: python scripts/analysis/reassess_evidence.py --output reproduced_evidence --bootstrap 5000 --seed 2026090501
+      - run: python materialize_studies.py --output reproduced_studies
+      - run: python studies/checkpoint_05/scripts/validate_tableau_against_statevector.py --clifford-table reproduced_studies/checkpoint_05/data/two_qubit_clifford_group.npz --maps reproduced_studies/checkpoint_05/data/two_qubit_clifford_symplectic_maps.npz --report reproduced_records/tableau_statevector.json
+      - run: python studies/checkpoint_04/scripts/validate_gate_invariant_formula.py --out reproduced_records/gate_invariants.json --samples 100 --seed 123
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recorded-evidence-${{ github.sha }}
+          path: |
+            reproduced_records/
+            reproduced_evidence/
           if-no-files-found: error
           retention-days: 30

@@ -1,41 +1,20 @@
-# Checkpoint 04 — fixed-spectrum intervention and response universality
+# Finite fixed-spectrum and probe study
 
-This study asks whether the complete central Schmidt spectrum determines the response to a fresh gate crossing the cut.
+This directory retains the original state-vector simulator, rank-flexible version, independent-seed driver, physical-stabilizer driver, deterministic analyses, and gate-theorem validation source. Raw discovery/confirmatory rows, reference spectra, group tables, and supporting analysis outputs are in the root data bundle under `checkpoint_04/`.
 
-## Scientific role
+```bash
+python materialize_studies.py --output reproduced_studies
+python studies/checkpoint_04/scripts/cross_architecture_simulation.py \
+  --outdir reproduced_studies/intervention_smoke --families haar_z clifford_z \
+  --sizes 8 --p-values 0.08 0.24 --trajectories 4 \
+  --discovery-trajectories 2 --probe-taus 1 --workers 1
+python studies/checkpoint_04/scripts/build_consolidated_checkpoint04_analysis.py \
+  --primary reproduced_studies/checkpoint_04/data/intervention/primary_rank4 \
+  --independent reproduced_studies/checkpoint_04/data/intervention/independent_seed_rank4 \
+  --rank2 reproduced_studies/checkpoint_04/data/intervention/posthoc_rank2 \
+  --outdir reproduced_studies/intervention_analysis --bootstrap-reps 4000
+```
 
-Checkpoint 04 supplies the discovery intervention and the general response theorem:
+The consolidated original analyses include unnormalized outcomes. The current Figure 1 point-estimate replay uses `scripts/analysis/reproduce_core_records.py`. The older design bootstrap in `studies/figure_design/bootstrap_reference.py` does not reproduce the accepted hybrid intervals; see `docs/REPRODUCIBILITY_LIMITS.md`. Do not interchange relative and unnormalized response magnitudes.
 
-1. generate monitored states under several circuit and measurement families;
-2. replace the central Schmidt eigenvalues by a common reference spectrum while retaining the state-dependent Schmidt vectors;
-3. apply the same fresh probe ensemble;
-4. compare the resulting relative Rényi-2 response across monitoring histories;
-5. derive and validate the exact four-purity response operator for locally dressed two-qubit probes.
-
-The fixed-spectrum contrasts remain negative across five state-generation families, three probe ensembles, and an independent seed. This establishes central-spectrum insufficiency in the tested finite systems. Checkpoint 05 supplies the later physical large-size construction without spectrum replacement.
-
-## Included source
-
-| File | Purpose |
-|---|---|
-| `scripts/cross_architecture_simulation.py` | State-vector simulator for the intervention and architecture/probe grid |
-| `scripts/cp04_common.py` | Shared gates, measurements, Schmidt operations, and response utilities |
-| `scripts/analyze_checkpoint04.py` | Held-out contrasts, bootstrap intervals, rank/probe sensitivities, and summaries |
-| `scripts/validate_response_operator.py` | Direct two-copy response-operator checks |
-| `scripts/validate_gate_invariant_formula.py` | Checks coefficients against entangling power and gate typicality |
-
-## Included results
-
-- `results/intervention_cross_architecture.csv`: architecture/probe endpoint contrasts;
-- `results/probe_response_coefficients.csv`: exact response coefficients for the tested probes;
-- `results/response_stencil_decomposition.csv`: decomposition into the four required purity features.
-
-The concise theorem is presented in `docs/THEORY.md`; the headline Figure 1 and Figure 2 inputs are in `data/processed/core_figures/`.
-
-## Scope
-
-This study does not establish a thermodynamic universality class or an MIPT order parameter. The spectrum replacement is a diagnostic intervention. Its physical relevance is tested independently with naturally generated exact-spectrum stabilizer states in `studies/checkpoint_05/`.
-
-## Raw-data policy
-
-The full compressed state-response rows, bootstrap arrays, and duplicate generated artifacts remain outside ordinary Git history. They are planned as a versioned release/data-deposit asset; see `docs/DATA_POLICY.md`.
+The preserved runs use rank four and a post-hoc rank-two control. The rank-flexible simulator accepts other ranks, but software support is not evidence that a rank-eight campaign was completed. No new physical experiment or later channel calculation belongs to this study.

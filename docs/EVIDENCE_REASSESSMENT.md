@@ -88,14 +88,13 @@ It is a purity-normalized linear-entropy response. It is not generally the mean 
 
 ## Reproduce this analysis
 
-Install the repository dependencies, obtain the original Checkpoint 05 ZIP, and run from the repository root:
+Install the repository dependencies, use the in-repository data bundle, and run from the repository root:
 
 ```bash
 python scripts/analysis/reassess_evidence.py \
-  --archive /path/to/entanglement_project_checkpoint_05.zip \
   --output reproduced_evidence --bootstrap 5000 --seed 2026090501
 ```
 
 The script verifies the full ZIP hash before reading it and records hashes of every member used. It imports no original checkpoint estimator code. It writes the fresh paired intervals, cell profiles, common-eligibility curve, covariance and window diagnostics, independently reconstructed finite-size coefficients, and fixed-menu extrapolation checks. Full raw circuit generation and a fresh full finite-size bootstrap campaign are outside this pass.
 
-The text results are in [`../results/evidence_reassessment/`](../results/evidence_reassessment/). The new bootstrap arrays are reproducible outputs, not frozen primary data. Permanent raw-archive deposit remains pending as described in [`DATA_POLICY.md`](DATA_POLICY.md).
+The text results are in [`../results/evidence_reassessment/`](../results/evidence_reassessment/). The new bootstrap arrays are reproducible outputs, not frozen primary data. The original records are bundled as described in [`DATA_POLICY.md`](DATA_POLICY.md).

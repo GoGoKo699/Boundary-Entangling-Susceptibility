@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Replay stored-row estimates and run explicitly post-hoc sensitivity checks.
 
-Input is the original Checkpoint 05 ZIP, verified before reading. No simulator,
+Input is the verified in-repository record bundle (or the original Checkpoint 05 ZIP). No simulator,
 original estimator, manuscript, or network access is used. Archived bootstraps
 are reused for size/model diagnostics; new trajectory-cluster bootstraps are
 used for location estimands. This does not rerun circuit generation.
@@ -15,6 +15,7 @@ import json
 import platform
 import zipfile
 from pathlib import Path
+from boundary_susceptibility.records import RecordBundle, ROOT
 
 import numpy as np
 import pandas as pd
@@ -29,26 +30,34 @@ KEY = ["n", "p_measure", "trajectory_id"]
 
 
 class Source:
-    def __init__(self, path: Path):
+    def __init__(self, path: Path | None = None):
+        path = Path(path) if path is not None else ROOT/'entanglement-data.zip'
+        if not path.is_file():
+            raise FileNotFoundError(f'Required recorded data are absent: {path}')
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
-        if digest != ARCHIVE_SHA256:
-            raise ValueError(f"Archive identity mismatch: {digest}")
-        self.zip = zipfile.ZipFile(path)
+        self.archive_sha256=digest
         self.used: dict[str, dict] = {}
+        self.bundle=None
+        if digest == ARCHIVE_SHA256:
+            self.zip = zipfile.ZipFile(path)
+        else:
+            self.bundle=RecordBundle(path)
+            self.zip=self.bundle.zip
 
     def read(self, path: str) -> bytes:
-        content = self.zip.read(PREFIX + path)
-        self.used[path] = {"bytes": len(content), "sha256": hashlib.sha256(content).hexdigest()}
+        content=(self.bundle.read('checkpoint_05/'+path) if self.bundle is not None
+                 else self.zip.read(PREFIX+path))
+        self.used[path]={'bytes':len(content),'sha256':hashlib.sha256(content).hexdigest()}
         return content
 
-    def csv(self, path: str) -> pd.DataFrame:
-        return pd.read_csv(io.BytesIO(self.read(path)), compression="gzip" if path.endswith(".gz") else None)
+    def csv(self,path:str) -> pd.DataFrame:
+        return pd.read_csv(io.BytesIO(self.read(path)),compression='gzip' if path.endswith('.gz') else None)
 
-    def npz(self, path: str) -> dict[str, np.ndarray]:
-        with np.load(io.BytesIO(self.read(path)), allow_pickle=False) as z:
-            return {k: z[k].copy() for k in z.files}
+    def npz(self,path:str) -> dict[str,np.ndarray]:
+        with np.load(io.BytesIO(self.read(path)),allow_pickle=False) as z:
+            return {k:z[k].copy() for k in z.files}
 
-    def json(self, path: str) -> dict:
+    def json(self,path:str) -> dict:
         return json.loads(self.read(path))
 
 
@@ -272,7 +281,7 @@ def size_analysis(src,output):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--archive",type=Path,required=True)
+    ap.add_argument("--archive",type=Path,default=ROOT/"entanglement-data.zip")
     ap.add_argument("--output",type=Path,default=Path("reproduced_evidence"))
     ap.add_argument("--bootstrap",type=int,default=5000)
     ap.add_argument("--seed",type=int,default=2026090501)
@@ -281,12 +290,13 @@ def main():
     args.output.mkdir(parents=True,exist_ok=True)
     source=Source(args.archive)
     summary={"analysis_status":"post-hoc sensitivity and archived-row replay, not a replacement primary analysis",
-             "seed":args.seed,"archive_sha256":ARCHIVE_SHA256}
+             "seed":args.seed,"archive_sha256":source.archive_sha256}
     summary["sizes"]=size_analysis(source,args.output)
     summary["locations"]=location_analysis(source,args.output,args.bootstrap,np.random.default_rng(args.seed))
     summary["environment"]={"python":platform.python_version(),"numpy":np.__version__,"pandas":pd.__version__,"scipy":scipy.__version__}
     (args.output/"summary.json").write_text(json.dumps(summary,indent=2)+"\n")
     (args.output/"input_manifest.json").write_text(json.dumps(source.used,indent=2)+"\n")
+    source.zip.close()
     print(json.dumps(summary,indent=2))
 
 if __name__=="__main__":

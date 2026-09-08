@@ -448,7 +448,7 @@ The model-free summary is preferable. In the common-eligibility sample, the magn
 
 **Answer.** The supplied phase-free tableau implementation was compared with a direct state-vector implementation for $n=4,6,8,10$, both monitoring protocols, four probabilities, four trajectories, and two times: 256 recorded comparisons agreed for the tested entropy/response quantities. The takeover reran that supplied cross-validation and separately checked the response projection and Clifford average. The evidence pass independently reconstructed all 16 finite-size coefficients and the original location endpoints from stored records. These are complementary checks with different failure modes. They do not constitute a new full large-system campaign or an external replication. [S3, S4, S7]
 
-At repository level, tests check exact-identity examples, a synthetic within-stratum regression with a known answer, paired bootstrap behavior, rejection of a wrong archive, and complete all-format figure export. The figure pipeline validates six PDF/PNG/SVG triples in fresh temporary output before copying them. This guards against stale missing outputs; it does not turn canonical-table redraws into raw-data reanalysis. The independent evidence command requires the hash-verified Checkpoint 05 archive, whose permanent download deposit remains pending. [S4, S5]
+At repository level, tests check exact-identity examples, a synthetic within-stratum regression with a known answer, paired bootstrap behavior, rejection of a wrong archive, and complete all-format figure export. The figure pipeline validates six PDF/PNG/SVG triples in fresh temporary output before copying them. This guards against stale missing outputs; it does not turn canonical-table redraws into raw-data reanalysis. The independent evidence command reads the required indexed root record bundle; it no longer requires a separately obtained Checkpoint 05 archive. Exact resampling of the accepted Figure 1 intervals remains unverified; the accepted table is preserved and source-traced. [S4, S5]
 
 ### H3. How does the work differ from established related approaches?
 
@@ -470,13 +470,13 @@ The source hierarchy is deliberate: current canonical figure tables for plotted 
 
 **S5. Repository implementation and claim boundaries.** [Code map](CODE_MAP.md), [claim ledger](../results/core_claims.csv), [reproduction guide](REPRODUCTION.md), and [tests](../tests/).
 
-**S6. Figure/question design record.** The preserved `entanglement_prl_figure_design_checkpoint_01/MAIN_APPENDIX_QUESTION_MAP.md` and Figure 1 specification supply the question identifiers and original contrast definition. The adopted question map is included with this report as [DIALOGUE_QUESTION_MAP.md](DIALOGUE_QUESTION_MAP.md). Historical Figure 4 fit language is superseded.
+**S6. Figure/question design record.** The retained specifications are in [studies/figure_design](../studies/figure_design/); figure-specific resamples are indexed in the root [record bundle](../data/record_bundle_manifest.json). The preserved `entanglement_prl_figure_design_checkpoint_01/MAIN_APPENDIX_QUESTION_MAP.md` and Figure 1 specification supply the question identifiers and original contrast definition. The adopted question map is included with this report as [DIALOGUE_QUESTION_MAP.md](DIALOGUE_QUESTION_MAP.md). Historical Figure 4 fit language is superseded.
 
-**S7. Takeover checks.** The author-facing `Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip` records the separately written checks. These are author-side numerical checks, not an external audit. Its provenance remains separate from the original primary simulations.
+**S7. Takeover checks.** The cited original-study check scripts and results are preserved under `takeover_review/` in the root record bundle, materialized by `materialize_studies.py`. The author-facing `Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip` records the separately written checks. These are author-side numerical checks, not an external audit. Its provenance remains separate from the original primary simulations.
 
 **S8. Finite intervention source.** [Checkpoint 04 study](../studies/checkpoint_04/), particularly `scripts/cross_architecture_simulation.py`, plus the preserved full Checkpoint 04 archive, SHA-256 `690722855b37c5ba1aab96720e03d0f36e7b2b0b86447827f9eeecda0a973023`. The archive contains the detailed rank/probe tables and reference-spectrum construction.
 
-**S9. Extended physical results.** The full Checkpoint 05 archive's `analysis/synthesis/` tables for code decomposition, time checks, cross-run comparisons, and hinge fits, and `analysis/primary/thermodynamic_limit_fits.csv`. Selected source is also in the [Checkpoint 05 study](../studies/checkpoint_05/). These supporting archive tables have not all been redeposited as ordinary Git files.
+**S9. Extended physical results.** The full Checkpoint 05 archive's `analysis/synthesis/` tables for code decomposition, time checks, cross-run comparisons, and hinge fits, and `analysis/primary/thermodynamic_limit_fits.csv`. Selected source is also in the [Checkpoint 05 study](../studies/checkpoint_05/). These supporting tables are included as unchanged members of the indexed root data bundle.
 
 **S10. Related-work scope.** [Stored literature audit](RELATED_WORK.md). This report uses its framing and attribution limits; it adds no fresh priority claim.
 
@@ -490,12 +490,11 @@ python reproduce.py --core-figures
 
 This reads canonical summaries and writes six PDF/PNG/SVG triples. The approved Figure 4 code does not read or fit a decay model.
 
-**Recompute the stored-row evidence.** With the original archive available:
+**Recompute the stored-row evidence.** Using the default in-repository data bundle:
 
 ```bash
 python scripts/analysis/reassess_evidence.py \
-  --archive /path/to/entanglement_project_checkpoint_05.zip \
   --output reproduced_evidence --bootstrap 5000 --seed 2026090501
 ```
 
-This verifies the archive identity, recalculates the finite-size point coefficients, replays the location endpoints, and reproduces the post-hoc checks. It does not rerun the circuit generator. Permanent raw-archive deposition and independent specialist verification remain distinct completion tasks, not hidden prerequisites falsely claimed to have been finished.
+This verifies the archive identity, recalculates the finite-size point coefficients, replays the location endpoints, and reproduces the post-hoc checks. It does not rerun the circuit generator. All required original records are in the indexed root bundle. Independent specialist review and full regeneration of the large simulation campaign are separate from stored-record reanalysis.

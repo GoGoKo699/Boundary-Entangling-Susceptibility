@@ -1,8 +1,5 @@
-# Study packages
+# Original susceptibility studies
 
-The repository separates the final research into two studies:
+[Checkpoint 04](checkpoint_04/README.md) contains the state-vector intervention and exact response validation. [Checkpoint 05](checkpoint_05/README.md) contains the physical large-size stabilizer study and paired measurement intervention.
 
-1. [`checkpoint_04/`](checkpoint_04/) — central-spectrum intervention, cross-architecture robustness, and the general local-twirl response theorem.
-2. [`checkpoint_05/`](checkpoint_05/) — physical stabilizer matching, large-size persistence, boundary codes, independent replication, and paired causal localization.
-
-The root `docs/` directory gives the reader-facing synthesis. These directories retain the executable research workflow and selected audit tables. Large compressed state tables are reserved for versioned release assets, as explained in `docs/DATA_POLICY.md`.
+The names preserve source identity, not a multi-project dependency. Run `python materialize_studies.py` from the repository root to place the original data layout beside the readable source in a separate workspace. Current interpretation is supplied by `docs/`, not by historical fit descriptions embedded in archival output files.

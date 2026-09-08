@@ -1,10 +1,5 @@
 # Data
 
-`processed/core_figures/` is the canonical, human-readable data layer behind the six Python-generated core panels.
+`processed/core_figures/` contains the frozen plotting summaries. They are not substitutes for trajectory records.
 
-- Figure 1: ten held-out/independent fixed-spectrum contrasts.
-- Figure 2: all nine exact boundary codes, probability slopes, and exact susceptibility reconstruction.
-- Figure 3: finite-size estimates and locked thermodynamic intercepts for two monitoring protocols and two independent runs.
-- Figure 4: distance-resolved paired intervention, conditional/unconditional contrast, and the locked exponential fit.
-
-Selected extended result tables live inside the corresponding study directory. Large trajectory-level archives are governed by `docs/DATA_POLICY.md`.
+`record_bundle_manifest.json` indexes the required root file `entanglement-data.zip`, including its whole-file hash and every original member hash. See [the data policy](../docs/DATA_POLICY.md) and [reproduction guide](../docs/REPRODUCTION.md).

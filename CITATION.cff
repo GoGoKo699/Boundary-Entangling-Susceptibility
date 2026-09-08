@@ -11,8 +11,6 @@ authors:
     given-names: Ruge
     email: gogoko699@gmail.com
 repository-code: https://github.com/GoGoKo699/Boundary-Entangling-Susceptibility
-version: 0.1.0
-date-released: 2026-08-26
 abstract: >-
   Code, canonical figure data, exact response identities, and validation
   material for fixed-spectrum boundary entangling susceptibility in monitored

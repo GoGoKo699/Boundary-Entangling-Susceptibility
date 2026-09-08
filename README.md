@@ -57,19 +57,21 @@ Causality is restricted to the specified paired location interventions and their
 
 ## Reproduce and inspect
 
+A complete checkout includes **`entanglement-data.zip` at the repository root**. [The data manifest](data/record_bundle_manifest.json) verifies the bundle and every source member. No old checkpoint download or previous chat is needed. `verify.py` fails if the original-data bundle is absent; redrawing summary tables alone is not data completeness.
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements-reproducible.txt
 pip install -e .
-pytest -q
 python verify.py
+pytest -q
 python reproduce.py --core-figures
 ```
 
 The figure command validates six PDF/PNG/SVG triples in a fresh staging directory before copying them into `reproduced_figures/`. The core data are in [data/processed/core_figures](data/processed/core_figures/); source is in [scripts/figures](scripts/figures/). Browser SVGs and publication PDFs use the same plotting code. The current Figure 4 generator does not read a decay-fit file. The [baseline record](docs/FIGURE_BASELINE.md) distinguishes current artwork from the historical external Overleaf hashes.
 
-To replay Figures 3 and 4 from stored trajectory records, use the separate archive-based command in [EVIDENCE_REASSESSMENT.md](docs/EVIDENCE_REASSESSMENT.md). Redrawing a small canonical table is not the same as recomputing its estimates from raw records. A successful CI run is a software/regression check, not an independent scientific replication.
+To replay all four figures from stored observations, run `python scripts/analysis/reproduce_core_records.py`. The post-hoc reassessment has a separate command in [REPRODUCTION.md](docs/REPRODUCTION.md). Redrawing a small canonical table is not the same as recomputing its estimates from raw records. A successful CI run is a software/regression check, not an independent scientific replication.
 
 ## Reader routes and scope
 
@@ -85,6 +87,8 @@ To replay Figures 3 and 4 from stored trajectory records, use the separate archi
 | Current figure version and caption | [Figure baseline](docs/FIGURE_BASELINE.md) |
 | Data availability | [Data policy](docs/DATA_POLICY.md) |
 
-No new order parameter, critical exponent, universal non-Clifford thermodynamic law, or finite-range theorem is claimed. The original trajectory-fingerprint and cumulative flow-balance directions are retained only as [research history](docs/RESEARCH_HISTORY.md). Selected study source is under [studies](studies/); immutable raw-data deposition remains pending. No manuscript TeX or TikZ is tracked.
+No new order parameter, critical exponent, universal non-Clifford thermodynamic law, or finite-range theorem is claimed. The original trajectory-fingerprint and cumulative flow-balance directions are retained only as [research history](docs/RESEARCH_HISTORY.md). Selected study source is under [studies](studies/); the required original observations and resamples are in the indexed root data bundle. No manuscript TeX or TikZ is tracked.
 
-The [citation record](CITATION.cff) is provisional. No reuse license has been selected; see [license status](LICENSE_PENDING.md).
+The [citation record](CITATION.cff) is provisional. No reuse license has been selected; see [license status](LICENSE_STATUS.md).
+
+See [precise reproducibility limits](docs/REPRODUCIBILITY_LIMITS.md). Preserved original intervals and fully regenerated intervals are not interchangeable.

@@ -1,18 +1,14 @@
-.PHONY: install verify test figures clean
-
+.PHONY: install test verify figures records evidence
 install:
-	python -m pip install -r requirements.txt
+	python -m pip install -r requirements-reproducible.txt
 	python -m pip install -e .
-
-verify:
-	python verify.py
-
 test:
 	pytest -q
-
+verify:
+	python verify.py
 figures:
 	python reproduce.py --core-figures
-
-clean:
-	rm -rf reproduced_figures .pytest_cache build dist *.egg-info
-	find . -type d -name __pycache__ -prune -exec rm -rf {} +
+records:
+	python scripts/analysis/reproduce_core_records.py
+evidence:
+	python scripts/analysis/reassess_evidence.py --bootstrap 5000 --seed 2026090501
