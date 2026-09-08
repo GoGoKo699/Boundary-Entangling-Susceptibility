@@ -137,7 +137,7 @@
     "scripts/figures/make_figure_03.py": "31330b258f07a29a19da478633447ea5af9bcebcda9215d98cc4808e9d0f378c"
   },
   "supporting_files": {
-    "figures/palette.json": "f82af8f55cd4ad07901464a709be98cfce78c0c46ddff0533a6a73ce623dc761",
+    "figures/palette.json": "a330cdf29c3489a3654eafde0a8f2969e860c7f6c482b08f20fd86c8866f8747",
     "scripts/figures/figure_palette.py": "10486a05bdb1aa18124e71cd7a234b0de8c5eb0c07d38c04b6cfda24a5af2eb8"
   },
   "history_policy": "No history rewrite. The interval-adoption record and historical Figure 1 files remain unchanged.",

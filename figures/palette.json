@@ -1,8 +1,7 @@
 {
-  "name": "Irises",
+  "name": "Figure palette",
   "status": "approved for figures only, 2026-09-08",
-  "reference": "https://en.wikipedia.org/wiki/Irises_(painting)",
-  "selection": "Design choices inspired by the linked reproduction as it appears today, not pigment measurements or exact pixel samples.",
+  "selection": "Colors for scientific figures. Repository pages use native GitHub styling.",
   "colors": {
     "ink": "#24313A",
     "iris": "#3F4D8C",
