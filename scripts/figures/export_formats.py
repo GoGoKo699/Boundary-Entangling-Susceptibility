@@ -1,8 +1,10 @@
 """Export one Matplotlib Figure to three formats without changing its layout."""
 from pathlib import Path
 import matplotlib as mpl
+from figure_palette import apply_palette
 
 def save_formats(figure, pdf: Path, png: Path) -> None:
+    apply_palette(figure)
     pdf, png = Path(pdf), Path(png)
     pdf.parent.mkdir(parents=True, exist_ok=True)
     png.parent.mkdir(parents=True, exist_ok=True)

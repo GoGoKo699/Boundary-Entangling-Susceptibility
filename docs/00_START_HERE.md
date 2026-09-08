@@ -1,5 +1,7 @@
 # Start here
 
+The [project guide](PROJECT_GUIDE.md) provides direct routes through the scientific account, figures, evidence, and reproduction commands. All pages use ordinary GitHub Markdown.
+
 Read the [scientific story](SCIENTIFIC_STORY.md) for the result chain or the [dialogue report](DIALOGUE_REPORT.md) for the main-text and appendix questions. The [exact theory](THEORY.md), [methods](NUMERICAL_METHODS.md), and [evidence reassessment](EVIDENCE_REASSESSMENT.md) provide the supporting detail.
 
 The current study concerns only boundary entangling susceptibility of monitored states. The original four-figure narrative is retained, with no fitted exponential in Figure 4. No new order parameter or rigorous thermodynamic limit is asserted.

@@ -1,5 +1,9 @@
 # Approved figure baseline
 
+## Current figure palette
+
+The six panels use the approved [Irises palette](../figures/PALETTE.md). All data, intervals, labels, axes, marker shapes, panel sizes, and fitted/no-fit choices are unchanged. This palette applies only to figures. The repository uses standard GitHub Markdown. The earlier revision descriptions below record what changed at their respective dates, not a claim that the old colors are still active.
+
 ## Figure 1 uncertainty revision: 8 September 2026
 
 The active Figure 1 panel now uses the reviewed primary support-conditioned bootstrap intervals. Point positions, fonts, colors, dimensions, axes, family order, and plotting source are unchanged. The former CSV/PDF/PNG/SVG are preserved under `results/historical_figure1/`. See [the current method](FIGURE1_UNCERTAINTY.md) and [replacement caption](FIGURE1_CAPTION.md). Figures 2–4 remain unchanged.

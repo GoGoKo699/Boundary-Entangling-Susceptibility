@@ -1,7 +1,0 @@
-{
-  "scientific_base": "1059662eb7a8ad8bb3262ff4feddd9d95da71d00",
-  "reviewed_source_xz_sha256": "b7f704f394835afc805eab6b0449a014171229060f2551648fba2d8217ee906f",
-  "unchanged_in_place_baseline_files": 199,
-  "original_readme_preserved": "website/source_snapshots/original_README.md.txt",
-  "scope": "Website source and in-repository preview only; no public deployment, statistical revision, license change, or canonical recoloring."
-}
