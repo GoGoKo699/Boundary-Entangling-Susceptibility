@@ -1,0 +1,1218 @@
+{
+  "format_version": 1,
+  "bundle": "entanglement-data.zip",
+  "sha256": "04e3e353a309b866634715b8b062b7531394fddbcdef1c61f8aec0ba3a4d0255",
+  "bytes": 17227222,
+  "members": [
+    {
+      "member": "accepted_figure1/figure_01_panel_b_data.csv",
+      "source_archive": "figure1_overleaf_hybrid_v2.zip",
+      "source_member": "figure1_overleaf_hybrid_v2/data/figure_01_panel_b_data.csv",
+      "sha256": "d0167d2607922cbb30566743560fe13d1ccc7822c2879d188a30fdbc21d76914",
+      "bytes": 1323
+    },
+    {
+      "member": "accepted_figure1/figure_01_source_manifest.json",
+      "source_archive": "figure1_overleaf_hybrid_v2.zip",
+      "source_member": "figure1_overleaf_hybrid_v2/data/figure_01_source_manifest.json",
+      "sha256": "5f96d88102b38a7f8dc4d53e838c8c44423851bc24bd19ac3b6c4b35519d1064",
+      "bytes": 689
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/equalization_invariance.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/equalization_invariance.csv",
+      "sha256": "8f9464467371e98a68a73785ef5e2f3352aacdf75c110067e8c3c2392a45be3c",
+      "bytes": 11415
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/gate_space_universality_bootstrap.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/gate_space_universality_bootstrap.csv",
+      "sha256": "800242ff22e62a7506b8ad611cfa23ecb42928809969ddf20fcba4d0fb2d5e08",
+      "bytes": 10524
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/intervention_adjacent_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/intervention_adjacent_contrasts.csv",
+      "sha256": "9afccb939bda1498e939519618dc4f405574a6b903e47e596b76868fef57a1bb",
+      "bytes": 12166
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/intervention_analysis_summary.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/intervention_analysis_summary.json",
+      "sha256": "678f52f7ad78f822d00504464bbc96303db32aef75ebdb7b0c9c37b8786dd8eb",
+      "bytes": 556
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/intervention_cross_architecture.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/intervention_cross_architecture.csv",
+      "sha256": "9342e61c83d155e1c3be62861e6029a68870da854813efc79213b3ee66529995",
+      "bytes": 6073
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/intervention_size_consistency.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/intervention_size_consistency.csv",
+      "sha256": "34bfef2b7403fb9d74621d4bf5905d2ce2212dfba67928761e79b4d10e903be1",
+      "bytes": 16995
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/physical_original_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/physical_original_contrasts.csv",
+      "sha256": "d39b15dc57afdae39921a56eb63724d92ccb3bdcdef22068e0249bc0a25573d9",
+      "bytes": 5980
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/physical_stabilizer_adjacent_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/physical_stabilizer_adjacent_contrasts.csv",
+      "sha256": "7925415050d4e013ea77e8902d47e10959113c3c92ae48815a34690162f6acf5",
+      "bytes": 48242
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/physical_stabilizer_combined_summary.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/physical_stabilizer_combined_summary.json",
+      "sha256": "446d15aca15afb62ece567013b295513647517a7b977906152bc410dfe0048a1",
+      "bytes": 4657
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/physical_stabilizer_fixed_effect_tests.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/physical_stabilizer_fixed_effect_tests.csv",
+      "sha256": "e8f4d62d1f2a73e299caa28fc60d371492d098e66d0c2b3940a7934953e93fce",
+      "bytes": 8392
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/physical_stabilizer_gate_bank_reliability.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/physical_stabilizer_gate_bank_reliability.csv",
+      "sha256": "5649f079a0b986d9cbf80bcb8b721377928004ef2c075b1bd932b83b20bf870a",
+      "bytes": 1047
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/physical_stabilizer_size_specific_tests.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/physical_stabilizer_size_specific_tests.csv",
+      "sha256": "858d69d8d366b64ce169bbb3d336c8a924bb38b10156677489af966fccc053c2",
+      "bytes": 21878
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/physical_stabilizer_spectrum_invariance.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/physical_stabilizer_spectrum_invariance.csv",
+      "sha256": "059801926762492e2e0f137889c1afd310291c7d9843eb608bd15df97bfc3c2f",
+      "bytes": 35643
+    },
+    {
+      "member": "checkpoint_04/analysis/consolidated/response_stencil_decomposition.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/consolidated/response_stencil_decomposition.csv",
+      "sha256": "2ae5a4f886a2f9b752196dc3646aceac2364e811582c3c891dd4f6349af56389",
+      "bytes": 2502
+    },
+    {
+      "member": "checkpoint_04/analysis/intervention/equalization_invariance.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/intervention/equalization_invariance.csv",
+      "sha256": "9e2ba9cf011c4b6553a800e473ff8e41f71b0ef8e245f1b6f772cd408710e5cd",
+      "bytes": 2939
+    },
+    {
+      "member": "checkpoint_04/analysis/intervention/intervention_adjacent_rate_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/intervention/intervention_adjacent_rate_contrasts.csv",
+      "sha256": "4e4fecaa5575237006100c6e445e3894f2919314f6dcc77629ce89c392a6de49",
+      "bytes": 3667
+    },
+    {
+      "member": "checkpoint_04/analysis/intervention/intervention_primary_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/intervention/intervention_primary_contrasts.csv",
+      "sha256": "bf5a8f816eac7007464cc326a84dc929451dae412f2d8c69da7b2f84ced8383f",
+      "bytes": 1861
+    },
+    {
+      "member": "checkpoint_04/analysis/intervention/intervention_size_specific_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/intervention/intervention_size_specific_contrasts.csv",
+      "sha256": "d97ef2129be63b4b8de2e59705fc8e8a9ed74a732e643036769f279be3ebc7ee",
+      "bytes": 5024
+    },
+    {
+      "member": "checkpoint_04/analysis/intervention/intervention_success_audit.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/intervention/intervention_success_audit.json",
+      "sha256": "10cc9afd6b68c02787e1b877f18ca9717be32b579713fe4abcc06803ac7a199b",
+      "bytes": 436
+    },
+    {
+      "member": "checkpoint_04/analysis/intervention/rank4_support_counts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/intervention/rank4_support_counts.csv",
+      "sha256": "f93ef7765da70f6d2f58bc929eaeec1db0379d55da357d1b1e9db4fc453dca16",
+      "bytes": 7349
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_analysis_summary.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_analysis_summary.json",
+      "sha256": "fc65c47ae1222128931ea4d3323a30a125eec2ea2908598eceee90d54a11f238",
+      "bytes": 3382
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_exact_stratum_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_exact_stratum_contrasts.csv",
+      "sha256": "68ee61b9a3900370dd6c388311c28becaa64d6f5421cfada21583e115f1a8191",
+      "bytes": 22221
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_fixed_effect_tests.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_fixed_effect_tests.csv",
+      "sha256": "576a2b31625aba34e47f15322e3575a201fe165f02aa892877de859711da109b",
+      "bytes": 4081
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_gate_bank_reliability.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_gate_bank_reliability.csv",
+      "sha256": "e29c9be28122106949b0bfb91589b55035ead301d08351601859e0b5fa8e1697",
+      "bytes": 533
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_size_specific_tests.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_size_specific_tests.csv",
+      "sha256": "ddc0c0c4c6cfd22fcb6f99355a1a7ac37c473b54c6b63d1676e5ad58d4523ca8",
+      "bytes": 10479
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_spectrum_invariance.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_independent_seed/physical_stabilizer_spectrum_invariance.csv",
+      "sha256": "e232e8ed8b4a17ac01d7bc57719229008f18eb0af577e7383b6e082d83ff5e12",
+      "bytes": 14847
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_main/physical_stabilizer_analysis_summary.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_main/physical_stabilizer_analysis_summary.json",
+      "sha256": "ff88a517dc1e3a8fb42e31017ccd134ed0892ca4ff0f7985866b8ea425195d5a",
+      "bytes": 3386
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_main/physical_stabilizer_exact_stratum_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_main/physical_stabilizer_exact_stratum_contrasts.csv",
+      "sha256": "3ec1c8f16022ec8fb0231afcd96bd1b26036e756985fa4d66900256056f3dc58",
+      "bytes": 22292
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_main/physical_stabilizer_fixed_effect_tests.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_main/physical_stabilizer_fixed_effect_tests.csv",
+      "sha256": "efdeb014eacad1ce8001a72a96def4cc04efaec660344eb35da8e73e26d6fb39",
+      "bytes": 4099
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_main/physical_stabilizer_gate_bank_reliability.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_main/physical_stabilizer_gate_bank_reliability.csv",
+      "sha256": "4d67793974993a8faf0db6fdf049bd9e2c5e194763914ac47de4a24181e41b7e",
+      "bytes": 535
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_main/physical_stabilizer_size_specific_tests.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_main/physical_stabilizer_size_specific_tests.csv",
+      "sha256": "cdf75796eca21bf564b2b568e6d748aebde8e337e3c9fd5f5924532d90d1f520",
+      "bytes": 10507
+    },
+    {
+      "member": "checkpoint_04/analysis/physical_main/physical_stabilizer_spectrum_invariance.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/analysis/physical_main/physical_stabilizer_spectrum_invariance.csv",
+      "sha256": "1de49d48128416e459090880d803bc54b1463604f13cba964cf9b4176c511785",
+      "bytes": 15646
+    },
+    {
+      "member": "checkpoint_04/data/exact_response/probe_response_coefficients.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/exact_response/probe_response_coefficients.csv",
+      "sha256": "d1ca7856f652cb9ad9d2efe94073347398177506efe6c82bf217a45925951032",
+      "bytes": 296
+    },
+    {
+      "member": "checkpoint_04/data/exact_response/response_operator_validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/exact_response/response_operator_validation.json",
+      "sha256": "40f5bdc38881110c4246fb65c26a0686cd912f2d06aa5fe09932bb73192602c8",
+      "bytes": 4416
+    },
+    {
+      "member": "checkpoint_04/data/exact_response/two_qubit_clifford_group.npz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/exact_response/two_qubit_clifford_group.npz",
+      "sha256": "3358c2efc54c48b91a7fd5f0c514a75dad9adc0307447fce0c476d64a8989c33",
+      "bytes": 117610
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/discovery_spectra.npz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/discovery_spectra.npz",
+      "sha256": "ef2c7e06b603847420998e7a5207791c09121547959aee241a544a850a0237bd",
+      "bytes": 366741
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/discovery_spectrum_metadata.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/discovery_spectrum_metadata.csv.gz",
+      "sha256": "18867fe0803d22736e991e228821fde205e331279a751db512e02b2ec22f427c",
+      "bytes": 4897
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/equalization_reference_spectra.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/equalization_reference_spectra.csv",
+      "sha256": "03cec62ed9e475c3d6907b59e43d4ea5dc3bab04a36fd429404ad126deee8cd1",
+      "bytes": 5863
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/equalization_reference_spectra.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/equalization_reference_spectra.json",
+      "sha256": "2e667e6393ef75e346cdb2b344f2ef039a9f4c7998647c0bd58282a444b244e9",
+      "bytes": 3982
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/physical_spectra.npz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/physical_spectra.npz",
+      "sha256": "e587eb7d20b7f49e3ce2322ef662955687ba06087227212662b8a9e730aee1e3",
+      "bytes": 736499
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/physical_spectrum_metadata.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/physical_spectrum_metadata.csv.gz",
+      "sha256": "d748ea4a32813faad6afb53ce37d2f1daeb38417ef9261fb2ec4da8490c2a829",
+      "bytes": 8783
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/probe_response_coefficients.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/probe_response_coefficients.csv",
+      "sha256": "d1ca7856f652cb9ad9d2efe94073347398177506efe6c82bf217a45925951032",
+      "bytes": 296
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/state_response_rows.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/state_response_rows.csv.gz",
+      "sha256": "153710199f198a1440f56e610255c61628eba4f9ee4745737ed03e9fc6693026",
+      "bytes": 344940
+    },
+    {
+      "member": "checkpoint_04/data/intervention/independent_seed_rank4/validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/independent_seed_rank4/validation.json",
+      "sha256": "15a0d863bee7327f61a099a9201e809b1cfd8a8382fa395db2f2fa09bb1e6e36",
+      "bytes": 1346
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/discovery_spectra.npz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/discovery_spectra.npz",
+      "sha256": "f4cd0b7da0a48c63f2b6012777001bd0f533d83210445c333c1e1b0778db0a7e",
+      "bytes": 560878
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/discovery_spectrum_metadata.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/discovery_spectrum_metadata.csv.gz",
+      "sha256": "d165b711cbf785fc26b6e11571dbb8f41ce659c8ffaf9ed2fd97195c3cf936fb",
+      "bytes": 7112
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/equalization_reference_spectra.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/equalization_reference_spectra.csv",
+      "sha256": "6f10eecc360e843d9834413110dec9aaf9280adc343b2956b2fe165d9b1ea6ee",
+      "bytes": 4610
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/equalization_reference_spectra.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/equalization_reference_spectra.json",
+      "sha256": "d40ec8e465dea45396c2722cf6157ed2e17edfc5b370279ce309469bfe082f95",
+      "bytes": 2460
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/physical_spectra.npz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/physical_spectra.npz",
+      "sha256": "cc96ca450013e7afabc7d5019e3fa3de4645de8a683323077468c2c0d4c3c1dd",
+      "bytes": 1113311
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/physical_spectrum_metadata.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/physical_spectrum_metadata.csv.gz",
+      "sha256": "901e6f14e97e680718b749c91ba12f9131c1b277245943656ad22d46b8ff6664",
+      "bytes": 13139
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/probe_response_coefficients.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/probe_response_coefficients.csv",
+      "sha256": "d1ca7856f652cb9ad9d2efe94073347398177506efe6c82bf217a45925951032",
+      "bytes": 296
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/state_response_rows.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/state_response_rows.csv.gz",
+      "sha256": "fd162cfa069d1e33493789536156ac3efc27acbcb9bca62012a6cf2f61885e11",
+      "bytes": 520709
+    },
+    {
+      "member": "checkpoint_04/data/intervention/posthoc_rank2/validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/posthoc_rank2/validation.json",
+      "sha256": "15a0d863bee7327f61a099a9201e809b1cfd8a8382fa395db2f2fa09bb1e6e36",
+      "bytes": 1346
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/discovery_spectra.npz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/discovery_spectra.npz",
+      "sha256": "d41b3917ac20d9d0530cd53af70bd76409c02c3295742076fb7130c3871f56b7",
+      "bytes": 560901
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/discovery_spectrum_metadata.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/discovery_spectrum_metadata.csv.gz",
+      "sha256": "e33815f7be155340a647c02b6cc1510412c196ce95a1a35466293127099d1128",
+      "bytes": 7106
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/equalization_reference_spectra.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/equalization_reference_spectra.csv",
+      "sha256": "03e604ff480b5ba41341c58fe555474bc440d5c45f2d9236c576a7a62dba3109",
+      "bytes": 5950
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/equalization_reference_spectra.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/equalization_reference_spectra.json",
+      "sha256": "9b5131367aa1fcf85dab189470eb8786d12280bda7d1d75d5a545553fe53ec94",
+      "bytes": 3966
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/physical_spectra.npz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/physical_spectra.npz",
+      "sha256": "cc96ca450013e7afabc7d5019e3fa3de4645de8a683323077468c2c0d4c3c1dd",
+      "bytes": 1113311
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/physical_spectrum_metadata.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/physical_spectrum_metadata.csv.gz",
+      "sha256": "ca6ff4eb531c34c0f65bd98092b29bdb041b891996a2deac854b7649fde61abd",
+      "bytes": 13139
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/probe_response_coefficients.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/probe_response_coefficients.csv",
+      "sha256": "d1ca7856f652cb9ad9d2efe94073347398177506efe6c82bf217a45925951032",
+      "bytes": 296
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/state_response_rows.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/state_response_rows.csv.gz",
+      "sha256": "1f3139866d13838a659e4c6e9e127170f11a7050ead1885810796f67bd89068c",
+      "bytes": 515675
+    },
+    {
+      "member": "checkpoint_04/data/intervention/primary_rank4/validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/intervention/primary_rank4/validation.json",
+      "sha256": "15a0d863bee7327f61a099a9201e809b1cfd8a8382fa395db2f2fa09bb1e6e36",
+      "bytes": 1346
+    },
+    {
+      "member": "checkpoint_04/data/physical/independent_seed/physical_stabilizer_states.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/physical/independent_seed/physical_stabilizer_states.csv.gz",
+      "sha256": "89aa224123c2f115b8ca6bfb3898adf507c7884d896c8607e69f4bb9e1f24513",
+      "bytes": 266491
+    },
+    {
+      "member": "checkpoint_04/data/physical/main/physical_stabilizer_states.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/data/physical/main/physical_stabilizer_states.csv.gz",
+      "sha256": "430d582ea69cf01f93ba9d521b8c7bc9a2bb0c81550ba2b863fd271d965b8095",
+      "bytes": 512531
+    },
+    {
+      "member": "checkpoint_04/design/DESIGN_LOCK_BEFORE_RUN.md",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/design/DESIGN_LOCK_BEFORE_RUN.md",
+      "sha256": "b73cd068ec28647d35c8f9b001bcf33508c598735761509cda849fefd38188c5",
+      "bytes": 4830
+    },
+    {
+      "member": "checkpoint_04/design/DESIGN_LOCK_BEFORE_RUN.sha256",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/design/DESIGN_LOCK_BEFORE_RUN.sha256",
+      "sha256": "c8ae6e08fc01c39f5edd58de6904d08b1eb3217033edb85004e2091db96080b1",
+      "bytes": 133
+    },
+    {
+      "member": "checkpoint_04/design/DESIGN_LOCK_TIMESTAMP_UTC.txt",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/design/DESIGN_LOCK_TIMESTAMP_UTC.txt",
+      "sha256": "b8a02a2e0917d7c4c6d9c4999d5499d6aad4f1f0ff2649a7a3f78e2d44c97510",
+      "bytes": 21
+    },
+    {
+      "member": "checkpoint_04/design/PHYSICAL_STABILIZER_DESIGN_LOCK_BEFORE_FULL_RUN.md",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/design/PHYSICAL_STABILIZER_DESIGN_LOCK_BEFORE_FULL_RUN.md",
+      "sha256": "b1e5561cc486e5df4a891d3f45db5fc62f0787fa38fa5b2fddc59caaaf374846",
+      "bytes": 4029
+    },
+    {
+      "member": "checkpoint_04/design/PHYSICAL_STABILIZER_DESIGN_LOCK_BEFORE_FULL_RUN.sha256",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/design/PHYSICAL_STABILIZER_DESIGN_LOCK_BEFORE_FULL_RUN.sha256",
+      "sha256": "55a5cbee472f58a9aaf018c806ef3b5b976d991a0d0063d9a9c6cd14a13c6eff",
+      "bytes": 158
+    },
+    {
+      "member": "checkpoint_04/design/PHYSICAL_STABILIZER_INDEPENDENT_SEED_LOCK_BEFORE_RUN.md",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/design/PHYSICAL_STABILIZER_INDEPENDENT_SEED_LOCK_BEFORE_RUN.md",
+      "sha256": "d5a73c991fd44d8b510b26d291bff4bb5770545792880319a00f972510d86856",
+      "bytes": 1462
+    },
+    {
+      "member": "checkpoint_04/design/PHYSICAL_STABILIZER_INDEPENDENT_SEED_LOCK_BEFORE_RUN.sha256",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/design/PHYSICAL_STABILIZER_INDEPENDENT_SEED_LOCK_BEFORE_RUN.sha256",
+      "sha256": "22149cb929ae37fba6584a118312c5dd56bcc44dd39456bbfcbe2ad71cc89afa",
+      "bytes": 163
+    },
+    {
+      "member": "checkpoint_04/design/PHYSICAL_STABILIZER_INDEPENDENT_SEED_LOCK_TIMESTAMP_UTC.txt",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/design/PHYSICAL_STABILIZER_INDEPENDENT_SEED_LOCK_TIMESTAMP_UTC.txt",
+      "sha256": "e65ae524dfe15461497e9bb8d5d28db00e32dbb9ab8bd6b7693b367b1d71dec0",
+      "bytes": 21
+    },
+    {
+      "member": "checkpoint_04/limitations/nonstabilizer_matching/README.md",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/limitations/nonstabilizer_matching/README.md",
+      "sha256": "9d5bd090058e6ccf2e9cd4a8a3c42f38c5bb6aa43ddb62d72a4244421eecbc3c",
+      "bytes": 464
+    },
+    {
+      "member": "checkpoint_04/limitations/nonstabilizer_matching/physical_matching_balance.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/limitations/nonstabilizer_matching/physical_matching_balance.csv",
+      "sha256": "c554cb44a270df428a1fdfd74847eacd4d472393fe7c3b0e9b3108f7a3a076a9",
+      "bytes": 1912
+    },
+    {
+      "member": "checkpoint_04/limitations/nonstabilizer_matching/physical_matching_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/limitations/nonstabilizer_matching/physical_matching_contrasts.csv",
+      "sha256": "0708a9be9babe8adbc368f46a1d755c67dfebb265dae18012887613b58b72f7e",
+      "bytes": 48926
+    },
+    {
+      "member": "checkpoint_04/limitations/nonstabilizer_matching/physical_matching_success_audit.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/limitations/nonstabilizer_matching/physical_matching_success_audit.json",
+      "sha256": "fc23d8a7d2119ad8b6f18608658a28e56f415a3718c7cb0c7a4b926141181862",
+      "bytes": 295
+    },
+    {
+      "member": "checkpoint_04/limitations/nonstabilizer_matching/physical_spectrum_matched_pairs.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/limitations/nonstabilizer_matching/physical_spectrum_matched_pairs.csv.gz",
+      "sha256": "7648aa288794f65fc0883bdea66a54abe3690eca2fc66fcd13cfa5e8457a79ac",
+      "bytes": 136314
+    },
+    {
+      "member": "checkpoint_04/validation/SMOKE_TEST_REPORT.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/validation/SMOKE_TEST_REPORT.json",
+      "sha256": "2a0f975156cbc27537af4c85552e6a03a98f593c6feb056b2d2cb5cf50fd9a62",
+      "bytes": 4028
+    },
+    {
+      "member": "checkpoint_04/validation/gate_invariant_formula_validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/validation/gate_invariant_formula_validation.json",
+      "sha256": "996ee8ad63c3c741a045ec8fe50d30ef46dfd35192f1c0cb9712c94654cce763",
+      "bytes": 1587
+    },
+    {
+      "member": "checkpoint_04/validation/intervention_independent_seed_simulator_validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/validation/intervention_independent_seed_simulator_validation.json",
+      "sha256": "15a0d863bee7327f61a099a9201e809b1cfd8a8382fa395db2f2fa09bb1e6e36",
+      "bytes": 1346
+    },
+    {
+      "member": "checkpoint_04/validation/intervention_primary_simulator_validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/validation/intervention_primary_simulator_validation.json",
+      "sha256": "15a0d863bee7327f61a099a9201e809b1cfd8a8382fa395db2f2fa09bb1e6e36",
+      "bytes": 1346
+    },
+    {
+      "member": "checkpoint_04/validation/intervention_rank2_simulator_validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/validation/intervention_rank2_simulator_validation.json",
+      "sha256": "15a0d863bee7327f61a099a9201e809b1cfd8a8382fa395db2f2fa09bb1e6e36",
+      "bytes": 1346
+    },
+    {
+      "member": "checkpoint_04/validation/response_operator_validation.json",
+      "source_archive": "entanglement_project_checkpoint_04.zip",
+      "source_member": "entanglement_project_checkpoint_04/validation/response_operator_validation.json",
+      "sha256": "40f5bdc38881110c4246fb65c26a0686cd912f2d06aa5fe09932bb73192602c8",
+      "bytes": 4416
+    },
+    {
+      "member": "checkpoint_05/analysis/intervention/analysis_summary.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/intervention/analysis_summary.json",
+      "sha256": "d7da26daea63391804723f35f5b7ec2380dc5a7103f8eddc51570bc5eaeeaa60",
+      "bytes": 1032
+    },
+    {
+      "member": "checkpoint_05/analysis/intervention/central_rank_reduction_probability.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/intervention/central_rank_reduction_probability.csv",
+      "sha256": "890d0aaa7ff9069fdcd07cca76a4566d87ecdff900026ec1acf01de13408a94b",
+      "bytes": 1915
+    },
+    {
+      "member": "checkpoint_05/analysis/intervention/distance_effects_by_cell.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/intervention/distance_effects_by_cell.csv",
+      "sha256": "d4ca83d666b685af23fa7a97bb8233c487d4cf0b1efe095705acb77203a53b38",
+      "bytes": 24983
+    },
+    {
+      "member": "checkpoint_05/analysis/intervention/fixed_spectrum_distance_decay.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/intervention/fixed_spectrum_distance_decay.csv",
+      "sha256": "b80c831f2561b1e669be6c91f2178f9759df2a421aa64a6959f453e4c2f74e80",
+      "bytes": 498
+    },
+    {
+      "member": "checkpoint_05/analysis/intervention/fixed_spectrum_distance_decay_fit.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/intervention/fixed_spectrum_distance_decay_fit.json",
+      "sha256": "ed5559ee8d4d0e94b0e4df43fa1b8abf839b66aaaebf39eb42dd01366f87ce53",
+      "bytes": 247
+    },
+    {
+      "member": "checkpoint_05/analysis/intervention/intervention_bootstraps.npz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/intervention/intervention_bootstraps.npz",
+      "sha256": "ad251db11842ad0562bf859675c86ec27a4f72ecb6ce7fc1df0026fff54ccb17",
+      "bytes": 319805
+    },
+    {
+      "member": "checkpoint_05/analysis/intervention/paired_near_far_effects.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/intervention/paired_near_far_effects.csv",
+      "sha256": "fc0dd200add3be7d9d43639fd1f1e31d1cb1843ed0bc031c846594de636c84ff",
+      "bytes": 4258
+    },
+    {
+      "member": "checkpoint_05/analysis/intervention/paired_trajectory_endpoints.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/intervention/paired_trajectory_endpoints.csv.gz",
+      "sha256": "e92cee1dfbc96128af1465b5549ad610fa2d2d80935f583ab80e9df5fac048a7",
+      "bytes": 46229
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/analysis_summary.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/analysis_summary.json",
+      "sha256": "4921a45e9f6922f42815d72da73aef9531512770e3a9f5f44d7dcb62a74399ec",
+      "bytes": 1879
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/bootstrap_primary_slopes.npz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/bootstrap_primary_slopes.npz",
+      "sha256": "6c3ecce69f240315c73fa98958b7df19848683397b80bdd18bdeb0da61cdaaf0",
+      "bytes": 297166
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/descriptive_means.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/descriptive_means.csv",
+      "sha256": "9baea0f359593084642b7f4bed95f9fa1ccac8a244b49f2935a520d18bdd8c7f",
+      "bytes": 21467
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/exact_rank_support.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/exact_rank_support.csv.gz",
+      "sha256": "9288133f70ba3272def5d65b140e81581c6e855a882e980315e8573342e9fb52",
+      "bytes": 7890
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/fixed_spectrum_adjacent_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/fixed_spectrum_adjacent_contrasts.csv",
+      "sha256": "b32b562ad515c6227eec34abc78901677cb1c0836ae8cfd03e7a0d7854a50779",
+      "bytes": 22711
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/fixed_spectrum_size_slopes.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/fixed_spectrum_size_slopes.csv",
+      "sha256": "9e60545e326f38adcf5518e1f9732d2da6c7d68bd3f7742579760a9a783f373b",
+      "bytes": 2493
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/independent_I3_crossings.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/independent_I3_crossings.csv",
+      "sha256": "42474fc06db739ea31f75324ebd34a241a46fa4d92b8eecd3cc1811b471713ff",
+      "bytes": 568
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/thermodynamic_limit_fits.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/thermodynamic_limit_fits.csv",
+      "sha256": "5fdabe0e78199c4911dc62e0abf8caed1607fce5fe7c1e397ff5d909586195c3",
+      "bytes": 722
+    },
+    {
+      "member": "checkpoint_05/analysis/primary/window_entropy_reconstruction.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/primary/window_entropy_reconstruction.csv",
+      "sha256": "c0327cdcbf1848615314bffc61826caee779df5b2110e09c879b9d25b52a56f8",
+      "bytes": 6437
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/analysis_summary.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/analysis_summary.json",
+      "sha256": "abf102907f4545e4e758d16942532dbdd9c262566e87b8b3bf9607df1ed24117",
+      "bytes": 1841
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/bootstrap_primary_slopes.npz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/bootstrap_primary_slopes.npz",
+      "sha256": "eb237d24ea3d344140eea4d5b9f87da412d4eb330a29517f498d006068f63d36",
+      "bytes": 299812
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/descriptive_means.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/descriptive_means.csv",
+      "sha256": "650bd26c52f020bc5cdcef14a1914df5dc5419b796b2917a856bb43324889fec",
+      "bytes": 23618
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/exact_rank_support.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/exact_rank_support.csv.gz",
+      "sha256": "676bd8ee4b44d8f9fde287d871e28b236f5a001031e967e506af16a7c14c58b4",
+      "bytes": 7028
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/fixed_spectrum_adjacent_contrasts.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/fixed_spectrum_adjacent_contrasts.csv",
+      "sha256": "cb30974ae8841f97ac1f8fa34096922a7f78ea3d5d9a7dee7f63d62d9450d795",
+      "bytes": 22537
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/fixed_spectrum_size_slopes.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/fixed_spectrum_size_slopes.csv",
+      "sha256": "ea1e5ad2b86068947ee1d7eb8fbc0202cea5f13f3e6cfdb052cf24292ef1ab73",
+      "bytes": 2470
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/independent_I3_crossings.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/independent_I3_crossings.csv",
+      "sha256": "cc165831fe66d24a24540728cfaab6f806e13b03a1fa755e1c2d6764d08ac93d",
+      "bytes": 530
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/thermodynamic_limit_fits.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/thermodynamic_limit_fits.csv",
+      "sha256": "dc989105942de3055f56365a2c8be1a70aeaa1fc35f50c07f8731c7fc9d4d605",
+      "bytes": 725
+    },
+    {
+      "member": "checkpoint_05/analysis/replication/window_entropy_reconstruction.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/replication/window_entropy_reconstruction.csv",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/boundary_code_decomposition.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/boundary_code_decomposition.csv",
+      "sha256": "9b49e139928439bd6b2ce7757935d006edf130e29d88d60436edfeb53cfc26e3",
+      "bytes": 26186
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/boundary_code_decomposition_checks.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/boundary_code_decomposition_checks.csv",
+      "sha256": "3f26ccf2341aa09bbf87cfff1bd25b6dd7c17f6fcd792f4d52a6bd30c1945bdf",
+      "bytes": 1900
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/boundary_code_summary.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/boundary_code_summary.json",
+      "sha256": "79620a376d8cab49fd4c953cf4c9117c1fee8ffd418132e416b25cc664e99f4d",
+      "bytes": 3622
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/cross_run_reproducibility.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/cross_run_reproducibility.csv",
+      "sha256": "846ba469a0eb79cf8fc07e515407bb0a1f1d5453fd751cfe5b3cc88d3cd5c24c",
+      "bytes": 5512
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/finite_size_model_sensitivity.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/finite_size_model_sensitivity.csv",
+      "sha256": "08244911d0934c3e4760eb00b8ef543d94d2a1417c0ea8fc064427d58f4b3128",
+      "bytes": 6973
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/finite_size_sensitivity_summary.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/finite_size_sensitivity_summary.json",
+      "sha256": "350c4d54b4151438e3cd972026cfcd9af9a4d6a7f0b9907481c86c917c484577",
+      "bytes": 956
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/fixed_spectrum_time_sensitivity.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/fixed_spectrum_time_sensitivity.csv",
+      "sha256": "a465a9ab674adc3c0fa44be3f8a1419310460b065c3b0b9e4c529f90c2c5223d",
+      "bytes": 7762
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/transition_crossover_bootstraps.npz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/transition_crossover_bootstraps.npz",
+      "sha256": "f2e87ccec812912a833bb02f27838570f47d0441687292dd3bc449fc8dbe8386",
+      "bytes": 243516
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/transition_crossover_hinge_fits.csv",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/transition_crossover_hinge_fits.csv",
+      "sha256": "10f67d1eddc12162ab170fb8597940a6a778f71cdc3dc08fabb3fa0b12f5b100",
+      "bytes": 2064
+    },
+    {
+      "member": "checkpoint_05/analysis/synthesis/transition_crossover_summary.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/analysis/synthesis/transition_crossover_summary.json",
+      "sha256": "5ad33f8a985d8bb1583c1e247f3b42625d9a1aef4f0fdc2e992f43e173505e2b",
+      "bytes": 5056
+    },
+    {
+      "member": "checkpoint_05/data/calibration/stabilizer_scaling_states.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/data/calibration/stabilizer_scaling_states.csv.gz",
+      "sha256": "1744ab87e9a0391bff4ec51f741d60ae7cc1aa58556887cf5c088bc345c75926",
+      "bytes": 113681
+    },
+    {
+      "member": "checkpoint_05/data/calibration_dense/stabilizer_scaling_states.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/data/calibration_dense/stabilizer_scaling_states.csv.gz",
+      "sha256": "06414b1a773a8d377d790d53875e3e50a502ba3294014e873b9088eaebb6d87d",
+      "bytes": 391858
+    },
+    {
+      "member": "checkpoint_05/data/independent_replication/stabilizer_scaling_states.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/data/independent_replication/stabilizer_scaling_states.csv.gz",
+      "sha256": "e72c3740d31a0f2d5a6c07fd702156558a34cb568ab4cb4ea1b23c8c7434b30d",
+      "bytes": 1930491
+    },
+    {
+      "member": "checkpoint_05/data/measurement_location_intervention/paired_measurement_interventions.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/data/measurement_location_intervention/paired_measurement_interventions.csv.gz",
+      "sha256": "70943f16093d672d82be62696d73387879539981e55b45be33a48d6172d6b365",
+      "bytes": 345935
+    },
+    {
+      "member": "checkpoint_05/data/measurement_location_intervention/stabilizer_scaling_states.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/data/measurement_location_intervention/stabilizer_scaling_states.csv.gz",
+      "sha256": "f39bf713391772b8ad6496af723db7fc4e364edca31a164314f959ce414389dc",
+      "bytes": 165430
+    },
+    {
+      "member": "checkpoint_05/data/primary_scaling/stabilizer_scaling_states.csv.gz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/data/primary_scaling/stabilizer_scaling_states.csv.gz",
+      "sha256": "3cd3df40084251c34d8b8420d13ad99220c576e12be2638cdb48a270ab0ac2e9",
+      "bytes": 5078817
+    },
+    {
+      "member": "checkpoint_05/data/two_qubit_clifford_group.npz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/data/two_qubit_clifford_group.npz",
+      "sha256": "3358c2efc54c48b91a7fd5f0c514a75dad9adc0307447fce0c476d64a8989c33",
+      "bytes": 117610
+    },
+    {
+      "member": "checkpoint_05/data/two_qubit_clifford_symplectic_maps.npz",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/data/two_qubit_clifford_symplectic_maps.npz",
+      "sha256": "b7d144e5946fbca54c652ec9a629715043f0989700c0cbc6a1d092c0a36efe64",
+      "bytes": 5540
+    },
+    {
+      "member": "checkpoint_05/design/CALIBRATION_PLAN.md",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/CALIBRATION_PLAN.md",
+      "sha256": "d3adf5fe76e27e1a7ff924b47951161a80bcc8d25b195db71dd90bb77fa5314d",
+      "bytes": 881
+    },
+    {
+      "member": "checkpoint_05/design/CALIBRATION_PLAN.sha256",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/CALIBRATION_PLAN.sha256",
+      "sha256": "f082c15834b5b569f8e77f53b085a496df74a74790d337c4f4eda1b5a09bd086",
+      "bytes": 86
+    },
+    {
+      "member": "checkpoint_05/design/CALIBRATION_TIMESTAMP_UTC.txt",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/CALIBRATION_TIMESTAMP_UTC.txt",
+      "sha256": "06663aa7ef2744df53606a80237ffb576f0494d0702cf3fcd497f89fb2ae2e34",
+      "bytes": 21
+    },
+    {
+      "member": "checkpoint_05/design/INDEPENDENT_REPLICATION_LOCK_BEFORE_RUN.md",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/INDEPENDENT_REPLICATION_LOCK_BEFORE_RUN.md",
+      "sha256": "8d61075467523300cfd2915cc92f1420af962a128368c2e47bd5dc2627911211",
+      "bytes": 800
+    },
+    {
+      "member": "checkpoint_05/design/INDEPENDENT_REPLICATION_LOCK_BEFORE_RUN.sha256",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/INDEPENDENT_REPLICATION_LOCK_BEFORE_RUN.sha256",
+      "sha256": "166decd9594de26e1dbe862ba6ad0020e700e4090625754d5ceb6592e4597141",
+      "bytes": 109
+    },
+    {
+      "member": "checkpoint_05/design/INDEPENDENT_REPLICATION_LOCK_TIMESTAMP_UTC.txt",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/INDEPENDENT_REPLICATION_LOCK_TIMESTAMP_UTC.txt",
+      "sha256": "57d696ee0b3b649a4522a86a29039efcab12844e6b9771348679cc159ffb53b8",
+      "bytes": 21
+    },
+    {
+      "member": "checkpoint_05/design/PAIRED_MEASUREMENT_INTERVENTION_LOCK_BEFORE_RUN.md",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/PAIRED_MEASUREMENT_INTERVENTION_LOCK_BEFORE_RUN.md",
+      "sha256": "d2e0c1f7bc2c0ec5efef2a649a1556977b5d63141d905ccddb16076cabffb368",
+      "bytes": 1674
+    },
+    {
+      "member": "checkpoint_05/design/PAIRED_MEASUREMENT_INTERVENTION_LOCK_BEFORE_RUN.sha256",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/PAIRED_MEASUREMENT_INTERVENTION_LOCK_BEFORE_RUN.sha256",
+      "sha256": "7351eaa9811d87cbf1ca97dbf67fe64d17f0a8956e6d2654098fed35642146bb",
+      "bytes": 117
+    },
+    {
+      "member": "checkpoint_05/design/PAIRED_MEASUREMENT_INTERVENTION_LOCK_BEFORE_RUN.timestamp_utc.txt",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/PAIRED_MEASUREMENT_INTERVENTION_LOCK_BEFORE_RUN.timestamp_utc.txt",
+      "sha256": "1dc73d73145d4cee208d4a67d8c406072af3322bc75d894db9e01244faf5dba2",
+      "bytes": 21
+    },
+    {
+      "member": "checkpoint_05/design/PRIMARY_SCALING_DESIGN_LOCK_BEFORE_RUN.md",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/PRIMARY_SCALING_DESIGN_LOCK_BEFORE_RUN.md",
+      "sha256": "f9e806612daf43c086cf436d76a7fba64fb6965328ec83f1b870fe74a895c41a",
+      "bytes": 4983
+    },
+    {
+      "member": "checkpoint_05/design/PRIMARY_SCALING_DESIGN_LOCK_BEFORE_RUN.sha256",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/PRIMARY_SCALING_DESIGN_LOCK_BEFORE_RUN.sha256",
+      "sha256": "2a3560956989fe9861f60f75f80ff4e35341c3a54662fe7eb16d346106bb1fd0",
+      "bytes": 108
+    },
+    {
+      "member": "checkpoint_05/design/PRIMARY_SCALING_DESIGN_LOCK_TIMESTAMP_UTC.txt",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/design/PRIMARY_SCALING_DESIGN_LOCK_TIMESTAMP_UTC.txt",
+      "sha256": "1ab98e1c10aff6983e9f2c93bbdbeb274cb3f269bcff2f732656155c018aea8a",
+      "bytes": 21
+    },
+    {
+      "member": "checkpoint_05/validation/ENVIRONMENT.txt",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/validation/ENVIRONMENT.txt",
+      "sha256": "bb63fac3c309889a529dcd18febc623493257559cdbbf876313ddf5838d12974",
+      "bytes": 201
+    },
+    {
+      "member": "checkpoint_05/validation/runtime_benchmark.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/validation/runtime_benchmark.json",
+      "sha256": "67f450b6945066e490f1876630eddeed2f53a8f94aac03f368d383bd9206ff88",
+      "bytes": 1706
+    },
+    {
+      "member": "checkpoint_05/validation/symplectic_map_build_report.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/validation/symplectic_map_build_report.json",
+      "sha256": "65ba350f754ffaf74c0a6a50f58977c695cd72f39250363cd2a0721c2e2291d8",
+      "bytes": 324
+    },
+    {
+      "member": "checkpoint_05/validation/tableau_vs_statevector.json",
+      "source_archive": "entanglement_project_checkpoint_05.zip",
+      "source_member": "entanglement_project_checkpoint_05/validation/tableau_vs_statevector.json",
+      "sha256": "189a83df6c1c98a70a48e184a9f98d21bc54a1f1ae4e0a3c992383c6c99841d8",
+      "bytes": 35591
+    },
+    {
+      "member": "figure_design/FIGURE_DATA_MANIFEST.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/FIGURE_DATA_MANIFEST.csv",
+      "sha256": "a078df16b86677ab8d713398b077578c062e2d4de481ff87b730cdbf9639d505",
+      "bytes": 1554
+    },
+    {
+      "member": "figure_design/fig01_data_provenance.json",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig01_data_provenance.json",
+      "sha256": "b052797cad51aac52a912f39bcabbc6105e127b3130948272ee726a0e55baef4",
+      "bytes": 1072
+    },
+    {
+      "member": "figure_design/fig01b_bootstrap_distributions.npz",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig01b_bootstrap_distributions.npz",
+      "sha256": "4e52dc15b5d19de40919984ed286ca81b06ad609af52b3233ca8d24cb6644bab",
+      "bytes": 742825
+    },
+    {
+      "member": "figure_design/fig01b_fixed_spectrum_relative_response.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig01b_fixed_spectrum_relative_response.csv",
+      "sha256": "0ff116dcb921b3fcc0240adf87615972d11deebadae0a299685db969442b1f4f",
+      "bytes": 1871
+    },
+    {
+      "member": "figure_design/fig01b_haar_z_relative_response_curve.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig01b_haar_z_relative_response_curve.csv",
+      "sha256": "5f74e4bc074edda1c8beb6b782a972a9011179d388e0750c31d9c5a18283eeaa",
+      "bytes": 529
+    },
+    {
+      "member": "figure_design/fig02_fig03_fig04_data_provenance.json",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig02_fig03_fig04_data_provenance.json",
+      "sha256": "0e4e38f442bb4f4f826d8e50659aab6b56a76e6f8336335feed70c2585ee4b4b",
+      "bytes": 763
+    },
+    {
+      "member": "figure_design/fig02b_boundary_code_primary_z_n256.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig02b_boundary_code_primary_z_n256.csv",
+      "sha256": "b8a63688f1b9acfad5d9e808107447181aaceda41825915bf7a7dc4e3090e23a",
+      "bytes": 1647
+    },
+    {
+      "member": "figure_design/fig02b_exact_response_alphabet.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig02b_exact_response_alphabet.csv",
+      "sha256": "1398d8e3b2e8d386046b6911e13860eae79997ccd741b10c93c78aee21e257dd",
+      "bytes": 218
+    },
+    {
+      "member": "figure_design/fig03b_size_slopes.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig03b_size_slopes.csv",
+      "sha256": "25226104dff1f6cb5344cb9c697f7debc5ce0d6cba0bc55d94f9ebc95a57a838",
+      "bytes": 2535
+    },
+    {
+      "member": "figure_design/fig03b_thermodynamic_fits.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig03b_thermodynamic_fits.csv",
+      "sha256": "f89038f5e13f0f7449921767c0166184c13694da31759310940988856d29a25e",
+      "bytes": 752
+    },
+    {
+      "member": "figure_design/fig04a_distance_decay.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig04a_distance_decay.csv",
+      "sha256": "9c437d84a9960d9ce1e18b5ff3ccca548a09b2a9010c1de0fd0a6f7439a1c4ce",
+      "bytes": 465
+    },
+    {
+      "member": "figure_design/fig04a_distance_decay_fit.json",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig04a_distance_decay_fit.json",
+      "sha256": "ed5559ee8d4d0e94b0e4df43fa1b8abf839b66aaaebf39eb42dd01366f87ce53",
+      "bytes": 247
+    },
+    {
+      "member": "figure_design/fig04b_conditioning_contrast.csv",
+      "source_archive": "entanglement_prl_figure_design_checkpoint_01.zip",
+      "source_member": "entanglement_prl_figure_design_checkpoint_01/figure_data/fig04b_conditioning_contrast.csv",
+      "sha256": "a80895ed413b9532e5ced10eb1b32a32129680e8868849d76487a71bc2da3b55",
+      "bytes": 310
+    },
+    {
+      "member": "takeover_review/README.md",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/README.md",
+      "sha256": "4bfd164dd0d1578ddfd8d76168c4b30280816c5377df6f1556bb429435860879",
+      "bytes": 1522
+    },
+    {
+      "member": "takeover_review/TAKEOVER_REVIEW.md",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/TAKEOVER_REVIEW.md",
+      "sha256": "eb6b47e0241d70e729e04bd44bfafc7b1b86e6c213d7545e9b06e647ca4c44c8",
+      "bytes": 11647
+    },
+    {
+      "member": "takeover_review/checks/common_stratum_distance_sensitivity.csv",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/common_stratum_distance_sensitivity.csv",
+      "sha256": "8ca5cf34db506f04a3b89671258b33467d393181cde1b064b5ac5bb7d7154f24",
+      "bytes": 180
+    },
+    {
+      "member": "takeover_review/checks/distance_fit_residuals.csv",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/distance_fit_residuals.csv",
+      "sha256": "bb6ff1953ae2542f6bb916465fccbd2ee18be2141e4a77ba8c10c479b6c34b7f",
+      "bytes": 911
+    },
+    {
+      "member": "takeover_review/checks/environment.json",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/environment.json",
+      "sha256": "216837f0c6e8b6b0603263d644bc2862fb0366c3bfeea3c938e1c045db45073e",
+      "bytes": 135
+    },
+    {
+      "member": "takeover_review/checks/independent_identity_checks.json",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/independent_identity_checks.json",
+      "sha256": "cbdb098cc443affe78459be0f272478a26fcb7758b02ad75dcb55de421b5e27c",
+      "bytes": 4469
+    },
+    {
+      "member": "takeover_review/checks/paired_reconstruction.csv",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/paired_reconstruction.csv",
+      "sha256": "ba4d039632c2c9b046ae245d40981a2f4c4781d00718aec61ce0aeb898025cbb",
+      "bytes": 641
+    },
+    {
+      "member": "takeover_review/checks/raw_row_slope_reconstruction.csv",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/raw_row_slope_reconstruction.csv",
+      "sha256": "d7dcb77e1ed113fc3d99d314bef1fb4f943016b48393ec65c62b7c1cecd03b53",
+      "bytes": 1694
+    },
+    {
+      "member": "takeover_review/checks/size_fit_diagnostics.csv",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/size_fit_diagnostics.csv",
+      "sha256": "0bb0ad6e9e645990e254049c6e252df7e2eaf8a82da033b2c4f388ff4acd325c",
+      "bytes": 412
+    },
+    {
+      "member": "takeover_review/checks/strict_pair_sensitivity.csv",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/strict_pair_sensitivity.csv",
+      "sha256": "69d2237e3aec2617484a53faff932bb0249a04fcd73db2c3060b33a85da4c7eb",
+      "bytes": 283
+    },
+    {
+      "member": "takeover_review/checks/summary.json",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/summary.json",
+      "sha256": "8e4dfa30f58be04c691dd927a98681e1771681753e067adb2ffe17f13f257bbe",
+      "bytes": 1646
+    },
+    {
+      "member": "takeover_review/checks/tableau_rerun.json",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/checks/tableau_rerun.json",
+      "sha256": "189a83df6c1c98a70a48e184a9f98d21bc54a1f1ae4e0a3c992383c6c99841d8",
+      "bytes": 35591
+    },
+    {
+      "member": "takeover_review/independent_identity_checks.py",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/independent_identity_checks.py",
+      "sha256": "83848b4239f5599a3c8f6b02ed5db12886af119713a6105244eac01523a62602",
+      "bytes": 2952
+    },
+    {
+      "member": "takeover_review/numerical_screen.py",
+      "source_archive": "Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip",
+      "source_member": "takeover_review/numerical_screen.py",
+      "sha256": "ca703fd39e98c6b79a437c2ab0d275b1bae928b41a3bf2cfef781e299144c444",
+      "bytes": 8641
+    }
+  ],
+  "scope": "Recorded observations, spectra, resamples, design records, and supporting old-study validation only. No channel-capacity follow-up.",
+  "source_archive_sha256": {
+    "entanglement_project_checkpoint_04.zip": "690722855b37c5ba1aab96720e03d0f36e7b2b0b86447827f9eeecda0a973023",
+    "entanglement_project_checkpoint_05.zip": "284a92bfac08af6194cd576ce07c4be90e1e760fcc7b0fc7951eaacd1fa975ce",
+    "figure1_overleaf_hybrid_v2.zip": "36b77e24bfb06bf3ae3a263e9ba74aa1eb9406377c29e28749e5dba91b783574"
+  }
+}

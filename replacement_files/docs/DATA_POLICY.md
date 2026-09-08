@@ -1,0 +1,23 @@
+# Data and scope
+
+The required data file is **`entanglement-data.zip` in the repository root**. It is a deterministic, indexed collection of unchanged records from the original susceptibility study. [The manifest](../data/record_bundle_manifest.json) specifies every member, byte count, original source member, and SHA-256 hash. It contains no manuscript source, fonts, or later channel-theory results.
+
+The bundle contains original intervention rows and reference/physical spectra, both large-size state tables, paired measurement records, archived bootstrap arrays, measurement/gate maps, supporting derived tables, design records, and the original figure-specific resamples. The separate original checkpoint ZIPs are not needed for the documented commands. They remain provenance sources, not hidden dependencies.
+
+The source code is readable under [studies](../studies/), not hidden inside a nested checkpoint archive. `python materialize_studies.py` builds a workspace with the documented data layout for these scripts. It verifies inputs and refuses to overwrite different existing files.
+
+## What self-contained means
+
+After installing the declared Python dependencies, a complete checkout contains everything needed for canonical-figure redraws, stored-record reanalysis, and the supplied simulator/theorem validation commands. `python verify.py` fails when the bundle is absent, incomplete, or altered. A green source-only test is not accepted as proof of data completeness.
+
+No claim is made that every large simulation campaign was freshly rerun during cleanup. Stored-record reanalysis, small simulator cross-checks, and full simulation generation remain separate operations.
+
+## Figures
+
+All six active PDF/PNG/SVG triples are tracked. Their byte identities and the canonical plotting inputs are protected by [the current baseline manifest](../provenance/current_baseline_sha256.json). The Figure 4 distance panel has no fitted exponential. The older external Overleaf hashes are historical provenance only; no Overleaf project is required.
+
+The discarded fit parameters are retained only under [results/historical_fit](../results/historical_fit/), so their diagnostic role is not confused with a current physical claim.
+
+## Licensing
+
+No license is granted by this cleanup. See [LICENSE_STATUS.md](../LICENSE_STATUS.md). Repository privacy and public-release decisions are unchanged.
