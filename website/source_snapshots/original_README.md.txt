@@ -2,12 +2,6 @@
 
 ## Boundary entangling susceptibility in monitored quantum circuits
 
-**[Browse the project preview](website/preview/README.md)** · **[Review the Irises figure palette](website/preview/FIGURES.md)** · [Scientific argument](docs/DIALOGUE_REPORT.md) · [Reproduce the results](docs/REPRODUCTION.md)
-
-[![Website desktop preview: the same spectrum, a different boundary response](website/preview/images/home-desktop.png)](website/preview/README.md)
-
-The website and its color proposals are now available for review inside this repository. The links above open GitHub-rendered pages; the screenshot shows the separately built website layout. The accepted results and figure files below are unchanged. [Website source and build instructions](website/README.md).
-
 Does the complete Schmidt spectrum across a cut determine the average response to the next fresh gate crossing that cut? **No.** The response considered here also depends on neighboring-cut purities. The empirical question is how monitored dynamics reshapes that additional information while the complete central spectrum is held fixed.
 
 Read the [four-figure dialogue report](docs/DIALOGUE_REPORT.md) for the complete argument, with nine main-text questions and 32 appendix questions. The [question map](docs/DIALOGUE_QUESTION_MAP.md) retains the agreed narrative order. The [evidence reassessment](docs/EVIDENCE_REASSESSMENT.md) distinguishes archived-row replay from new post-hoc checks and explains the distance/size-fit limitations.
