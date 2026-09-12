@@ -1,4 +1,10 @@
-# Novelty and literature audit
+# Related work and primary attribution
+
+<a id="novelty-and-literature-audit"></a>
+
+[Return to README](../README.md) · [Background reading map](PROJECT_GUIDE.md#learn) · [Next: exact theory](THEORY.md)
+
+The one pedagogical starting point is Fisher, Khemani, Nahum and Vijay, *Random Quantum Circuits*, Annual Review of Condensed Matter Physics **14** (2023), using [arXiv:2207.14280v1](https://arxiv.org/abs/2207.14280v1), [PDF](https://arxiv.org/pdf/2207.14280v1). The selected passages and PDF pagination are verified in the [project guide](PROJECT_GUIDE.md). The papers below supply primary attribution and comparisons; readers need not study them to follow the local bridge or four-figure account. Their essential ingredients are explained in [THEORY](THEORY.md). The retained bounded literature assessment follows.
 
 ## Scope of this audit
 
@@ -184,6 +190,8 @@ for a stronger population, localization or thermodynamic claim.
 
 ## Reference set
 
+- M. P. A. Fisher, V. Khemani, A. Nahum and S. Vijay, *Random Quantum Circuits*, Annual Review of Condensed Matter Physics **14** (2023). Single background tutorial; section/page references use [arXiv:2207.14280v1](https://arxiv.org/abs/2207.14280v1), dated 28 July 2022.
+
 - D. Fattal et al., *Entanglement in the stabilizer formalism*,
   arXiv:quant-ph/0406168.
 - Z. Webb, *The Clifford group forms a unitary 3-design*, arXiv:1510.02769.
@@ -222,3 +230,5 @@ for a stronger population, localization or thermodynamic claim.
 - M. Rudziński, G. Tartaglione, and K. Życzkowski, *Entangling power and
   fidelity diagnostic for bipartite quantum channels*,
   [arXiv:2605.26867v2](https://arxiv.org/abs/2605.26867v2).
+
+[Next: technical derivations and the entanglement-feature dictionary](THEORY.md) · [Return to README](../README.md)

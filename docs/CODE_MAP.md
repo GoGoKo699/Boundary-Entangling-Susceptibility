@@ -1,5 +1,7 @@
 # Code map
 
+[Previous: reproduction route](REPRODUCTION.md) · [Return to README](../README.md) · [Next: figure inputs and scripts](../figures/README.md)
+
 | Task | Source | Input |
 |---|---|---|
 | Exact three-cut response and stabilizer alphabet | `src/boundary_susceptibility/response.py`, `boundary_codes.py` | Purities or integer entropy increments |
@@ -22,3 +24,5 @@ See [precise reproducibility limits](REPRODUCIBILITY_LIMITS.md). Preserved origi
 ## Current Figure 1 uncertainty
 
 `complete_figure1_uncertainty.py` regenerates the adopted recipe and its prespecified sensitivity; `verify_figure1_uncertainty.py` independently replays saved multiplicities; `check_figure1_adoption.py` binds the replay to current figure inputs and protected hashes. All are under `scripts/analysis/`. See [the complete commands](FIGURE1_UNCERTAINTY.md).
+
+[Next: figure inputs and scripts](../figures/README.md) · [Return to README](../README.md)

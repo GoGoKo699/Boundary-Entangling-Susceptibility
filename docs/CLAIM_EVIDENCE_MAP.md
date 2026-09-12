@@ -1,5 +1,7 @@
 # Claim and evidence map
 
+[Previous: theory](THEORY.md) · [Return to README](../README.md) · [Next: estimators and comparison rules](NUMERICAL_METHODS.md)
+
 The [machine-readable ledger](../results/core_claims.csv) and [four-figure dialogue](DIALOGUE_REPORT.md) describe the same scientific scope. Ledger IDs M1–M5 identify claims, not the separate M1–M9 dialogue questions. T1 is a supporting deduction, not a sixth empirical discovery.
 
 | Claim ID | Claim and figure role | Supporting source | Boundary |
@@ -24,3 +26,5 @@ Figure 1 compares finite-system states modified to share reference eigenvalues. 
 **L3: transition interpretation.** No new order parameter, critical exponent, or generic non-Clifford thermodynamic law is claimed. Contextual transition crossings and secondary hinge analyses do not replace the primary conditional estimand.
 
 Figure 1's current uncertainty recipe is completely specified but remains post-hoc, pointwise, support-conditioned, and conditional on the archived references. Its historical bootstrap was not recovered. Figures 2–4, the raw records, and all statistical procedures are unchanged by this scientific consolidation. See [reproducibility limits](REPRODUCIBILITY_LIMITS.md) and the [prior-work account](RELATED_WORK.md).
+
+[Next: estimators and comparison rules](NUMERICAL_METHODS.md) · [Return to README](../README.md)

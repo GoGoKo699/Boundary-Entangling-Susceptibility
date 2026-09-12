@@ -1,5 +1,7 @@
 # Methods and definitions
 
+[Previous: claim evidence](CLAIM_EVIDENCE_MAP.md) · [Return to README](../README.md) · [Next: evidence and fit limitations](EVIDENCE_REASSESSMENT.md)
+
 ## 1. Circuit ensemble
 
 The large-size physical arm uses an open one-dimensional chain of even length
@@ -251,3 +253,5 @@ numerical ranges of every load-bearing result.
 ## Figure 1 uncertainty revision
 
 The active Figure 1 bars use 50,000 valid support-conditioned trajectory-cluster percentile draws, primary pool `eligible_union`, seed 2026090801. Size/rate strata are resampled separately; time observations and eligibility masks remain clustered. A whole proposal is rejected if any required cell is empty. Fixed run-specific discovery spectra and common observed support are not re-estimated. These nominal pointwise post-hoc intervals are not simultaneous or exact finite-sample guarantees. The [adopted recipe](FIGURE1_UNCERTAINTY.md) and immutable plan define all details; other analyses are unchanged.
+
+[Next: evidence and fit limitations](EVIDENCE_REASSESSMENT.md) · [Return to README](../README.md)

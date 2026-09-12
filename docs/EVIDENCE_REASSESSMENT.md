@@ -1,5 +1,7 @@
 # Evidence reassessment: distance profile, pairing, and finite-size inference
 
+[Previous: methods](NUMERICAL_METHODS.md) · [Return to README](../README.md) · [Next: reproducibility limits](REPRODUCIBILITY_LIMITS.md)
+
 **Figure status update:** The author has approved removal of the exponential curve and length annotation from the active Figure 4 distance panel. The original data and intervals are unchanged. See [the approved baseline and caption](FIGURE_BASELINE.md). The analysis below records the reassessment that motivated that decision.
 
 **Analysis date:** 2026-09-05. **Basis:** the original Checkpoint 05 archive, SHA-256 `284a92bfac08af6194cd576ce07c4be90e1e760fcc7b0fc7951eaacd1fa975ce`.
@@ -98,3 +100,5 @@ python scripts/analysis/reassess_evidence.py \
 The script verifies the full ZIP hash before reading it and records hashes of every member used. It imports no original checkpoint estimator code. It writes the fresh paired intervals, cell profiles, common-eligibility curve, covariance and window diagnostics, independently reconstructed finite-size coefficients, and fixed-menu extrapolation checks. Full raw circuit generation and a fresh full finite-size bootstrap campaign are outside this pass.
 
 The text results are in [`../results/evidence_reassessment/`](../results/evidence_reassessment/). The new bootstrap arrays are reproducible outputs, not frozen primary data. The original records are bundled as described in [`DATA_POLICY.md`](DATA_POLICY.md).
+
+[Next: reproducibility limits](REPRODUCIBILITY_LIMITS.md) · [Return to README](../README.md)

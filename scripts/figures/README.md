@@ -11,4 +11,6 @@ The supported entry point is `python reproduce.py --core-figures` from the repos
 
 `export_formats.py` provides the common export function. Browser SVGs use text and may use fallback fonts; the PDF is the publication-font reference. The earlier `make_figure_01.py` is not called by the supported command.
 
-The plot values and accepted manuscript layout are preserved. Figure 4 still contains the historical exponential for reproducibility; that fit is not endorsed as a physical law. See [`../../docs/EVIDENCE_REASSESSMENT.md`](../../docs/EVIDENCE_REASSESSMENT.md) before interpreting the curve or its xi annotation.
+The accepted numerical panels are preserved. The current Figure 4 distance panel contains neither an exponential curve nor a fitted-length annotation; the old fit is retained only as historical provenance. See [the current figure baseline](../../docs/FIGURE_BASELINE.md) and [evidence reassessment](../../docs/EVIDENCE_REASSESSMENT.md). Editable external composite schematics remain unavailable; numerical-panel reproduction does not verify an external manuscript layout.
+
+[Next: figure-to-data gallery](../../figures/README.md) · [Return to README](../../README.md)

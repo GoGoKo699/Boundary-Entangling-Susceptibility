@@ -1,16 +1,18 @@
 # Frequently asked questions
 
+**Role: brief answers to recurring interpretation questions.** The [stable question index](DIALOGUE_QUESTION_MAP.md) leads to the full answers; the [bridge](TUTORIAL_BRIDGE.md) introduces the concepts in order. [Return to README](../README.md).
+
 ## What is fixed by same-spectrum matching?
 
 The complete central Schmidt eigenvalue list, including zeros and rank. In the diagnostic intervention the list is replaced while state-dependent Schmidt vectors are retained. In the physical stabilizer arm, matching `(n,tau,S_m)` fixes the complete flat spectrum without altering the state.
 
 ## Is the response an entropy increment?
 
-It is the expected normalized linear-entropy change divided by the input central purity. It is not generally the mean finite-gate increment of `-log2(P_m)`. The explicit definition is in the root README and [numerical methods](NUMERICAL_METHODS.md).
+It is the expected normalized linear-entropy change divided by the input central purity. It is not generally the mean finite-gate increment of `-log2(P_m)`. The explicit definition is in the [bridge](TUTORIAL_BRIDGE.md#what-response-is-measured) and [numerical methods](NUMERICAL_METHODS.md).
 
 ## Why does the central spectrum not suffice?
 
-It does not fix the neighboring-cut purities that enter the exact fresh-gate formula. A small exact example is in the [scientific story](SCIENTIFIC_STORY.md). The empirical contribution concerns the monitored distribution of this missing spatial information.
+It does not fix the neighboring-cut purities that enter the exact fresh-gate formula. A small exact example is with complete arithmetic in the [bridge](TUTORIAL_BRIDGE.md#same-central-spectrum-different-response). The empirical contribution concerns the monitored distribution of this missing spatial information.
 
 ## Does the exact formula imply a local reduced state is sufficient?
 
@@ -59,3 +61,5 @@ That the included software, frozen-result regression checks, structural checks, 
 ## Where are the raw data?
 
 The required root `entanglement-data.zip` contains the original records, spectra, resamples, and maps indexed by `data/record_bundle_manifest.json`. No old chat or separately obtained checkpoint ZIP is needed. The current Figure 1 intervals have a deterministic recipe and independent replay; only the superseded historical bootstrap remains unrecovered; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
+
+[Next: full question-and-answer account](DIALOGUE_REPORT.md) · [Return to README](../README.md)
