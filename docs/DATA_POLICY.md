@@ -20,7 +20,7 @@ The discarded fit parameters are retained only under [results/historical_fit](..
 
 ## Licensing
 
-No license is granted by this cleanup. See [LICENSE_STATUS.md](../LICENSE_STATUS.md). Repository privacy and public-release decisions are unchanged.
+Original research data and figure content are licensed under [CC BY 4.0](../LICENSES/CC-BY-4.0.txt). Original software, including the two Python members of the root data ZIP, is licensed under [MIT](../LICENSE). The archive bytes remain unchanged; [LICENSE_STATUS.md](../LICENSE_STATUS.md) defines the material scope and third-party exceptions. Licensing does not change repository visibility.
 
 ## Current and historical Figure 1 records
 

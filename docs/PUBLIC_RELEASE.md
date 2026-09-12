@@ -1,19 +1,19 @@
 # Public-release preparation
 
-**Status: preparation for owner review; the repository remains private.** This page records the concrete release decisions and checks. It does not authorize a visibility change or certify ownership, security or scientific priority.
+**Status: licenses adopted on the working branch; public release remains pending.** The repository remains private and the PR is unmerged. This page records the release decisions and checks. The owner's licensing approval does not authorize a visibility change or certify security or scientific priority.
 
-The proposed licenses are in [LICENSE_STATUS.md](../LICENSE_STATUS.md), component boundaries in [third-party notices](../THIRD_PARTY_NOTICES.md), and correction guidance in [CONTRIBUTING.md](../CONTRIBUTING.md). [CITATION.cff](../CITATION.cff) now supports citation of the repository and the actual commit used. Its optional personal-email field is omitted; that does not remove email addresses from Git history.
+The adopted licenses and material scope are in [LICENSE_STATUS.md](../LICENSE_STATUS.md), component boundaries in [third-party notices](../THIRD_PARTY_NOTICES.md), and correction guidance in [CONTRIBUTING.md](../CONTRIBUTING.md). [CITATION.cff](../CITATION.cff) supports citation of the repository and the actual commit used. Its optional personal-email field is omitted; that does not remove email addresses from Git history.
 
 ## Decisions before public visibility
 
 | Item | Prepared result and remaining decision |
 |---|---|
-| License | Review MIT for original software and CC BY 4.0 for original documentation, data and figures. Both permit commercial reuse. Confirm the rights holder and any necessary collaborator, institutional, funder or publisher permissions, then adopt the standard texts and material scope together. |
+| License | Completed on the working branch: the owner approved MIT for original software and CC BY 4.0 for original documentation, data and figures, and confirmed authority under Ruge Lin's name. Both permit commercial reuse. See the [adoption record](#license-adoption). |
 | What becomes public | Review the history, other branches, pull-request discussions and Actions logs/artifacts as well as the intended main tree. Current-file cleanup alone does not clear these surfaces. See the inventory below. |
-| Author identity | Confirm the existing name Ruge Lin and the contact information already present in commit metadata are suitable for public exposure. Removing an optional CFF email is not history scrubbing. |
+| Author identity | Ruge Lin is the confirmed copyright attribution. Review contact information already present in commit metadata for public suitability. Removing an optional CFF email is not history scrubbing. |
 | Review and stability | Review the reader-route PR and this preparation separately. Before release, require the existing `test`, `recorded-evidence` and `figure1-uncertainty` checks on the selected commit. The branch endpoint currently reports `main` as unprotected; consider a pull-request/check requirement before accepting public contributions. No settings were changed. |
 | Citation and version | Keep the repository citation usable now. Choose a release tag only for an approved commit. Add the real release date and version, and a DOI or preprint reference only after one has actually been issued. No GitHub releases were present at inspection. |
-| Figure assets | Confirm rights for the distributed numerical panels. Disclose the unavailable external editable composite sources and leave those assets out of the release. Their absence does not prevent release of the existing self-contained numerical workflows. |
+| Figure assets | The owner's authority confirmation covers the included original numerical panels. Disclose the unavailable external editable composite sources and leave those assets out of the release. Their absence does not prevent release of the existing self-contained numerical workflows. |
 
 Licensing consent is a decision to grant reuse rights. Public visibility is a later, separate action after the release scope is approved. If historical material should stay private, first choose a specific preservation and publication approach. Do not assume deleting a branch or removing a current file erases its commits, pull requests or other copies.
 
@@ -42,7 +42,7 @@ Three historical repair-attempt NPZ files could not be opened as ZIP containers 
 
 GitHub's [visibility documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#making-a-repository-public) explicitly states that Actions history and logs become public. Review the relevant stored material before changing visibility. Nothing in this preparation deletes history, branches, workflow runs or artifacts.
 
-## Checks for this preparation
+## Initial preparation checks
 
 The implementation sequence is: inventory the current files and remote release surfaces; prepare the license scope, citation and contribution guidance; validate metadata, navigation and preserved assets; submit a private review PR. Initial SHA-256 hashes of all 614 tracked files were saved before editing. The starting Git tree above is the durable source for comparison.
 
@@ -50,13 +50,22 @@ The root archive has 172 indexed members, including two Python programs. Its byt
 
 Validation passed: `CITATION.cff` against the [official CFF 1.2.0 schema](https://github.com/citation-file-format/citation-file-format/blob/1.2.0/schema.json), using Draft 7 validation with format checks; `python scripts/check_reader_docs.py --self-test` for 29 active pages, 515 local links/images and 41 preserved question destinations; `python verify.py` for all 172 source-data members and current panels/inputs; and `git diff --check`. The CFF validator was used in the task environment and is not a new project dependency.
 
-Of the 614 starting tracked files, 610 retain their SHA-256 hashes. The four changed files are `CITATION.cff`, `LICENSE_STATUS.md`, README and the documentation check's page list. Three new Markdown pages provide contribution guidance, third-party notices and this record. Scientific code, data, accepted figures, plans and historical records are unchanged. No new license grant, repository setting, release or DOI was created. Remote CI status is reported on the review PR. These are static metadata/link and existing integrity checks, not browser, mobile, accessibility or scientific validation. The [reader-route implementation record](reader-route-01/IMPLEMENTATION.md) retains its previous checks.
+At preparation head `bc8104496cd90380045f0cda1f80cd03b0045e0a`, 610 of the 614 starting tracked files retained their SHA-256 hashes. The four changed files were `CITATION.cff`, `LICENSE_STATUS.md`, README and the documentation check's page list. Three new Markdown pages provided contribution guidance, third-party notices and this record. Scientific code, data, accepted figures, plans and historical records were unchanged. That preparation created no license grant, repository setting, release or DOI. All three existing CI jobs passed at that head. These were static metadata/link and existing integrity checks, not browser, mobile, accessibility or scientific validation. The [reader-route implementation record](reader-route-01/IMPLEMENTATION.md) retains its previous checks.
 
-## After the owner approves the scope
+<a id="license-adoption"></a>
+## License adoption
 
-1. Adopt the license texts and consistent notices described in [license status](../LICENSE_STATUS.md#owner-decision-and-adoption), with confirmed rights and exceptions.
-2. Resolve any unwanted historical exposure through an explicitly approved approach. Preserve research provenance and do not silently rewrite it.
-3. Review the intended main commit, its documentation route and successful existing checks. Authorize merges separately from publication.
-4. Approve the exact repository visibility change. Then inspect the public README, equations, figure paths and citation panel, and publish a versioned release if desired. Archive that release for a DOI only if an archival service has actually been configured.
+On 2026-09-12 the owner approved the proposed material split and confirmed authority to license the included original material under Ruge Lin's name. The adoption adds root `LICENSE` and `LICENSES/CC-BY-4.0.txt`, updates the current scope, README, contribution and data notices, and declares MIT for software package metadata. It applies on this private working branch; merge and public visibility remain separate actions.
 
-[Next: license decision](../LICENSE_STATUS.md) · [Return to README](../README.md)
+The MIT text comes from the [SPDX license-list-data v3.27.0 template](https://github.com/spdx/license-list-data/blob/v3.27.0/text/MIT.txt), with only its copyright placeholders filled as `2026 Ruge Lin`. The CC BY 4.0 text was downloaded unchanged from [Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode.txt). The web reader timed out for that URL; direct HTTPS retrieval succeeded. No legal terms were rewritten.
+
+The package retains the existing `setuptools>=68` build floor and uses its supported file-based license metadata. Its distributions include the scope and both legal texts, preserving the separate terms for any bundled research documentation. This does not add dependencies or modify the science. The first adoption commit and final checks are recorded in PR #12.
+
+<a id="after-the-owner-approves-the-scope"></a>
+## Remaining release steps
+
+1. Resolve any unwanted historical exposure through an explicitly approved approach. Preserve research provenance and do not silently rewrite it.
+2. Review the intended main commit, its documentation route and successful existing checks. Authorize merges separately from publication.
+3. Approve the exact repository visibility change. Then inspect the public README, equations, figure paths and citation panel, and publish a versioned release if desired. Archive that release for a DOI only if an archival service has actually been configured.
+
+[Next: license scope](../LICENSE_STATUS.md) · [Return to README](../README.md)

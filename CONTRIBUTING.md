@@ -6,6 +6,6 @@ Submit a focused pull request for a correction. Explain its reason, affected cla
 
 Use the checks appropriate to the change from the [reproduction guide](docs/REPRODUCTION.md#integrity). For reader documentation, also run `python scripts/check_reader_docs.py --self-test`. A report does not require rerunning a large simulation campaign.
 
-The [license decision](LICENSE_STATUS.md) is pending. Include only material you have permission to contribute and identify any third-party source and its terms. Resolve the applicable license before merging outside contributions. This page does not introduce a copyright assignment or contributor license agreement.
+Submit original contributions under the [license applicable to the material](LICENSE_STATUS.md): MIT for software and executable examples, CC BY 4.0 for research documentation, data and figures. Include only material you have permission to contribute and identify any third-party source and its terms. Discuss any different terms before inclusion. This page does not introduce a copyright assignment or contributor license agreement.
 
 [Next: reproduction guide](docs/REPRODUCTION.md) · [Return to README](README.md)
