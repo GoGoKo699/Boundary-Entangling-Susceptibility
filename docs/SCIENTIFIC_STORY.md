@@ -1,5 +1,7 @@
 # Scientific story
 
+**Role: short recap of the result chain.** For a first explanation, use the [review-to-project route](PROJECT_GUIDE.md#learn) and [bridge](TUTORIAL_BRIDGE.md). For direct checking, start at [notation](NOTATION.md). [Return to README](../README.md).
+
 The complete question-and-answer treatment is the [four-figure dialogue report](DIALOGUE_REPORT.md). Its [main-text and appendix question map](DIALOGUE_QUESTION_MAP.md) follows the agreed research narrative.
 
 ## 1. Central spectrum and fresh response are different information
@@ -41,3 +43,5 @@ The three designs have distinct estimands: Figure 1 uses modified finite-system 
 ## Scope
 
 The contribution is the monitored-state redistribution and controlled response mechanism at fixed complete central spectrum, connected to an exact identity and physical large-size evidence. No new order parameter, critical exponent, generic non-Clifford thermodynamic law, unconditional monitoring-rate causal effect, or strict finite-range theorem is asserted. The four-figure dialogue separates these boundaries at each step rather than relegating them to a final disclaimer.
+
+[Next: complete four-figure account](DIALOGUE_REPORT.md) · [Return to README](../README.md)

@@ -1,5 +1,7 @@
 # Reproducibility limits
 
+[Previous: methods](NUMERICAL_METHODS.md) · [Return to README](../README.md) · [Next: reproduction commands](REPRODUCTION.md)
+
 ## Current Figure 1
 
 The approved 8 September 2026 intervals have a complete deterministic recipe, fixed seed, preserved source inputs, saved proposal multiplicities, expected output hashes, and a separate RNG-independent verifier. The active table contains this primary support-conditioned calculation. [Commands and statistical limitations](FIGURE1_UNCERTAINTY.md) are explicit. The full CI calculation verifies the newly generated arrays against the active intervals.
@@ -21,3 +23,5 @@ The [campaign recipes](CAMPAIGN_RECIPES.md) distinguish verified generator seeds
 The required numerical workflows are self-contained. This does not mean all historical execution manifests/logs or all eventual figure assets are present. Actual editable external composite schematics remain outstanding as specified in the [project guide](PROJECT_GUIDE.md).
 
 After installation of the declared dependencies, the current calculations need no old chat, external research repository, or original checkpoint ZIP. CI artifacts have finite retention, but all inputs and scripts required to regenerate them are tracked.
+
+[Next: reproduction commands](REPRODUCTION.md) · [Return to README](../README.md)

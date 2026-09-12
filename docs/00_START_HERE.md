@@ -1,9 +1,7 @@
 # Start here
 
-The [project guide](PROJECT_GUIDE.md) provides direct routes through the scientific account, figures, evidence, and reproduction commands. All pages use ordinary GitHub Markdown.
+The single entrance is the [repository README](../README.md). Choose **LEARN**, **CHECK** or **REPRODUCE** there.
 
-Read the [scientific story](SCIENTIFIC_STORY.md) for the result chain or the [dialogue report](DIALOGUE_REPORT.md) for the main-text and appendix questions. The [exact theory](THEORY.md), [methods](NUMERICAL_METHODS.md), and [evidence reassessment](EVIDENCE_REASSESSMENT.md) provide the supporting detail.
+The [project guide](PROJECT_GUIDE.md) maps the selected review to the local explanation. If you already know which result you want, use the [41-question index](DIALOGUE_QUESTION_MAP.md) or [figure gallery](../figures/README.md).
 
-The current study concerns only boundary entangling susceptibility of monitored states. The original four-figure narrative is retained, with no fitted exponential in Figure 4. No new order parameter or rigorous thermodynamic limit is asserted.
-
-For use without the paper or this chat, start with [data completeness](DATA_POLICY.md), [reproduction commands](REPRODUCTION.md), and [the actual code map](CODE_MAP.md). A complete checkout includes the hash-checked root data bundle.
+[Next: choose a reader route](../README.md#choose-a-route) · [Return to README](../README.md)

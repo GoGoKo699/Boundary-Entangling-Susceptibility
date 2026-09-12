@@ -1,5 +1,7 @@
 # Approved figure baseline
 
+[Previous: figure gallery](../figures/README.md) · [Return to README](../README.md) · [Next: redraw the accepted panels](REPRODUCTION.md#redraw)
+
 ## Figure 3 coefficient-label revision: 8 September 2026
 
 Figure 3 now labels its ordinate **within-spectrum $\beta_n$ (per $\Delta p=0.02$)**. This is a pooled finite-grid fixed-effect coefficient, not a pointwise derivative. Only the ylabel string and its three rendered exports changed. All numerical data, intervals, fitted lines, colors, markers, axes, panel dimensions and layout settings remain unchanged. See [the explicit label successor](../provenance/FIGURE3_LABEL_2026-09-08.json) and [the focused checks](../tests/test_figure3_label.py).
@@ -31,3 +33,5 @@ The earlier `provenance/figure_sha256.csv` identifies the historical external Ov
 ## Replacement Figure 4 caption
 
 **Paired measurement-location intervention at unchanged central spectrum.** (a) Copies of the same premeasurement stabilizer state receive one projective-Z measurement at distance d from the central cut. Retaining interventions with unchanged central entropy preserves the complete central Schmidt spectrum. Points show the measurement-induced change in the purity-normalized linear-entropy response to an independent fresh cross-cut probe, pooled with equal weight over nine (n,p) cells; bars are the original 95% trajectory-bootstrap intervals. The observed response is concentrated near the cut and decreases strongly in magnitude over the measured distances. No fitted distance law is imposed. (b) Paired near-minus-far effect, with far distances at least n/4. The pooled effect is +0.0714 [+0.0655,+0.0773] without spectrum conditioning and -0.0474 [-0.0494,-0.0455] under the original unchanged-spectrum eligibility rule. Eligible sides are averaged within each distance before pairing. The location comparison is controlled on copies of the same pre-state; its conditional interpretation does not concern assignment of the long-run monitoring rate. Stricter same-side and common-eligibility checks are documented separately and do not replace the plotted primary estimates.
+
+[Next: redraw the accepted panels](REPRODUCTION.md#redraw) · [Return to README](../README.md)

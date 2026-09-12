@@ -1,5 +1,7 @@
 # Scope and limitations
 
+[Previous: claim evidence](CLAIM_EVIDENCE_MAP.md) · [Return to README](../README.md) · [Next: reproducibility limits](REPRODUCIBILITY_LIMITS.md)
+
 ## Supported core
 
 The project studies a fresh-gate, purity-normalized linear-entropy response. The complete central Schmidt spectrum is insufficient; neighboring-cut purity features determine the Haar/uniform-Clifford response exactly. Monitored stabilizer ensembles exhibit negative within-spectrum monitoring coefficients through 256 qubits and in an independent-seed campaign. Paired location contrasts and a stricter common-eligibility profile support concentration of the measurement-induced suppression near the cut.
@@ -18,3 +20,5 @@ The nonpositive single-measurement sign is an exact corollary for pure stabilize
 No new order parameter, critical exponent, universal non-Clifford thermodynamic law, or absolute novelty priority is asserted. The [evidence reassessment](EVIDENCE_REASSESSMENT.md) is the current interpretation of Figures 3 and 4; the original analysis definitions remain archived for provenance.
 
 The indexed record bundle must be present in the checkout for the recorded-data workflows. Explicit code/data/figure licensing remains undecided. The current Figure 1 intervals have a fully specified support-conditioned recipe. Its fixed references, selected support, and small Clifford samples limit inference. The superseded historical table is preserved without claiming recovery of its missing seed; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
+
+[Next: reproducibility limits](REPRODUCIBILITY_LIMITS.md) · [Return to README](../README.md)

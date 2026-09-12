@@ -1,5 +1,7 @@
 # General two-copy response operator for a gate crossing an entanglement cut
 
+[Previous: notation](NOTATION.md) · [Return to README](../README.md) · [Next: claim evidence](CLAIM_EVIDENCE_MAP.md)
+
 This document supplies the exact identities used in the [four-figure dialogue](DIALOGUE_REPORT.md). The first part treats general probe ensembles and retains the locally dressed extensions; the second treats stabilizer spectra, the finite response alphabet, and the single-measurement sign corollary. The [claim map](CLAIM_EVIDENCE_MAP.md) separates these deductions from the monitored-ensemble evidence. The [related-work account](RELATED_WORK.md) records the established ingredients; no independent priority claim is attached to the Haar transfer identity or the corollary.
 
 **Conventions.** $D=2^{n/2}$ is the half-chain dimension; $d$ is reserved for the measurement distance in Figure 4. $\chi_2$ is the average normalized linear-entropy increment and $\chi_{\rm rel}=\chi_2/P_m$. Neither is an average finite increment of logarithmic Rényi-2 entropy. Original code arguments named `d` retain their historical meaning of dimension; no implementation or data field is renamed.
@@ -582,3 +584,5 @@ entropies for the Haar/Clifford purity-normalized linear-entropy response. It do
 small physical window of qubits determines those entropies, nor that the new
 susceptibility is an order parameter. The empirical claims concern how the
 boundary-code distribution changes in the monitored circuit ensemble.
+
+[Next: claim evidence](CLAIM_EVIDENCE_MAP.md) · [Return to README](../README.md)

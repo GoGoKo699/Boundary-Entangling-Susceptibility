@@ -1,5 +1,7 @@
 # Results at a glance
 
+**Role: numerical lookup after the scientific account.** The canonical tables linked below own the numerical values. Read the [four-figure account](DIALOGUE_REPORT.md) for the comparisons and the [claim map](CLAIM_EVIDENCE_MAP.md) for their scope. [Return to README](../README.md).
+
 The point estimates and Figures 2–4 retain their original numerical inputs. Figure 1 uses the [adopted support-conditioned uncertainty calculation](FIGURE1_UNCERTAINTY.md); its historical error bars are not the current ones. The [evidence reassessment](EVIDENCE_REASSESSMENT.md) adds post-hoc checks and revises the interpretation of the historical exponential curve, not the archived observations.
 
 ## Fixed-spectrum intervention
@@ -46,3 +48,5 @@ The original near-minus-far estimates are +0.0714074 unconditionally and -0.0474
 The common-eligibility curve uses 4,025 pre-states and keeps the selected sides fixed across six distances. Its magnitude at four sites is about 12% of the adjacent-cut magnitude; at eight sites it is about 1.6%. These are measured attenuation ratios, not a fitted correlation length.
 
 The current Figure 4 has no exponential curve or length annotation. The historical value xi=2.372 [2.251,2.496] is preserved only as fit provenance in [the archived fit record](../results/historical_fit/figure_04_distance_fit.json), not as an endorsed physical localization length: residual checks reject its use as an adequate full-profile description. No replacement functional form is promoted. Read the [precise estimands and fit diagnostics](EVIDENCE_REASSESSMENT.md) before interpreting Figure 4.
+
+[Next: claim-level evidence and limitations](CLAIM_EVIDENCE_MAP.md) · [Return to README](../README.md)
