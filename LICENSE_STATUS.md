@@ -22,7 +22,7 @@ The citation in [CITATION.cff](CITATION.cff) supports scholarly credit and repro
 <a id="owner-decision-and-adoption"></a>
 ## Adoption and distribution
 
-The [adoption record](docs/PUBLIC_RELEASE.md#license-adoption) identifies the first licensed snapshot and the checks performed. This is an adopted grant on the working branch. Repository visibility and PR merging remain separate decisions; no public release or DOI is implied.
+The [adoption record](docs/PUBLIC_RELEASE.md#license-adoption) identifies the first licensed snapshot and the checks performed. The licenses apply to the material in this tree under the scope above. Repository visibility does not change that scope, and licensing does not imply a versioned release or DOI.
 
 The software package declares MIT for its code. Its distributions carry this scope notice and both license texts so that included research documentation retains its CC BY 4.0 terms. Do not interpret the software metadata as relicensing research content. The root data ZIP is unchanged: its member licenses are described here rather than inserted into the protected archive.
 
