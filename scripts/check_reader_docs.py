@@ -34,6 +34,7 @@ QUESTION_IDS = tuple((
     "D1 D2 D3 D4 E1 E2 E3 E4 E5 E6 F1 F2 F3 F4 F5 G1 G2 G3 H1 H2 H3"
 ).split())
 ACTIVE = (
+    "LICENSE_STATUS.md", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", "docs/PUBLIC_RELEASE.md",
     "README.md", "docs/PROJECT_GUIDE.md", "docs/TUTORIAL_BRIDGE.md",
     "docs/NOTATION.md", "docs/DIALOGUE_REPORT.md", "docs/DIALOGUE_QUESTION_MAP.md",
     "docs/THEORY.md", "docs/NUMERICAL_METHODS.md", "docs/CLAIM_EVIDENCE_MAP.md",

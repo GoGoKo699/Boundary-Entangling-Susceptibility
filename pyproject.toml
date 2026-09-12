@@ -6,8 +6,12 @@ build-backend="setuptools.build_meta"
 name="boundary-entangling-susceptibility"
 version="0.1.0"
 description="Exact identities and reproducible analyses for boundary entangling susceptibility in monitored circuits"
+license={file="LICENSE"}
 requires-python=">=3.11"
 dependencies=["numpy>=1.24","pandas>=2.0","scipy>=1.10","matplotlib>=3.7"]
+
+[tool.setuptools]
+license-files=["LICENSE", "LICENSE_STATUS.md", "LICENSES/CC-BY-4.0.txt", "THIRD_PARTY_NOTICES.md"]
 
 [tool.setuptools.packages.find]
 where=["src"]
