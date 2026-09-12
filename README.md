@@ -48,4 +48,4 @@ The manuscript remains the final step. The six accepted numerical panels and the
 
 Development history is accessible through the [project guide](docs/PROJECT_GUIDE.md#history-and-readiness). The [older-baseline audit](audits/full-sanity-01/REVIEW.md) and [completed repair record](repairs/full-sanity-01/SUMMARY.md) retain their separate roles. The repaired entanglement-feature attribution and supporting exports are part of the current baseline.
 
-The [citation record](CITATION.cff) is provisional. No reuse license has been selected; see [license status](LICENSE_STATUS.md). The [implementation record](docs/reader-route-01/IMPLEMENTATION.md) describes this documentation pass and its checks.
+Use the [citation record](CITATION.cff) and identify the commit or release used. No reuse license has been adopted; see the [proposed license scope](LICENSE_STATUS.md) and [public-release preparation](docs/PUBLIC_RELEASE.md). [Contribution guidance](CONTRIBUTING.md) explains how to report corrections. The [implementation record](docs/reader-route-01/IMPLEMENTATION.md) describes the reader-route redesign and its checks.
