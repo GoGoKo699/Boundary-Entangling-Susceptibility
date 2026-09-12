@@ -1,0 +1,214 @@
+{
+  "repository": "GoGoKo699/Boundary-Entangling-Susceptibility",
+  "review_date_utc": "2026-09-12",
+  "purpose": "Record the scope of the completed available-history exposure review; interpretation and release decisions belong to docs/PUBLIC_RELEASE.md.",
+  "status": "No blocking disclosure identified in reviewed available material; repository private and PRs unmerged at inspection.",
+  "main": "20954b2ae96e8a5ea95749475fd6b0724b2d5e6b",
+  "working_branch": "docs/public-release-prep-01",
+  "inspected_head": "69e3670fe197ebf23c8a9cbee844ce2b3058416a",
+  "inspected_tree": "f0fff20658467618edf08c5585d8866567888aeb",
+  "refs": {
+    "refs/heads/analysis/figure1-uncertainty-2026-09-08": "f87bf7a2c524e1a493b193e145d3352b78c570bc",
+    "refs/heads/approved-figure4-dialogue-2026-09-05": "1726eefc07a6c9aa1f9d769b63fc4ed616d6e54a",
+    "refs/heads/audit/full-sanity-01": "897dba9926583d12bcaacb214d62a5652c1ba8e1",
+    "refs/heads/cleanup/entanglement-only-2026-09-08": "2761ba6bf3bb5e4f810c4c45e7ac5f118ab0a79e",
+    "refs/heads/docs/neutral-palette-wording": "3b722dbb8616e45edcabc46a5aadfe3ee1d8b22d",
+    "refs/heads/docs/public-release-prep-01": "69e3670fe197ebf23c8a9cbee844ce2b3058416a",
+    "refs/heads/docs/review-guided-reader-route-01": "1b262318d244cd2f44536647fd4d94861a7d2b05",
+    "refs/heads/docs/scientific-consolidation-2026-09-08": "1ac49f12db86d46deae068bfc43bd7523e958c82",
+    "refs/heads/evidence-reassessment-2026-09-05": "64a62826fced6288129ea033c324c84a7a9c63d3",
+    "refs/heads/fix/full-sanity-01": "a096fe3c2fb0d51b0aa819a25c46091e16126089",
+    "refs/heads/main": "20954b2ae96e8a5ea95749475fd6b0724b2d5e6b",
+    "refs/heads/migration-assets": "00647c663739a14370935fca44a9d823677122d6",
+    "refs/heads/migration-assets-20260826": "8406e8191d845d10552537b7e359af15be4ddde7",
+    "refs/heads/migration-assets-current": "8406e8191d845d10552537b7e359af15be4ddde7",
+    "refs/heads/migration-assets-final": "8406e8191d845d10552537b7e359af15be4ddde7",
+    "refs/heads/migration-assets-stage": "25b9aa7a6e5e4274a2f4212d2546e00b240c0ad3",
+    "refs/heads/migration-checkpoint": "8406e8191d845d10552537b7e359af15be4ddde7",
+    "refs/heads/migration-stage-01": "1a70fb4fcb5077fae98a13a7ffb2931c1d4bf8ee",
+    "refs/heads/migration-temp-02": "308ed11a0dbd87e1f44a1d5c9f9b244449cb50b6",
+    "refs/heads/migration-temp-ignore": "ca19fcd8067d2b06d21863251bbad20c06ee1eef",
+    "refs/heads/presentation/default-style-irises-figures": "22cc0ce682972062fdb4a0db4a143c8313294ded",
+    "refs/heads/presentation/repository-preview-2026-09-08": "f99b8ae70204f4c1aae4e5ece2969bb2eea844e9",
+    "refs/heads/repository-audit-2026-08-27": "8d8009cb904990b160129cf83f9eac52ed76e407",
+    "refs/pull/1/head": "8d8009cb904990b160129cf83f9eac52ed76e407",
+    "refs/pull/10/head": "a096fe3c2fb0d51b0aa819a25c46091e16126089",
+    "refs/pull/11/head": "1b262318d244cd2f44536647fd4d94861a7d2b05",
+    "refs/pull/11/merge": "4928ee2bf29512df648a6931646ed11832347ee6",
+    "refs/pull/12/head": "69e3670fe197ebf23c8a9cbee844ce2b3058416a",
+    "refs/pull/12/merge": "f9b398c18a202828ad34f0e47a9e053b33cbb248",
+    "refs/pull/2/head": "64a62826fced6288129ea033c324c84a7a9c63d3",
+    "refs/pull/3/head": "1726eefc07a6c9aa1f9d769b63fc4ed616d6e54a",
+    "refs/pull/4/head": "2761ba6bf3bb5e4f810c4c45e7ac5f118ab0a79e",
+    "refs/pull/5/head": "f87bf7a2c524e1a493b193e145d3352b78c570bc",
+    "refs/pull/6/head": "1ac49f12db86d46deae068bfc43bd7523e958c82",
+    "refs/pull/7/head": "202f5e6fd6b7b169dc735311901a8ddc30bf7eeb",
+    "refs/pull/8/head": "22cc0ce682972062fdb4a0db4a143c8313294ded",
+    "refs/pull/9/head": "3b722dbb8616e45edcabc46a5aadfe3ee1d8b22d"
+  },
+  "git": {
+    "branches": 23,
+    "pull_heads": 12,
+    "pull_merge_refs": 2,
+    "tags": 0,
+    "commits": 122,
+    "blobs": 742,
+    "blob_bytes": 61449866,
+    "root_commit": "3897c03a69d6490202eeedd80bf74e70e71c3b58",
+    "missing_parents": 0,
+    "truncated_tree_listings": 0,
+    "blob_hash_or_size_mismatches": 0,
+    "expanded_content_counts": {
+      "item_references": 1655,
+      "unique_payloads": 1220,
+      "unique_payload_bytes": 265850927,
+      "zip_members": 810,
+      "gzip_payloads": 21,
+      "partial_zip_entries": 58
+    },
+    "pdf_text_extractions": 21,
+    "remaining_content_parse_errors": [],
+    "encoded_transfers": [
+      {
+        "name": "preview-part",
+        "tree": "5997d0419ee7ef3dcadf69671bf2459529bfbdf9",
+        "parts": 4,
+        "bytes": 101977,
+        "sha256": "bf837bd9ea94780f18dad55befa3cbcdebdf90133f5ebb912a009c26883d60ac",
+        "transport_hash_verified": true
+      },
+      {
+        "name": "bes_science_payload",
+        "tree": "4b81a82e5015edd97e551e5ef1d300085d09bc9f",
+        "parts": 6,
+        "bytes": 45585,
+        "sha256": "76ed24538ba50d0df6bd3403494312136c7d95a4e9ee87ee50a56a3bb01de426",
+        "transport_hash_verified": true
+      },
+      {
+        "name": "figure1_adoption_payload",
+        "tree": "e85d0ca8798e51c0efb20c33e83631a2c951c1be",
+        "parts": 7,
+        "bytes": 37892,
+        "sha256": "a1313e6aaa9a20931ed6fe443635c66c58176f4fd9e9bc09b39358e56ff959fb",
+        "transport_hash_verified": true
+      }
+    ],
+    "incomplete_historical_npz": [
+      {
+        "path": "repairs/full-sanity-01/reproduced_figure1_uncertainty/resamples/all_confirmatory__primary__haar_random_pauli.npz",
+        "blob_prefix": "3c35c86ea23d",
+        "complete_numeric_streams": 26,
+        "unparsed_tail_bytes": 0
+      },
+      {
+        "path": "repairs/full-sanity-01/reproduced_figure1_uncertainty/resamples/eligible_union__independent__haar_z.npz",
+        "blob_prefix": "d455ab80678e",
+        "complete_numeric_streams": 14,
+        "unparsed_tail_bytes": 0
+      },
+      {
+        "path": "repairs/full-sanity-01/reproduced_figure1_uncertainty_retry/resamples/eligible_union__primary__floquet_cartan_z.npz",
+        "blob_prefix": "23618af11291",
+        "complete_numeric_streams": 18,
+        "unparsed_tail_bytes": 0
+      }
+    ],
+    "npz_method": "Read existing local ZIP headers and DEFLATE streams, check completion and CRC, and inspect numeric NPY payloads. All present bytes accounted for; central directories remain missing. No file repaired or historical scientific output recovered.",
+    "text_method": "Pattern-screen every distinct blob and expanded payload; read every commit message and identity entry; inspect flagged text and historical presentation/provenance changes in context. Safe numeric headers only; no pickle loading or archive program execution.",
+    "distinct_commit_root_trees_recursively_listed": 106
+  },
+  "discussions": {
+    "pull_requests": 12,
+    "standalone_issues": 0,
+    "bodies_read": 12,
+    "issue_comments_read": 5,
+    "reviews": 0,
+    "inline_comments": 0,
+    "pagination_exhausted": true,
+    "comment_ids": [
+      5581181798,
+      5583414637,
+      5584481339,
+      5587955070,
+      5590327625
+    ]
+  },
+  "actions": {
+    "newest_run_id": 34679287903,
+    "newest_run_created_at": "2026-09-12T06:53:13Z",
+    "oldest_run_id": 32967750329,
+    "oldest_run_created_at": "2026-08-26T12:17:12Z",
+    "runs": 165,
+    "run_attempts": 166,
+    "run_pages": [
+      100,
+      65
+    ],
+    "jobs": 265,
+    "job_logs_retrieved": 265,
+    "job_logs_unavailable": 0,
+    "log_characters": 11359977,
+    "log_lines": 115967,
+    "logs_method": "Pattern screen of all retrieved log text with contextual inspection of credential, contact, URL and workflow/import candidates. Masked values were neither recovered nor tested.",
+    "artifacts": 175,
+    "artifact_bytes": 1587247013,
+    "runs_with_artifacts": 81,
+    "runs_without_artifacts": 84,
+    "artifact_listing_errors": 0,
+    "artifact_size_or_digest_mismatches": 0,
+    "artifact_parse_errors": 0,
+    "artifact_member_occurrences": 5913,
+    "recursive_member_occurrences": 33171,
+    "unique_artifact_payloads": 1135,
+    "artifact_method": "Read every artifact ZIP; recursive ZIP/TAR/gzip inflation, safe NPY headers and raw bytes; UTF-8/raw pattern checks; PDF text/metadata/fonts; PNG metadata; data-URI base64 inflation. No pickle execution, archive code execution, image OCR, general credential scanner, or scientific rerun.",
+    "artifact_dispositions": {
+      "credential_and_private_link_patterns": "Zero matches for private keys, common GitHub/service tokens, credential-bearing URLs, quoted secret assignments, private conversation/share URLs and signed-URL parameters. Pattern coverage is bounded; absence of matches is not certification.",
+      "emails": "Two distinct historical CITATION.cff payloads retain the known author Gmail. Remaining text matches are Python matrix multiplication expressions; raw TAR matches duplicate their contained members. No new contact identity found.",
+      "workspace_paths": "Seven distinct leaf provenance/design-manifest payloads contain historical /mnt/data paths. Two raw TAR hits duplicate their contained members. These are provenance paths, not credential or private download links.",
+      "other_project": "Manual context review found My-tone version/source references, an explicit channel-capacity exclusion in the source-bundle manifest, and false positives where the case-insensitive LoRA pattern matches exploratory. No My-tone corpus or separate-project payload was identified.",
+      "historical_web_previews": "Five website-preview artifacts contain identical three screenshots, superseded website/palette pages and original-study downloads. Another verified-repository-preview artifact also stores the built site and its source TAR. These remain historical presentation material, not the accepted current GitHub reading route.",
+      "unparsed_content": "No artifact or nested-container parse errors. All 309 distinct NPY payloads have numeric, bool or complex dtypes; no object arrays were unpickled. The separate Git-file coverage is recorded above.",
+      "visual_limit": "Only the three unique historical website screenshots were visually inspected. Numerical PNGs and PDFs received raw/text/metadata checks as applicable, not a new visual scientific audit."
+    },
+    "historical_screenshots": [
+      {
+        "sha256": "dce940f2e9048bcdcb6907fe174447e850d954344d470989ee0dad9ba0bf0967",
+        "copies": 5,
+        "finding": "Historical scientific landing page or palette guide; no visible credentials, private conversation, unrelated personal material or contact detail."
+      },
+      {
+        "sha256": "3380c8140f6f32ba16bacc8e414dee0bd21d93ef651ed6fec067f76c202daee4",
+        "copies": 5,
+        "finding": "Historical scientific landing page or palette guide; no visible credentials, private conversation, unrelated personal material or contact detail."
+      },
+      {
+        "sha256": "9dcea6398f13869b021e40eb41c3920e0ef5e2e51cc36cf9e06eca672cb0050b",
+        "copies": 5,
+        "finding": "Historical scientific landing page or palette guide; no visible credentials, private conversation, unrelated personal material or contact detail."
+      }
+    ]
+  },
+  "inventory_digests": {
+    "serialization": "For each inventory, UTF-8 encode lexicographically sorted records joined by LF, with one final LF; report SHA-256. Separator within multi-field records is one ASCII space.",
+    "commit_sha_lines": "b71747f2ef4376459853d59d2a363970e3a3d4685246ea9953aa77356077816c",
+    "blob_sha_size_lines": "898ceb3ea6aacb80db2981c2006006190bc789cc01ad436ef171a728b794ece0",
+    "run_id_lines": "6fd3fab37daebc95a10c008b98099c960607814b7ae124ad349641a3e1ba16fe",
+    "job_id_run_id_attempt_character_count_lines": "a586422df4866e9b30549e43c719f8b95296483ba1bd556eac603d0cc263c64c",
+    "artifact_id_run_id_size_sha256_lines": "92a5567b8868c04d48f30f523f10b30be419e44c58674fa775abd9fcdb65b4cf",
+    "commit_root_tree_sha_lines": "a9706cdbed0c1e915d37d38e294087b54db9c9fca6d0bd42e7a7f16c5cd4036a"
+  },
+  "known_retained_exposure": [
+    "Existing author email in historical CFF files, Git author/committer and Actions run metadata, and historical source copies in artifacts; the address is not repeated in this record.",
+    "Historical workspace paths, migration and repair attempts, superseded labels, and website/palette previews remain historical records.",
+    "My-tone references are versioned presentation attribution; no private corpus identified. No separate-project payload identified."
+  ],
+  "limits": [
+    "Available refs and retained GitHub records at the pinned snapshot; deleted/unreachable objects, deleted or earlier edited discussion text, and deleted/expired artifacts are outside coverage.",
+    "Credential formats, private keys, credential-bearing URLs, secret assignments, contacts, local paths and private-link patterns were checked. This is bounded inspection, not a security certification.",
+    "Account security settings and secret values were not queried.",
+    "Only three distinct historical screenshots were visually inspected. No new GitHub rendering, mobile, accessibility, OCR or visual scientific validation is claimed.",
+    "External editable composite sources and external Overleaf material were not recovered or inspected.",
+    "No science, historical record, asset, workflow or data was changed by the exposure review. No history deletion, merge, visibility change or publication occurred."
+  ]
+}
