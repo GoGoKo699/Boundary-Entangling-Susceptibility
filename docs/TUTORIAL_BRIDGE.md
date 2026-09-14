@@ -37,8 +37,8 @@ A recorded trajectory remains pure after each outcome-conditioned measurement. D
 For cut $j$, reduce to the first $j$ sites and define its purity
 
 $$
-\rho_{[1:j]}=\operatorname{Tr}_{j+1,\ldots,n}|\psi\rangle\langle\psi|,
-\qquad P_j=\operatorname{Tr}\rho_{[1:j]}^2.
+\rho_{[1:j]}=\mathop{\mathrm{Tr}}\nolimits_{j+1,\ldots,n}|\psi\rangle\langle\psi|,
+\qquad P_j=\mathop{\mathrm{Tr}}\nolimits\rho_{[1:j]}^2.
 $$
 
 The central half has dimension $D=2^m$. Its normalized linear entropy is
@@ -61,7 +61,7 @@ Positive response means the probe increases normalized linear entropy on average
 
 ### The short two-copy calculation
 
-Let $\rho=|\psi\rangle\langle\psi|$ and let $F_X$ exchange subsystem $X$ between two copies. Contracting indices gives $P_X=\operatorname{Tr}(\rho^{\otimes2}F_X)$. Since the probe touches only $ab$, it changes the central swap $F_LF_a$ only through $F_a$.
+Let $\rho=|\psi\rangle\langle\psi|$ and let $F_X$ exchange subsystem $X$ between two copies. Contracting indices gives $P_X=\mathop{\mathrm{Tr}}\nolimits(\rho^{\otimes2}F_X)$. Since the probe touches only $ab$, it changes the central swap $F_LF_a$ only through $F_a$.
 
 Haar averaging over $U(4)$ projects that operator onto the span of the identity and the full two-copy swap $F_{ab}$:
 
@@ -70,7 +70,7 @@ $$
 =\alpha I+\beta F_{ab}.
 $$
 
-This is an average on the two-qubit probe space, whose two-copy dimension is 16. Both $\operatorname{Tr}F_a$ and $\operatorname{Tr}(F_aF_{ab})$ equal 8, while $\operatorname{Tr}I=16$ and $\operatorname{Tr}F_{ab}=4$. Preserving these two overlaps gives
+This is an average on the two-qubit probe space, whose two-copy dimension is 16. Both $\mathop{\mathrm{Tr}}\nolimits F_a$ and $\mathop{\mathrm{Tr}}\nolimits(F_aF_{ab})$ equal 8, while $\mathop{\mathrm{Tr}}\nolimits I=16$ and $\mathop{\mathrm{Tr}}\nolimits F_{ab}=4$. Preserving these two overlaps gives
 
 $$
 16\alpha+4\beta=8,\qquad 4\alpha+16\beta=8,

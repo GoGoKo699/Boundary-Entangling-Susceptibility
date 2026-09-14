@@ -18,8 +18,8 @@ where qubits $a$ and $b$ are adjacent to the central cut. The left half is
 $A=La$, and the right half is $B=bR$. For any subsystem $X$, write
 
 $$
-P_X=\operatorname{Tr}\rho_X^2
-   =\operatorname{Tr}\!\left(\rho^{\otimes 2}F_X\right),
+P_X=\mathop{\mathrm{Tr}}\nolimits\rho_X^2
+   =\mathop{\mathrm{Tr}}\nolimits\!\left(\rho^{\otimes 2}F_X\right),
 $$
 
 where $F_X$ swaps the two replicas on $X$.
@@ -47,7 +47,7 @@ $$
 \boxed{
 \mathbb E_{U\sim\mathcal E} P'_{La}
 =
-\operatorname{Tr}\!\left[
+\mathop{\mathrm{Tr}}\nolimits\!\left[
 \rho^{\otimes2}
 \left(F_L\otimes\Omega_{\mathcal E}\otimes I_R\right)
 \right].
@@ -62,13 +62,13 @@ $$
 \rho'=(I_{LR}\otimes U_{ab})\rho(I_{LR}\otimes U_{ab}^{\dagger}).
 $$
 
-Using $P'_{La}=\operatorname{Tr}[(\rho')^{\otimes2}F_{La}]$, cyclicity of the
+Using $P'_{La}=\mathop{\mathrm{Tr}}\nolimits[(\rho')^{\otimes2}F_{La}]$, cyclicity of the
 trace, and $F_{La}=F_LF_a$,
 
 $$
 P'_{La}(U)
 =
-\operatorname{Tr}\!\left[
+\mathop{\mathrm{Tr}}\nolimits\!\left[
 \rho^{\otimes2}
 \left(
 F_L\otimes U_{ab}^{\dagger\otimes2}F_aU_{ab}^{\otimes2}\otimes I_R
@@ -96,9 +96,9 @@ from $\Omega$. Averaging over the input dressings is the Hilbert--Schmidt
 projection onto the commutant of the local two-copy action. For two qubits,
 
 $$
-\operatorname{Comm}\{v_a^{\otimes2}\otimes v_b^{\otimes2}\}
+\mathop{\mathrm{Comm}}\nolimits\{v_a^{\otimes2}\otimes v_b^{\otimes2}\}
 =
-\operatorname{span}\{I,F_a,F_b,F_aF_b\}.
+\mathop{\mathrm{span}}\nolimits\{I,F_a,F_b,F_aF_b\}.
 $$
 
 Hence
@@ -165,7 +165,7 @@ $$
 E_{\mathrm{op}}(V)
 =
 1-\frac1{16}
-\operatorname{Tr}\!\left[(V^R V^{R\dagger})^2\right],
+\mathop{\mathrm{Tr}}\nolimits\!\left[(V^R V^{R\dagger})^2\right],
 \qquad
 E_{\mathrm{op}}(\mathrm{SWAP})=\frac34,
 $$
@@ -227,7 +227,7 @@ For the output region $La$:
 
 Kuo et al.'s Eq. (19) propagates the purity-feature vector by
 $T=\widehat{W}_V\widehat{W}_I^{-1}$, where the gate-feature matrix is
-$(\widehat{W}_V)_{\sigma,\tau}=\operatorname{Tr}(F_\sigma V^{\otimes2}F_\tau V^{\dagger\otimes2})$
+$(\widehat{W}_V)_{\sigma,\tau}=\mathop{\mathrm{Tr}}\nolimits(F_\sigma V^{\otimes2}F_\tau V^{\dagger\otimes2})$
 and $\widehat{W}_I$ is its identity-gate Gram matrix. The labels
 $\sigma,\tau$ specify subsystem swaps on $ab$. For a direct algebraic
 translation of their Eqs. (17) and (60), put $E=E_{\mathrm{op}}(V)$ and

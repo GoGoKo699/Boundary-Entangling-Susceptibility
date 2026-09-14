@@ -5,6 +5,16 @@ on:
 permissions:
   contents: read
 jobs:
+  reader-docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/check_reader_docs.py --self-test
+      - run: python scripts/check_markdown_math.py --self-test
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 15
