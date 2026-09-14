@@ -3,7 +3,8 @@
 
 Run ``python scripts/check_reader_docs.py`` from any directory. ``--self-test``
 also exercises deliberately broken targets/anchors in a temporary directory.
-Includes a regression check for GitHub's rejected operator-name macro. This is
+Includes regression checks for GitHub's rejected operator-name macro and
+display equations accidentally parsed as Markdown headings. This is
 not a Markdown renderer, full TeX validator, browser/accessibility test, or
 external-URL checker. Historical pages are checked as link destinations only;
 their own outgoing links are outside the active route checked here.
@@ -66,6 +67,10 @@ def prose_lines(text: str) -> tuple[list[str], list[str]]:
             lines.append("")
             continue
         lines.append(line)
+        if display and re.fullmatch(r" {0,3}(?:=+|-+)[ \t]*", line):
+            errors.append(
+                f"line {number}: standalone equals/hyphen line inside $$ math "
+                "can turn the equation into a Markdown heading; use a math fence")
         # Inline code can contain literal dollars and link-shaped examples.
         plain = re.sub(r"(`+).*?\1", "", line)
         tokens = list(re.finditer(r"(?<!\\)(?:\$\$|\$)", plain))
@@ -329,6 +334,17 @@ def self_test() -> None:
         assert any("unclosed display" in item for item in failures)
     assert prose_lines("```python\nx=1\n")[1] == ["line 1: unclosed code fence"]
     assert prose_lines("$x\n")[1]
+    # A valid TeX expression can still become a Markdown setext heading before
+    # math rendering. Keep the user's conditional-expectation example covered.
+    conditional = r"\mathbb E[\chi_{\rm rel}\mid S_m,\tau,n,p]"
+    for underline in ("=", "===", "-", "---", "   =  "):
+        broken = "$$\n" + conditional + "\n" + underline + "\nr_n\n$$\n"
+        assert any("Markdown heading" in error for error in document(broken)[2])
+        fenced = "```math\n" + conditional + "\n" + underline + "\nr_n\n```\n"
+        assert not document(fenced)[2]
+        assert not headings(prose_lines(fenced)[0])
+    assert not document("A real heading\n=\n\n$$\nx=y\n$$\n")[2]
+    assert not document("```text\n$$\nx\n=\ny\n$$\n```\n")[2]
     for expression in (r"\operatorname{Tr}A", r"\operatorname*{mean}_{i}x_i"):
         for opening, closing in (("$", "$"), ("$`", "`$"), ("$$\n", "\n$$"),
                                  ("```math\n", "\n```"), ("~~~~math\n", "\n~~~~")):
@@ -340,7 +356,7 @@ def self_test() -> None:
         + "```tex\n" + r"\operatorname{Tr}A" + "\n```\n"
         + r"$\operatornameSuffix + \\operatorname$")
     assert "line 3:" in math_macro_errors("$$\nx=1\n" + r"\operatorname{Tr}A" + "\n$$")[0]
-    print("self-test passed: links, anchors, delimiters and rejected GitHub math macros")
+    print("self-test passed: links, anchors, delimiters, math heading collisions and rejected GitHub math macros")
 
 
 def main() -> int:

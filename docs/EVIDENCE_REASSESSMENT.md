@@ -82,9 +82,9 @@ Furthermore, `beta_n` is an overlap-weighted within-spectrum regression coeffici
 
 Write the existing observable explicitly:
 
-$$
+```math
 \chi_{\mathrm{rel}}=\frac{D}{D-1}\left(1-\frac{\mathbb E_U P'_m}{P_m}\right),\qquad D=2^{n/2}.
-$$
+```
 
 It is a purity-normalized linear-entropy response. It is not generally the mean finite-gate change of `-log2(P_m)`. The symbol and numerical definition are unchanged; `D` in this note avoids confusing the half-chain dimension with measurement distance `d`.
 
