@@ -55,11 +55,11 @@ For a region `A`, the stabilizer entropy is computed from the rank of the
 restricted binary generator matrix. Pure stabilizer reduced states have a flat
 nonzero spectrum. If the central entropy is `S_m`, then
 
-\[
+$$
 \lambda_1=\cdots=\lambda_{2^{S_m}}=2^{-S_m},
 \qquad
 \lambda_j=0\quad(j>2^{S_m}).
-\]
+$$
 
 Thus a fixed `(n,tau,S_m)` stratum is an exact complete-central-spectrum
 stratum.
@@ -71,20 +71,20 @@ across the three adjacent cuts. The exact average normalized linear-entropy
 response to a fresh Haar-random or uniformly random two-qubit Clifford gate on
 the central bond is
 
-\[
+```math
 \chi_2
 =
 \frac{d}{d-1}
 \left[
 P_m-\frac25(P_{m-1}+P_{m+1})
 \right].
-\]
+```
 
 The primary large-size outcome is
 
-\[
+$$
 \chi_{\rm rel}=\frac{\chi_2}{P_m}.
-\]
+$$
 
 The relative response removes the trivial multiplicative central-purity scale,
 which can become very small when the matched rank grows with system size. The
@@ -92,14 +92,14 @@ unnormalized `chi_2` remains a prespecified secondary outcome.
 
 For stabilizer states,
 
-\[
+```math
 \chi_{\rm rel}
 =
 \frac{d}{d-1}
 \left[
 1-\frac25(2^{\delta_L}+2^{\delta_R})
 \right],
-\]
+```
 
 where `delta_L=S_m-S_{m-1}` and `delta_R=S_m-S_{m+1}`.
 
@@ -131,7 +131,7 @@ stratified by `(tau,S_m)`. A stratum is eligible when at least three probability
 levels have at least ten trajectory records each. Within the eligible support,
 fit
 
-\[
+```math
 y_i
 =
 \alpha_{\tau,S_m}
@@ -139,7 +139,7 @@ y_i
 \beta_n\frac{p_i-0.26}{0.02}
 +
 \varepsilon_i.
-\]
+```
 
 The primary outcome is `chi_rel`; the secondary outcome is `chi_2`. Hence
 `beta_n` is the fixed-complete-spectrum change per `Delta p=0.02`.
@@ -159,9 +159,9 @@ separately to expose that support structure.
 
 The locked primary extrapolation is
 
-\[
+$$
 \beta_n=\beta_\infty+\frac{a}{n}.
-\]
+$$
 
 The exponent is not fitted. Weighted least squares uses the size-level
 bootstrap intervals, and a second bootstrap propagates trajectory uncertainty
@@ -173,10 +173,10 @@ are reported only as sensitivity analyses.
 The monitored transition is located with the standard quarter-partition
 tripartite information
 
-\[
+$$
 I_3(A:B:C)
 =S_A+S_B+S_C-S_{AB}-S_{AC}-S_{BC}+S_{ABC}
-\]
+$$
 
 for four contiguous quarters of the open chain. Only `tau=10` is used. Pairwise
 size crossings are linearly interpolated on the simulated probability grid and
