@@ -64,6 +64,6 @@ The manuscript remains the final step. Current proofs, estimators, evidence, att
 
 The [full audit](../audits/full-sanity-01/REVIEW.md) assesses its older frozen baseline. The [repair summary](../repairs/full-sanity-01/SUMMARY.md) records the integrated equation-level attribution, corrected supporting exports, figure label and validation changes. Those completed repairs are not pending work. [Reproducibility limits](REPRODUCIBILITY_LIMITS.md) distinguishes current calculations from unrecovered historical invocations and resamples.
 
-[Research history](RESEARCH_HISTORY.md), [run history](RUN_HISTORY.md), and [provenance](../provenance/README.md) are optional source tracing. [Citation status](../CITATION.cff), [license status](../LICENSE_STATUS.md), and the [public-release checklist](../provenance/PUBLIC_RELEASE_CHECKLIST.md) have separate roles. No new hosting, release or permission grant is implied.
+[Research history](RESEARCH_HISTORY.md), [run history](RUN_HISTORY.md), and [provenance](../provenance/README.md) are optional source tracing. [Citation status](../CITATION.cff), [license scope](../LICENSE_STATUS.md), and [current public-release preparation](PUBLIC_RELEASE.md) have separate roles. No new hosting, release or permission grant is implied.
 
 [Return to README](../README.md) · [Continue with the bridge](TUTORIAL_BRIDGE.md)
