@@ -5,7 +5,7 @@ on:
 permissions:
   contents: read
 jobs:
-  reader-docs:
+  markdown-math:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -13,7 +13,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python scripts/check_reader_docs.py --self-test
       - run: python scripts/check_markdown_math.py --self-test
   test:
     runs-on: ubuntu-latest
@@ -23,6 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Check reader documentation
+        run: python scripts/check_reader_docs.py --self-test
       - run: pip install -r requirements-reproducible.txt
       - run: pip install -e .
       - run: python verify.py
