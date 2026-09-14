@@ -37,11 +37,11 @@ The appendix answers implementation and inference objections in the same order. 
 
 **Answer.** You have specified all central bipartite entanglement quantities that depend only on those eigenvalues. For a pure state across the cut $A|B$,
 
-$$
+```math
 |\psi\rangle=\sum_{\alpha}\sqrt{\lambda_\alpha}
 |u_\alpha\rangle_A|v_\alpha\rangle_B,
 \qquad \lambda_\alpha\geq0,\quad\sum_\alpha\lambda_\alpha=1.
-$$
+```
 
 The list $\{\lambda_\alpha\}$ fixes the central purity, Schmidt rank, and entropies. It does not specify the Schmidt vectors $|u_\alpha\rangle$ and $|v_\alpha\rangle$, or how their degrees of freedom occupy the sites within each half. A gate acting on just the two boundary sites is sensitive to that spatial arrangement. The question is therefore about the **response to a specified local operation**, not a competing definition of the entanglement already present. [S2]
 
@@ -59,19 +59,19 @@ The list $\{\lambda_\alpha\}$ fixes the central purity, Schmidt rank, and entrop
 
 **Answer.** Consider a pure state of an even open chain of $n$ qubits. Sites are numbered $1,\ldots,n$; the central cut is after site $m=n/2$, between the two qubits receiving the probe. The reduced state $\rho_{[1:j]}$ describes sites $1,\ldots,j$. With half-chain dimension $D=2^m$, define its purity $P_j$ and the central normalized linear entropy $L_m$ by
 
-$$
+```math
 P_j=\mathrm{Tr}\,\rho_{[1:j]}^2,
 \qquad L_m=\frac{D}{D-1}(1-P_m).
-$$
+```
 
 A fresh two-qubit unitary $U$ acts on the central bond, independently of the gates that generated the state. The response and its purity-normalized version are
 
-$$
+```math
 \chi_2=\mathbb E_U[L'_m-L_m]
 =\frac{D}{D-1}(P_m-\mathbb E_U P'_m),
 \qquad
 \chi_{\mathrm{rel}}=\frac{\chi_2}{P_m}.
-$$
+```
 
 The main probe ensemble is Haar $U(4)$, or the uniform two-qubit Clifford ensemble, which gives the same two-copy average. This equality concerns the fresh probe, not equality of the monitored states prepared by Haar and Clifford circuits. The expectation is evaluated using an exact identity rather than estimating it from a finite sample of fresh gates. Positive response means an average increase in normalized linear entropy; negative response means an average decrease. A negative **contrast or monitoring coefficient** means a lower response in one ensemble, not necessarily a negative response for every state. [S2, S3]
 
@@ -83,9 +83,9 @@ The family labels in Figure 1 describe the state-generation dynamics and monitor
 
 **Answer.** Division by $P_m$ separates the relative response from the input purity scale. It is useful when ranks vary with size, because purity can become small. The unnormalized $\chi_2$ remains a secondary outcome. This quantity is not generally
 
-$$
+```math
 \mathbb E_U[-\log_2 P'_m]+\log_2 P_m.
-$$
+```
 
 The average of a logarithm is not the logarithm of an average, and the response here is linear in purity. We retain the established symbol, but use **purity-normalized linear-entropy response** as the precise description. It is a finite-gate response, not an infinitesimal derivative with respect to gate strength or monitoring probability. [A2](#a2) defines the complete-cycle time and monitoring conventions before any rates are compared. [S3, S4]
 
@@ -101,10 +101,10 @@ The average of a logarithm is not the logarithm of an average, and the response 
 
 The displayed endpoint is
 
-$$
+```math
 \Delta\chi_{\mathrm{rel}}
 =\chi_{\mathrm{rel}}(p=0.24)-\chi_{\mathrm{rel}}(p=0.08).
-$$
+```
 
 The comparison averages the supported size/time cell contrasts, using $n=10,12,14$ and $\tau=6,8$. Five circuit/measurement families are tested: Haar/projective Z, Clifford/projective Z, Floquet-Cartan/projective Z, Haar/random Pauli, and Haar/weak Z. The primary and independent-seed estimates are all negative, with all ten plotted 95% intervals below zero. The Clifford row uses four supported cells rather than the six available for the other families. [S1, S6, S8]
 
@@ -130,17 +130,17 @@ The comparison averages the supported size/time cell contrasts, using $n=10,12,1
 
 **Answer.** Write the local partition as $La|bR$, with $a,b$ the two qubits on which the probe acts. The two-copy Haar average, an established purity-transfer rule specialized locally in [the theory](THEORY.md#5-cartan-specialization), gives
 
-$$
+```math
 \mathbb E_U P'_m=\frac25(P_{m-1}+P_{m+1}).
-$$
+```
 
 Consequently,
 
-$$
+```math
 \boxed{\chi_{\mathrm{rel}}=
 \frac{D}{D-1}\left[1-\frac25
 \frac{P_{m-1}+P_{m+1}}{P_m}\right].}
-$$
+```
 
 This identity holds for every pure input state under the stated probe ensemble. No stabilizer assumption enters it. The complete central spectrum fixes $P_m$, but it does not fix the two neighboring-cut purities. At fixed $P_m$, a larger neighboring-purity sum gives a lower response. That is the exact state information through which the measured effect operates. The identity does not, by itself, predict the direction in which monitoring changes those purities. [S2]
 
@@ -162,18 +162,18 @@ This identity holds for every pure input state under the stated probe ensemble. 
 
 **Answer.** Stabilizer states make the exact response a finite alphabet. Their flat spectra will also permit complete-spectrum matching without state modification in M6. For a pure stabilizer state, $P_j=2^{-S_j}$, where $S_j$ is the integer entropy in bits. Define
 
-$$
+```math
 \delta_L=S_m-S_{m-1},\qquad
 \delta_R=S_m-S_{m+1}.
-$$
+```
 
 Moving a cut by one qubit changes its entropy by at most one bit, so each increment lies in $\{-1,0,+1\}$. The ordered pair is the boundary code: a label for two entropy increments, not itself a quantum error-correcting code. There are nine codes, but only six distinct response values:
 
-$$
+```math
 r(\delta_L,\delta_R)
 =\frac{\chi_{\mathrm{rel}}}{D/(D-1)}
 =1-\frac25(2^{\delta_L}+2^{\delta_R}).
-$$
+```
 
 A central local entropy minimum, code $(-1,-1)$, has $r=+0.6$; a central local maximum, code $(+1,+1)$, has $r=-0.6$. The two matrices compare this exact response alphabet with an observed redistribution of code probabilities. [S2, S1]
 
@@ -245,11 +245,11 @@ The primary simulation contains 57,600 trajectories; the disjoint-seed run conta
 
 **Answer.** No. For a single-site projective Pauli measurement on a pure stabilizer state, each cut entropy stays unchanged or decreases. On the branch preserving the central spectrum, $\Delta_M P_m=0$, while $\Delta_M P_{m-1}$ and $\Delta_M P_{m+1}$ are nonnegative. Subtraction of the same exact response formula gives
 
-$$
+```math
 \Delta_M\chi_{\rm rel}
 =-\frac{2D}{5(D-1)P_m}
 \left(\Delta_M P_{m-1}+\Delta_M P_{m+1}\right)\leq0.
-$$
+```
 
 Here $\Delta_M$ compares the states before and after measurement; $\chi_{\rm rel}$ still averages over the fresh probe ensemble. This corollary does not assert a sign for every individual gate or generic non-stabilizer measurement. Appendix F3 states the assumptions and deduction. The empirical questions are the frequency, magnitude, and spatial dependence of the change. In particular, two nonpositive changes need not have a negative near-minus-far difference. [S2, S3]
 
@@ -257,11 +257,11 @@ Here $\Delta_M$ compares the states before and after measurement; $\chi_{\rm rel
 
 **Answer.** Each premeasurement stabilizer state is copied in simulation. One projective-Z measurement is applied at a chosen distance from the central cut on each copy. The averaged fresh-probe response is computed before and after that measurement. The distance profile plots the measurement-induced change
 
-$$
+```math
 \Delta\chi_{\mathrm{rel}}(d)
 =\chi_{\mathrm{rel}}(\text{postmeasurement at }d)
 -\chi_{\mathrm{rel}}(\text{premeasurement}).
-$$
+```
 
 It is not itself the difference from a far measurement. The right panel instead forms the paired difference $D_{\mathrm{rel}}=\Delta\chi_{\mathrm{rel}}^{\mathrm{near}}-\Delta\chi_{\mathrm{rel}}^{\mathrm{far}}$, with near distance zero and eligible far distances at least $n/4$. The nine $(n,p)$ cells are weighted equally. [S3, S4]
 
@@ -357,10 +357,10 @@ The results do not establish a new monitored-transition order parameter, a criti
 
 **Answer.** In two copies, let $F_X$ swap region $X$. Purity is $P_X=\mathrm{Tr}(\rho^{\otimes2}F_X)$. A probe on $ab$ changes the central swap $F_LF_a$ only through $F_a$. Haar averaging on the four-dimensional space $ab$ projects the response operator onto $I$ and the full swap $F_{ab}$:
 
-$$
+```math
 \Omega=\mathbb E_U U^{\dagger\otimes2}F_aU^{\otimes2}
 =\alpha I+\beta F_{ab}.
-$$
+```
 
 Both $\mathrm{Tr}(F_a)$ and $\mathrm{Tr}(F_aF_{ab})$ are eight. Since $\mathrm{Tr}I=16$ and $\mathrm{Tr}F_{ab}=4$, trace preservation gives $16\alpha+4\beta=8$ and $4\alpha+16\beta=8$. Thus $\alpha=\beta=2/5$. Multiplying by $F_L$ yields the purities of $L$ and $Lab$, which are the cuts $m-1$ and $m+1$. A two-design gives the same two-copy average. This is the explicit Haar specialization of the response-operator derivation in the source. [S2]
 
@@ -370,10 +370,10 @@ Both $\mathrm{Tr}(F_a)$ and $\mathrm{Tr}(F_aF_{ab})$ are eight. Since $\mathrm{T
 
 **Answer.** For any probability ensemble $\mathcal E$, define $\Omega_{\mathcal E}=\mathbb E_U U^{\dagger\otimes2}F_aU^{\otimes2}$. Then
 
-$$
+```math
 \mathbb E_U P'_{La}=\mathrm{Tr}\!\left[\rho^{\otimes2}
 (F_L\otimes\Omega_{\mathcal E}\otimes I_R)\right].
-$$
+```
 
 This follows from the purity swap identity and cyclicity of the trace. It is not a claim that every ensemble reduces to three cut purities. Without the corresponding symmetry, the operator can retain more information. The simple neighboring-cut form belongs to the Haar/two-design specialization. [S2]
 
@@ -383,16 +383,16 @@ This follows from the purity swap identity and cyclicity of the trace. It is not
 
 **Answer.** For $U=(u_a\otimes u_b)V(v_a\otimes v_b)$ with independent local Haar dressing, the output rotations cancel from the swap response and the input twirl projects onto $I,F_a,F_b,F_aF_b$. Therefore
 
-$$
+```math
 \mathbb E P'_{La}=c_IP_L+c_aP_{La}+c_bP_{L\cup b}+c_{ab}P_R.
-$$
+```
 
 The last term uses global purity. The additional $P_{L\cup b}$ is noncontiguous. In the normalization used by the source,
 
-$$
+```math
 (c_I,c_a,c_b,c_{ab})=
 \left(\frac23e_p,\ 1-g_t-\frac56e_p,\ g_t-\frac56e_p,\ \frac23e_p\right).
-$$
+```
 
 Here $e_p$ and $g_t$ are the source's normalized entangling power and gate typicality. Their conventions are given in the theory document; inserting definitions from another normalization can change these coefficients. The source lists $(2/5,0,0,2/5)$ for the Haar/two-design case, $(1/3,1/4,-1/12,1/3)$ for the dressed XY probe, and $(4/9,1/9,-2/9,4/9)$ for the dressed XX probe. Negative coefficients are allowed: this is an operator decomposition, not a convex mixture of subsystem purities. [S2]
 
@@ -422,11 +422,11 @@ Here $e_p$ and $g_t$ are the source's normalized entangling power and gate typic
 
 **Answer.** For the stated probe and stabilizer inputs, yes. With $q_p(b\mid n,\tau,S_m)$ the conditional code distribution,
 
-$$
+```math
 \mathbb E[\chi_{\mathrm{rel}}\mid n,\tau,S_m,p]
 =\sum_b q_p(b\mid n,\tau,S_m)\,r_n(b),
 \quad r_n(b)=\frac{D}{D-1}r(b).
-$$
+```
 
 A linear fixed-effect coefficient has the same weighted decomposition when it is applied to the response and all code indicators using identical observations and weights. Probability-slope conservation is an additional consistency requirement. Machine-precision agreement belongs to full-precision calculations; sums formed from the rounded matrix labels will not reproduce that precision. [S2, S5]
 
@@ -456,18 +456,18 @@ A linear fixed-effect coefficient has the same weighted decomposition when it is
 
 **Answer.** The fitted model is
 
-$$
+```math
 y_i=\alpha_{\tau_i,S_{m,i}}+\beta_n x_i+\varepsilon_i,
 \qquad x_i=(p_i-0.26)/0.02.
-$$
+```
 
 Within-stratum demeaning gives
 
-$$
+```math
 \widehat\beta_n=
 \frac{\sum_i(x_i-\bar x_{s(i)})(y_i-\bar y_{s(i)})}
 {\sum_i(x_i-\bar x_{s(i)})^2}.
-$$
+```
 
 The original uncertainty calculation clusters by trajectory and bootstraps trajectories within monitoring-rate cells, preserving their time records together. Eligibility is frozen from the observed support for that analysis. These intervals describe sampling uncertainty conditional on that rule. The evidence reassessment implements the coefficient independently and reproduces all 16 relative-response estimates; it does not independently regenerate the entire finite-size bootstrap campaign. [S3, S4]
 
@@ -513,11 +513,11 @@ The original uncertainty calculation clusters by trajectory and bootstraps traje
 
 **Answer.** The single-site projective Pauli measurement is local with respect to each of the three cuts. Its nonzero-probability stabilizer outcomes have identical cut entropies because their phase-free support is the same. Average entanglement monotonicity therefore applies to each such entropy value, and the one-generator rank update bounds the decrease by one bit. Hence $\Delta_M S_j\in\{0,-1\}$ for $j=m-1,m,m+1$. The flat-spectrum identity gives $\Delta_M P_{m\pm1}\geq0$. With $\Delta_M P_m=0$, subtraction of the Haar/uniform-Clifford identity gives
 
-$$
+```math
 \Delta_M\chi_{\rm rel}
 =-\frac{2D}{5(D-1)P_m}
 \bigl(\Delta_M P_{m-1}+\Delta_M P_{m+1}\bigr)\leq0.
-$$
+```
 
 Equality holds exactly when both neighboring purities are unchanged. This is an explicit deduction from the existing response identity and stabilizer measurement rule, not independent numerical evidence. It constrains the ensemble-averaged probe response, not every gate realization. It neither orders two allowed measurement locations nor predicts the long-run monitoring coefficient. [S2, S3]
 

@@ -14,9 +14,9 @@ Figure 1 tests the monitored-state question by replacing eigenvalues with discov
 
 For a Haar or uniform two-qubit Clifford probe,
 
-$$
+```math
 \chi_{\mathrm{rel}}=\frac{D}{D-1}\left[1-\frac25\frac{P_{m-1}+P_{m+1}}{P_m}\right],\qquad D=2^{n/2}.
-$$
+```
 
 The central spectrum fixes only one of the three required purities. For stabilizer states this becomes a nine-code function of the two adjacent entropy increments. Figure 2 compares the exact response alphabet with the observed redistribution of code probabilities. The [theory](THEORY.md) distinguishes the exact response functional from the empirical direction of that redistribution.
 

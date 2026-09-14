@@ -11,7 +11,7 @@ $B=bR=\{m,\ldots,n-1\}$.
 
 The central Schmidt decomposition is
 
-$$
+```math
 |\psi\rangle
 =
 \sum_j\sqrt{\lambda_j}
@@ -20,7 +20,7 @@ $$
 \lambda_1\ge\lambda_2\ge\cdots\ge0,
 \qquad
 \sum_j\lambda_j=1.
-$$
+```
 
 For any subsystem $X$,
 
@@ -30,12 +30,12 @@ $$
 
 The normalized linear entropy of the half chain is
 
-$$
+```math
 S_{2,\mathrm{lin}}
 =
 \frac{d}{d-1}(1-P_A),
 \qquad d=2^{n/2}.
-$$
+```
 
 The entangling susceptibility $\chi$ is the expected change in this quantity
 after a fresh two-qubit probe gate crossing the central cut.
@@ -53,12 +53,12 @@ Write
 
 For a Haar or uniformly random two-qubit Clifford probe,
 
-$$
+```math
 \chi_{\mathrm{Haar}}
 =
 \frac{d}{d-1}
 \left[P_A-\frac25(P_L+P_R)\right].
-$$
+```
 
 For the two locally dressed Cartan probes, the exact coefficients are stored in
 `probe_response_coefficients.csv` and derived in
@@ -140,23 +140,23 @@ $$
 For every $(\mathrm{family},n,\tau)$ cell, the discovery trajectories define a
 rank-4 target spectrum
 
-$$
+```math
 \mu^{(4)}
 =
 \mathop{\mathrm{mean}}\nolimits_{\mathrm{discovery}}
 \frac{(\lambda_1,\ldots,\lambda_4)}{\sum_{j=1}^4\lambda_j},
-$$
+```
 
 renormalized to unit sum. A confirmatory state with rank at least four is
 reconstructed as
 
-$$
+```math
 M_{\mathrm{eq}}
 =
 U_{[:,1:4]}
 \mathop{\mathrm{diag}}\nolimits(\sqrt{\mu^{(4)}})
 V^\dagger_{[1:4,:]}.
-$$
+```
 
 This makes the complete nonzero central spectrum identical within the cell
 while retaining the original leading Schmidt vectors. Confirmatory states are
@@ -175,11 +175,11 @@ was added after inspecting rank support and is explicitly post hoc.
 
 For every family and probe, the primary contrast is
 
-$$
+```math
 \Delta\chi
 =
 \chi(p=0.24)-\chi(p=0.08)
-$$
+```
 
 on confirmatory equalized states.
 

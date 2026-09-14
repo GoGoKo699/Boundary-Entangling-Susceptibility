@@ -20,9 +20,9 @@ All ten current nominal pointwise 95% support-conditioned intervals lie below ze
 
 ## Exact mechanism
 
-$$
+```math
 \chi_{\mathrm{rel}}=\frac{D}{D-1}\left[1-\frac25\frac{P_{m-1}+P_{m+1}}{P_m}\right],\qquad D=2^{n/2}.
-$$
+```
 
 The stabilizer boundary alphabet makes its ensemble mean a response-weighted boundary-code distribution. The representative n=256 reconstruction yields -0.0521300364. See [theory](THEORY.md).
 

@@ -71,14 +71,14 @@ across the three adjacent cuts. The exact average normalized linear-entropy
 response to a fresh Haar-random or uniformly random two-qubit Clifford gate on
 the central bond is
 
-$$
+```math
 \chi_2
 =
 \frac{d}{d-1}
 \left[
 P_m-\frac25(P_{m-1}+P_{m+1})
 \right].
-$$
+```
 
 The primary large-size outcome is
 
@@ -92,14 +92,14 @@ unnormalized `chi_2` remains a prespecified secondary outcome.
 
 For stabilizer states,
 
-$$
+```math
 \chi_{\rm rel}
 =
 \frac{d}{d-1}
 \left[
 1-\frac25(2^{\delta_L}+2^{\delta_R})
 \right],
-$$
+```
 
 where `delta_L=S_m-S_{m-1}` and `delta_R=S_m-S_{m+1}`.
 
@@ -131,7 +131,7 @@ stratified by `(tau,S_m)`. A stratum is eligible when at least three probability
 levels have at least ten trajectory records each. Within the eligible support,
 fit
 
-$$
+```math
 y_i
 =
 \alpha_{\tau,S_m}
@@ -139,7 +139,7 @@ y_i
 \beta_n\frac{p_i-0.26}{0.02}
 +
 \varepsilon_i.
-$$
+```
 
 The primary outcome is `chi_rel`; the secondary outcome is `chi_2`. Hence
 `beta_n` is the fixed-complete-spectrum change per `Delta p=0.02`.
