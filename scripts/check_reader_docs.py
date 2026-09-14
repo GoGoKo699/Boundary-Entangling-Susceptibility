@@ -3,7 +3,8 @@
 
 Run ``python scripts/check_reader_docs.py`` from any directory. ``--self-test``
 also exercises deliberately broken targets/anchors in a temporary directory.
-This is not a Markdown renderer, TeX validator, browser/accessibility test, or
+Includes a regression check for GitHub's rejected operator-name macro. This is
+not a Markdown renderer, full TeX validator, browser/accessibility test, or
 external-URL checker. Historical pages are checked as link destinations only;
 their own outgoing links are outside the active route checked here.
 """
@@ -81,6 +82,68 @@ def prose_lines(text: str) -> tuple[list[str], list[str]]:
     if display:
         errors.append(f"line {display}: unclosed display math delimiter")
     return lines, errors
+
+
+def math_macro_errors(text: str) -> list[str]:
+    """Check rendered math, including GitHub's backtick and math-fence forms.
+
+    GitHub rejects ``\\operatorname`` even though ordinary TeX/MathJax accepts
+    it (github/markup#1688). Check the command token, including its starred
+    form, rather than matching arbitrary prose or literal code examples.
+    This is a known-failure check, not a complete GitHub macro allowlist.
+    """
+    errors = []
+    fence = None
+    delimiter = None
+
+    def command_at(line: str, position: int, number: int) -> int:
+        token = re.match(r"\\(?:[A-Za-z]+|.)", line[position:])
+        if not token:
+            return position + 1
+        if token[0] == r"\operatorname":
+            errors.append(
+                f"line {number}: \\operatorname is rejected by GitHub math; "
+                r"use \mathop{\mathrm{...}}\nolimits for an upright operator")
+        return position + len(token[0])
+
+    for number, line in enumerate(text.splitlines(), 1):
+        marker = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", line)
+        if fence:
+            if marker and marker[1][0] == fence[0] and len(marker[1]) >= fence[1] and not marker[2].strip():
+                fence = None
+                continue
+            if not fence[2]:
+                continue
+            position = 0
+            while position < len(line):
+                position = (command_at(line, position, number) if line[position] == "\\"
+                            else position + 1)
+            continue
+        if marker and delimiter is None:
+            fence = (marker[1][0], len(marker[1]), marker[2].strip() == "math")
+            continue
+        position = 0
+        while position < len(line):
+            if line[position] == "\\":
+                position = (command_at(line, position, number) if delimiter
+                            else min(position + 2, len(line)))
+            elif delimiter:
+                if line.startswith(delimiter, position):
+                    position += len(delimiter)
+                    delimiter = None
+                else:
+                    position += 1
+            elif line[position] == "`":
+                ticks = re.match(r"`+", line[position:])[0]
+                end = line.find(ticks, position + len(ticks))
+                position = end + len(ticks) if end >= 0 else position + len(ticks)
+            elif line[position] == "$":
+                opener = "$$" if line.startswith("$$", position) else "$`" if line.startswith("$`", position) else "$"
+                delimiter = "`$" if opener == "$`" else opener
+                position += len(opener)
+            else:
+                position += 1
+    return errors
 
 
 def slug(heading: str) -> str:
@@ -179,7 +242,7 @@ def document(text: str) -> tuple[set[str], list[tuple[int, str]], list[str]]:
     markup.feed("\n".join(lines))
     links, link_errors = markdown_links(lines)
     return ({anchor for _, anchor in headings(lines)} | markup.anchors,
-            links + markup.links, errors + link_errors)
+            links + markup.links, errors + link_errors + math_macro_errors(text))
 
 
 def check_files(root: Path, paths: tuple[str, ...]) -> tuple[list[str], int]:
@@ -266,7 +329,18 @@ def self_test() -> None:
         assert any("unclosed display" in item for item in failures)
     assert prose_lines("```python\nx=1\n")[1] == ["line 1: unclosed code fence"]
     assert prose_lines("$x\n")[1]
-    print("self-test passed: valid links and deliberate target/anchor/fence/math failures")
+    for expression in (r"\operatorname{Tr}A", r"\operatorname*{mean}_{i}x_i"):
+        for opening, closing in (("$", "$"), ("$`", "`$"), ("$$\n", "\n$$"),
+                                 ("```math\n", "\n```"), ("~~~~math\n", "\n~~~~")):
+            bad_math = opening + expression + closing
+            assert len(math_macro_errors(bad_math)) == 1, bad_math
+            assert any("rejected by GitHub" in error for error in document(bad_math)[2])
+    assert not math_macro_errors(
+        r"Literal `\operatorname{Tr}` and \$5; $\mathop{\mathrm{Tr}}\nolimits_{B}\rho$." + "\n"
+        + "```tex\n" + r"\operatorname{Tr}A" + "\n```\n"
+        + r"$\operatornameSuffix + \\operatorname$")
+    assert "line 3:" in math_macro_errors("$$\nx=1\n" + r"\operatorname{Tr}A" + "\n$$")[0]
+    print("self-test passed: links, anchors, delimiters and rejected GitHub math macros")
 
 
 def main() -> int:
