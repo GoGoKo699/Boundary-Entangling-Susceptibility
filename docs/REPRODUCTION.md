@@ -25,6 +25,7 @@ pip install -e .
 python verify.py
 pytest -q
 python scripts/check_reader_docs.py --self-test
+python scripts/check_markdown_math.py --self-test
 ```
 
 The root data bundle is required and hash-checked. An incomplete clone must not be described as self-contained.
