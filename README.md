@@ -10,6 +10,10 @@ The measured response is the expected change in normalized linear entropy from o
 
 In the tested monitored ensembles, stronger monitoring is associated with a lower response at fixed central spectrum. The physical stabilizer comparison remains negative through 256 qubits and repeats with disjoint seeds. A separate experiment applies alternative single measurements to copies of the same pre-state: its spectrum-preserving comparisons show a response change concentrated near the cut. These results have distinct comparison populations. They do not establish an unconditional causal effect of assigning a long-run monitoring rate, a thermodynamic theorem, a universal localization length, or a new transition order parameter.
 
+## Manuscript status and collaboration
+
+Manuscript writing is currently on hold. Researchers interested in collaborating on this project or preparing the manuscript are welcome to contact **Ruge Lin** at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
 <a id="reader-routes-and-scope"></a>
 
 ## Choose a route
