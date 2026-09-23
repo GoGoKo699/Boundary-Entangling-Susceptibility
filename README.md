@@ -18,6 +18,8 @@ Manuscript writing is currently on hold. Researchers interested in collaborating
 
 ## Choose a route
 
+For topic searches and automated reading, the [repository discovery guide](llms.txt) maps relevant questions to current sources, evidence and claim boundaries.
+
 | Route | Start and destination |
 |---|---|
 | **LEARN** | [Selected review passages and their project uses](docs/PROJECT_GUIDE.md#learn) → [local tutorial bridge](docs/TUTORIAL_BRIDGE.md) → [complete four-figure account](docs/DIALOGUE_REPORT.md) |
