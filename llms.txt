@@ -1,0 +1,43 @@
+# Beyond the Schmidt Spectrum: Boundary Entangling Susceptibility in Monitored Quantum Circuits
+
+> Research code, data, exact response identities and a four-figure study of how monitored quantum states respond to a fresh two-qubit gate crossing an entanglement cut, after controlling the complete central Schmidt spectrum.
+
+Canonical repository: https://github.com/GoGoKo699/Boundary-Entangling-Susceptibility
+
+Relevant questions for finding this study:
+- Does the complete Schmidt spectrum determine a state's average entangling response to a new gate across the cut?
+- How do neighboring-cut purities and stabilizer boundary entropy increments determine the Haar/uniform-Clifford averaged response?
+- Does a monitoring-associated response difference remain after spectrum equalization or physical spectrum matching?
+- How does the location of a single measurement affect the subsequent fresh-gate response on copies of the same pre-state?
+
+Search terms: boundary entangling susceptibility; monitored quantum circuits; hybrid unitary-measurement circuits; fixed Schmidt spectrum; neighboring-cut purity; stabilizer boundary codes; measurement-location interventions.
+
+The observable is the expected change in normalized linear entropy from an independent probe, divided by the INPUT central purity. For the stated pure inputs, Haar-random and uniformly random two-qubit Clifford probes have the same average. This quantity is neither an average finite logarithmic Renyi-2 entropy change nor a derivative with respect to monitoring rate.
+
+Spectrum replacement, physical matching of stabilizer states, and paired measurement interventions are distinct comparisons. The within-spectrum monitoring coefficients in physical stabilizer ensembles remain negative through the tested sizes up to 256 qubits; they do not establish unconditional monitoring-rate causality or a thermodynamic theorem. The spatial evidence supports near-cut concentration, without an established localization length. Exact identities and corollaries must be distinguished from empirical evidence and credited to their antecedents. This is a state-response study, separate from noisy-measurement-record channel-capacity research.
+
+This file is a relevance and source index. Read the linked evidence before citing a claim. The links track main; identify the commit or release actually consulted. Current claim, figure and uncertainty pages take precedence over superseded historical exports. Citation metadata and licensing are maintained in their dedicated files below.
+
+## Start and learn
+
+- [README](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/README.md): Main question, findings and reader routes.
+- [Project guide](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/PROJECT_GUIDE.md): Selected passages from Fisher, Khemani, Nahum and Vijay's Random Quantum Circuits review, the single background tutorial.
+- [Tutorial bridge](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/TUTORIAL_BRIDGE.md): Definitions, worked example and connection to this study.
+- [Four-figure account](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/DIALOGUE_REPORT.md): Complete scientific explanation and questions.
+
+## Check a claim
+
+- [Claim and evidence map](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/CLAIM_EVIDENCE_MAP.md): Exact statements, conditional observations and model-dependent interpretations; links to the machine-readable claim ledger.
+- [Theory](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/THEORY.md): Response definitions, purity identities, stabilizer scope and measurement corollary.
+- [Related work](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/RELATED_WORK.md): Primary attribution and equation-level entanglement-feature correspondence.
+- [Numerical methods](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/NUMERICAL_METHODS.md): Sampling, estimands, support, weighting and comparison populations.
+- [Figure gallery](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/figures/README.md): Current captions, canonical data and plotting scripts.
+- [Reproducibility limits](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/REPRODUCIBILITY_LIMITS.md): Fixed-reference/support uncertainty, missing historical records and unavailable editable external schematics.
+
+## Reproduce and cite
+
+- [Reproduction guide](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/REPRODUCTION.md): Dependencies and commands, separating redraw, record replay, bootstrap regeneration and new simulation.
+- [Code map](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/CODE_MAP.md): Locate response formulas, simulators, estimators and verification scripts.
+- [Current Figure 1 uncertainty](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/FIGURE1_UNCERTAINTY.md): Adopted 50,000-valid-draw procedure and independent replay; historical resamples were not recovered.
+- [Citation record](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/CITATION.cff): Author, title and release metadata; cite the repository and actual commit or release used.
+- [License scope](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/LICENSE_STATUS.md): Terms and exceptions for code, documentation, data and figures.
