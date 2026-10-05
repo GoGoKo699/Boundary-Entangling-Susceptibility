@@ -55,12 +55,16 @@ The theory is the home for complete derivations, including the general and local
 
 [REPRODUCTION](REPRODUCTION.md) owns the executable route and explains each operation's meaning. The [figure gallery](../figures/README.md) maps questions to canonical data, caption and plotting script; [CODE_MAP](CODE_MAP.md) maps the underlying implementations. The [record manifest](../data/record_bundle_manifest.json) identifies the included raw members. A reader can reproduce the current numerical workflows without another tutorial, old chats, a missing checkpoint archive or My-tone.
 
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
 <a id="before-writing-the-manuscript"></a>
 <a id="research-history"></a>
 
 ## History and readiness
 
-The manuscript remains the final step. Current proofs, estimators, evidence, attribution and numerical panels are traceable here. The actual editable external composite schematics remain unavailable; the accepted six numerical panels do not recover those assets or verify an unseen Overleaf layout. This is an asset-completion gap, separate from understanding and reproducing the current study.
+Current proofs, estimators, evidence, attribution and numerical panels are traceable here. The actual editable external composite schematics remain unavailable; the accepted six numerical panels do not recover those assets or verify an unseen Overleaf layout. This is an asset-completion gap, separate from understanding and reproducing the current study.
 
 The [full audit](../audits/full-sanity-01/REVIEW.md) assesses its older frozen baseline. The [repair summary](../repairs/full-sanity-01/SUMMARY.md) records the integrated equation-level attribution, corrected supporting exports, figure label and validation changes. Those completed repairs are not pending work. [Reproducibility limits](REPRODUCIBILITY_LIMITS.md) distinguishes current calculations from unrecovered historical invocations and resamples.
 

@@ -18,6 +18,10 @@ Spectrum replacement, physical matching of stabilizer states, and paired measure
 
 This file is a relevance and source index. Read the linked evidence before citing a claim. The links track main; identify the commit or release actually consulted. Current claim, figure and uncertainty pages take precedence over superseded historical exports. Citation metadata and licensing are maintained in their dedicated files below.
 
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
 ## Start and learn
 
 - [README](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/README.md): Main question, findings and reader routes.

@@ -10,4 +10,8 @@ Use [GitHub's supported math delimiters](https://docs.github.com/en/get-started/
 
 Use fenced `math` blocks for display equations in current reader pages. An equals sign on its own line inside a `$$` block can be interpreted as a [Markdown heading underline](https://github.github.com/gfm/#setext-headings), so a valid equation can appear as a broken title. A `math` fence protects the equation from Markdown parsing and needs no `$$` inside it. Keep intentional section headings and their stable anchors separate from display equations. The documentation check includes a regression for this collision.
 
-The approved [Irises palette](../figures/PALETTE.md) is for figures only. All scientific source pages remain ordinary Markdown. The manuscript is the final step, after the repository's source and attribution obligations are complete.
+The approved [Irises palette](../figures/PALETTE.md) is for figures only. All scientific source pages remain ordinary Markdown.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
