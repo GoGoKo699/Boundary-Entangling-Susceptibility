@@ -1,6 +1,6 @@
 # Frequently asked questions
 
-**Role: brief answers to recurring interpretation questions.** The [stable question index](DIALOGUE_QUESTION_MAP.md) leads to the full answers; the [bridge](TUTORIAL_BRIDGE.md) introduces the concepts in order. [Return to README](../README.md).
+The [question index](DIALOGUE_QUESTION_MAP.md) leads to the full answers; the [bridge](TUTORIAL_BRIDGE.md) introduces the concepts in order. [Return to README](../README.md).
 
 ## What is fixed by same-spectrum matching?
 
@@ -12,19 +12,23 @@ It is the expected normalized linear-entropy change divided by the input central
 
 ## Why does the central spectrum not suffice?
 
-It does not fix the neighboring-cut purities that enter the exact fresh-gate formula. A small exact example is with complete arithmetic in the [bridge](TUTORIAL_BRIDGE.md#same-central-spectrum-different-response). The empirical contribution concerns the monitored distribution of this missing spatial information.
+It does not fix the neighboring-cut purities that enter the exact fresh-gate formula. A small exact example is worked out in the [bridge](TUTORIAL_BRIDGE.md#same-central-spectrum-different-response). The empirical contribution concerns the monitored distribution of this missing spatial information.
 
 ## Does the exact formula imply a local reduced state is sufficient?
 
 No. The probe acts on the boundary qubits, but the purity features concern extended bipartitions. The nine-code stabilizer description is not a theorem of reconstruction from a small physical window.
 
-## Does the project prove a nonzero thermodynamic limit?
+<a id="does-the-project-prove-a-nonzero-thermodynamic-limit"></a>
 
-No. The within-spectrum coefficients are directly observed to be negative through 256 qubits. The original inverse-size extrapolations and a finite menu of post-hoc alternatives have negative intercepts, but model residuals and changing support limit the precision of a thermodynamic interpretation. See [evidence reassessment](EVIDENCE_REASSESSMENT.md).
+## How should the finite-size extrapolation be interpreted?
 
-## Is the localization length exactly 2.37 sites?
+The within-spectrum coefficients are directly observed to be negative through 256 qubits. The locked inverse-size extrapolations and a finite menu of post-hoc alternatives have negative intercepts, but those limiting values remain model-dependent. Model residuals and changing support limit the precision of a thermodynamic interpretation. See [evidence reassessment](EVIDENCE_REASSESSMENT.md).
 
-No. That value is the historical unweighted exponential-fit parameter. A narrow bootstrap parameter interval did not establish the adequacy of the exponential. The revised interpretation is a response concentrated near the cut and rapidly decreasing at the sampled distances. The current accepted Figure 4 has already removed that curve and annotation.
+<a id="is-the-localization-length-exactly-237-sites"></a>
+
+## How is the distance profile summarized?
+
+The response change is concentrated near the cut and rapidly decreases at the sampled distances. Measured attenuation ratios summarize the profile. A single exponential inadequately describes the full profile; see the [fit diagnostics](EVIDENCE_REASSESSMENT.md).
 
 ## Could changing selected trajectories produce the distance profile?
 
@@ -44,11 +48,13 @@ The specified paired location interventions on copies of the same pre-state. A s
 
 ## What does independent replication mean here?
 
-The primary design was repeated with a disjoint base seed. This is independent-seed replication, not an independent implementation or external laboratory replication. Separate direct state-vector/tableau tests address some implementation risks.
+The primary design was repeated with a disjoint base seed using the same simulator. Separate direct state-vector/tableau tests check the tested entropy and response quantities across implementations.
 
-## Is this a new transition order parameter?
+<a id="is-this-a-new-transition-order-parameter"></a>
 
-No. Transition context is secondary. Neither an order parameter nor a critical exponent is claimed.
+## How does the response relate to the monitored transition?
+
+The conditional monitoring coefficients remain negative on both sides of the contextual transition estimate. The study compares response-relevant structure within central-spectrum strata. [Transition context](TRANSITION_CONTEXT.md) gives the supporting crossing and slope analysis.
 
 ## What non-Clifford evidence is included?
 
@@ -60,6 +66,6 @@ That the included software, frozen-result regression checks, structural checks, 
 
 ## Where are the raw data?
 
-The required root `entanglement-data.zip` contains the original records, spectra, resamples, and maps indexed by `data/record_bundle_manifest.json`. No old chat or separately obtained checkpoint ZIP is needed. The current Figure 1 intervals have a deterministic recipe and independent replay; only the superseded historical bootstrap remains unrecovered; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
+The required root `entanglement-data.zip` contains the records, spectra, resamples and maps indexed by `data/record_bundle_manifest.json`. Figure 1 intervals have a deterministic recipe and independent replay. The [reproducibility limits](REPRODUCIBILITY_LIMITS.md) distinguish the available records and workflows.
 
 [Next: full question-and-answer account](DIALOGUE_REPORT.md) · [Return to README](../README.md)

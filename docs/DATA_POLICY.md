@@ -1,16 +1,16 @@
 # Data and scope
 
-The required data file is **`entanglement-data.zip` in the repository root**. It is a deterministic, indexed collection of unchanged records from the original susceptibility study. [The manifest](../data/record_bundle_manifest.json) specifies every member, byte count, original source member, and SHA-256 hash. It contains no manuscript source, fonts, or later channel-theory results.
+The required data file is **`entanglement-data.zip` in the repository root**. It is a deterministic, indexed collection of unchanged records from the original susceptibility study. [The manifest](../data/record_bundle_manifest.json) specifies every member, byte count, original source member, and SHA-256 hash.
 
-The bundle contains original intervention rows and reference/physical spectra, both large-size state tables, paired measurement records, archived bootstrap arrays, measurement/gate maps, supporting derived tables, design records, and earlier figure-design resamples. The archived size/location bootstrap arrays are distinct from the unrecovered historical Figure 1 resamples. The separate original checkpoint ZIPs are not needed for the documented commands. They remain provenance sources, not hidden dependencies.
+The bundle contains original intervention rows and reference/physical spectra, both large-size state tables, paired measurement records, archived bootstrap arrays, measurement/gate maps, supporting derived tables, design records, and earlier figure-design resamples. The archived size/location bootstrap arrays are distinct from the unrecovered historical Figure 1 resamples.
 
-The source code is readable under [studies](../studies/), not hidden inside a nested checkpoint archive. `python materialize_studies.py` builds a workspace with the documented data layout for these scripts. It verifies inputs and refuses to overwrite different existing files.
+The source code is under [studies](../studies/). `python materialize_studies.py` builds a workspace with the documented data layout for these scripts. It verifies inputs and refuses to overwrite different existing files.
 
 ## What self-contained means
 
 After installing the declared Python dependencies, a complete checkout contains everything needed for canonical-figure redraws, stored-record reanalysis, and the supplied simulator/theorem validation commands. `python verify.py` fails when the bundle is absent, incomplete, or altered. A green source-only test is not accepted as proof of data completeness.
 
-No claim is made that every large simulation campaign was freshly rerun during cleanup. Stored-record reanalysis, small simulator cross-checks, and full simulation generation remain separate operations.
+The [reproduction guide](REPRODUCTION.md) distinguishes stored-record reanalysis, simulator cross-checks, and full simulation generation.
 
 ## Figures
 
@@ -20,7 +20,7 @@ The discarded fit parameters are retained only under [results/historical_fit](..
 
 ## Licensing
 
-Original research data and figure content are licensed under [CC BY 4.0](../LICENSES/CC-BY-4.0.txt). Original software, including the two Python members of the root data ZIP, is licensed under [MIT](../LICENSE). The archive bytes remain unchanged; [LICENSE_STATUS.md](../LICENSE_STATUS.md) defines the material scope and third-party exceptions. Licensing does not change repository visibility.
+Original research data and figure content are licensed under [CC BY 4.0](../LICENSES/CC-BY-4.0.txt). Original software, including the two Python members of the root data ZIP, is licensed under [MIT](../LICENSE). The archive bytes remain unchanged; [LICENSE_STATUS.md](../LICENSE_STATUS.md) defines the material scope and third-party exceptions.
 
 ## Current and historical Figure 1 records
 

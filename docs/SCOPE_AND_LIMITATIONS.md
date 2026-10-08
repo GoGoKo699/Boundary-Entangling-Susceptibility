@@ -10,15 +10,15 @@ The nonpositive single-measurement sign is an exact corollary for pure stabilize
 
 ## Distinctions that matter
 
-- A finite-size observation is not proof of a limiting coefficient. Extrapolation intervals condition on a model, and exact-spectrum support changes with size.
-- A narrow parameter interval is not model validation. The historical single-exponential distance fit is not an adequate description of the entire measured profile.
-- A rapidly attenuating profile is not a hard finite-range theorem; far-distance events are sparse and a simultaneous band includes zero at the farthest displayed point in the common-eligibility analysis.
-- Independent seeds are not an independent implementation or external replication.
-- The paired causal claim concerns selected potential measurement-location interventions on the same pre-state. It is not an unconditional population effect or a randomized causal effect of long-run monitoring probability.
-- The exact purity formula is not a claim that a small local reduced state contains all the required information.
+- Finite-size coefficients are directly measured through 256 qubits. Limiting coefficients depend on the extrapolation model, and exact-spectrum support changes with size.
+- The distance result is summarized by measured attenuation ratios. Residual checks show that a single exponential inadequately describes the full profile.
+- Far-distance events are sparse, and a simultaneous band includes zero at the farthest displayed point in the common-eligibility analysis.
+- The simulation replication uses disjoint seeds with the same implementation.
+- The paired causal claim concerns measurement-location interventions on copies of the same pre-state within the specified eligible population. The long-run monitoring-rate comparisons condition on a post-dynamics spectrum and remain associational.
+- The exact response formula uses purities of extended bipartitions, even though the probe acts on two boundary qubits.
 
-No new order parameter, critical exponent, universal non-Clifford thermodynamic law, or absolute novelty priority is asserted. The [evidence reassessment](EVIDENCE_REASSESSMENT.md) is the current interpretation of Figures 3 and 4; the original analysis definitions remain archived for provenance.
+The [evidence reassessment](EVIDENCE_REASSESSMENT.md) provides the supporting model, support and pairing diagnostics for Figures 3 and 4.
 
-The indexed record bundle must be present in the checkout for the recorded-data workflows. Explicit code/data/figure licensing remains undecided. The current Figure 1 intervals have a fully specified support-conditioned recipe. Its fixed references, selected support, and small Clifford samples limit inference. The superseded historical table is preserved without claiming recovery of its missing seed; see [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
+Figure 1 intervals use a fully specified, pointwise, support-conditioned bootstrap recipe. Fixed reference spectra, selected support and small Clifford samples limit inference; discovery-reference uncertainty is excluded. See [reproducibility limits](REPRODUCIBILITY_LIMITS.md) for record and replay coverage, and [license scope](../LICENSE_STATUS.md) for the terms applying to the included materials.
 
 [Next: reproducibility limits](REPRODUCIBILITY_LIMITS.md) · [Return to README](../README.md)

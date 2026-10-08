@@ -4,7 +4,7 @@
 
 ## Current Figure 1
 
-The approved 8 September 2026 intervals have a complete deterministic recipe, fixed seed, preserved source inputs, saved proposal multiplicities, expected output hashes, and a separate RNG-independent verifier. The active table contains this primary support-conditioned calculation. [Commands and statistical limitations](FIGURE1_UNCERTAINTY.md) are explicit. The full CI calculation verifies the newly generated arrays against the active intervals.
+The plotted intervals have a complete deterministic recipe, fixed seed, preserved source inputs, saved proposal multiplicities, expected output hashes, and a separate RNG-independent verifier. The active table contains this primary support-conditioned calculation. [Commands and statistical limitations](FIGURE1_UNCERTAINTY.md) are explicit. The full CI calculation verifies the newly generated arrays against the active intervals.
 
 Reproducible does not mean unconditional or exact finite-sample coverage. The reference spectra and observed support are held fixed, and empty-cell proposals are rejected as whole contrasts. In particular, small eligible Clifford samples remain a limitation. Discovery-reference uncertainty is not included.
 
@@ -20,8 +20,10 @@ Figures 3 and 4 reconstruct original intervals from preserved bootstrap arrays; 
 
 The [campaign recipes](CAMPAIGN_RECIPES.md) distinguish verified generator seeds from unrecovered historical bootstrap invocations. The original transition-crossing bootstrap arrays are not stored, so their interval tables have been source-inspected, not independently regenerated. The corrected supporting architecture/probe exports retain explicitly named archived interval columns; their older support procedure is not the current Figure 1 bootstrap.
 
-The required numerical workflows are self-contained. This does not mean all historical execution manifests/logs or all eventual figure assets are present. Actual editable external composite schematics remain outstanding as specified in the [project guide](PROJECT_GUIDE.md).
+## Figure sources
 
-After installation of the declared dependencies, the current calculations need no old chat, external research repository, or original checkpoint ZIP. CI artifacts have finite retention, but all inputs and scripts required to regenerate them are tracked.
+The six numerical panels include plotting code and PDF/PNG/SVG exports. Editable sources for external composite schematics are unavailable and are excluded from the repository assets; see [license and material scope](../LICENSE_STATUS.md).
+
+All inputs and scripts required for the documented numerical workflows are tracked. CI artifacts have finite retention and can be regenerated from the checkout.
 
 [Next: reproduction commands](REPRODUCTION.md) · [Return to README](../README.md)

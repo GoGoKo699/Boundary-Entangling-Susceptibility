@@ -28,7 +28,7 @@ python scripts/check_reader_docs.py --self-test
 python scripts/check_markdown_math.py --self-test
 ```
 
-The root data bundle is required and hash-checked. An incomplete clone must not be described as self-contained.
+The root data bundle is required and hash-checked.
 
 <a id="redraw"></a>
 
@@ -80,21 +80,25 @@ Figures 3 and 4 instead have archived bootstrap arrays that the record replayer 
 <a id="reassessment"></a>
 <a id="4-repeat-the-september-evidence-reassessment"></a>
 
-## Optional: repeat the September evidence reassessment
+<a id="optional-repeat-the-september-evidence-reassessment"></a>
+
+## Optional: reproduce sensitivity analyses
 
 ```bash
 python scripts/analysis/reassess_evidence.py \
   --output reproduced_evidence --bootstrap 5000 --seed 2026090501
 ```
 
-The default input is the in-repository bundle. The former `--archive original_checkpoint_05.zip` interface remains supported for provenance comparisons but is not required. This is the same estimator and selection logic as the audited September reassessment; only the source-container adapter changed.
+The default input is the in-repository bundle.
 
 It recalculates the stored-row point coefficients and paired endpoints, applies the explicitly post-hoc same-side and common-eligibility checks, and repeats the fit-residual and size-sensitivity calculations. New location intervals use whole-pre-state resampling. Size-model intervals reuse the archived size-level resamples. These sensitivity results do not replace the frozen primary data.
 
 <a id="new-campaign"></a>
 <a id="5-materialize-a-research-workspace-and-run-simulator-checks"></a>
 
-## Optional: materialize a workspace, check simulators, or plan a new campaign
+<a id="optional-materialize-a-workspace-check-simulators-or-plan-a-new-campaign"></a>
+
+## Optional: check simulators and reproduce state generation
 
 ```bash
 python materialize_studies.py --output reproduced_studies
@@ -106,7 +110,7 @@ python studies/checkpoint_04/scripts/validate_gate_invariant_formula.py \
   --out reproduced_records/gate_invariants.json --samples 100 --seed 123
 ```
 
-The workspace also contains the original intervention and full scaling input layouts. The [campaign recipes](CAMPAIGN_RECIPES.md) give explicit run labels, grids and base seeds and distinguish verified generation inputs from unavailable historical command/analysis-seed records. `--help` documents an interface, not proof of a historical invocation. Full generation is not run on every commit and was not repeated for the audit repairs.
+The workspace also contains the original intervention and full scaling input layouts. The [campaign recipes](CAMPAIGN_RECIPES.md) give explicit run labels, grids and base seeds and distinguish verified generation inputs from unavailable historical command/analysis-seed records. `--help` documents an interface, not proof of a historical invocation. Full state generation is a separate calculation from the CI replay checks.
 
 ## Meaning of verification
 

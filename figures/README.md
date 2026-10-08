@@ -15,7 +15,7 @@ This gallery connects the question to the canonical artwork, numerical table, pl
 
 Within each family, size, and time cell, eligible states receive shared rank-4 eigenvalues while retaining their own leading Schmidt vectors. Monitoring rate varies. The plotted quantity is the equal-cell mean response at $p=0.24$ minus that at $p=0.08$, separately for the primary and independent-seed runs. All ten plotted estimates and intervals lie below zero in the tested finite families.
 
-The operation modifies the states and is diagnostic. Its current nominal pointwise intervals are support-conditioned and hold archived run-specific references fixed. They are not simultaneous intervals and do not include reference-selection uncertainty. Historical resamples were not recovered.
+The operation modifies the states and is diagnostic. Its current nominal pointwise intervals are support-conditioned and hold archived run-specific references fixed. They are not simultaneous intervals and do not include reference-selection uncertainty.
 
 ![Figure 1. Fixed-spectrum response comparison.](core_svg/figure_01_panel_b.svg)
 
@@ -65,7 +65,7 @@ Read [M6–M7](../docs/DIALOGUE_REPORT.md#m6); check [claims M3–M4 and limitat
 
 Copies of the same premeasurement stabilizer state receive alternative single projective-Z measurements. The earlier circuit history is fixed; the measurement location varies. The first panel shows the measurement-induced change in the averaged fresh-probe response at each distance under the original spectrum-preserving eligibility. The second shows paired near-minus-far contrasts, both without and with that eligibility.
 
-The conditional near-minus-far contrast is negative, and stricter selected-population checks retain near-cut concentration. A single allowed measurement's nonpositive change is an exact corollary; it does not order two locations. The data supply that comparison within the stated populations. No exponential localization length, asymptotic distance law, or strict finite range is established.
+The conditional near-minus-far contrast is negative, and stricter selected-population checks retain near-cut concentration. A single allowed measurement's nonpositive change is an exact corollary; it does not order two locations. The data supply that comparison within the stated populations. The distance profile describes attenuation over the measured distances.
 
 ![Figure 4, first panel. Spectrum-preserving distance profile without a fitted decay law.](core_svg/figure_04_distance_decay.svg)
 
@@ -81,6 +81,6 @@ Read [M8](../docs/DIALOGUE_REPORT.md#m8) and [Appendix F](../docs/DIALOGUE_REPOR
 
 Follow the [reproduction guide](../docs/REPRODUCTION.md) for environment setup, checks, figure redraw, stored-record replay, and uncertainty regeneration. Redrawing canonical tables does not regenerate the underlying statistics or simulations. The [code map](../docs/CODE_MAP.md) identifies the corresponding analysis paths.
 
-The [approved figure baseline](../docs/FIGURE_BASELINE.md) owns version and caption decisions. `core/` contains PDF/PNG outputs; `core_svg/` contains matching SVGs. The [active manifest](../provenance/current_baseline_sha256.json) identifies current output files. The [approved palette](PALETTE.md) stays inside the figures. Editable external composite-schematic sources remain an asset-completion gap, recorded in the [project guide](../docs/PROJECT_GUIDE.md#history-and-readiness); the six accepted panels are available here.
+The [figure specification](../docs/FIGURE_BASELINE.md) defines the panels and Figure 4 caption. `core/` contains PDF/PNG outputs; `core_svg/` contains matching SVGs. The [active manifest](../provenance/current_baseline_sha256.json) identifies current output files. The [approved palette](PALETTE.md) stays inside the figures.
 
 **Next:** [four-figure conclusion](../docs/DIALOGUE_REPORT.md#m9), [claim evidence](../docs/CLAIM_EVIDENCE_MAP.md), or [reproduction](../docs/REPRODUCTION.md). **Return:** [learning route](../docs/PROJECT_GUIDE.md) · [README](../README.md).

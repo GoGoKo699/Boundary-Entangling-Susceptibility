@@ -2,17 +2,15 @@
 
 ## A dialogue on boundary entangling susceptibility
 
-**Scientific account · 8 September 2026**
-
 [Previous: tutorial bridge](TUTORIAL_BRIDGE.md) · [Learning route](PROJECT_GUIDE.md) · [Return to README](../README.md)
 
 This is the complete four-figure account. After the selected review and the local bridge, start at [M1](#m1) and follow the main questions in order. Specialists can go directly to the [exact response](#m4), [physical matching](#m6), or [paired intervention](#m8). The [question index](DIALOGUE_QUESTION_MAP.md) links every main and appendix answer; the [figure gallery](../figures/README.md) links artwork to its inputs and code. Paired panels appear one after another for narrow screens; the adopted captions' left/right descriptions refer to their first/second order.
 
 **Central question.** When two many-body states have the same complete Schmidt spectrum across a cut, what determines their response to the next fresh gate crossing that cut?
 
-**Answer in one paragraph.** For the purity-normalized linear-entropy response studied here, the central spectrum is insufficient. A Haar-random or uniformly random two-qubit Clifford probe has an exact response determined by three adjacent-cut purities. In the tested monitored ensembles, the neighboring-purity information has monitoring-associated differences within fixed-spectrum comparisons. The physical conditional coefficients remain negative through 256 qubits and repeat under disjoint seeds. A spectrum-preserving Pauli measurement on a pure stabilizer state cannot increase this averaged response; the paired intervention establishes how its suppression depends on measurement location in the tested populations. The result does not require a single-exponential distance law, a rigorous thermodynamic limit, or a new transition order parameter. [S1–S5]
+**Answer in one paragraph.** For the purity-normalized linear-entropy response studied here, the central spectrum is insufficient. A Haar-random or uniformly random two-qubit Clifford probe has an exact response determined by three adjacent-cut purities. In the tested monitored ensembles, the neighboring-purity information has monitoring-associated differences within fixed-spectrum comparisons. The physical conditional coefficients remain negative through 256 qubits and repeat under disjoint seeds. A spectrum-preserving Pauli measurement on a pure stabilizer state cannot increase this averaged response; the paired intervention establishes how its suppression depends on measurement location in the tested populations. [S1–S5]
 
-This report follows the stable **M1–M9 main questions** and **A–H appendix questions**. Its four figures contain six Python panels. The answers distinguish exact identities, original numerical results, extrapolations, and post-hoc checks. The Figure 4 distance panel uses the approved revision without the exponential curve or its length annotation. Its data and original confidence intervals are unchanged. [S1, S4, S6]
+This report follows the stable **M1–M9 main questions** and **A–H appendix questions**. Its four figures contain six Python panels. The answers distinguish exact identities, original numerical results, extrapolations, and post-hoc checks. [S1, S4, S6]
 
 ## Reading map
 
@@ -114,7 +112,7 @@ The comparison averages the supported size/time cell contrasts, using $n=10,12,1
 
 **Figure 1. Complete central-spectrum control leaves a response difference.** Filled circles are the held-out primary run; open squares are the independent-seed run. Bars are the adopted nominal pointwise 95% percentile intervals from 50,000 valid support-conditioned trajectory-cluster draws per contrast. Whole trajectories retain their time records and rank-eligibility masks; entire proposals with any empty required cell are rejected. The primary pool is the union of trajectories with an eligible retained row. Reference spectra and observed support are fixed. See [the complete recipe and limitations](FIGURE1_UNCERTAINTY.md). The eigenvalues are equalized within comparison cells, while the retained Schmidt vectors remain state-dependent. This is a diagnostic spectrum replacement, not an experimentally proposed operation. [S1, S6]
 
-**Follow Figure 1.** [Canonical contrast table](../data/processed/core_figures/figure_01_panel_b.csv) · [plot script](../scripts/figures/make_figure_01_frozen.py) · [adopted full caption](FIGURE1_CAPTION.md) · [claim M1 and its limit](CLAIM_EVIDENCE_MAP.md) · [reference construction](#b1) · [uncertainty method](FIGURE1_UNCERTAINTY.md). The current bars hold archived references and support fixed; the historical resamples were not recovered. See [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
+**Follow Figure 1.** [Canonical contrast table](../data/processed/core_figures/figure_01_panel_b.csv) · [plot script](../scripts/figures/make_figure_01_frozen.py) · [adopted full caption](FIGURE1_CAPTION.md) · [claim M1 and its limit](CLAIM_EVIDENCE_MAP.md) · [reference construction](#b1) · [uncertainty method](FIGURE1_UNCERTAINTY.md). The bars hold archived references and support fixed. See [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
 
 **Reader.** What does the plot establish, and what does it not establish?
 
@@ -295,7 +293,7 @@ It is not itself the difference from a far measurement. The right panel instead 
 
 These comparisons answer different objections and have different estimands. The measurement-sign corollary does not determine the monitoring-rate trend. Figure 4 does not quantitatively derive Figure 3's entire coefficient, and Figure 2's weighted reconstruction is an identity, not an additional independent experiment. [S2–S4]
 
-The results do not establish a new monitored-transition order parameter, a critical exponent, a universal generic non-Clifford thermodynamic law, or an unconditional causal effect of the long-run monitoring rate. The limiting extrapolation is model-dependent, and no exponential fit is a physical conclusion. The [claim and evidence map](CLAIM_EVIDENCE_MAP.md) records the scope of each statement separately. [S4, S5]
+The monitoring-rate coefficients are conditional associations. The limiting extrapolation is model-dependent, and the spatial conclusion concerns attenuation over the measured distances. The [claim and evidence map](CLAIM_EVIDENCE_MAP.md) records the scope of each statement separately. [S4, S5]
 
 **Next:** [check each claim and limitation](CLAIM_EVIDENCE_MAP.md), or use the [question index](DIALOGUE_QUESTION_MAP.md) for a specific objection. [Return to README](../README.md).
 
@@ -400,7 +398,7 @@ Here $e_p$ and $g_t$ are the source's normalized entangling power and gate typic
 
 ### C4. How were the coefficients checked?
 
-**Answer.** The original checkpoint compared direct commutant projection with the gate-invariant expression on 100 Haar-random two-qubit gates, with maximum coefficient discrepancy about $1.17\times10^{-15}$. The takeover review reports a separately written projection check with discrepancy about $1.11\times10^{-15}$ and direct averaging over the supplied 11,520-element Clifford bank on 12 four-qubit inputs. These are numerical checks of implementations and identities, not proofs of absolute novelty or external specialist review. The algebraic derivation and the assumptions remain the basis of the exact claim. [S2, S7]
+**Answer.** The original checkpoint compared direct commutant projection with the gate-invariant expression on 100 Haar-random two-qubit gates, with maximum coefficient discrepancy about $1.17\times10^{-15}$. The takeover review reports a separately written projection check with discrepancy about $1.11\times10^{-15}$ and direct averaging over the supplied 11,520-element Clifford bank on 12 four-qubit inputs. These numerical checks test the implementations and identities. The algebraic derivation and the assumptions remain the basis of the exact claim. [S2, S7]
 
 ## D. Stabilizer spectra and boundary codes
 
@@ -531,7 +529,7 @@ Equality holds exactly when both neighboring purities are unchanged. This is an 
 
 ### F5. Does the distance profile justify a physical localization length?
 
-**Answer.** The earlier appendix plan asked whether the fitted length was robust. The reassessment changes the answer: a physical length inferred from an adequate single-exponential law has not been established. The historical unweighted fit gave $\xi=2.372$, but its predictions fall outside all six pointwise intervals. That observation alone is not six independent hypothesis tests. Covariance-aware fits give residual diagnostics $Q=140.59$ for the original profile and $Q=94.45$ for the common-eligibility profile, each with four nominal residual dimensions. No exact chi-square p-value is assigned. [S4]
+**Answer.** A single exponential does not adequately describe the measured profile. The historical unweighted fit gave $\xi=2.372$, but its predictions fall outside all six pointwise intervals. That observation alone is not six independent hypothesis tests. Covariance-aware fits give residual diagnostics $Q=140.59$ for the original profile and $Q=94.45$ for the common-eligibility profile, each with four nominal residual dimensions. No exact chi-square p-value is assigned. [S4]
 
 The model-free summary is preferable. In the common-eligibility sample, the magnitude ratios at four and eight sites are 11.95% and 1.65%, with fresh intervals 9.54%–14.52% and 0.89%–2.51%. These are jointly bootstrapped ratios of pooled means. The simultaneous six-distance band includes zero at $d=16$; sparse tail events prevent a strong asymptotic-distance claim. Figure 4 therefore shows the original observations without a replacement fitted function. [S4]
 
@@ -541,7 +539,7 @@ The model-free summary is preferable. In the common-eligibility sample, the magn
 
 ### G1. Where is the transition in this circuit convention?
 
-**Answer.** The source uses tripartite information of contiguous quarter partitions, not the new response, to locate crossings between system sizes. The high-size crossing is near $p=0.27$ in the complete-cycle convention. It is a numerical contextual estimate, not an exact critical probability. This report does not add a fifth main figure for it or use that estimate to choose the primary response endpoint. [S3, S9]
+**Answer.** The source uses tripartite information of contiguous quarter partitions, not the new response, to locate crossings between system sizes. The high-size crossing is near $p=0.27$ in the complete-cycle convention. It is a numerical contextual estimate, not an exact critical probability. The primary response endpoint is defined independently of this contextual estimate. [S3, S9]
 
 <a id="g2"></a>
 
@@ -571,17 +569,17 @@ The model-free summary is preferable. In the common-eligibility sample, the magn
 | Disjoint-seed repeat | Independent-seed replication, not external replication |
 | Limiting negative coefficient | Model-dependent extrapolation |
 | Paired location contrast | Controlled potential interventions in a selected population |
-| Single-exponential physical length, hard finite range, new order parameter | Not established or not claimed |
+| Distance dependence | Near-cut concentration over measured distances; a single exponential poorly describes the profile |
 
-**Answer.** These categories should remain visible in the report, repository, and eventual paper. A theorem about the response functional cannot establish the sign of every ensemble trend; a green software workflow cannot independently validate every simulation assumption; and a narrow fitted interval cannot establish an extrapolation model. [S2–S5]
+**Answer.** The categories identify what each calculation supports. A theorem about the response functional cannot establish the sign of every ensemble trend; a green software workflow cannot independently validate every simulation assumption; and a narrow fitted interval cannot establish an extrapolation model. [S2–S5]
 
 <a id="h2"></a>
 
 ### H2. What simulator and package checks were performed?
 
-**Answer.** The supplied phase-free tableau implementation was compared with a direct state-vector implementation for $n=4,6,8,10$, both monitoring protocols, four probabilities, four trajectories, and two times: 256 recorded comparisons agreed for the tested entropy/response quantities. The takeover reran that supplied cross-validation and separately checked the response projection and Clifford average. The evidence pass independently reconstructed all 16 finite-size coefficients and the original location endpoints from stored records. These are complementary checks with different failure modes. They do not constitute a new full large-system campaign or an external replication. [S3, S4, S7]
+**Answer.** The supplied phase-free tableau implementation was compared with a direct state-vector implementation for $n=4,6,8,10$, both monitoring protocols, four probabilities, four trajectories, and two times: 256 recorded comparisons agreed for the tested entropy/response quantities. Separate checks address the response projection and Clifford average. Stored-row replay independently reconstructs all 16 finite-size coefficients and the original location endpoints from stored records. These complementary implementation and stored-record checks have different failure modes. [S3, S4, S7]
 
-At repository level, tests check exact-identity examples, a synthetic within-stratum regression with a known answer, paired bootstrap behavior, rejection of a wrong archive, and complete all-format figure export. The figure pipeline validates six PDF/PNG/SVG triples in fresh temporary output before copying them. This guards against stale missing outputs; it does not turn canonical-table redraws into raw-data reanalysis. The independent evidence command reads the required indexed root record bundle; it no longer requires a separately obtained Checkpoint 05 archive. Current Figure 1 intervals are reproduced by the adopted locked sampler and independently replayed from saved multiplicities. Only the superseded historical interval recipe remains unrecovered; see [the current procedure](FIGURE1_UNCERTAINTY.md). [S4, S5]
+At repository level, tests check exact-identity examples, a synthetic within-stratum regression with a known answer, paired bootstrap behavior, rejection of a wrong archive, and complete all-format figure export. The figure pipeline validates six PDF/PNG/SVG triples in fresh temporary output before copying them. This guards against stale missing outputs; it does not turn canonical-table redraws into raw-data reanalysis. The independent evidence command reads the indexed root record bundle. Current Figure 1 intervals are reproduced by the adopted locked sampler and independently replayed from saved multiplicities. See [the uncertainty procedure](FIGURE1_UNCERTAINTY.md). [S4, S5]
 
 <a id="h3"></a>
 
@@ -589,17 +587,15 @@ At repository level, tests check exact-identity examples, a synthetic within-str
 
 **Answer.** The source literature audit credits stabilizer spectrum structure, Clifford designs, two-copy swap methods, entanglement features, and gate entangling-power/typicality descriptions as established ingredients. The intended contribution is their use in a controlled question about monitored state ensembles: full central-spectrum control, a fresh-gate response, an exact neighboring-cut explanation, physical large-size comparison, and a paired location intervention. Elementary insufficiency, the Haar neighboring-purity transfer rule, and the measurement-sign deduction are not presented as independent novelty claims. The empirical direction and organization of the monitored-state redistribution remain separate from those identities. [S2, S10]
 
-This report does not perform a new priority search or certify absolute novelty. The stored literature audit is a record of prior positioning, not proof that no equivalent formulation exists. The four-figure argument should remain intelligible and testable even to a reader who regards the individual algebraic tools as familiar. [S10]
-
 # Source register and reproduction
 
-The source hierarchy is deliberate: current canonical figure tables for plotted numbers; the exact theory for algebraic claims; recorded methods and code for estimands; and the September 5 reassessment for fit limitations and new selected-population checks. Older figure specifications organize the questions but do not override the later evidence reassessment.
+Use canonical figure tables for plotted numbers, exact theory for algebraic claims, methods and code for estimands, and the evidence reassessment for fit diagnostics and post-hoc selected-population checks.
 
-**S1. Canonical figure data.** [Core CSV/JSON tables](../data/processed/core_figures/), especially the Figure 1 contrast, Figure 2 code, Figure 3 scaling, and Figure 4 distance/contrast tables. Figure 1 uses the approved 8 September 2026 uncertainty recipe; its historical intervals are preserved separately. Figures 2–4 are unchanged.
+**S1. Canonical figure data.** [Core CSV/JSON tables](../data/processed/core_figures/), especially the Figure 1 contrast, Figure 2 code, Figure 3 scaling, and Figure 4 distance/contrast tables. Figure 1 uses the [support-conditioned uncertainty procedure](FIGURE1_UNCERTAINTY.md).
 
 **S2. Exact theory.** [Response operator and stabilizer boundary-code theory](THEORY.md). Includes assumptions, local twirling, gate-invariant conventions, the finite alphabet, and the measurement-sign corollary deduced from the response identity and stabilizer measurement rule.
 
-**S3. Methods.** [Numerical methods](NUMERICAL_METHODS.md), [run history](RUN_HISTORY.md), and [campaign recipes](CAMPAIGN_RECIPES.md). These distinguish recorded generation seeds and grids, support rules, archived uncertainty replay, and newly declared analysis seeds. Original execution logs/manifests and actual Figure 3/4 analyzer invocation seeds are unavailable; source defaults alone do not establish historical execution.
+**S3. Methods.** [Numerical methods](NUMERICAL_METHODS.md), [run history](RUN_HISTORY.md), and [campaign recipes](CAMPAIGN_RECIPES.md). These distinguish recorded generation seeds and grids, support rules, archived uncertainty replay, and newly declared analysis seeds. See [reproducibility limits](REPRODUCIBILITY_LIMITS.md) for historical execution coverage.
 
 **S4. Evidence reassessment.** [September 5 analysis](EVIDENCE_REASSESSMENT.md), [result tables](../results/evidence_reassessment/), and [independently written replay script](../scripts/analysis/reassess_evidence.py). The source archive is Checkpoint 05, SHA-256 `284a92bfac08af6194cd576ce07c4be90e1e760fcc7b0fc7951eaacd1fa975ce`.
 
@@ -607,13 +603,13 @@ The source hierarchy is deliberate: current canonical figure tables for plotted 
 
 **S6. Figure/question design record.** The retained specifications are in [studies/figure_design](../studies/figure_design/); figure-specific resamples are indexed in the root [record bundle](../data/record_bundle_manifest.json). The preserved `entanglement_prl_figure_design_checkpoint_01/MAIN_APPENDIX_QUESTION_MAP.md` and Figure 1 specification supply the question identifiers and original contrast definition. The adopted question map is included with this report as [DIALOGUE_QUESTION_MAP.md](DIALOGUE_QUESTION_MAP.md). Historical Figure 4 fit language is superseded.
 
-**S7. Takeover checks.** The cited original-study check scripts and results are preserved as selected members under `takeover_review/` in the root record bundle, materialized by `materialize_studies.py`. The manifest records their source archive, `Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip`; that original ZIP is not a required or included separate deliverable. These are author-side numerical checks, not an external audit. Their provenance remains separate from the original primary simulations.
+**S7. Implementation cross-checks.** The cited original-study check scripts and results are preserved as selected members under `takeover_review/` in the root record bundle, materialized by `materialize_studies.py`. The manifest records their source archive, `Boundary-Entangling-Susceptibility-takeover-review-2026-09-05.zip`. These are author-side numerical checks, not an external audit. Their provenance remains separate from the original primary simulations.
 
-**S8. Finite intervention source.** [Checkpoint 04 study](../studies/checkpoint_04/), particularly `scripts/cross_architecture_simulation.py`, plus selected original members under `checkpoint_04/` in the root data bundle. The [manifest](../data/record_bundle_manifest.json) maps every retained member to its source; the original Checkpoint 04 archive is identified by SHA-256 `690722855b37c5ba1aab96720e03d0f36e7b2b0b86447827f9eeecda0a973023`, but the full historical ZIP is not included. The retained records include the detailed rank/probe tables and reference-spectrum construction needed for the documented calculations.
+**S8. Finite intervention source.** [Checkpoint 04 study](../studies/checkpoint_04/), particularly `scripts/cross_architecture_simulation.py`, plus selected original members under `checkpoint_04/` in the root data bundle. The [manifest](../data/record_bundle_manifest.json) maps every retained member to its source; the original Checkpoint 04 archive is identified by SHA-256 `690722855b37c5ba1aab96720e03d0f36e7b2b0b86447827f9eeecda0a973023`. The retained records include the detailed rank/probe tables and reference-spectrum construction needed for the documented calculations.
 
-**S9. Extended physical results.** Selected original Checkpoint 05 `analysis/synthesis/` tables for code decomposition, time checks, cross-run comparisons, and hinge fits, and `analysis/primary/thermodynamic_limit_fits.csv`. Selected source is also in the [Checkpoint 05 study](../studies/checkpoint_05/). These supporting tables are included as unchanged members under `checkpoint_05/` in the indexed root data bundle; the full historical Checkpoint 05 archive is not included.
+**S9. Extended physical results.** Selected original Checkpoint 05 `analysis/synthesis/` tables for code decomposition, time checks, cross-run comparisons, and hinge fits, and `analysis/primary/thermodynamic_limit_fits.csv`. Selected source is also in the [Checkpoint 05 study](../studies/checkpoint_05/). These supporting tables are included as unchanged members under `checkpoint_05/` in the indexed root data bundle.
 
-**S10. Related-work scope.** [Primary attribution and related work](RELATED_WORK.md), including the repaired equation-level entanglement-feature dictionary in [the theory](THEORY.md#entanglement-feature-dictionary). These references establish attribution; the selected review remains the one external background tutorial. This report adds no fresh priority claim.
+**S10. Related-work scope.** [Primary attribution and related work](RELATED_WORK.md), including the equation-level entanglement-feature dictionary in [the theory](THEORY.md#entanglement-feature-dictionary). These references establish attribution; the selected review remains the one external background tutorial.
 
 <a id="two-different-reproduction-tasks"></a>
 
@@ -621,6 +617,6 @@ The source hierarchy is deliberate: current canonical figure tables for plotted 
 
 The [reproduction guide](REPRODUCTION.md) owns the executable commands and environment instructions. A [figure redraw](REPRODUCTION.md#redraw) reads canonical summaries and exports the six panels. A [stored-record replay](REPRODUCTION.md#record-replay) recomputes estimates from the indexed root data bundle. [Uncertainty regeneration](REPRODUCTION.md#uncertainty) is a further task with its own archived-reference and seed limits; it is not achieved by redrawing the panels. None of these steps reruns the full circuit campaign.
 
-The [figure gallery](../figures/README.md) connects each panel to its canonical inputs and script. [Reproducibility limits](REPRODUCIBILITY_LIMITS.md) distinguish available records from unrecovered historical execution details and editable external schematic sources.
+The [figure gallery](../figures/README.md) connects each panel to its canonical inputs and script. [Reproducibility limits](REPRODUCIBILITY_LIMITS.md) define the coverage of each workflow.
 
 **Next:** [claim evidence](CLAIM_EVIDENCE_MAP.md) or [reproduction](REPRODUCTION.md). **Return:** [learning route](PROJECT_GUIDE.md) · [question index](DIALOGUE_QUESTION_MAP.md) · [README](../README.md).
