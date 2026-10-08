@@ -121,7 +121,7 @@ Define the two entropy increments
 \delta_L=S_m-S_{m-1},\qquad \delta_R=S_m-S_{m+1}.
 ```
 
-Adding or removing one qubit changes a bipartite entropy by at most one bit, by subadditivity and the corresponding difference bound. Stabilizer entropies are integers, so each increment lies in $\{-1,0,+1\}$. The ordered pair has nine possible codes in the overall description, although individual ranks or small geometries can restrict which occur. Here **boundary code** means this pair of entropy increments; it is not itself a quantum error-correcting code or a replica-pairing variable.
+Adding or removing one qubit changes a bipartite entropy by at most one bit, by subadditivity and the corresponding difference bound. Stabilizer entropies are integers, so each increment lies in $`\{-1,0,+1\}`$. The ordered pair has nine possible codes in the overall description, although individual ranks or small geometries can restrict which occur. Here **boundary code** means this pair of entropy increments; it is not itself a quantum error-correcting code or a replica-pairing variable.
 
 Since $P_{m\pm1}/P_m=2^{\delta_{L,R}}$, define the response with its dimension factor removed,
 
