@@ -62,7 +62,7 @@ The post-gate state is
 \rho'=(I_{LR}\otimes U_{ab})\rho(I_{LR}\otimes U_{ab}^{\dagger}).
 ```
 
-Using $P'_{La}=\mathop{\mathrm{Tr}}\nolimits [(\rho')^{\otimes2}F_{La}]$, cyclicity of the
+Using $`P'_{La}=\mathop{\mathrm{Tr}}\nolimits [(\rho')^{\otimes2}F_{La}]`$, cyclicity of the
 trace, and $F_{La}=F_LF_a$,
 
 ```math
@@ -159,7 +159,7 @@ Use the rescaled definitions of
 [Jonnadula et al., Eqs. (16) and (18), arXiv:1909.08139v2](https://arxiv.org/abs/1909.08139v2),
 not the original unrescaled product-input entangling power. With
 $V_{ij,kl}=\langle ij|V|kl\rangle$, define realignment by
-$(V^R)_{ik,jl}=V_{ij,kl}$, where $i,j,k,l\in\{0,1\}$. Then
+$`(V^R)_{ik,jl}=V_{ij,kl}`$, where $`i,j,k,l\in\{0,1\}`$. Then
 
 ```math
 E_{\mathrm{op}}(V)
@@ -211,28 +211,28 @@ unitaries.
 
 ### Entanglement-feature dictionary
 
-Write $q$ for the papers' single-site dimension $d$: here $q=2$, whereas
-$D=2^{n/2}$ is the half-chain dimension and our $d$ labels measurement distance.
-In the feature basis, a down spin includes a site in a subsystem; $X_a,X_b$
-toggle inclusion and $Z_a,Z_b$ read the corresponding signs
-($+1$ for exclusion, $-1$ for inclusion). These are not physical gates.
-For the output region $La$:
+Write $`q`$ for the papers' single-site dimension $`d`$: here $`q=2`$, whereas
+$`D=2^{n/2}`$ is the half-chain dimension and our $`d`$ labels measurement distance.
+In the feature basis, a down spin includes a site in a subsystem; $`X_a,X_b`$
+toggle inclusion and $`Z_a,Z_b`$ read the corresponding signs
+($`+1`$ for exclusion, $`-1`$ for inclusion). These are not physical gates.
+For the output region $`La`$:
 
 | Transfer-row operation | Input region | Purity in this document |
 |---|---|---|
-| $I$ | $La$ | $P_{La}=P_m$ |
-| $X_a$ | $L$ | $P_L=P_{m-1}$ |
-| $X_b$ | $Lab$ | $P_{Lab}=P_{m+1}=P_R$ for pure global inputs |
-| $X_aX_b$ | $Lb$ | noncontiguous $P_{L\cup b}$ |
+| $`I`$ | $`La`$ | $`P_{La}=P_m`$ |
+| $`X_a`$ | $`L`$ | $`P_L=P_{m-1}`$ |
+| $`X_b`$ | $`Lab`$ | $`P_{Lab}=P_{m+1}=P_R`$ for pure global inputs |
+| $`X_aX_b`$ | $`Lb`$ | noncontiguous $`P_{L\cup b}`$ |
 
 Kuo et al.'s Eq. (19) propagates the purity-feature vector by
-$T=\widehat{W}_V\widehat{W}_I^{-1}$, where the gate-feature matrix is
-$(\widehat{W}_V)_{\sigma,\tau}=\mathop{\mathrm{Tr}}\nolimits (F_\sigma V^{\otimes2}F_\tau V^{\dagger\otimes2})$
-and $\widehat{W}_I$ is its identity-gate Gram matrix. The labels
-$\sigma,\tau$ specify subsystem swaps on $ab$. For a direct algebraic
-translation of their Eqs. (17) and (60), put $E=E_{\mathrm{op}}(V)$ and
-$E_s=E_{\mathrm{op}}(V\,\mathrm{SWAP})$. At $q=2$, their coefficients are
-$A_{ab}=16E$ and $B_{ab}=16(3/4-E_s)$. Multiplication gives
+$`T=\widehat{W}_V\widehat{W}_I^{-1}`$, where the gate-feature matrix is
+$`(\widehat{W}_V)_{\sigma,\tau}=\mathop{\mathrm{Tr}}\nolimits (F_\sigma V^{\otimes2}F_\tau V^{\dagger\otimes2})`$
+and $`\widehat{W}_I`$ is its identity-gate Gram matrix. The labels
+$`\sigma,\tau`$ specify subsystem swaps on $`ab`$. For a direct algebraic
+translation of their Eqs. (17) and (60), put $`E=E_{\mathrm{op}}(V)`$ and
+$`E_s=E_{\mathrm{op}}(V\,\mathrm{SWAP})`$. At $`q=2`$, their coefficients are
+$`A_{ab}=16E`$ and $`B_{ab}=16(3/4-E_s)`$. Multiplication gives
 
 ```math
 T=I-Q\left[u-v(X_a+X_b)+wX_aX_b\right],
@@ -245,8 +245,8 @@ u=\frac{A_{ab}-B_{ab}/4}{9}=g_t+\frac56e_p,
 \quad w=\frac{A_{ab}/4-B_{ab}}{9}=\frac56e_p-g_t.
 ```
 
-The cut row has coefficients $(v,1-u,-w,v)$ in the order
-$(P_L,P_{La},P_{L\cup b},P_{Lab})$, exactly the displayed stencil. This is a
+The cut row has coefficients $`(v,1-u,-w,v)`$ in the order
+$`(P_L,P_{La},P_{L\cup b},P_{Lab})`$, exactly the displayed stencil. This is a
 specialization and change of normalization, not an independent transfer identity. Negative
 coefficients are allowed: they are not probabilities of separate experiments.
 Only the fresh probe needs local input averaging; no locally scrambled or
@@ -310,9 +310,9 @@ give
 T_{\mathrm{Haar}}=I-Q\left[I-\frac{q}{q^2+1}(X_a+X_b)\right].
 ```
 
-Its cut row is $\mathbb E P'_{La}=q(P_L+P_{Lab})/(q^2+1)$. For qubits this is
-$\mathbb E P'_m=(2/5)(P_{m-1}+P_{m+1})$. The response normalization then gives
-$\chi_2=D(P_m-\mathbb E P'_m)/(D-1)$ and
+Its cut row is $`\mathbb E P'_{La}=q(P_L+P_{Lab})/(q^2+1)`$. For qubits this is
+$`\mathbb E P'_m=(2/5)(P_{m-1}+P_{m+1})`$. The response normalization then gives
+$`\chi_2=D(P_m-\mathbb E P'_m)/(D-1)`$ and
 $\chi_{\rm rel}=\chi_2/P_m$, with **input** purity in the denominator.
 No logarithm-of-average or average-logarithm approximation is used.
 

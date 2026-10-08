@@ -41,7 +41,7 @@ The appendix answers implementation and inference objections in the same order. 
 \qquad \lambda_\alpha\geq0,\quad\sum_\alpha\lambda_\alpha=1.
 ```
 
-The list $\{\lambda_\alpha\}$ fixes the central purity, Schmidt rank, and entropies. It does not specify the Schmidt vectors $|u_\alpha\rangle$ and $|v_\alpha\rangle$, or how their degrees of freedom occupy the sites within each half. A gate acting on just the two boundary sites is sensitive to that spatial arrangement. The question is therefore about the **response to a specified local operation**, not a competing definition of the entanglement already present. [S2]
+The list $`\{\lambda_\alpha\}`$ fixes the central purity, Schmidt rank, and entropies. It does not specify the Schmidt vectors $`|u_\alpha\rangle`$ and $`|v_\alpha\rangle`$, or how their degrees of freedom occupy the sites within each half. A gate acting on just the two boundary sites is sensitive to that spatial arrangement. The question is therefore about the **response to a specified local operation**, not a competing definition of the entanglement already present. [S2]
 
 **Reader.** Why study this distinction in monitored circuits?
 
@@ -165,7 +165,7 @@ This identity holds for every pure input state under the stated probe ensemble. 
 \delta_R=S_m-S_{m+1}.
 ```
 
-Moving a cut by one qubit changes its entropy by at most one bit, so each increment lies in $\{-1,0,+1\}$. The ordered pair is the boundary code: a label for two entropy increments, not itself a quantum error-correcting code. There are nine codes, but only six distinct response values:
+Moving a cut by one qubit changes its entropy by at most one bit, so each increment lies in $`\{-1,0,+1\}`$. The ordered pair is the boundary code: a label for two entropy increments, not itself a quantum error-correcting code. There are nine codes, but only six distinct response values:
 
 ```math
 r(\delta_L,\delta_R)
@@ -410,7 +410,7 @@ Here $e_p$ and $g_t$ are the source's normalized entangling power and gate typic
 
 <a id="d2"></a>
 
-### D2. Why are the boundary increments restricted to $\{-1,0,+1\}$?
+### D2. Why are the boundary increments restricted to $`\{-1,0,+1\}`$?
 
 **Answer.** The entropy difference between adjacent cuts is bounded in magnitude by the entropy of the intervening qubit, at most one bit. Stabilizer entropies are integer valued. Combining these facts gives the three allowed values for each increment. Nine ordered pairs are available to the global description, although particular central ranks or small geometries can restrict which codes occur in a given stratum. Nine codes do not mean nine independent response values or nine independent tests. [S2]
 
@@ -509,7 +509,7 @@ The original uncertainty calculation clusters by trajectory and bootstraps traje
 
 **Reader.** Why does spectrum preservation constrain the sign of the response change?
 
-**Answer.** The single-site projective Pauli measurement is local with respect to each of the three cuts. Its nonzero-probability stabilizer outcomes have identical cut entropies because their phase-free support is the same. Average entanglement monotonicity therefore applies to each such entropy value, and the one-generator rank update bounds the decrease by one bit. Hence $\Delta_M S_j\in\{0,-1\}$ for $j=m-1,m,m+1$. The flat-spectrum identity gives $\Delta_M P_{m\pm1}\geq0$. With $\Delta_M P_m=0$, subtraction of the Haar/uniform-Clifford identity gives
+**Answer.** The single-site projective Pauli measurement is local with respect to each of the three cuts. Its nonzero-probability stabilizer outcomes have identical cut entropies because their phase-free support is the same. Average entanglement monotonicity therefore applies to each such entropy value, and the one-generator rank update bounds the decrease by one bit. Hence $`\Delta_M S_j\in\{0,-1\}`$ for $`j=m-1,m,m+1`$. The flat-spectrum identity gives $`\Delta_M P_{m\pm1}\geq0`$. With $`\Delta_M P_m=0`$, subtraction of the Haar/uniform-Clifford identity gives
 
 ```math
 \Delta_M\chi_{\rm rel}

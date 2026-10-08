@@ -72,7 +72,10 @@ def prose_lines(text: str) -> tuple[list[str], list[str]]:
                 f"line {number}: standalone equals/hyphen line inside $$ math "
                 "can turn the equation into a Markdown heading; use a math fence")
         # Inline code can contain literal dollars and link-shaped examples.
-        plain = re.sub(r"(`+).*?\1", "", line)
+        plain = re.sub(
+            r"\$`[^\n]*?`\$|(`+).*?\1",
+            lambda m: m[0].replace("`", " ") if m[0].startswith("$`") else " " * len(m[0]),
+            line)
         tokens = list(re.finditer(r"(?<!\\)(?:\$\$|\$)", plain))
         singles = 0
         for token in tokens:
@@ -292,7 +295,13 @@ def check_questions(root: Path) -> list[str]:
     questions = [(title, anchor) for title, anchor in
                  headings(prose_lines(current)[0]) if QUESTION.match(title)]
     ids = tuple(QUESTION.match(title)[1] for title, _ in questions)
-    encoded = json.dumps(questions, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    # Protecting inline TeX from Markdown does not change the question text or
+    # its original heading URL. Compare the same TeX with either GitHub delimiter.
+    canonical_questions = [
+        (re.sub(r"\$`([^`\n]+)`\$", r"$\1$", title), anchor)
+        for title, anchor in questions
+    ]
+    encoded = json.dumps(canonical_questions, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
     errors = []
     if ids != QUESTION_IDS:
         errors.append(f"{report}: nine main/32 appendix question ID inventory or order changed")
@@ -345,6 +354,16 @@ def self_test() -> None:
         assert not headings(prose_lines(fenced)[0])
     assert not document("A real heading\n=\n\n$$\nx=y\n$$\n")[2]
     assert not document("```text\n$$\nx\n=\ny\n$$\n```\n")[2]
+    # Inline code masking must not join the dollars in GitHub's protected math
+    # into a display delimiter. Exercise odd and even numbers of expressions.
+    for inline in (r"$`\{-1,0,+1\}`$", r"$`S_m`$ and $`P_m`$"):
+        assert not document(inline)[2]
+    assert not document(r"Literal ``$`S_m`$`` is code.")[2]
+    original = r"D2. Values in $\{-1,0,+1\}$?"
+    protected = r"D2. Values in $`\{-1,0,+1\}`$?"
+    assert slug(original) == slug(protected)
+    assert re.sub(r"\$`([^`\n]+)`\$", r"$\1$", protected) == original
+
     for expression in (r"\operatorname{Tr}A", r"\operatorname*{mean}_{i}x_i"):
         for opening, closing in (("$", "$"), ("$`", "`$"), ("$$\n", "\n$$"),
                                  ("```math\n", "\n```"), ("~~~~math\n", "\n~~~~")):
