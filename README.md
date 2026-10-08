@@ -8,7 +8,7 @@ Boundary entangling susceptibility in monitored quantum circuits.
 
 The measured response is the expected change in normalized linear entropy from one independent two-qubit probe, divided by the input central purity. Haar-random and uniformly random two-qubit Clifford probes give the same average. This is a finite-gate quantity. It is neither a derivative with respect to monitoring probability nor an average finite logarithmic Rényi-2 entropy change.
 
-In the tested monitored ensembles, stronger monitoring is associated with a lower response at fixed central spectrum. The physical stabilizer comparison remains negative through 256 qubits and repeats with disjoint seeds. A separate experiment applies alternative single measurements to copies of the same pre-state: its spectrum-preserving comparisons show a response change concentrated near the cut. These results have distinct comparison populations. They do not establish an unconditional causal effect of assigning a long-run monitoring rate, a thermodynamic theorem, a universal localization length, or a new transition order parameter.
+In the tested monitored ensembles, stronger monitoring is associated with a lower response at fixed central spectrum. The physical stabilizer comparison remains negative through 256 qubits and repeats with disjoint seeds. A separate experiment applies alternative single measurements to copies of the same pre-state: its spectrum-preserving comparisons show a response change concentrated near the cut. The monitoring-rate results are conditional comparisons; the paired measurement experiment identifies a location effect within its spectrum-preserving population.
 
 ## Purpose and contact
 
@@ -26,7 +26,7 @@ For topic searches and automated reading, the [repository discovery guide](llms.
 | **CHECK** | [Notation](docs/NOTATION.md) → [technical derivations](docs/THEORY.md) → [claim evidence](docs/CLAIM_EVIDENCE_MAP.md) → [estimators and comparison rules](docs/NUMERICAL_METHODS.md) → [limitations](docs/REPRODUCIBILITY_LIMITS.md) |
 | **REPRODUCE** | [Environment and integrity checks](docs/REPRODUCTION.md#environment) → [figure redraw](docs/REPRODUCTION.md#redraw) → [record replay](docs/REPRODUCTION.md#record-replay) → [uncertainty regeneration](docs/REPRODUCTION.md#uncertainty) → [optional new-campaign instructions](docs/REPRODUCTION.md#new-campaign) |
 
-The one external background tutorial is Matthew P. A. Fisher, Vedika Khemani, Adam Nahum and Sagar Vijay, *Random Quantum Circuits*, Annual Review of Condensed Matter Physics **14** (2023), read here as [arXiv:2207.14280v1](https://arxiv.org/abs/2207.14280v1). The [guide](docs/PROJECT_GUIDE.md) identifies the short findings route and the extra derivation reading. Other [primary references](docs/RELATED_WORK.md) supply attribution; they are not additional required tutorials. This reading route is an editorial choice for this repository, not an endorsed sequel to the review.
+The one external background tutorial is Matthew P. A. Fisher, Vedika Khemani, Adam Nahum and Sagar Vijay, *Random Quantum Circuits*, Annual Review of Condensed Matter Physics **14** (2023), read here as [arXiv:2207.14280v1](https://arxiv.org/abs/2207.14280v1). The [guide](docs/PROJECT_GUIDE.md) identifies the short findings route and the extra derivation reading. Other [primary references](docs/RELATED_WORK.md) supply attribution; they are not additional required tutorials.
 
 <a id="1-central-spectrum-insufficiency"></a>
 <a id="2-an-exact-neighboring-cut-mechanism"></a>
@@ -46,10 +46,12 @@ Open the [six-panel gallery](figures/README.md) for artwork, captions, tables an
 
 <a id="reproduce-and-inspect"></a>
 
-## Reproducibility and readiness
+<a id="reproducibility-and-readiness"></a>
+
+## Reproduce and cite
 
 A complete checkout includes the required root `entanglement-data.zip`, checked against its [record manifest](data/record_bundle_manifest.json). The [reproduction guide](docs/REPRODUCTION.md) gives executable commands and distinguishes redraws, stored-record replay, bootstrap regeneration and new simulation. Passing software checks is not independent scientific replication.
 
-The six numerical panels and their plotting code are included. Editable sources for the composite-figure schematics are not yet included. See [source availability and reproducibility limits](docs/REPRODUCIBILITY_LIMITS.md).
+The six numerical panels, plotting code, and numerical inputs are included. See [reproducibility limits](docs/REPRODUCIBILITY_LIMITS.md) for the scope of each replay.
 
-Use the [citation record](CITATION.cff) and identify the commit or release used. Original code is licensed under [MIT](LICENSE); original documentation, data and figures under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See the [material scope and exceptions](LICENSE_STATUS.md) and [public-release preparation](docs/PUBLIC_RELEASE.md). [Contribution guidance](CONTRIBUTING.md) explains how to report corrections.
+Use the [citation record](CITATION.cff) and identify the commit or release used. Original code is licensed under [MIT](LICENSE); original documentation, data and figures under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See the [material scope and exceptions](LICENSE_STATUS.md). [Contribution guidance](CONTRIBUTING.md) explains how to report corrections.

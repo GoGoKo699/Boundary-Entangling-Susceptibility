@@ -23,8 +23,8 @@ Figure 1 compares finite-system states modified to share reference eigenvalues. 
 
 **L2: spatial law.** The historical exponential parameter near 2.37 sites does not establish a physical localization length. The full profile is poorly described by a single exponential, including under common eligibility. The accepted no-fit Figure 4 supports near-cut concentration and attenuation over measured distances, not a strict finite-range theorem.
 
-**L3: transition interpretation.** No new order parameter, critical exponent, or generic non-Clifford thermodynamic law is claimed. Contextual transition crossings and secondary hinge analyses do not replace the primary conditional estimand.
+**L3: transition interpretation.** Transition crossings and secondary hinge analyses provide context for the primary conditional response; their estimators and scope are described in [transition context](TRANSITION_CONTEXT.md).
 
-Figure 1's current uncertainty recipe is completely specified but remains post-hoc, pointwise, support-conditioned, and conditional on the archived references. Its historical bootstrap was not recovered. Figures 2–4, the raw records, and all statistical procedures are unchanged by this scientific consolidation. See [reproducibility limits](REPRODUCIBILITY_LIMITS.md) and the [prior-work account](RELATED_WORK.md).
+Figure 1's current uncertainty recipe is completely specified but remains post-hoc, pointwise, support-conditioned, and conditional on the archived references. See [reproducibility limits](REPRODUCIBILITY_LIMITS.md) and the [prior-work account](RELATED_WORK.md).
 
 [Next: estimators and comparison rules](NUMERICAL_METHODS.md) · [Return to README](../README.md)

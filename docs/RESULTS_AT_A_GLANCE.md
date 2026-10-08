@@ -1,8 +1,8 @@
 # Results at a glance
 
-**Role: numerical lookup after the scientific account.** The canonical tables linked below own the numerical values. Read the [four-figure account](DIALOGUE_REPORT.md) for the comparisons and the [claim map](CLAIM_EVIDENCE_MAP.md) for their scope. [Return to README](../README.md).
+The canonical tables linked below contain the numerical values. Read the [four-figure account](DIALOGUE_REPORT.md) for the comparisons and the [claim map](CLAIM_EVIDENCE_MAP.md) for their scope. [Return to README](../README.md).
 
-The point estimates and Figures 2–4 retain their original numerical inputs. Figure 1 uses the [adopted support-conditioned uncertainty calculation](FIGURE1_UNCERTAINTY.md); its historical error bars are not the current ones. The [evidence reassessment](EVIDENCE_REASSESSMENT.md) adds post-hoc checks and revises the interpretation of the historical exponential curve, not the archived observations.
+Figure 1 uses the [support-conditioned uncertainty calculation](FIGURE1_UNCERTAINTY.md). The [evidence reassessment](EVIDENCE_REASSESSMENT.md) supplies post-hoc model, pairing and eligibility checks.
 
 ## Fixed-spectrum intervention
 
@@ -16,7 +16,7 @@ The endpoint is the relative-response contrast between monitoring probabilities 
 | Haar / random Pauli | -0.1882 | -0.1977 |
 | Haar / weak Z | -0.1826 | -0.1781 |
 
-All ten current nominal pointwise 95% support-conditioned intervals lie below zero. Source: [`../data/processed/core_figures/figure_01_panel_b.csv`](../data/processed/core_figures/figure_01_panel_b.csv).
+All ten nominal pointwise 95% support-conditioned intervals lie below zero. Source: [`../data/processed/core_figures/figure_01_panel_b.csv`](../data/processed/core_figures/figure_01_panel_b.csv).
 
 ## Exact mechanism
 
@@ -43,10 +43,10 @@ These are model-dependent extrapolations, not directly observed thermodynamic va
 
 The nonpositive change from each spectrum-preserving Pauli measurement is an exact stabilizer corollary for the averaged probe. It does not determine the sign of the near-minus-far difference below. The [theory](THEORY.md#5-one-measurement-corollary) states the assumptions and deduction.
 
-The original near-minus-far estimates are +0.0714074 unconditionally and -0.0474290 on the unchanged-spectrum branch. The post-hoc strict same-side endpoint is -0.0474737 with a fresh 95% interval [-0.0493378,-0.0454700]. Every strict cell has a negative pointwise interval.
+The near-minus-far estimates are +0.0714074 unconditionally and -0.0474290 on the unchanged-spectrum branch. The post-hoc strict same-side endpoint is -0.0474737 with a fresh 95% interval [-0.0493378,-0.0454700]. Every strict cell has a negative pointwise interval.
 
 The common-eligibility curve uses 4,025 pre-states and keeps the selected sides fixed across six distances. Its magnitude at four sites is about 12% of the adjacent-cut magnitude; at eight sites it is about 1.6%. These are measured attenuation ratios, not a fitted correlation length.
 
-The current Figure 4 has no exponential curve or length annotation. The historical value xi=2.372 [2.251,2.496] is preserved only as fit provenance in [the archived fit record](../results/historical_fit/figure_04_distance_fit.json), not as an endorsed physical localization length: residual checks reject its use as an adequate full-profile description. No replacement functional form is promoted. Read the [precise estimands and fit diagnostics](EVIDENCE_REASSESSMENT.md) before interpreting Figure 4.
+The [estimands and fit diagnostics](EVIDENCE_REASSESSMENT.md) explain the selected populations and the use of measured attenuation ratios to summarize the profile.
 
 [Next: claim-level evidence and limitations](CLAIM_EVIDENCE_MAP.md) · [Return to README](../README.md)

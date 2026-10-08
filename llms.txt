@@ -14,7 +14,7 @@ Search terms: boundary entangling susceptibility; monitored quantum circuits; hy
 
 The observable is the expected change in normalized linear entropy from an independent probe, divided by the INPUT central purity. For the stated pure inputs, Haar-random and uniformly random two-qubit Clifford probes have the same average. This quantity is neither an average finite logarithmic Renyi-2 entropy change nor a derivative with respect to monitoring rate.
 
-Spectrum replacement, physical matching of stabilizer states, and paired measurement interventions are distinct comparisons. The within-spectrum monitoring coefficients in physical stabilizer ensembles remain negative through the tested sizes up to 256 qubits; they do not establish unconditional monitoring-rate causality or a thermodynamic theorem. The spatial evidence supports near-cut concentration, without an established localization length. Exact identities and corollaries must be distinguished from empirical evidence and credited to their antecedents. This is a state-response study, separate from noisy-measurement-record channel-capacity research.
+Spectrum replacement, physical matching of stabilizer states, and paired measurement interventions are distinct comparisons. The within-spectrum monitoring coefficients in physical stabilizer ensembles remain negative through the tested sizes up to 256 qubits. These are conditional associations; extrapolations depend on the finite-size model. The paired spatial evidence supports near-cut concentration within the specified eligible populations. Credit the antecedents of the exact identities and corollaries separately from the empirical findings.
 
 This file is a relevance and source index. Read the linked evidence before citing a claim. The links track main; identify the commit or release actually consulted. Current claim, figure and uncertainty pages take precedence over superseded historical exports. Citation metadata and licensing are maintained in their dedicated files below.
 
@@ -36,12 +36,12 @@ This repository serves as a record of the work and a guide for the author’s se
 - [Related work](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/RELATED_WORK.md): Primary attribution and equation-level entanglement-feature correspondence.
 - [Numerical methods](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/NUMERICAL_METHODS.md): Sampling, estimands, support, weighting and comparison populations.
 - [Figure gallery](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/figures/README.md): Current captions, canonical data and plotting scripts.
-- [Reproducibility limits](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/REPRODUCIBILITY_LIMITS.md): Fixed-reference/support uncertainty, missing historical records and unavailable editable external schematics.
+- [Reproducibility limits](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/REPRODUCIBILITY_LIMITS.md): Statistical conditioning, source availability and the coverage of numerical replay.
 
 ## Reproduce and cite
 
 - [Reproduction guide](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/REPRODUCTION.md): Dependencies and commands, separating redraw, record replay, bootstrap regeneration and new simulation.
 - [Code map](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/CODE_MAP.md): Locate response formulas, simulators, estimators and verification scripts.
-- [Current Figure 1 uncertainty](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/FIGURE1_UNCERTAINTY.md): Adopted 50,000-valid-draw procedure and independent replay; historical resamples were not recovered.
+- [Current Figure 1 uncertainty](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/docs/FIGURE1_UNCERTAINTY.md): 50,000-valid-draw procedure, fixed references and support, and independent replay.
 - [Citation record](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/CITATION.cff): Author, title and release metadata; cite the repository and actual commit or release used.
 - [License scope](https://raw.githubusercontent.com/GoGoKo699/Boundary-Entangling-Susceptibility/main/LICENSE_STATUS.md): Terms and exceptions for code, documentation, data and figures.

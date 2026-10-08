@@ -2,7 +2,7 @@
 
 The repository uses GitHub's default Markdown presentation. Navigation should connect the scientific question to the result, proof, data, and reproducible calculation without a separate themed website.
 
-Write concrete reader questions, explain quantities before using them, and keep notation consistent. The My-tone repository-mode guidance informed the earlier reader routes; its private corpus is not copied here or needed to use this repository. New prose avoids em dashes.
+Write concrete reader questions, explain quantities before using them, and keep notation consistent. Present the scientific question, definitions, results, evidence and reproduction instructions directly. Keep development chronology in the historical records. State assumptions and limitations where they affect interpretation; avoid repeated inventories of work outside the study. New prose avoids em dashes.
 
 Style editing must not change scientific meaning. Preserve signs, quantifiers, reference populations, confidence-interval definitions, causal qualifications, and attribution. Keep diagnostic spectrum replacement, physical conditional matching, and paired measurement interventions distinct.
 

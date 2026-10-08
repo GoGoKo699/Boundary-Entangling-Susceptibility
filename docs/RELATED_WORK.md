@@ -4,11 +4,13 @@
 
 [Return to README](../README.md) · [Background reading map](PROJECT_GUIDE.md#learn) · [Next: exact theory](THEORY.md)
 
-The one pedagogical starting point is Fisher, Khemani, Nahum and Vijay, *Random Quantum Circuits*, Annual Review of Condensed Matter Physics **14** (2023), using [arXiv:2207.14280v1](https://arxiv.org/abs/2207.14280v1), [PDF](https://arxiv.org/pdf/2207.14280v1). The selected passages and PDF pagination are verified in the [project guide](PROJECT_GUIDE.md). The papers below supply primary attribution and comparisons; readers need not study them to follow the local bridge or four-figure account. Their essential ingredients are explained in [THEORY](THEORY.md). The retained bounded literature assessment follows.
+The one pedagogical starting point is Fisher, Khemani, Nahum and Vijay, *Random Quantum Circuits*, Annual Review of Condensed Matter Physics **14** (2023), using [arXiv:2207.14280v1](https://arxiv.org/abs/2207.14280v1), [PDF](https://arxiv.org/pdf/2207.14280v1). The selected passages and PDF pagination are verified in the [project guide](PROJECT_GUIDE.md). The papers below supply primary attribution and comparisons; readers need not study them to follow the local bridge or four-figure account. Their essential ingredients are explained in [THEORY](THEORY.md).
 
-## Scope of this audit
+<a id="scope-of-this-audit"></a>
 
-This audit asks whether the Checkpoint 05 combination is already established:
+## Relation to this study
+
+The study combines four elements:
 
 1. compare monitored states at exactly the same complete central Schmidt
    spectrum;
@@ -18,18 +20,15 @@ This audit asks whether the Checkpoint 05 combination is already established:
 4. demonstrate large-size persistence and a paired cut-local measurement
    intervention.
 
-A targeted search through 2026-08-19, with equation-level checks added on
-2026-09-08, did not identify a paper establishing this complete empirical
-combination. This bounded search is not proof of priority. In particular,
-the local purity-transfer identities are established, and fixed-Schmidt-orbit
-response also has prior formulations.
+The local purity-transfer identities are established, and fixed-Schmidt-orbit
+response also has prior formulations. The comparisons below distinguish these
+antecedents from the monitored-population endpoints tested here.
 
-**Current framing.** The [claim map](CLAIM_EVIDENCE_MAP.md) distinguishes exact
+The [claim map](CLAIM_EVIDENCE_MAP.md) distinguishes exact
 ingredients, their direct deductions, and empirical evidence. The
 single-measurement suppression sign is a corollary; the paired spatial
 dependence is empirical. Different comparison designs need not estimate the
-same numerical effect. This page integrates the focused attribution repair,
-not an exhaustive priority certification.
+same numerical effect.
 
 ## Established background that must be credited
 
@@ -137,9 +136,14 @@ stabilizer-profile and localizable-entanglement antecedents above. None of
 these equations establishes the signs or effect sizes of the repository's
 specified monitored-population endpoints.
 
-## Conservative contribution statement
+<a id="conservative-contribution-statement"></a>
 
-The strongest defensible novelty statement is:
+<a id="claims-to-avoid"></a>
+<a id="priority-risks-for-external-review"></a>
+
+## Contribution
+
+The contribution is the controlled empirical comparison:
 
 > We formulate and test a fixed-spectrum response question for monitored
 > quantum states. The established local-twirl identity specifies the neighboring-cut
@@ -158,35 +162,6 @@ The empirical contribution lies in the tested combination of:
 3. an exact neighboring-cut mechanism;
 4. physical large-size stabilizer realization;
 5. paired measurement-location contrasts in specified selected populations.
-
-## Claims to avoid
-
-Do not state that the work:
-
-- invents stabilizer spectrum matching;
-- invents Clifford/Haar two-copy equivalence;
-- invents entanglement features, entangling power, or gate typicality;
-- provides a new MIPT order parameter;
-- proves a new universality class;
-- establishes absolute priority for the general local-twirl coefficient formula;
-- applies to arbitrary non-Clifford monitored systems in the thermodynamic
-  limit.
-
-## Priority risks for external review
-
-1. The four-purity transfer formula is already present in the
-   entanglement-feature literature. Its translation and attribution must be
-   retained wherever the local-twirl mechanism is used.
-2. A stabilizer entropy-gradient or local-rank identity may be known in graph-
-   state language.
-3. The empirical result may be viewed as a specific consequence of Clifford
-   flat spectra unless its physical question and paired intervention are made
-   central.
-4. The transition crossover is secondary and should not be oversold.
-
-The independent repository audit checked the stated equations and scope.
-Its bounded literature search neither certifies priority nor supplies evidence
-for a stronger population, localization or thermodynamic claim.
 
 ## Reference set
 

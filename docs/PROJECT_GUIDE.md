@@ -35,8 +35,6 @@ The review's Eq.13 (p.16) relates purity to Rényi-2 entropy using natural logar
 
 One optional passage serves a specific question: the paragraph on p.31 immediately before §4.1.1 explains why a measurement deep inside a monitored volume-law state can have a small entropy effect. Read it if interested in why location matters. Figure 4 measures a different endpoint, the change in a subsequent fresh-gate response; that paragraph predicts neither its paired ordering nor a localization length.
 
-This map was checked against the actual v1 PDF, including the relevant equations and surrounding prose. Direct PDF retrieval succeeded after the web-reader fetch failed. No review text, figures or pages are distributed here. The route is this repository's educational choice and implies no endorsement by the review's authors.
-
 **Next:** [TUTORIAL_BRIDGE](TUTORIAL_BRIDGE.md), then [DIALOGUE_REPORT](DIALOGUE_REPORT.md). Use the [question index](DIALOGUE_QUESTION_MAP.md) to skip to a particular issue.
 
 <a id="check-the-argument"></a>
@@ -45,7 +43,7 @@ This map was checked against the actual v1 PDF, including the relevant equations
 
 [Notation](NOTATION.md) → [theory](THEORY.md) → [claim evidence](CLAIM_EVIDENCE_MAP.md) → [methods](NUMERICAL_METHODS.md) → [evidence reassessment](EVIDENCE_REASSESSMENT.md) and [reproducibility limits](REPRODUCIBILITY_LIMITS.md).
 
-The theory is the home for complete derivations, including the general and locally dressed probes. Methods define the estimators and eligible populations. The claim map separates exact statements from conditional observations and model-dependent interpretations. [RELATED_WORK](RELATED_WORK.md) owns primary attribution and the repaired entanglement-feature correspondence. Specialists can use this route directly.
+The theory is the home for complete derivations, including the general and locally dressed probes. Methods define the estimators and eligible populations. The claim map separates exact statements from conditional observations and model-dependent interpretations. [RELATED_WORK](RELATED_WORK.md) owns primary attribution and the equation-level entanglement-feature correspondence. Specialists can use this route directly.
 
 <a id="reproduce-the-evidence"></a>
 
@@ -53,7 +51,7 @@ The theory is the home for complete derivations, including the general and local
 
 [Environment](REPRODUCTION.md#environment) → [integrity/tests](REPRODUCTION.md#integrity) → [redraw](REPRODUCTION.md#redraw) → [stored-record replay](REPRODUCTION.md#record-replay) → [current uncertainty regeneration](REPRODUCTION.md#uncertainty) → [optional new-campaign instructions](REPRODUCTION.md#new-campaign).
 
-[REPRODUCTION](REPRODUCTION.md) owns the executable route and explains each operation's meaning. The [figure gallery](../figures/README.md) maps questions to canonical data, caption and plotting script; [CODE_MAP](CODE_MAP.md) maps the underlying implementations. The [record manifest](../data/record_bundle_manifest.json) identifies the included raw members. A reader can reproduce the current numerical workflows without another tutorial, old chats, a missing checkpoint archive or My-tone.
+[REPRODUCTION](REPRODUCTION.md) owns the executable route and explains each operation's meaning. The [figure gallery](../figures/README.md) maps questions to canonical data, caption and plotting script; [CODE_MAP](CODE_MAP.md) maps the underlying implementations. The [record manifest](../data/record_bundle_manifest.json) identifies the included raw members.
 
 ## Purpose and contact
 
@@ -62,12 +60,10 @@ This repository serves as a record of the work and a guide for the author’s se
 <a id="before-writing-the-manuscript"></a>
 <a id="research-history"></a>
 
-## History and readiness
+<a id="history-and-readiness"></a>
 
-Current proofs, estimators, evidence, attribution and numerical panels are traceable here. The actual editable external composite schematics remain unavailable; the accepted six numerical panels do not recover those assets or verify an unseen Overleaf layout. This is an asset-completion gap, separate from understanding and reproducing the current study.
+## Sources and citation
 
-The [full audit](../audits/full-sanity-01/REVIEW.md) assesses its older frozen baseline. The [repair summary](../repairs/full-sanity-01/SUMMARY.md) records the integrated equation-level attribution, corrected supporting exports, figure label and validation changes. Those completed repairs are not pending work. [Reproducibility limits](REPRODUCIBILITY_LIMITS.md) distinguishes current calculations from unrecovered historical invocations and resamples.
-
-[Research history](RESEARCH_HISTORY.md), [run history](RUN_HISTORY.md), and [provenance](../provenance/README.md) are optional source tracing. [Citation status](../CITATION.cff), [license scope](../LICENSE_STATUS.md), and [current public-release preparation](PUBLIC_RELEASE.md) have separate roles. No new hosting, release or permission grant is implied.
+Use the [citation record](../CITATION.cff) with the commit or release consulted, and the [license scope](../LICENSE_STATUS.md) for reuse. [Provenance](../provenance/README.md) records source identities; [reproducibility limits](REPRODUCIBILITY_LIMITS.md) specifies the coverage of the numerical workflows.
 
 [Return to README](../README.md) · [Continue with the bridge](TUTORIAL_BRIDGE.md)

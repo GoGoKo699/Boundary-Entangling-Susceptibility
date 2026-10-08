@@ -4,8 +4,6 @@
 
 Use this page to find one answer without retracing the whole route. Every ID links to the complete account; the short anchors coexist with the original heading anchors. These question IDs are separate from the M1–M5 claim IDs in the [claim and evidence map](CLAIM_EVIDENCE_MAP.md).
 
-The M1–M9 and A–H identifiers retain the original figure-design structure. Appendix F5 now asks whether a physical localization length is justified, reflecting the evidence reassessment and approved no-fit artwork. No fifth narrative figure is introduced.
-
 ## Main-text questions
 
 | Order | Question | Figure / role |
